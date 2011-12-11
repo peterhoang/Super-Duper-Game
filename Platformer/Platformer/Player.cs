@@ -66,19 +66,22 @@ namespace Platformer
         Vector2 velocity;
 
         // Constants for controling horizontal movement
-        private const float MoveAcceleration = 13000.0f;
+        private const float MoveAcceleration = 14000.0f;
         private const float MaxMoveSpeed = 3500.0f;
         private const float GroundDragFactor = 0.48f;
         private const float AirDragFactor = 0.58f;
 
         // Constants for controlling vertical movement
-        private const float MaxJumpTime = 0.35f;
-        private const float MaxRollTime = 0.35f;
+        private const float MaxJumpTime = 0.20f;
         private const float JumpLaunchVelocity = -3500.0f;
         private const float GravityAcceleration = 3400.0f;
         private const float MaxFallSpeed = 550.0f;
         private const float JumpControlPower = 0.14f;
+
+        // Constants for rolling movement
+        private const float MaxRollTime = 0.35f;
         private const float RollControlPower = 0.14f;
+        private const float MaxRollRate = 0.6f;
 
         // Input configuration
         private const float MoveStickScale = 1.0f;
@@ -109,9 +112,11 @@ namespace Platformer
         // Rolling state
         private bool isRolling;
         private bool wasRolling;
+        private bool canRollAgain = true;
         private float rollTime;
-
-        // Shooting state
+        private float rollRateTime;
+        
+                // Shooting state
         private bool isShooting;
         private bool wasShooting;
         private HandGun gun1;
@@ -154,7 +159,7 @@ namespace Platformer
             jumpAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_jump"), 0.1f, false);
             celebrateAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/Celebrate"), 0.1f, false);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_die"), 0.1f, false);
-            rollAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_roll"), 0.1f, false);
+            rollAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_roll2"), 0.1f, false);
 
 
             // Calculate bounds within texture size.            
@@ -275,7 +280,14 @@ namespace Platformer
                 keyboardState.IsKeyDown(Keys.W) ||
                 touchState.AnyTouch();
 
-            isRolling = gamePadState.IsButtonDown(RollButton);
+            if (gamePadState.IsButtonDown(RollButton))
+            {
+                if (canRollAgain && isOnGround)
+                {
+                    isRolling = true;
+                    canRollAgain = false;
+                }
+            }
             isShooting = gamePadState.IsButtonDown(FireButton);
         }
 
@@ -382,7 +394,7 @@ namespace Platformer
             if (isRolling)
             {
                 // Begin or continue a roll
-                 if ((!wasRolling && IsOnGround && !isJumping) || rollTime > 0.0f)
+                if ((!wasRolling && IsOnGround) || rollTime > 0.0f)
                 {
                     //if (rollTime == 0.0f)
                        // jumpSound.Play();
@@ -396,14 +408,14 @@ namespace Platformer
                 {
                     // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
                     float direction = (flip == SpriteEffects.FlipHorizontally) ? -1.0f : 1.0f;
-                    velocityX = direction * (MaxMoveSpeed * 0.75f) * (1.0f - (float)Math.Pow(rollTime / MaxRollTime, RollControlPower));
+                    velocityX = direction * (MaxMoveSpeed * 0.5f) * (1.0f - (float)Math.Pow(rollTime / MaxRollTime, RollControlPower));
                 }
                 else
                 {
-                    // Reached the apex of the roll
                     rollTime = 0.0f;
                     isRolling = false;
                 }
+               
             }
             else
             {
@@ -411,6 +423,17 @@ namespace Platformer
                 rollTime = 0.0f;
             }
             wasRolling = isRolling;
+
+            // Rate of rolling
+            if (!canRollAgain)
+            {
+                rollRateTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (rollRateTime > MaxRollRate)
+                {
+                    rollRateTime = 0.0f;
+                    canRollAgain = true;
+                }
+            }
 
             return velocityX;
         }
