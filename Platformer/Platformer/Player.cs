@@ -88,7 +88,8 @@ namespace Platformer
         private const float AccelerometerScale = 1.5f;
         private const Buttons JumpButton = Buttons.A;
         private const Buttons RollButton = Buttons.B;
-        private const Buttons FireButton = Buttons.RightTrigger;
+        private const Buttons FireButton = Buttons.X;
+        private const Buttons SwitchButton = Buttons.Y;
 
         /// <summary>
         /// Gets whether or not the player's feet are on the ground.
@@ -116,10 +117,16 @@ namespace Platformer
         private float rollTime;
         private float rollRateTime;
         
-                // Shooting state
+        // Shooting state
         private bool isShooting;
         private bool wasShooting;
-        private HandGun gun1;
+        
+        //Player's weapons
+        private HandGun m_handgun;
+        private Shotgun m_shotgun;
+        private Gun gun;
+
+        private GamePadState old_gamePadState = new GamePadState();
 
         private Rectangle localBounds;
         /// <summary>
@@ -174,7 +181,10 @@ namespace Platformer
             jumpSound = Level.Content.Load<SoundEffect>("Sounds/PlayerJump");
             fallSound = Level.Content.Load<SoundEffect>("Sounds/PlayerFall");
 
-            gun1 = new HandGun(level, position);
+            m_handgun = new HandGun(level, position);
+            m_shotgun = new Shotgun(level, position);
+
+            gun = m_handgun;
         }
 
         /// <summary>
@@ -186,6 +196,7 @@ namespace Platformer
             Position = position;
             Velocity = Vector2.Zero;
             isAlive = true;
+            isShooting = false;
             sprite.PlayAnimation(idleAnimation);
         }
 
@@ -221,12 +232,11 @@ namespace Platformer
                 }
             }
 
-            gun1.Update(gameTime, Position, flip);
-
+            gun.Update(gameTime, Position, flip);
+           
             // Clear input.
             movement = 0.0f;
             isJumping = false;
-           // isRolling = false;
             isShooting = false;
         }
 
@@ -259,19 +269,27 @@ namespace Platformer
             }
 
             // If any digital horizontal movement input is found, override the analog movement.
-            if (gamePadState.IsButtonDown(Buttons.DPadLeft) ||
-                keyboardState.IsKeyDown(Keys.Left) ||
+            if (keyboardState.IsKeyDown(Keys.Left) ||
                 keyboardState.IsKeyDown(Keys.A))
             {
                 movement = -1.0f;
             }
-            else if (gamePadState.IsButtonDown(Buttons.DPadRight) ||
-                     keyboardState.IsKeyDown(Keys.Right) ||
+            else if (keyboardState.IsKeyDown(Keys.Right) ||
                      keyboardState.IsKeyDown(Keys.D))
             {
                 movement = 1.0f;
             }
 
+            // Weapon switching
+            if (gamePadState.IsButtonDown(SwitchButton) && !old_gamePadState.IsButtonDown(SwitchButton))
+            {
+                if (gun == m_handgun) 
+                    gun = m_shotgun;
+                else
+                    gun = m_handgun;
+            }
+                     
+                     
             // Check if the player wants to jump.
             isJumping =
                 gamePadState.IsButtonDown(JumpButton) ||
@@ -280,7 +298,7 @@ namespace Platformer
                 keyboardState.IsKeyDown(Keys.W) ||
                 touchState.AnyTouch();
 
-            if (gamePadState.IsButtonDown(RollButton))
+            if (gamePadState.IsButtonDown(RollButton) && !old_gamePadState.IsButtonDown(RollButton))
             {
                 if (canRollAgain && isOnGround)
                 {
@@ -288,7 +306,12 @@ namespace Platformer
                     canRollAgain = false;
                 }
             }
-            isShooting = gamePadState.IsButtonDown(FireButton);
+            if (gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton))
+            {
+                gun.Shoot();
+            }
+
+            old_gamePadState = gamePadState;
         }
 
         /// <summary>
@@ -550,7 +573,7 @@ namespace Platformer
 
             // Draw the gun if not rolling
             if (!isRolling)
-                gun1.Draw(gameTime, spriteBatch);
+                gun.Draw(gameTime, spriteBatch);
         }
     }
 }

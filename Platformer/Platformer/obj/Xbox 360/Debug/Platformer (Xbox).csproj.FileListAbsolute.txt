@@ -126,3 +126,4 @@ E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platfor
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.exe
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.pdb
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll2.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb

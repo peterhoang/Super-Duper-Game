@@ -8,13 +8,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-
 namespace Platformer
 {
-    /// <summary>
-    /// This is a game component that implements IUpdateable.
-    /// </summary>
-    class HandGun : Gun
+    class Shotgun : Gun
     {
         private Animation baseGraphic;
         private AnimationPlayer sprite;
@@ -22,10 +18,9 @@ namespace Platformer
         private Animation muzzleFire;
         private AnimationPlayer muzzle;
         private float muzzleAnimationTimer;
-
         private bool isShooting;
 
-        public HandGun(Level level, Vector2 position)
+        public Shotgun(Level level, Vector2 position)
         {
             Level = level;
             Position = position;
@@ -38,8 +33,8 @@ namespace Platformer
         public void LoadContent()
         {
             // Load animated textures.
-            baseGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun"), 0.1f, false);
-            muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun_muzzle"), 0.03f, false);
+            baseGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun"), 0.1f, false);
+            muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun_muzzle"), 0.01f, false);
         }
 
         public override void Shoot()
@@ -58,10 +53,12 @@ namespace Platformer
 
             sprite.PlayAnimation(baseGraphic);
 
-            if (isShooting) {
+            if (isShooting)
+            {
                 muzzleAnimationTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
                 muzzle.PlayAnimation(muzzleFire);
-                if (muzzleAnimationTimer > 0.20f) {
+                if (muzzleAnimationTimer > 0.20f)
+                {
                     muzzleAnimationTimer = 0.0f;
                     isShooting = false;
                     muzzle.StopAnimation();
@@ -79,9 +76,10 @@ namespace Platformer
 
             if (isShooting)
             {
-                Vector2 offset = (Flip == SpriteEffects.None) ? new Vector2(12, 0) : new Vector2(-12, 0);
+                Vector2 offset = (Flip == SpriteEffects.None) ? new Vector2(32, 0) : new Vector2(-32, 0);
                 muzzle.Draw(gameTime, spriteBatch, Position + offset, Flip);
             }
         }
+
     }
 }

@@ -64,6 +64,14 @@ namespace Platformer
             this.time = 0.0f;
         }
 
+        public void StopAnimation()
+        {
+            // Stop the animation
+            this.animation = null;
+            this.frameIndex = 0;
+            this.time = 0.0f;
+        }
+
         /// <summary>
         /// Advances the time position and draws the current frame of the animation.
         /// </summary>

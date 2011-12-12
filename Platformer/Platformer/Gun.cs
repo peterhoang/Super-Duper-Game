@@ -15,7 +15,7 @@ namespace Platformer
     /// <summary>
     /// This is a game component that implements IUpdateable.
     /// </summary>
-    class Gun
+    abstract class Gun
     {
         private Animation _baseGraphic;
 
@@ -45,6 +45,12 @@ namespace Platformer
         public Gun(Game game)
         {
         }
+
+        public abstract void Shoot();
+
+        public abstract void Update(GameTime gameTime, Vector2 position, SpriteEffects flip);
+
+        public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch);
 
     }
 }

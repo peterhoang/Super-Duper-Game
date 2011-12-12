@@ -386,7 +386,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun.xnb</Output>
-      <Time>2011-12-10T11:21:25.6662-05:00</Time>
+      <Time>2011-12-11T16:45:16.0562-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\shotgun.png</Source>
@@ -404,7 +404,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb</Output>
-      <Time>2011-12-10T11:21:25.6672-05:00</Time>
+      <Time>2011-12-11T18:49:09.4552-05:00</Time>
     </Item>
     <Item>
       <Source>Fonts\Hud.spritefont</Source>
@@ -496,6 +496,15 @@
       <Options>None</Options>
       <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll2.xnb</Output>
       <Time>2011-12-11T14:36:06.8652-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\shotgun_muzzle.png</Source>
+      <Name>Sprites\Weapons\shotgun_muzzle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb</Output>
+      <Time>2011-12-11T18:39:26.6862-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

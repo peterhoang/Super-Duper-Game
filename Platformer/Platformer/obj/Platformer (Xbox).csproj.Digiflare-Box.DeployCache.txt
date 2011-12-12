@@ -6,7 +6,7 @@ E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platfor
 Default Thumbnail
 2011-12-09T17:33:13.6323438Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Platformer.exe
-2011-12-11T20:08:36.9972000Z
+2011-12-11T23:52:39.2432000Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb
 2011-12-11T19:16:19.3032000Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb
@@ -98,11 +98,13 @@ E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platfor
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Run.xnb
 2011-12-11T19:16:17.4222000Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun.xnb
-2011-12-11T19:16:26.3582000Z
+2011-12-11T21:45:54.7002000Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb
-2011-12-11T19:16:26.3972000Z
+2011-12-11T23:49:12.1642000Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun.xnb
 2011-12-11T19:16:26.3682000Z
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb
+2011-12-11T23:39:37.3262000Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA0.xnb
 2011-12-11T19:16:18.0402000Z
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA1.xnb
