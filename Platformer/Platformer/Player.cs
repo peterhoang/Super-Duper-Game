@@ -94,7 +94,7 @@ namespace Platformer
         /// <summary>
         /// Gets whether or not the player's feet are on the ground.
         /// </summary>
-        public bool IsOnGround
+        public bool IsOnGround  
         {
             get { return isOnGround; }
         }
@@ -116,10 +116,6 @@ namespace Platformer
         private bool canRollAgain = true;
         private float rollTime;
         private float rollRateTime;
-        
-        // Shooting state
-        private bool isShooting;
-        private bool wasShooting;
         
         //Player's weapons
         private HandGun m_handgun;
@@ -196,7 +192,6 @@ namespace Platformer
             Position = position;
             Velocity = Vector2.Zero;
             isAlive = true;
-            isShooting = false;
             sprite.PlayAnimation(idleAnimation);
         }
 
@@ -237,7 +232,6 @@ namespace Platformer
             // Clear input.
             movement = 0.0f;
             isJumping = false;
-            isShooting = false;
         }
 
         /// <summary>
@@ -308,7 +302,7 @@ namespace Platformer
             }
             if (gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton))
             {
-                gun.Shoot();
+                gun.Shoot(velocity);
             }
 
             old_gamePadState = gamePadState;

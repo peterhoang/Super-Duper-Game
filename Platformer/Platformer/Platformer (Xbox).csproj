@@ -70,11 +70,13 @@
     <Compile Include="Accelerometer.cs" />
     <Compile Include="Animation.cs" />
     <Compile Include="AnimationPlayer.cs" />
+    <Compile Include="Bullet.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Gem.cs" />
     <Compile Include="Gun.cs" />
     <Compile Include="HandGun.cs" />
+    <Compile Include="HandgunBullet.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="PlatformerGame.cs" />
     <Compile Include="Player.cs" />

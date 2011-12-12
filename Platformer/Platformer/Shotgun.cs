@@ -37,7 +37,7 @@ namespace Platformer
             muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun_muzzle"), 0.01f, false);
         }
 
-        public override void Shoot()
+        public override void Shoot(Vector2 velocity)
         {
             isShooting = true;
         }

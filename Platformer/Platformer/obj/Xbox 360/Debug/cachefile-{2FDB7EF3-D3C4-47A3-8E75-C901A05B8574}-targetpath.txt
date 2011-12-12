@@ -55,6 +55,7 @@ Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
 Content\Sprites\Player\cop_roll2.xnb
 Content\Sprites\Weapons\shotgun_muzzle.xnb
+Content\Sprites\Weapons\bullet.xnb
 Content\Levels\0.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

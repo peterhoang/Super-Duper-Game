@@ -16,12 +16,18 @@ namespace Platformer
     /// </summary>
     class HandGun : Gun
     {
+        // graphic of the gun
         private Animation baseGraphic;
         private AnimationPlayer sprite;
 
+        // graphic of the muzzle 
         private Animation muzzleFire;
         private AnimationPlayer muzzle;
         private float muzzleAnimationTimer;
+
+        // List of bullets
+        private const int MAX_HANDGUN_BULLETS = 3;
+        private List<HandgunBullet> _bullets;
 
         private bool isShooting;
 
@@ -29,6 +35,14 @@ namespace Platformer
         {
             Level = level;
             Position = position;
+
+            // Initialize bullets
+            _bullets = new List<HandgunBullet>();
+            for (int i = 0; i < MAX_HANDGUN_BULLETS; i++)
+            {
+                _bullets.Add(new HandgunBullet(level, position));
+            }
+
             LoadContent();
         }
 
@@ -42,9 +56,22 @@ namespace Platformer
             muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun_muzzle"), 0.03f, false);
         }
 
-        public override void Shoot()
+        public override void Shoot(Vector2 velocity)
         {
             isShooting = true;
+
+            //fire off a bullet if any available
+            foreach (HandgunBullet bullet in _bullets)
+            {
+                if (!bullet.IsAlive)
+                {
+                    bullet.IsAlive = true;
+                    bullet.Position = this.Position + new Vector2(0, -22);
+                    bullet.Flip = Flip;
+                    bullet.PlayerVelocity = velocity;
+                    break;
+                }
+            }
         }
 
         /// <summary>
@@ -66,7 +93,15 @@ namespace Platformer
                     isShooting = false;
                     muzzle.StopAnimation();
                 }
+
             }
+
+            // Update each bullet
+            foreach (HandgunBullet bullet in _bullets)
+            {
+                bullet.Update(gameTime);
+            }
+            
         }
 
         /// <summary>
@@ -81,6 +116,12 @@ namespace Platformer
             {
                 Vector2 offset = (Flip == SpriteEffects.None) ? new Vector2(12, 0) : new Vector2(-12, 0);
                 muzzle.Draw(gameTime, spriteBatch, Position + offset, Flip);
+            }
+
+            // Draw call for bullets
+            foreach (HandgunBullet bullet in _bullets)
+            {
+                bullet.Draw(gameTime, spriteBatch);
             }
         }
     }

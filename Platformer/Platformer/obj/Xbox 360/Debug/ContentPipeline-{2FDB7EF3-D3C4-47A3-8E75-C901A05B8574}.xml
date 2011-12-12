@@ -506,6 +506,15 @@
       <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb</Output>
       <Time>2011-12-11T18:39:26.6862-05:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Weapons\bullet.png</Source>
+      <Name>Sprites\Weapons\bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\bullet.xnb</Output>
+      <Time>2011-12-11T22:21:26.3292-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2FDB7EF3-D3C4-47A3-8E75-C901A05B8574}</ContentProjectGUID>
