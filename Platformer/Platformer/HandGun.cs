@@ -27,14 +27,14 @@ namespace Platformer
 
         // List of bullets
         private const int MAX_HANDGUN_BULLETS = 3;
-        private List<HandgunBullet> _bullets;
 
         private bool isShooting;
 
-        public HandGun(Level level, Vector2 position)
+        public HandGun(Level level, Vector2 position, Player player)
         {
             Level = level;
             Position = position;
+            _player = player;
 
             // Initialize bullets
             _bullets = new List<HandgunBullet>();
@@ -56,10 +56,16 @@ namespace Platformer
             muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun_muzzle"), 0.03f, false);
         }
 
-        public override void Shoot(Vector2 velocity)
+        public override void Reset()
         {
-            isShooting = true;
+            foreach (HandgunBullet bullet in _bullets)
+            {
+                bullet.IsAlive = false;
+            }
+        }
 
+        public override void Shoot()
+        {
             //fire off a bullet if any available
             foreach (HandgunBullet bullet in _bullets)
             {
@@ -68,7 +74,8 @@ namespace Platformer
                     bullet.IsAlive = true;
                     bullet.Position = this.Position + new Vector2(0, -22);
                     bullet.Flip = Flip;
-                    bullet.PlayerVelocity = velocity;
+                    bullet.Player = _player;
+                    isShooting = true;
                     break;
                 }
             }
@@ -96,7 +103,7 @@ namespace Platformer
 
             }
 
-            // Update each bullet
+            // Draw call for bullets
             foreach (HandgunBullet bullet in _bullets)
             {
                 bullet.Update(gameTime);
@@ -107,10 +114,11 @@ namespace Platformer
         /// <summary>
         /// Draws the gun
         /// </summary>
-        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch, bool isRolling)
         {
             // Draw that sprite.
-            sprite.Draw(gameTime, spriteBatch, Position, Flip);
+            if (!isRolling)
+                sprite.Draw(gameTime, spriteBatch, Position, Flip);
 
             if (isShooting)
             {

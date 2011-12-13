@@ -66,8 +66,8 @@ namespace Platformer
         Vector2 velocity;
 
         // Constants for controling horizontal movement
-        private const float MoveAcceleration = 14000.0f;
-        private const float MaxMoveSpeed = 3500.0f;
+        private const float MoveAcceleration = 13000.0f;
+        private const float MaxMoveSpeed = 3000.0f;
         private const float GroundDragFactor = 0.48f;
         private const float AirDragFactor = 0.58f;
 
@@ -121,6 +121,9 @@ namespace Platformer
         private HandGun m_handgun;
         private Shotgun m_shotgun;
         private Gun gun;
+        private float rateoffire;
+        private const float HANDGUN_RATE = 0.4f;
+        private bool canShoot = true;
 
         private GamePadState old_gamePadState = new GamePadState();
 
@@ -177,10 +180,21 @@ namespace Platformer
             jumpSound = Level.Content.Load<SoundEffect>("Sounds/PlayerJump");
             fallSound = Level.Content.Load<SoundEffect>("Sounds/PlayerFall");
 
-            m_handgun = new HandGun(level, position);
-            m_shotgun = new Shotgun(level, position);
+            m_handgun = new HandGun(level, position, this);
+            m_shotgun = new Shotgun(level, position, this);
 
             gun = m_handgun;
+            canShoot = true;
+        }
+
+        public void LoadContent(string idle, string run, string jump, string death, string roll)
+        {
+            // Load animated textures.
+            idleAnimation = new Animation(Level.Content.Load<Texture2D>(idle), 0.1f, true);
+            runAnimation = new Animation(Level.Content.Load<Texture2D>(run), 0.1f, true);
+            jumpAnimation = new Animation(Level.Content.Load<Texture2D>(jump), 0.1f, false);
+            dieAnimation = new Animation(Level.Content.Load<Texture2D>(death), 0.1f, false);
+            rollAnimation = new Animation(Level.Content.Load<Texture2D>(roll), 0.1f, false);
         }
 
         /// <summary>
@@ -192,6 +206,7 @@ namespace Platformer
             Position = position;
             Velocity = Vector2.Zero;
             isAlive = true;
+            
             sprite.PlayAnimation(idleAnimation);
         }
 
@@ -227,7 +242,23 @@ namespace Platformer
                 }
             }
 
+
+            if (gun == m_handgun)
+            {
+                rateoffire += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (rateoffire > HANDGUN_RATE)
+                {
+                    canShoot = true;
+                    rateoffire = 0.0f;
+                }
+            }
+            else
+            {
+                canShoot = true;
+            }
+
             gun.Update(gameTime, Position, flip);
+            
            
             // Clear input.
             movement = 0.0f;
@@ -277,6 +308,7 @@ namespace Platformer
             // Weapon switching
             if (gamePadState.IsButtonDown(SwitchButton) && !old_gamePadState.IsButtonDown(SwitchButton))
             {
+                gun.Reset();
                 if (gun == m_handgun) 
                     gun = m_shotgun;
                 else
@@ -302,7 +334,12 @@ namespace Platformer
             }
             if (gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton))
             {
-                gun.Shoot(velocity);
+                if (canShoot)
+                {
+                    gun.Shoot();
+                    canShoot = false;
+                }
+                    
             }
 
             old_gamePadState = gamePadState;
@@ -566,8 +603,7 @@ namespace Platformer
             sprite.Draw(gameTime, spriteBatch, Position, flip);            
 
             // Draw the gun if not rolling
-            if (!isRolling)
-                gun.Draw(gameTime, spriteBatch);
+            gun.Draw(gameTime, spriteBatch, isRolling);
         }
     }
 }

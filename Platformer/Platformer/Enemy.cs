@@ -157,19 +157,21 @@ namespace Platformer
         /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            // Stop running when the game is paused or before turning around.
-            if (!Level.Player.IsAlive ||
-                Level.ReachedExit ||
-                Level.TimeRemaining == TimeSpan.Zero ||
-                waitTime > 0)
+            foreach (Player player in Level.Players)
             {
-                sprite.PlayAnimation(idleAnimation);
+                // Stop running when the game is paused or before turning around.
+                if (!player.IsAlive ||
+                    Level.ReachedExit ||
+                    Level.TimeRemaining == TimeSpan.Zero ||
+                    waitTime > 0)
+                {
+                    sprite.PlayAnimation(idleAnimation);
+                }
+                else
+                {
+                    sprite.PlayAnimation(runAnimation);
+                }
             }
-            else
-            {
-                sprite.PlayAnimation(runAnimation);
-            }
-
 
             // Draw facing the way the enemy is moving.
             SpriteEffects flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;

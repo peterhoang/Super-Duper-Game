@@ -16,8 +16,6 @@ namespace Platformer
     /// </summary>
     abstract class Gun
     {
-        private Animation _baseGraphic;
-
         public Level Level
         {
             get { return level; }
@@ -39,17 +37,32 @@ namespace Platformer
         }
         SpriteEffects flip;
 
+        public Player Player
+        {
+            get { return _player; }
+            set { _player = value; }
+        }
+        protected Player _player;
+
+        public List<HandgunBullet> Bullets
+        {
+            get { return _bullets; }
+        }
+        protected List<HandgunBullet> _bullets;
+
         public Gun() { }
 
         public Gun(Game game)
         {
         }
 
-        public abstract void Shoot(Vector2 velocity);
+        public abstract void Shoot();
+
+        public abstract void Reset();
 
         public abstract void Update(GameTime gameTime, Vector2 position, SpriteEffects flip);
 
-        public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch);
+        public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch, bool isRolling);
 
     }
 }

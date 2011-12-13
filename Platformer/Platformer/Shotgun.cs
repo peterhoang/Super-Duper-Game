@@ -20,10 +20,11 @@ namespace Platformer
         private float muzzleAnimationTimer;
         private bool isShooting;
 
-        public Shotgun(Level level, Vector2 position)
+        public Shotgun(Level level, Vector2 position, Player player)
         {
             Level = level;
             Position = position;
+            _player = player;
             LoadContent();
         }
 
@@ -37,7 +38,11 @@ namespace Platformer
             muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun_muzzle"), 0.01f, false);
         }
 
-        public override void Shoot(Vector2 velocity)
+        public override void Reset()
+        {
+        }
+
+        public override void Shoot()
         {
             isShooting = true;
         }
@@ -69,10 +74,11 @@ namespace Platformer
         /// <summary>
         /// Draws the gun
         /// </summary>
-        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch, bool isRolling)
         {
             // Draw that sprite.
-            sprite.Draw(gameTime, spriteBatch, Position, Flip);
+            if (!isRolling)
+                sprite.Draw(gameTime, spriteBatch, Position, Flip);
 
             if (isShooting)
             {

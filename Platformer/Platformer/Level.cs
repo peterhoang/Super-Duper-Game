@@ -33,11 +33,17 @@ namespace Platformer
         private const int EntityLayer = 2;
 
         // Entities in the level.
-        public Player Player
+        public List<Player> Players
         {
-            get { return player; }
+            get { return players; }
         }
-        Player player;
+        List<Player> players = new List<Player>();
+        
+        //public Player Player
+        //{
+        //    get { return player; }
+        //}
+        //Player player;
 
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
@@ -94,7 +100,7 @@ namespace Platformer
         {
             // Create a new content manager to load content used just by this level.
             content = new ContentManager(serviceProvider, "Content");
-
+        
             timeRemaining = TimeSpan.FromMinutes(2.0);
 
             LoadTiles(fileStream);
@@ -111,6 +117,8 @@ namespace Platformer
 
             // Load sounds.
             exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
+
+            
         }
 
         /// <summary>
@@ -154,7 +162,8 @@ namespace Platformer
             }
 
             // Verify that the level has a beginning and an end.
-            if (Player == null)
+            //if (Player == null)
+            if (players.Count <= 0)
                 throw new NotSupportedException("A level must have a starting point.");
             if (exit == InvalidPosition)
                 throw new NotSupportedException("A level must have an exit.");
@@ -266,11 +275,22 @@ namespace Platformer
         /// </summary>
         private Tile LoadStartTile(int x, int y)
         {
-            if (Player != null)
-                throw new NotSupportedException("A level may only have one starting point.");
+            //if (Player != null)
+            //    throw new NotSupportedException("A level may only have one starting point.");
 
             start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            player = new Player(this, start);
+            Player player1 = new Player(this, start);
+            
+            start = RectangleExtensions.GetBottomCenter(GetBounds(x + 10, y));
+            Player player2 = new Player(this, start);
+            player2.LoadContent("Sprites/Player/cop_yellow_idle",
+                                "Sprites/Player/cop_yellow_running",
+                                "Sprites/Player/cop_yellow_jump",
+                                "Sprites/Player/cop_yellow_die",
+                                "Sprites/Player/cop_yellow_roll");
+            
+            players.Add(player1);
+            players.Add(player2);
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -375,45 +395,48 @@ namespace Platformer
         public void Update(
             GameTime gameTime, 
             KeyboardState keyboardState, 
-            GamePadState gamePadState, 
+            GamePadState[] gamePadStates, 
             TouchCollection touchState, 
             AccelerometerState accelState,
             DisplayOrientation orientation)
         {
             // Pause while the player is dead or time is expired.
-            if (!Player.IsAlive || TimeRemaining == TimeSpan.Zero)
+            foreach (Player player in players)
             {
-                // Still want to perform physics on the player.
-                Player.ApplyPhysics(gameTime);
-            }
-            else if (ReachedExit)
-            {
-                // Animate the time being converted into points.
-                int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
-                seconds = Math.Min(seconds, (int)Math.Ceiling(TimeRemaining.TotalSeconds));
-                timeRemaining -= TimeSpan.FromSeconds(seconds);
-                score += seconds * PointsPerSecond;
-            }
-            else
-            {
-                timeRemaining -= gameTime.ElapsedGameTime;
-                Player.Update(gameTime, keyboardState, gamePadState, touchState, accelState, orientation);
-                UpdateGems(gameTime);
-
-                // Falling off the bottom of the level kills the player.
-                if (Player.BoundingRectangle.Top >= Height * Tile.Height)
-                    OnPlayerKilled(null);
-
-                UpdateEnemies(gameTime);
-
-                // The player has reached the exit if they are standing on the ground and
-                // his bounding rectangle contains the center of the exit tile. They can only
-                // exit when they have collected all of the gems.
-                if (Player.IsAlive &&
-                    Player.IsOnGround &&
-                    Player.BoundingRectangle.Contains(exit))
+                if (!player.IsAlive || TimeRemaining == TimeSpan.Zero)
                 {
-                    OnExitReached();
+                    // Still want to perform physics on the player.
+                    player.ApplyPhysics(gameTime);
+                }
+                else if (ReachedExit)
+                {
+                    // Animate the time being converted into points.
+                    int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
+                    seconds = Math.Min(seconds, (int)Math.Ceiling(TimeRemaining.TotalSeconds));
+                    timeRemaining -= TimeSpan.FromSeconds(seconds);
+                    score += seconds * PointsPerSecond;
+                }
+                else
+                {
+                    timeRemaining -= gameTime.ElapsedGameTime;
+                    player.Update(gameTime, keyboardState, gamePadStates[players.IndexOf(player)], touchState, accelState, orientation);
+                    UpdateGems(gameTime);
+
+                    // Falling off the bottom of the level kills the player.
+                    if (player.BoundingRectangle.Top >= Height * Tile.Height)
+                        OnPlayerKilled(null);
+
+                    UpdateEnemies(gameTime);
+
+                    // The player has reached the exit if they are standing on the ground and
+                    // his bounding rectangle contains the center of the exit tile. They can only
+                    // exit when they have collected all of the gems.
+                    if (player.IsAlive &&
+                        player.IsOnGround &&
+                        player.BoundingRectangle.Contains(exit))
+                    {
+                        OnExitReached();
+                    }
                 }
             }
 
@@ -433,10 +456,13 @@ namespace Platformer
 
                 gem.Update(gameTime);
 
-                if (gem.BoundingCircle.Intersects(Player.BoundingRectangle))
+                foreach (Player player in players)
                 {
-                    gems.RemoveAt(i--);
-                    OnGemCollected(gem, Player);
+                    if (gem.BoundingCircle.Intersects(player.BoundingRectangle))
+                    {
+                        gems.RemoveAt(i--);
+                        OnGemCollected(gem, player);
+                    }
                 }
             }
         }
@@ -450,10 +476,13 @@ namespace Platformer
             {
                 enemy.Update(gameTime);
 
-                // Touching an enemy instantly kills the player
-                if (enemy.BoundingRectangle.Intersects(Player.BoundingRectangle))
+                foreach (Player player in players)
                 {
-                    OnPlayerKilled(enemy);
+                    // Touching an enemy instantly kills the player
+                    if (enemy.BoundingRectangle.Intersects(player.BoundingRectangle))
+                    {
+                        OnPlayerKilled(enemy);
+                    }
                 }
             }
         }
@@ -479,7 +508,10 @@ namespace Platformer
         /// </param>
         private void OnPlayerKilled(Enemy killedBy)
         {
-            Player.OnKilled(killedBy);
+            foreach (Player player in players)
+            {
+                player.OnKilled(killedBy);
+            }
         }
 
         /// <summary>
@@ -487,9 +519,12 @@ namespace Platformer
         /// </summary>
         private void OnExitReached()
         {
-            Player.OnReachedExit();
-            exitReachedSound.Play();
-            reachedExit = true;
+            foreach (Player player in players)
+            {
+                player.OnReachedExit();
+                exitReachedSound.Play();
+                reachedExit = true;
+            }
         }
 
         /// <summary>
@@ -497,7 +532,10 @@ namespace Platformer
         /// </summary>
         public void StartNewLife()
         {
-            Player.Reset(start);
+            foreach (Player player in players)
+            {
+                player.Reset(start);
+            }
         }
 
         #endregion
@@ -516,8 +554,9 @@ namespace Platformer
 
             foreach (Gem gem in gems)
                 gem.Draw(gameTime, spriteBatch);
-
-            Player.Draw(gameTime, spriteBatch);
+            
+            foreach (Player player in players)
+                player.Draw(gameTime, spriteBatch);
 
             foreach (Enemy enemy in enemies)
                 enemy.Draw(gameTime, spriteBatch);

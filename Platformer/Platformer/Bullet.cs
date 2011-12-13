@@ -24,7 +24,7 @@ namespace Platformer
             get { return position; }
             set { position = value; }
         }
-        Vector2 position;
+        protected Vector2 position;
 
         public SpriteEffects Flip
         {
@@ -40,15 +40,13 @@ namespace Platformer
         }
         bool isAlive;
 
-        public Vector2 PlayerVelocity
+        public Player Player
         {
-            get { return playerVelocity; }
-            set { playerVelocity = value; }
+            get { return _player; }
+            set { _player = value; }
         }
-        Vector2 playerVelocity;
+        protected Player _player;
 
-        protected Vector2 velocity;
-        
         public Bullet() { }
 
         public abstract void Update(GameTime gameTime);

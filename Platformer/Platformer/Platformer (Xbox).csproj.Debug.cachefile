@@ -43,6 +43,9 @@ Content\Sprites\Player\cop_die.xnb
 Content\Sprites\Weapons\handgun.xnb
 Content\Sprites\Weapons\shotgun.xnb
 Content\Sprites\Weapons\handgun_muzzle.xnb
+Content\Sprites\Player\cop_roll2.xnb
+Content\Sprites\Weapons\shotgun_muzzle.xnb
+Content\Sprites\Weapons\bullet.xnb
 Content\Fonts\Hud.xnb
 Content\Sounds\ExitReached.xnb
 Content\Sounds\GemCollected.xnb
@@ -52,9 +55,11 @@ Content\Sounds\PlayerFall.xnb
 Content\Sounds\PlayerJump.xnb
 Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
-Content\Sprites\Player\cop_roll2.xnb
-Content\Sprites\Weapons\shotgun_muzzle.xnb
-Content\Sprites\Weapons\bullet.xnb
+Content\Sprites\Player\cop_yellow_die.xnb
+Content\Sprites\Player\cop_yellow_idle.xnb
+Content\Sprites\Player\cop_yellow_jump.xnb
+Content\Sprites\Player\cop_yellow_roll.xnb
+Content\Sprites\Player\cop_yellow_running.xnb
 Content\Sounds\Music.wma
 Content\Levels\0.txt
 Content\Levels\2.txt

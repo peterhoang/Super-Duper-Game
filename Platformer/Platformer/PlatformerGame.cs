@@ -14,6 +14,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Input.Touch;
+using System.Collections.Generic;
 
 
 namespace Platformer
@@ -44,7 +45,10 @@ namespace Platformer
 
         // We store our input states so that we only poll once per frame, 
         // then we use the same input state wherever needed
-        private GamePadState gamePadState;
+        // Represent the current controller states.
+        GamePadState[] gamePadStates = new GamePadState[2];
+        private GamePadState gamePadState_1;
+        private GamePadState gamePadState_2;
         private KeyboardState keyboardState;
         private TouchCollection touchState;
         private AccelerometerState accelerometerState;
@@ -110,7 +114,7 @@ namespace Platformer
             HandleInput();
 
             // update our level, passing down the GameTime along with all of our input states
-            level.Update(gameTime, keyboardState, gamePadState, touchState, 
+            level.Update(gameTime, keyboardState, gamePadStates, touchState, 
                          accelerometerState, Window.CurrentOrientation);
 
             base.Update(gameTime);
@@ -120,33 +124,39 @@ namespace Platformer
         {
             // get all of our input states
             keyboardState = Keyboard.GetState();
-            gamePadState = GamePad.GetState(PlayerIndex.One);
+            gamePadState_1 = GamePad.GetState(PlayerIndex.One);
+            gamePadState_2 = GamePad.GetState(PlayerIndex.Two);
+            gamePadStates[0] = gamePadState_1;
+            gamePadStates[1] = gamePadState_2;
             touchState = TouchPanel.GetState();
             accelerometerState = Accelerometer.GetState();
 
             // Exit the game when back is pressed.
-            if (gamePadState.Buttons.Back == ButtonState.Pressed)
+            if (gamePadState_1.Buttons.Back == ButtonState.Pressed)
                 Exit();
 
             bool continuePressed =
                 keyboardState.IsKeyDown(Keys.Space) ||
-                gamePadState.IsButtonDown(Buttons.A) ||
+                gamePadState_1.IsButtonDown(Buttons.A) ||
                 touchState.AnyTouch();
 
             // Perform the appropriate action to advance the game and
             // to get the player back to playing.
             if (!wasContinuePressed && continuePressed)
             {
-                if (!level.Player.IsAlive)
+                foreach (Player player in level.Players)
                 {
-                    level.StartNewLife();
-                }
-                else if (level.TimeRemaining == TimeSpan.Zero)
-                {
-                    if (level.ReachedExit)
-                        LoadNextLevel();
-                    else
-                        ReloadCurrentLevel();
+                    if (!player.IsAlive)
+                    {
+                        level.StartNewLife();
+                    }
+                    else if (level.TimeRemaining == TimeSpan.Zero)
+                    {
+                        if (level.ReachedExit)
+                            LoadNextLevel();
+                        else
+                            ReloadCurrentLevel();
+                    }
                 }
             }
 
@@ -223,20 +233,23 @@ namespace Platformer
            
             // Determine the status overlay message to show.
             Texture2D status = null;
-            if (level.TimeRemaining == TimeSpan.Zero)
+            foreach (Player player in level.Players)
             {
-                if (level.ReachedExit)
+                if (level.TimeRemaining == TimeSpan.Zero)
                 {
-                    status = winOverlay;
+                    if (level.ReachedExit)
+                    {
+                        status = winOverlay;
+                    }
+                    else
+                    {
+                        status = loseOverlay;
+                    }
                 }
-                else
+                else if (!player.IsAlive)
                 {
-                    status = loseOverlay;
+                    status = diedOverlay;
                 }
-            }
-            else if (!level.Player.IsAlive)
-            {
-                status = diedOverlay;
             }
 
             if (status != null)
