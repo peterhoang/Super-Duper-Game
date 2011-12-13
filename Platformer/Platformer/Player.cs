@@ -91,6 +91,13 @@ namespace Platformer
         private const Buttons FireButton = Buttons.X;
         private const Buttons SwitchButton = Buttons.Y;
 
+        //Health
+        public float Health
+        {
+            get { return health; }
+        }
+        private float health;
+
         /// <summary>
         /// Gets whether or not the player's feet are on the ground.
         /// </summary>
@@ -99,6 +106,11 @@ namespace Platformer
             get { return isOnGround; }
         }
         bool isOnGround;
+
+        public bool IsRolling
+        {
+            get { return isRolling; }
+        }
 
         /// <summary>
         /// Current user movement input.
@@ -124,6 +136,11 @@ namespace Platformer
         private float rateoffire;
         private const float HANDGUN_RATE = 0.4f;
         private bool canShoot = true;
+
+        //Sprite Effects: Pulse red
+        private bool pulseRed;
+        private float pulseRedTime;
+        private const float MAX_PULSE_TIME = 0.4f;
 
         private GamePadState old_gamePadState = new GamePadState();
 
@@ -167,7 +184,6 @@ namespace Platformer
             dieAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_die"), 0.1f, false);
             rollAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_roll2"), 0.1f, false);
 
-
             // Calculate bounds within texture size.            
             int width = (int)(idleAnimation.FrameWidth * 0.4);
             int left = (idleAnimation.FrameWidth - width) / 2;
@@ -195,6 +211,13 @@ namespace Platformer
             jumpAnimation = new Animation(Level.Content.Load<Texture2D>(jump), 0.1f, false);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>(death), 0.1f, false);
             rollAnimation = new Animation(Level.Content.Load<Texture2D>(roll), 0.1f, false);
+
+            // Calculate bounds within texture size.            
+            int width = (int)(idleAnimation.FrameWidth * 0.4);
+            int left = (idleAnimation.FrameWidth - width) / 2;
+            int height = (int)(idleAnimation.FrameWidth * 0.8);
+            int top = idleAnimation.FrameHeight - height;
+            localBounds = new Rectangle(left, top, width, height);
         }
 
         /// <summary>
@@ -206,7 +229,12 @@ namespace Platformer
             Position = position;
             Velocity = Vector2.Zero;
             isAlive = true;
-            
+            isRolling = false;
+            isJumping = false;
+            pulseRed = false;
+            pulseRedTime = 0.0f;
+            health = 100;
+
             sprite.PlayAnimation(idleAnimation);
         }
 
@@ -259,7 +287,17 @@ namespace Platformer
 
             gun.Update(gameTime, Position, flip);
             
-           
+            //Sprite effects
+            if (pulseRed)
+            {
+                pulseRedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (pulseRedTime > MAX_PULSE_TIME)
+                {
+                    pulseRed = false;
+                    pulseRedTime = 0.0f;
+                }
+            }
+
             // Clear input.
             movement = 0.0f;
             isJumping = false;
@@ -561,6 +599,18 @@ namespace Platformer
             previousBottom = bounds.Bottom;
         }
 
+        public void OnHit(float damage)
+        {
+            this.health -= damage;
+            pulseRed = true;
+            pulseRedTime = 0.0f;
+
+            if (this.health <= 0)
+            {
+                OnKilled(null);
+            }
+        }
+
         /// <summary>
         /// Called when the player has been killed.
         /// </summary>
@@ -571,7 +621,9 @@ namespace Platformer
         public void OnKilled(Enemy killedBy)
         {
             isAlive = false;
-
+            pulseRed = false;
+            pulseRedTime = 0.0f;
+         
             if (killedBy != null)
                 killedSound.Play();
             else
@@ -600,10 +652,28 @@ namespace Platformer
                 flip = SpriteEffects.FlipHorizontally;               
 
             // Draw that sprite.
-            sprite.Draw(gameTime, spriteBatch, Position, flip);            
+            Color newColor = Color.White;
+            
+            if (pulseRed)
+            {
+                Color spriteColor = Color.Red;
+                double speed = 30.0;
+                double pulseCycle = Math.Sin(gameTime.TotalGameTime.TotalSeconds * speed) / 2.0 + .5;
+                byte range = 100;
+
+                byte r = (byte)MathHelper.Clamp(MathHelper.Lerp((float)(spriteColor.R - range), (float)(spriteColor.R + range), (float)pulseCycle), 0, 255);
+                byte g = (byte)MathHelper.Clamp(MathHelper.Lerp((float)(spriteColor.G - range), (float)(spriteColor.G + range), (float)pulseCycle), 0, 255);
+                byte b = (byte)MathHelper.Clamp(MathHelper.Lerp((float)(spriteColor.B - range), (float)(spriteColor.B + range), (float)pulseCycle), 0, 255);
+
+                newColor.R = r;
+                newColor.G = g;
+                newColor.B = b;
+            }
+            
+            sprite.Draw(gameTime, spriteBatch, Position, flip, newColor);            
 
             // Draw the gun if not rolling
-            gun.Draw(gameTime, spriteBatch, isRolling);
+            if (isAlive) gun.Draw(gameTime, spriteBatch, isRolling);
         }
     }
 }

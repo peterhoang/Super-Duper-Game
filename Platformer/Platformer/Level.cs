@@ -481,7 +481,7 @@ namespace Platformer
                     // Touching an enemy instantly kills the player
                     if (enemy.BoundingRectangle.Intersects(player.BoundingRectangle))
                     {
-                        OnPlayerKilled(enemy);
+                        OnPlayerKilled(enemy, player);
                     }
                 }
             }
@@ -506,12 +506,15 @@ namespace Platformer
         /// The enemy who killed the player. This is null if the player was not killed by an
         /// enemy, such as when a player falls into a hole.
         /// </param>
-        private void OnPlayerKilled(Enemy killedBy)
+        private void OnPlayerKilled(Enemy killedBy, Player player)
         {
-            foreach (Player player in players)
-            {
-                player.OnKilled(killedBy);
-            }
+            player.OnKilled(killedBy);
+            player.Reset(start);
+        }
+     
+        private void OnPlayerKilled(Player player)
+        {
+            OnPlayerKilled(null, player);
         }
 
         /// <summary>

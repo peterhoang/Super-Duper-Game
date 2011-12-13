@@ -60,7 +60,7 @@ namespace Platformer
         {
             foreach (HandgunBullet bullet in _bullets)
             {
-                bullet.IsAlive = false;
+                bullet.Reset();
             }
         }
 

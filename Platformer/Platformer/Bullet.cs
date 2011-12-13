@@ -47,7 +47,31 @@ namespace Platformer
         }
         protected Player _player;
 
+
+        // graphic of the bullet
+        protected Animation bulletGraphic;
+        protected AnimationPlayer bulletSprite;
+        protected Rectangle localBounds;
+        /// <summary>
+        /// Gets a rectangle which bounds this bullet in world space.
+        /// </summary>
+        public Rectangle BoundingRectangle
+        {
+            get
+            {
+                int left = (int)Math.Round(Position.X - bulletSprite.Origin.X) + localBounds.X;
+                int top = (int)Math.Round(Position.Y - bulletSprite.Origin.Y) + localBounds.Y;
+
+                return new Rectangle(left, top, localBounds.Width, localBounds.Height);
+            }
+        }
+
+        public delegate void OnHitHandler(object sender, EventArgs e);
+        public event OnHitHandler OnHit;
+
         public Bullet() { }
+
+        public abstract void Reset();
 
         public abstract void Update(GameTime gameTime);
 
