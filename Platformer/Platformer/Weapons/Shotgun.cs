@@ -20,11 +20,26 @@ namespace Platformer
         private float muzzleAnimationTimer;
         private bool isShooting;
 
+        private const int MAX_SHELLS = 2;
+        public List<ShotgunShell> Shells
+        {
+            get { return _shells; }
+        }
+        protected List<ShotgunShell> _shells;
+
         public Shotgun(Level level, Vector2 position, Player player)
         {
             Level = level;
             Position = position;
             _player = player;
+
+            // Initialize bullets
+            _shells = new List<ShotgunShell>();
+            for (int i = 0; i < MAX_SHELLS; i++)
+            {
+                _shells.Add(new ShotgunShell(level, position));
+            }
+
             LoadContent();
         }
 
@@ -40,11 +55,27 @@ namespace Platformer
 
         public override void Reset()
         {
+            foreach (ShotgunShell shell in _shells)
+            {
+                shell.Reset();
+            }
         }
 
         public override void Shoot()
         {
-            isShooting = true;
+            //fire off a bullet if any available
+            foreach (ShotgunShell shell in _shells)
+            {
+                if (!shell.IsAlive)
+                {
+                    shell.IsAlive = true;
+                    shell.Position = this.Position;
+                    shell.Flip = Flip;
+                    shell.Player = _player;
+                    isShooting = true;
+                    break;
+                }
+            }
         }
 
         /// <summary>
@@ -52,7 +83,7 @@ namespace Platformer
         /// </summary>
         public override void Update(GameTime gameTime, Vector2 position, SpriteEffects flip)
         {
-            Vector2 offset = (flip == SpriteEffects.None) ? new Vector2(45, 0) : new Vector2(-45, 0);
+            Vector2 offset = (flip == SpriteEffects.None) ? new Vector2(37, 3) : new Vector2(-37, 3);
             Flip = flip;
             Position = position + offset;
 
@@ -69,6 +100,12 @@ namespace Platformer
                     muzzle.StopAnimation();
                 }
             }
+
+            // Update call for bullets
+            foreach (ShotgunShell shell in _shells)
+            {
+                shell.Update(gameTime);
+            }
         }
 
         /// <summary>
@@ -82,9 +119,10 @@ namespace Platformer
 
             if (isShooting)
             {
-                Vector2 offset = (Flip == SpriteEffects.None) ? new Vector2(32, 0) : new Vector2(-32, 0);
+                Vector2 offset = (Flip == SpriteEffects.None) ? new Vector2(32, 2) : new Vector2(-32, 2);
                 muzzle.Draw(gameTime, spriteBatch, Position + offset, Flip);
             }
+
         }
 
     }

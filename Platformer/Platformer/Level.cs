@@ -161,6 +161,14 @@ namespace Platformer
                 }
             }
 
+            // Set player 2's colors
+            players[1].LoadContent("Sprites/Player/cop_yellow_idle",
+                    "Sprites/Player/cop_yellow_running",
+                    "Sprites/Player/cop_yellow_jump",
+                    "Sprites/Player/cop_yellow_die",
+                    "Sprites/Player/cop_yellow_roll");
+            
+
             // Verify that the level has a beginning and an end.
             //if (Player == null)
             if (players.Count <= 0)
@@ -225,6 +233,9 @@ namespace Platformer
                 // Player 1 start point
                 case '1':
                     return LoadStartTile(x, y);
+                // Player 2 start point
+                case '2':
+                    return LoadStartTile(x, y);
 
                 // Impassable block
                 case '#':
@@ -279,18 +290,9 @@ namespace Platformer
             //    throw new NotSupportedException("A level may only have one starting point.");
 
             start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            Player player1 = new Player(this, start);
-            
-            start = RectangleExtensions.GetBottomCenter(GetBounds(x + 10, y));
-            Player player2 = new Player(this, start);
-            player2.LoadContent("Sprites/Player/cop_yellow_idle",
-                                "Sprites/Player/cop_yellow_running",
-                                "Sprites/Player/cop_yellow_jump",
-                                "Sprites/Player/cop_yellow_die",
-                                "Sprites/Player/cop_yellow_roll");
-            
-            players.Add(player1);
-            players.Add(player2);
+            Player player = new Player(this, start);
+
+            players.Add(player);
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -403,7 +405,7 @@ namespace Platformer
             // Pause while the player is dead or time is expired.
             foreach (Player player in players)
             {
-                if (!player.IsAlive || TimeRemaining == TimeSpan.Zero)
+                if (!player.IsAlive)// || TimeRemaining == TimeSpan.Zero)
                 {
                     // Still want to perform physics on the player.
                     player.ApplyPhysics(gameTime);
@@ -509,7 +511,8 @@ namespace Platformer
         private void OnPlayerKilled(Enemy killedBy, Player player)
         {
             player.OnKilled(killedBy);
-            player.Reset(start);
+            //
+            player.Reset();
         }
      
         private void OnPlayerKilled(Player player)
@@ -533,12 +536,9 @@ namespace Platformer
         /// <summary>
         /// Restores the player to the starting point to try the level again.
         /// </summary>
-        public void StartNewLife()
+        public void StartNewLife(Player player)
         {
-            foreach (Player player in players)
-            {
-                player.Reset(start);
-            }
+            player.Reset();
         }
 
         #endregion

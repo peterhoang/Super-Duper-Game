@@ -44,12 +44,6 @@ namespace Platformer
         }
         protected Player _player;
 
-        public List<HandgunBullet> Bullets
-        {
-            get { return _bullets; }
-        }
-        protected List<HandgunBullet> _bullets;
-
         public Gun() { }
 
         public Gun(Game game)

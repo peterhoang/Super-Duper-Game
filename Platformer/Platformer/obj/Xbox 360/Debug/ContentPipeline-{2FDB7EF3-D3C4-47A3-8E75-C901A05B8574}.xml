@@ -560,6 +560,15 @@
       <Output>C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_running.xnb</Output>
       <Time>2011-12-12T14:13:23.2830329-05:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Weapons\shell.png</Source>
+      <Name>Sprites\Weapons\shell</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb</Output>
+      <Time>2011-12-14T14:04:24.0124189-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2FDB7EF3-D3C4-47A3-8E75-C901A05B8574}</ContentProjectGUID>

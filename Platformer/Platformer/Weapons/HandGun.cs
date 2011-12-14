@@ -25,8 +25,12 @@ namespace Platformer
         private AnimationPlayer muzzle;
         private float muzzleAnimationTimer;
 
-        // List of bullets
-        private const int MAX_HANDGUN_BULLETS = 3;
+        private const int MAX_HANDGUN_BULLETS = 4;
+        public List<HandgunBullet> Bullets
+        {
+            get { return _bullets; }
+        }
+        protected List<HandgunBullet> _bullets;
 
         private bool isShooting;
 
@@ -72,7 +76,7 @@ namespace Platformer
                 if (!bullet.IsAlive)
                 {
                     bullet.IsAlive = true;
-                    bullet.Position = this.Position + new Vector2(0, -22);
+                    bullet.Position = this.Position + new Vector2(-2, -22);
                     bullet.Flip = Flip;
                     bullet.Player = _player;
                     isShooting = true;
@@ -103,7 +107,7 @@ namespace Platformer
 
             }
 
-            // Draw call for bullets
+            // Update call for bullets
             foreach (HandgunBullet bullet in _bullets)
             {
                 bullet.Update(gameTime);

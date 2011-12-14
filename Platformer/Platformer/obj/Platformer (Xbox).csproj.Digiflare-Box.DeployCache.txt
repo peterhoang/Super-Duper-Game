@@ -6,7 +6,7 @@ C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\
 Default Thumbnail
 2011-12-09T17:33:13.6323438Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Platformer.exe
-2011-12-13T19:48:52.0363443Z
+2011-12-14T19:15:40.9141355Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb
 2011-12-12T14:44:47.2305792Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb
@@ -28,7 +28,7 @@ C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\B
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\Hud.xnb
 2011-12-12T14:44:52.0078525Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\0.txt
-2011-12-10T16:38:25.7647103Z
+2011-12-14T16:17:00.3199526Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\1.txt
 2011-12-10T16:38:25.7647103Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\2.txt
@@ -113,6 +113,8 @@ C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\S
 2011-12-12T14:44:51.7278364Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb
 2011-12-12T14:44:51.7508378Z
+C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb
+2011-12-14T19:04:27.4046130Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun.xnb
 2011-12-12T14:44:51.7328367Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb

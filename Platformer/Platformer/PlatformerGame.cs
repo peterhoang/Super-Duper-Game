@@ -135,32 +135,33 @@ namespace Platformer
             if (gamePadState_1.Buttons.Back == ButtonState.Pressed)
                 Exit();
 
-            bool continuePressed =
-                keyboardState.IsKeyDown(Keys.Space) ||
-                gamePadState_1.IsButtonDown(Buttons.A) ||
-                touchState.AnyTouch();
-
-            // Perform the appropriate action to advance the game and
-            // to get the player back to playing.
-            if (!wasContinuePressed && continuePressed)
+            foreach (Player player in level.Players)
             {
-                foreach (Player player in level.Players)
+                bool continuePressed =
+                    keyboardState.IsKeyDown(Keys.Space) ||
+                    gamePadStates[level.Players.IndexOf(player)].IsButtonDown(Buttons.A) ||
+                    touchState.AnyTouch();
+
+                // Perform the appropriate action to advance the game and
+                // to get the player back to playing.
+                if (!wasContinuePressed && continuePressed)
                 {
                     if (!player.IsAlive)
                     {
-                        level.StartNewLife();
+                        level.StartNewLife(player);
                     }
-                    else if (level.TimeRemaining == TimeSpan.Zero)
-                    {
-                        if (level.ReachedExit)
-                            LoadNextLevel();
-                        else
-                            ReloadCurrentLevel();
-                    }
-                }
-            }
+                   // else if (level.TimeRemaining == TimeSpan.Zero)
+                   // {
+                   //     if (level.ReachedExit)
+                   //         LoadNextLevel();
+                   //     else
+                   //         ReloadCurrentLevel();
+                   // }
 
-            wasContinuePressed = continuePressed;
+                }
+                wasContinuePressed = continuePressed;
+            }
+            
         }
 
         private void LoadNextLevel()
@@ -213,6 +214,7 @@ namespace Platformer
 
             // Draw time remaining. Uses modulo division to cause blinking when the
             // player is running out of time.
+            /*
             string timeString = "TIME: " + level.TimeRemaining.Minutes.ToString("00") + ":" + level.TimeRemaining.Seconds.ToString("00");
             Color timeColor;
             if (level.TimeRemaining > WarningTime ||
@@ -226,13 +228,16 @@ namespace Platformer
                 timeColor = Color.Red;
             }
             DrawShadowedString(hudFont, timeString, hudLocation, timeColor);
+             *
 
             // Draw score
             float timeHeight = hudFont.MeasureString(timeString).Y;
             DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.Yellow);
            
             // Determine the status overlay message to show.
+            
             Texture2D status = null;
+            /*
             foreach (Player player in level.Players)
             {
                 if (level.TimeRemaining == TimeSpan.Zero)
@@ -251,6 +256,7 @@ namespace Platformer
                     status = diedOverlay;
                 }
             }
+             
 
             if (status != null)
             {
@@ -258,6 +264,7 @@ namespace Platformer
                 Vector2 statusSize = new Vector2(status.Width, status.Height);
                 spriteBatch.Draw(status, center - statusSize / 2, Color.White);
             }
+             * */
         }
 
         private void DrawShadowedString(SpriteFont font, string value, Vector2 position, Color color)

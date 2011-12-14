@@ -91,6 +91,14 @@ namespace Platformer
         private const Buttons FireButton = Buttons.X;
         private const Buttons SwitchButton = Buttons.Y;
 
+        // Respawn point
+        public Vector2 RespawnPosition
+        {
+            get { return respawnPosition; }
+            set { respawnPosition = value; }
+        }
+        private Vector2 respawnPosition;
+
         //Health
         public float Health
         {
@@ -134,7 +142,8 @@ namespace Platformer
         private Shotgun m_shotgun;
         private Gun gun;
         private float rateoffire;
-        private const float HANDGUN_RATE = 0.4f;
+        private const float HANDGUN_RATE = 0.2f;
+        private const float SHOTGUN_RATE = 0.4f;
         private bool canShoot = true;
 
         //Sprite Effects: Pulse red
@@ -167,6 +176,8 @@ namespace Platformer
             this.level = level;
 
             LoadContent();
+
+            respawnPosition = position;
 
             Reset(position);
         }
@@ -238,6 +249,11 @@ namespace Platformer
             sprite.PlayAnimation(idleAnimation);
         }
 
+        public void Reset()
+        {
+            Reset(respawnPosition);
+        }
+
         /// <summary>
         /// Handles input, performs physics, and animates the player sprite.
         /// </summary>
@@ -270,11 +286,18 @@ namespace Platformer
                 }
             }
 
-
+            rateoffire += (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (gun == m_handgun)
             {
-                rateoffire += (float)gameTime.ElapsedGameTime.TotalSeconds;
                 if (rateoffire > HANDGUN_RATE)
+                {
+                    canShoot = true;
+                    rateoffire = 0.0f;
+                }
+            }
+            else if (gun == m_shotgun)
+            {
+                if (rateoffire > SHOTGUN_RATE)
                 {
                     canShoot = true;
                     rateoffire = 0.0f;
@@ -282,7 +305,8 @@ namespace Platformer
             }
             else
             {
-                canShoot = true;
+                canShoot = false;
+                rateoffire = 0.0f;
             }
 
             gun.Update(gameTime, Position, flip);
