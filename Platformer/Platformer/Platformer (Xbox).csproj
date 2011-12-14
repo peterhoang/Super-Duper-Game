@@ -70,6 +70,11 @@
     <Compile Include="Accelerometer.cs" />
     <Compile Include="Animation.cs" />
     <Compile Include="AnimationPlayer.cs" />
+    <Compile Include="ParticleEngine\ExplosionParticleSystem.cs" />
+    <Compile Include="ParticleEngine\ExplosionSmokeParticleSystem.cs" />
+    <Compile Include="ParticleEngine\Particle.cs" />
+    <Compile Include="ParticleEngine\ParticleSystem.cs" />
+    <Compile Include="ParticleEngine\SmokePlumeParticleSystem.cs" />
     <Compile Include="Weapons\Bullet.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Enemy.cs" />

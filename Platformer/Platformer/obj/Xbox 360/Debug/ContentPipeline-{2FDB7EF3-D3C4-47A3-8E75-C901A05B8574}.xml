@@ -377,7 +377,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_die.xnb</Output>
-      <Time>2011-12-10T11:38:25.6357029-05:00</Time>
+      <Time>2011-12-14T14:29:15.2187111-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\handgun.png</Source>
@@ -522,7 +522,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_die.xnb</Output>
-      <Time>2011-12-12T14:11:21.6020731-05:00</Time>
+      <Time>2011-12-14T14:31:44.8722708-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_yellow_idle.png</Source>

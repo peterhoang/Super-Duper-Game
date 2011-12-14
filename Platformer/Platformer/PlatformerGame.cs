@@ -26,6 +26,10 @@ namespace Platformer
     {
         // Resources for drawing.
         private GraphicsDeviceManager graphics;
+        public SpriteBatch SpriteBatch
+        {
+            get { return spriteBatch; }
+        }
         private SpriteBatch spriteBatch;
 
         // Global content.
@@ -58,6 +62,13 @@ namespace Platformer
         // have a level file present. This allows us to not need to check for the file
         // or handle exceptions, both of which can add unnecessary time to level loading.
         private const int numberOfLevels = 3;
+
+        // a random number generator that the whole sample can share.
+        private static Random random = new Random(354669);
+        public static Random Random
+        {
+            get { return random; }
+        }
 
         public PlatformerGame()
         {
@@ -272,5 +283,18 @@ namespace Platformer
             spriteBatch.DrawString(font, value, position + new Vector2(1.0f, 1.0f), Color.Black);
             spriteBatch.DrawString(font, value, position, color);
         }
+
+
+        #region Helper Functions
+
+        //  a handy little function that gives a random float between two
+        // values. This will be used in several places in the sample, in particilar in
+        // ParticleSystem.InitializeParticle.
+        public static float RandomBetween(float min, float max)
+        {
+            return min + (float)random.NextDouble() * (max - min);
+        }
+
+        #endregion
     }
 }

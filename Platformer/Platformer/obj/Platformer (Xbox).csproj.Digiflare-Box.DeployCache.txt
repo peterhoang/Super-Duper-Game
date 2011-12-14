@@ -78,7 +78,7 @@ C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\S
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Celebrate.xnb
 2011-12-12T14:44:46.2865252Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_die.xnb
-2011-12-12T14:44:51.7238362Z
+2011-12-14T19:31:47.2154048Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_idle.xnb
 2011-12-12T14:44:51.6628327Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_jump.xnb
@@ -90,7 +90,7 @@ C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\S
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_running.xnb
 2011-12-12T14:44:51.6518321Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_die.xnb
-2011-12-12T19:17:32.4872865Z
+2011-12-14T19:31:47.2384061Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_idle.xnb
 2011-12-12T19:17:32.4942869Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_jump.xnb
