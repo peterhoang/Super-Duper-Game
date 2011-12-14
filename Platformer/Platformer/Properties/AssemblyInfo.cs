@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Platformer")]
-[assembly: AssemblyProduct("Platformer")]
+[assembly: AssemblyTitle("Battle Royal: Extreme")]
+[assembly: AssemblyProduct("Game")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2010")]
+[assembly: AssemblyCompany("Digiflare")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2010, © Peter Hoang 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
