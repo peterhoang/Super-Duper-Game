@@ -511,7 +511,6 @@ namespace Platformer
         private void OnPlayerKilled(Enemy killedBy, Player player)
         {
             player.OnKilled(killedBy);
-            //
             player.Reset();
         }
      

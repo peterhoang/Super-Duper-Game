@@ -66,10 +66,10 @@ namespace Platformer
         Vector2 velocity;
 
         // Constants for controling horizontal movement
-        private const float MoveAcceleration = 13000.0f;
-        private const float MaxMoveSpeed = 3000.0f;
-        private const float GroundDragFactor = 0.48f;
-        private const float AirDragFactor = 0.58f;
+        private const float MoveAcceleration = 12000.0f;
+        private const float MaxMoveSpeed = 2000.0f;
+        private const float GroundDragFactor = 0.65f;
+        private const float AirDragFactor = 0.62f;
 
         // Constants for controlling vertical movement
         private const float MaxJumpTime = 0.20f;
@@ -122,7 +122,7 @@ namespace Platformer
 
         /// <summary>
         /// Current user movement input.
-        /// </summary>
+        /// </summary> 
         private float movement;
 
         // Jumping state
@@ -524,7 +524,7 @@ namespace Platformer
                 {
                     // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
                     float direction = (flip == SpriteEffects.FlipHorizontally) ? -1.0f : 1.0f;
-                    velocityX = direction * (MaxMoveSpeed * 0.5f) * (1.0f - (float)Math.Pow(rollTime / MaxRollTime, RollControlPower));
+                    velocityX = direction * (MaxMoveSpeed) * (1.0f - (float)Math.Pow(rollTime / MaxRollTime, RollControlPower));
                 }
                 else
                 {

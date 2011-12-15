@@ -9,16 +9,20 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Platformer
 {
-    class ShotgunShell : Bullet
+    class HandgunBullet : Bullet
     {
-        private float bulletDistance;
-
+   
         private const float BULLET_SPEED = 10.0f;
-        private const float MAX_BULLET_SPEED = 300.0f;
-        private const float MAX_DISTANCE = 40.0f;
-        private const float BULLET_DAMAGE = 50.0f;
+        private const float BULLET_DAMAGE = 25.0f;
+        
+        private const float MAX_BULLET_SPEED = 500.0f;
+        private const float MAX_BULLET_TIMEALIVE = 0.3f;
+   
+        private float bulletTimeAlive; 
+        
 
-        public ShotgunShell(Level level, Vector2 position)
+
+        public HandgunBullet(Level level, Vector2 position)
         {
             Level = level;
             Position = position;
@@ -32,9 +36,9 @@ namespace Platformer
         public void LoadContent()
         {
             // Load animated textures.
-            bulletGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shell"), 0.1f, false);
+            bulletGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/bullet"), 0.1f, false);
 
-            // Calculate bounds within texture size.            
+             // Calculate bounds within texture size.            
             int width = (int)(bulletGraphic.FrameWidth * 0.4);
             int left = (bulletGraphic.FrameWidth - width) / 2;
             int height = (int)(bulletGraphic.FrameWidth * 0.8);
@@ -52,13 +56,13 @@ namespace Platformer
 
             float dist = BULLET_SPEED;
             position.X += movement * dist;
+            
+            bulletTimeAlive += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            bulletDistance += dist;
-
-            if (bulletDistance > MAX_DISTANCE)
+            if (bulletTimeAlive > MAX_BULLET_TIMEALIVE)
             {
                 IsAlive = false;
-                bulletDistance = 0.0f;
+                bulletTimeAlive = 0.0f;
             }
             else
             {
@@ -68,7 +72,7 @@ namespace Platformer
 
         public override void Reset()
         {
-            bulletDistance = 0.0f;
+            bulletTimeAlive = 0.0f;
             IsAlive = false;
         }
 
@@ -94,7 +98,8 @@ namespace Platformer
                     if (this.BoundingRectangle.Intersects(player.BoundingRectangle))
                     {
                         //Rolling players are invulnarable. 
-                        if (!player.IsRolling)
+                        //Ignore dead players
+                        if (!player.IsRolling && player.IsAlive)
                         {
                             player.OnHit(BULLET_DAMAGE);
                             this.Reset();

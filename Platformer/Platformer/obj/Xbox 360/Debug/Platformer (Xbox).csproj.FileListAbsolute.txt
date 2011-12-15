@@ -201,3 +201,9 @@ C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\S
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_roll.xnb
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_running.xnb
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_die.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_idle.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_jump.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_roll.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_running.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb
