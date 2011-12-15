@@ -15,7 +15,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Input.Touch;
 using System.Collections.Generic;
-
+using ParticleEngine;
 
 namespace Platformer
 {
@@ -70,10 +70,46 @@ namespace Platformer
             get { return random; }
         }
 
+        
+        // ************************** Particle System Stuff **********************************
+        ExplosionParticleSystem explosion;
+        ExplosionSmokeParticleSystem smoke;
+        RetroBloodSprayParticleSystem bloodSprayRight;
+        RetroBloodSprayParticleSystem bloodSprayLeft;
+       
+        Vector2 particleEffectPos = Vector2.Zero;
+
+        // a timer that will tell us when it's time to trigger another explosion.
+        const float TimeBetweenExplosions = 0.5f;
+        float timeTillExplosion = 0.0f;
+
+        // duration of the particle effect
+        const float MAX_EXPLOSION_EFFECT_TIME = TimeBetweenExplosions;
+        float timeExplosionEffect = 0.0f;
+        bool startExplosionEffect = false;
+        // ************************** Particle System Stuff **********************************
+
+
         public PlatformerGame()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            // create the particle systems and add them to the components list.
+            // we should never see more than one explosion at once
+            explosion = new ExplosionParticleSystem(this, 1);
+            Components.Add(explosion);
+
+            // but the smoke from the explosion lingers a while.
+            smoke = new ExplosionSmokeParticleSystem(this, 2);
+            Components.Add(smoke);
+
+            bloodSprayRight = new RetroBloodSprayParticleSystem(this, 10);
+            bloodSprayLeft = new RetroBloodSprayParticleSystem(this, 10);
+            bloodSprayLeft.Dir = -1.0f;
+            Components.Add(bloodSprayRight);
+            Components.Add(bloodSprayLeft);
+
 
 #if WINDOWS_PHONE
             graphics.IsFullScreen = true;
@@ -112,6 +148,8 @@ namespace Platformer
             catch { }
 
             LoadNextLevel();
+
+
         }
 
         /// <summary>
@@ -124,10 +162,14 @@ namespace Platformer
             // Handle polling for our input and handling high-level input
             HandleInput();
 
+            float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             // update our level, passing down the GameTime along with all of our input states
             level.Update(gameTime, keyboardState, gamePadStates, touchState, 
                          accelerometerState, Window.CurrentOrientation);
 
+            UpdateExplosions(dt);
+           
             base.Update(gameTime);
         }
 
@@ -175,6 +217,37 @@ namespace Platformer
             
         }
 
+        // this function is called when we want to demo the explosion effect. it
+        // updates the timeTillExplosion timer, and starts another explosion effect
+        // when the timer reaches zero.
+        private void UpdateExplosions(float dt)
+        {
+            if (!startExplosionEffect) return; 
+
+            timeTillExplosion -= dt;
+            if (timeTillExplosion < 0)
+            {
+                Vector2 where = particleEffectPos;
+             
+                // the overall explosion effect is actually comprised of two particle
+                // systems: the fiery bit, and the smoke behind it. add particles to
+                // both of those systems.
+                explosion.AddParticles(where);
+                smoke.AddParticles(where);
+
+                // reset the timer.
+                timeTillExplosion = TimeBetweenExplosions;
+            }
+
+            // Update duration
+            timeExplosionEffect += dt;
+            if (timeExplosionEffect > MAX_EXPLOSION_EFFECT_TIME)
+            {
+                startExplosionEffect = false;
+                timeExplosionEffect = 0.0f;
+            }
+        }
+
         private void LoadNextLevel()
         {
             // move to the next level
@@ -182,12 +255,48 @@ namespace Platformer
 
             // Unloads the content for the current level before loading the next one.
             if (level != null)
+            {
+                foreach (Player player in level.Players)
+                {
+                    player.OnHit -= player_OnHit;
+                }
                 level.Dispose();
+            }
 
             // Load the level.
             string levelPath = string.Format("Content/Levels/{0}.txt", levelIndex);
-            using (Stream fileStream = TitleContainer.OpenStream(levelPath))
+            using (Stream fileStream = TitleContainer.OpenStream(levelPath)) {
                 level = new Level(Services, fileStream, levelIndex);
+                foreach (Player player in level.Players)
+                {
+                    player.OnHit += new OnHitHandler(player_OnHit);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Handles the OnHit event of the player control. For now, this is used to determine where to
+        /// generate the particle effects
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
+        void player_OnHit(object sender, EventArgs e)
+        {
+            Player player = sender as Player;
+           
+            float xRange = 10f;
+            float yRange = 12f;
+            float ycenter = player.Position.Y - 25;
+
+            Vector2 where = Vector2.Zero;
+            where.X = RandomBetween(player.Position.X - xRange, player.Position.X + xRange);
+            where.Y = RandomBetween(ycenter - yRange, ycenter + yRange);
+
+            if (player.GotHitFrom  > 0.0f)
+                bloodSprayRight.AddParticles(where);
+            else
+                bloodSprayLeft.AddParticles(where);
+                
         }
 
         private void ReloadCurrentLevel()

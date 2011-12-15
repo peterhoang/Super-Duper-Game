@@ -15,12 +15,17 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 
 namespace Platformer
-{
+{   
+    // When player gets hit
+    public delegate void OnHitHandler(object sender, EventArgs e);
+
     /// <summary>
     /// Our fearless adventurer!
     /// </summary>
     class Player
     {
+        public event OnHitHandler OnHit;
+
         // Animations
         private Animation idleAnimation;
         private Animation runAnimation;
@@ -28,8 +33,14 @@ namespace Platformer
         private Animation celebrateAnimation;
         private Animation dieAnimation;
         private Animation rollAnimation;
-        private SpriteEffects flip = SpriteEffects.None;
         private AnimationPlayer sprite;
+        private SpriteEffects flip = SpriteEffects.None;
+
+        public float GotHitFrom
+        {
+            get { return gotHitFrom; }
+        }
+        private float gotHitFrom;
 
         // Sounds
         private SoundEffect killedSound;
@@ -69,10 +80,10 @@ namespace Platformer
         private const float MoveAcceleration = 12000.0f;
         private const float MaxMoveSpeed = 2000.0f;
         private const float GroundDragFactor = 0.65f;
-        private const float AirDragFactor = 0.62f;
+        private const float AirDragFactor = 0.52f;
 
         // Constants for controlling vertical movement
-        private const float MaxJumpTime = 0.20f;
+        private const float MaxJumpTime = 0.3f;
         private const float JumpLaunchVelocity = -3500.0f;
         private const float GravityAcceleration = 3400.0f;
         private const float MaxFallSpeed = 550.0f;
@@ -623,11 +634,20 @@ namespace Platformer
             previousBottom = bounds.Bottom;
         }
 
-        public void OnHit(float damage)
+        /// <summary>
+        /// When player get's hit. Called from a Bullet.
+        /// </summary>
+        /// <param name="damage">The damage.</param>
+        /// <param name="hitFrom">The hit from.</param>
+        public void Hit(float damage, float hitFrom)
         {
             this.health -= damage;
             pulseRed = true;
             pulseRedTime = 0.0f;
+
+            gotHitFrom = hitFrom;
+
+            OnHit.Invoke(this, new EventArgs());
 
             if (this.health <= 0)
             {
@@ -653,6 +673,7 @@ namespace Platformer
             else
                 fallSound.Play();
 
+            gun.Reset();
             sprite.PlayAnimation(dieAnimation);
         }
 

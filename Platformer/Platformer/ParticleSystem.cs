@@ -75,6 +75,11 @@ namespace ParticleEngine
         #region constants to be set by subclasses
 
         /// <summary>
+        /// Blend Color to draw the texture with. Default is white.
+        /// </summary>
+        protected Color blendColor = Color.White;
+
+        /// <summary>
         /// minNumParticles and maxNumParticles control the number of particles that are
         /// added when AddParticles is called. The number of particles will be a random
         /// number between minNumParticles and maxNumParticles.
@@ -351,7 +356,7 @@ namespace ParticleEngine
                 // since we want the maximum alpha to be 1, not .25, we'll scale the 
                 // entire equation by 4.
                 float alpha = 4 * normalizedLifetime * (1 - normalizedLifetime);
-				Color color = Color.White * alpha;
+				Color color = blendColor * alpha;
 
                 // make particles grow as they age. they'll start at 75% of their size,
                 // and increase to 100% once they're finished.

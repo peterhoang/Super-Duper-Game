@@ -96,7 +96,8 @@ namespace Platformer
                         //Rolling players are invulnarable. 
                         if (!player.IsRolling && player.IsAlive)
                         {
-                            player.OnHit(BULLET_DAMAGE);
+                            float dir = (Flip == SpriteEffects.None) ? 1.0f : -1.0f;
+                            player.Hit(BULLET_DAMAGE, dir);
                             this.Reset();
                         }
                     }

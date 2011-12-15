@@ -66,9 +66,6 @@ namespace Platformer
             }
         }
 
-        public delegate void OnHitHandler(object sender, EventArgs e);
-        public event OnHitHandler OnHit;
-
         public Bullet() { }
 
         public abstract void Reset();

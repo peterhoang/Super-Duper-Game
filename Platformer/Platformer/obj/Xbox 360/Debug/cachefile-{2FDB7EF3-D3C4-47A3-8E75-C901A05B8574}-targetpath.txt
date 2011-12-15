@@ -62,6 +62,9 @@ Content\Sounds\PlayerFall.xnb
 Content\Sounds\PlayerJump.xnb
 Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
+Content\Sprites\Particles\explosion.xnb
+Content\Sprites\Particles\smoke.xnb
+Content\Sprites\quad.xnb
 Content\Levels\0.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

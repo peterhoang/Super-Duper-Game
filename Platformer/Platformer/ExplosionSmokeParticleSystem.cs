@@ -37,7 +37,7 @@ namespace ParticleEngine
         /// </summary>
         protected override void InitializeConstants()
         {
-            textureFilename = "smoke";
+            textureFilename = "Sprites/Particles/smoke";
 
             // less initial speed than the explosion itself
             minInitialSpeed = 20;

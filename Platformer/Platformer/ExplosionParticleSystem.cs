@@ -36,7 +36,7 @@ namespace ParticleEngine
         /// </summary>
         protected override void InitializeConstants()
         {
-            textureFilename = "explosion";
+            textureFilename = "Sprites/Particles/explosion";
 
             // high initial speed with lots of variance.  make the values closer
             // together to have more consistently circular explosions.

@@ -17,6 +17,8 @@ using System.IO;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Input;
 
+using ParticleEngine;
+
 namespace Platformer
 {
     /// <summary>

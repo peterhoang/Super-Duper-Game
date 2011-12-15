@@ -6,138 +6,144 @@ C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\
 Default Thumbnail
 2011-12-09T17:33:13.6323438Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Platformer.exe
-2011-12-14T22:01:17.0664509Z
+2011-12-15T21:55:15.8502632Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb
-2011-12-12T14:44:47.2305792Z
+2011-12-15T16:57:47.1115223Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb
-2011-12-12T14:44:47.9276191Z
+2011-12-15T16:57:47.8655654Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_2.xnb
-2011-12-12T14:44:48.6376597Z
+2011-12-15T16:57:48.6246088Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_0.xnb
-2011-12-12T14:44:49.1066865Z
+2011-12-15T16:57:49.1174344Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_1.xnb
-2011-12-12T14:44:49.5727132Z
+2011-12-15T16:57:49.5844611Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_2.xnb
-2011-12-12T14:44:50.0497405Z
+2011-12-15T16:57:50.1154915Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_0.xnb
-2011-12-12T14:44:50.4227618Z
+2011-12-15T16:57:50.5255150Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_1.xnb
-2011-12-12T14:44:50.8227847Z
+2011-12-15T16:57:50.9325383Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_2.xnb
-2011-12-12T14:44:51.2698102Z
+2011-12-15T16:57:51.4015651Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\Hud.xnb
-2011-12-12T14:44:52.0078525Z
+2011-12-15T16:57:52.2136115Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\0.txt
-2011-12-14T16:17:00.3199526Z
+2011-12-15T17:48:49.3851009Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\1.txt
 2011-12-10T16:38:25.7647103Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\2.txt
 2011-12-10T16:38:25.7657103Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_died.xnb
-2011-12-12T14:44:51.3868169Z
+2011-12-15T16:57:51.5255722Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_lose.xnb
-2011-12-12T14:44:51.5038236Z
+2011-12-15T16:57:51.6485792Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_win.xnb
-2011-12-12T14:44:51.6218304Z
+2011-12-15T16:57:51.7775866Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\ExitReached.xnb
-2011-12-12T14:44:52.3278708Z
+2011-12-15T16:57:52.3646202Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\GemCollected.xnb
-2011-12-12T14:44:52.3808738Z
+2011-12-15T16:57:52.4196233Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\MonsterKilled.xnb
-2011-12-12T14:44:52.4438774Z
+2011-12-15T16:57:52.4936275Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music.wma
-2011-12-12T14:44:55.3670446Z
+2011-12-15T16:57:55.2097829Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music.xnb
-2011-12-12T14:44:55.3930461Z
+2011-12-15T16:57:55.2517853Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\PlayerFall.xnb
-2011-12-12T14:44:55.4710505Z
+2011-12-15T16:57:55.3667919Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\PlayerJump.xnb
-2011-12-12T14:44:55.5150531Z
+2011-12-15T16:57:55.4107944Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\PlayerKilled.xnb
-2011-12-12T14:44:55.5760566Z
+2011-12-15T16:57:55.4727979Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Powerup.xnb
-2011-12-12T14:44:55.8350714Z
+2011-12-15T16:57:55.7338129Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Gem.xnb
-2011-12-12T14:44:45.6094865Z
+2011-12-15T16:57:45.4164253Z
+C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\quad.xnb
+2011-12-15T21:22:59.5228555Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Idle.xnb
-2011-12-12T14:44:45.6864909Z
+2011-12-15T16:57:45.4964299Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Run.xnb
-2011-12-12T14:44:45.7584950Z
+2011-12-15T16:57:45.5644338Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Idle.xnb
-2011-12-12T14:44:45.8404997Z
+2011-12-15T16:57:45.6454384Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Run.xnb
-2011-12-12T14:44:45.9105037Z
+2011-12-15T16:57:45.7154424Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Idle.xnb
-2011-12-12T14:44:45.9875081Z
+2011-12-15T16:57:45.7914468Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Run.xnb
-2011-12-12T14:44:46.0555120Z
+2011-12-15T16:57:45.8644510Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Idle.xnb
-2011-12-12T14:44:46.1365166Z
+2011-12-15T16:57:45.9484558Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Run.xnb
-2011-12-12T14:44:46.2115209Z
+2011-12-15T16:57:46.0254602Z
+C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\explosion.xnb
+2011-12-15T17:14:41.7525934Z
+C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\smoke.xnb
+2011-12-15T17:14:42.1266148Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Celebrate.xnb
-2011-12-12T14:44:46.2865252Z
+2011-12-15T16:57:46.1034646Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_die.xnb
-2011-12-14T19:31:47.2154048Z
+2011-12-15T16:57:51.9755979Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_idle.xnb
-2011-12-12T14:44:51.6628327Z
+2011-12-15T16:57:51.9105942Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_jump.xnb
-2011-12-12T14:44:51.6848340Z
+2011-12-15T16:57:51.9335955Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll.xnb
-2011-12-12T14:44:51.7038351Z
+2011-12-15T16:57:51.9535967Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll2.xnb
-2011-12-12T14:44:51.7658386Z
+2011-12-15T16:57:52.0276009Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_running.xnb
-2011-12-12T14:44:51.6518321Z
+2011-12-15T16:57:51.8965934Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_die.xnb
-2011-12-14T19:31:47.2384061Z
+2011-12-15T16:57:52.0786038Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_idle.xnb
-2011-12-12T19:17:32.4942869Z
+2011-12-15T16:57:52.0856042Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_jump.xnb
-2011-12-12T19:17:32.5172883Z
+2011-12-15T16:57:52.1086055Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_roll.xnb
-2011-12-12T19:17:32.5332892Z
+2011-12-15T16:57:52.1236064Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_running.xnb
-2011-12-12T19:17:32.5642910Z
+2011-12-15T16:57:52.1546082Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Die.xnb
-2011-12-12T14:44:46.3555292Z
+2011-12-15T16:57:46.1734686Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Idle.xnb
-2011-12-12T14:44:46.3645297Z
+2011-12-15T16:57:46.1814691Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Jump.xnb
-2011-12-12T14:44:46.4355337Z
+2011-12-15T16:57:46.2584735Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Run.xnb
-2011-12-12T14:44:46.5015375Z
+2011-12-15T16:57:46.3304776Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\bullet.xnb
-2011-12-12T16:22:12.0908861Z
+2011-12-15T16:57:52.0576026Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun.xnb
-2011-12-12T14:44:51.7278364Z
+2011-12-15T16:57:51.9815983Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb
-2011-12-12T14:44:51.7508378Z
+2011-12-15T16:57:52.0085998Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb
-2011-12-14T19:04:27.4046130Z
+2011-12-15T16:57:52.1596084Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun.xnb
-2011-12-12T14:44:51.7328367Z
+2011-12-15T16:57:51.9875986Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb
-2011-12-12T14:44:51.7908401Z
+2011-12-15T16:57:52.0546024Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA0.xnb
-2011-12-12T14:44:46.5055377Z
+2011-12-15T16:57:46.3354779Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA1.xnb
-2011-12-12T14:44:46.5085379Z
+2011-12-15T16:57:46.3394781Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA2.xnb
-2011-12-12T14:44:46.5115381Z
+2011-12-15T16:57:46.3434784Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA3.xnb
-2011-12-12T14:44:46.5145383Z
+2011-12-15T16:57:46.3474786Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA4.xnb
-2011-12-12T14:44:46.5175384Z
+2011-12-15T16:57:46.3514788Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA5.xnb
-2011-12-12T14:44:46.5215387Z
+2011-12-15T16:57:46.3544790Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA6.xnb
-2011-12-12T14:44:46.5245388Z
+2011-12-15T16:57:46.3594793Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB0.xnb
-2011-12-12T14:44:46.5275390Z
+2011-12-15T16:57:46.3634795Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB1.xnb
-2011-12-12T14:44:46.5305392Z
+2011-12-15T16:57:46.3664797Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Exit.xnb
-2011-12-12T14:44:51.6558323Z
+2011-12-15T16:57:51.9015937Z
 C:\Peter\Battle-Royal-Extreme\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Platform.xnb
-2011-12-12T14:44:46.5335394Z
+2011-12-15T16:57:46.3694799Z
