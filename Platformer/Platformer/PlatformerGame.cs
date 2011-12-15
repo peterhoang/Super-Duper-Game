@@ -313,7 +313,6 @@ namespace Platformer
         {
             graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
 
-
             spriteBatch.Begin();
 
             level.Draw(gameTime, spriteBatch);
