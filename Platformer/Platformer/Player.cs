@@ -37,6 +37,10 @@ namespace Platformer
         private Animation rollAnimation;
         private AnimationPlayer sprite;
         private SpriteEffects flip = SpriteEffects.None;
+        public SpriteEffects Flip
+        {
+            get { return flip; }
+        }
 
         public float GotHitFrom
         {
@@ -682,6 +686,7 @@ namespace Platformer
         public void OnKilled(Player killedBy)
         {
             level.attacker_id = level.Players.IndexOf(killedBy);
+          
             isAlive = false;
             pulseRed = false;
             pulseRedTime = 0.0f;

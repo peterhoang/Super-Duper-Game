@@ -72,6 +72,7 @@
     <Compile Include="Bullet.cs" />
     <Compile Include="Camera2d.cs" />
     <Compile Include="Circle.cs" />
+    <Compile Include="Corpse.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="ExplosionParticleSystem.cs" />
     <Compile Include="ExplosionSmokeParticleSystem.cs" />

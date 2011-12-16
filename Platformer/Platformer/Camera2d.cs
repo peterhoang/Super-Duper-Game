@@ -32,7 +32,7 @@ namespace Platformer
             float marginLeft = cameraPosition + marginWidth;
             float marginRight = cameraPosition + viewport.Width - marginWidth;
 
-            float offset = 10.0f * Tile.Width;
+            float offset = 5.0f * Tile.Width;
 
             // don't spawn outside the map
             float maxcamerapos = Tile.Width * level.Width - viewport.Width;

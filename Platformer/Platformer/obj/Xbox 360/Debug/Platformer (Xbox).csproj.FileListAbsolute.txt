@@ -287,3 +287,5 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Microsoft.Xna
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.exe
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.pdb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\Copy of 0.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\blue_corpse.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\yellow_corpse.xnb

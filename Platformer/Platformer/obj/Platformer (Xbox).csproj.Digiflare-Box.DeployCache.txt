@@ -6,7 +6,7 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\
 C:\Peter\Super-Duper-Game\Platformer\Platformer\Super_Awesome_Game_box.png
 2011-12-16T14:18:54.6841272Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Platformer.exe
-2011-12-16T20:23:41.2459638Z
+2011-12-16T21:42:25.1873886Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb
 2011-12-16T15:55:47.4337624Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb
@@ -83,6 +83,8 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprit
 2011-12-16T15:55:53.3788351Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\smoke.xnb
 2011-12-16T15:55:53.8388358Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\blue_corpse.xnb
+2011-12-16T21:30:39.8198739Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Celebrate.xnb
 2011-12-16T15:55:46.2447267Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_die.xnb
@@ -115,6 +117,8 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprit
 2011-12-16T15:55:46.4247270Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Run.xnb
 2011-12-16T15:55:46.5247271Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\yellow_corpse.xnb
+2011-12-16T21:30:39.8348747Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\bullet.xnb
 2011-12-16T15:55:52.7288342Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun.xnb

@@ -48,7 +48,11 @@ namespace Platformer
 
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
-
+        
+        private const int MAX_CORPSES = 10;
+        private Corpse[,] corpses = new Corpse[2,MAX_CORPSES];
+        private int[] corpseIndex = new int[2];
+       
         // Key locations in the level.        
         private Vector2 start;
         private Point exit = InvalidPosition;
@@ -134,6 +138,16 @@ namespace Platformer
             exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
 
             camera = new Camera2d(this);
+
+            // allocate for corpses
+            corpseIndex[0] = 0;
+            corpseIndex[1] = 0;
+            for (int i = 0; i < MAX_CORPSES; i++)
+            {
+                corpses[0, i] = new Corpse(this, Vector2.Zero, "Sprites/Player/blue_corpse");
+                corpses[1, i] = new Corpse(this, Vector2.Zero, "Sprites/Player/yellow_corpse");
+            }
+           
         }
 
         /// <summary>
@@ -552,9 +566,19 @@ namespace Platformer
             float xpos = camera.GetSpawnPoint(attacker_id, game.GraphicsDevice.Viewport);
             if (xpos > 0.0f)
             {
-                player.Reset(new Vector2(xpos, player.Position.Y));
+                SpawnCorpse(player.Position, player.Flip, players.IndexOf(player));
+                player.Reset(new Vector2(xpos, player.Position.Y));               
             }
                
+        }
+
+        public void SpawnCorpse(Vector2 pos, SpriteEffects flip, int playerIndex)
+        {
+            corpses[playerIndex, corpseIndex[playerIndex]].IsActive = true;
+            corpses[playerIndex, corpseIndex[playerIndex]].Position = pos;
+            corpses[playerIndex, corpseIndex[playerIndex]].Flip = flip; 
+
+            corpseIndex[playerIndex] = (corpseIndex[playerIndex] + 1 >= MAX_CORPSES) ? 0 : corpseIndex[playerIndex] + 1;
         }
 
         #endregion
@@ -580,6 +604,15 @@ namespace Platformer
                               RasterizerState.CullCounterClockwise, null, cameraTransform);
 
             DrawTiles(spriteBatch);
+
+            for (int j = 0; j < 2; j++)
+            {
+                for (int i = 0; i < MAX_CORPSES; i++)
+                {
+                    if (corpses[j, i].IsActive)
+                        corpses[j, i].Draw(gameTime, spriteBatch);
+                }
+            }
 
             foreach (Gem gem in gems)
                 gem.Draw(gameTime, spriteBatch);
