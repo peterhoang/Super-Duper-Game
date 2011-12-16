@@ -56,6 +56,8 @@ namespace Platformer
 
         // Level game state.
         private Random random = new Random(354668); // Arbitrary, but constant seed
+        private PlatformerGame game;
+
         public Camera2d Camera
         {
             get { return camera; }
@@ -102,10 +104,12 @@ namespace Platformer
         /// <param name="fileStream">
         /// A stream containing the tile data.
         /// </param>
-        public Level(IServiceProvider serviceProvider, Stream fileStream, int levelIndex)
+        public Level(IServiceProvider serviceProvider, Stream fileStream, int levelIndex, PlatformerGame game)
         {
             // Create a new content manager to load content used just by this level.
             content = new ContentManager(serviceProvider, "Content");
+
+            this.game = game;
 
             timeRemaining = TimeSpan.FromMinutes(2.0);
 
@@ -545,7 +549,12 @@ namespace Platformer
         /// </summary>
         public void StartNewLife(Player player)
         {
-            player.Reset();
+            float xpos = camera.GetSpawnPoint(attacker_id, game.GraphicsDevice.Viewport);
+            if (xpos > 0.0f)
+            {
+                player.Reset(new Vector2(xpos, player.Position.Y));
+            }
+               
         }
 
         #endregion

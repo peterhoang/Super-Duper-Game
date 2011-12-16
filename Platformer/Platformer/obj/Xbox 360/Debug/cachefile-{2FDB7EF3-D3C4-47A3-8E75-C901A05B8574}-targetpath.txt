@@ -68,3 +68,4 @@ Content\Sounds\Powerup.xnb
 Content\Levels\0.txt
 Content\Levels\2.txt
 Content\Levels\1.txt
+Content\Levels\Copy of 0.txt

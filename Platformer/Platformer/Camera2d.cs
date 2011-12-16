@@ -10,6 +10,8 @@ namespace Platformer
     {
         private Level level;
 
+        const float ViewMargin = 0.35f;
+
         public Camera2d(Level level)
         {
             this.level = level;
@@ -21,10 +23,36 @@ namespace Platformer
             get { return cameraPosition; }
         }
 
+        public float GetSpawnPoint(int attacker_id, Viewport viewport)
+        {
+            float results = -1.0f;
+
+            // Calculate the edges of the screen.
+            float marginWidth = viewport.Width * ViewMargin;
+            float marginLeft = cameraPosition + marginWidth;
+            float marginRight = cameraPosition + viewport.Width - marginWidth;
+
+            float offset = 10.0f * Tile.Width;
+
+            // don't spawn outside the map
+            float maxcamerapos = Tile.Width * level.Width - viewport.Width;
+
+            // player 1
+            if (attacker_id == 0)
+            {
+                results = marginRight + offset;
+                return (results > maxcamerapos) ? -1.0f : results;
+            }
+            // player 2
+            else
+            {
+                results = marginLeft - offset;
+                return (results < 0.0f) ? -1.0f : results;
+            }
+        }
+
         public void ScrollCamera(Player follow, Viewport viewport)
         {
-            const float ViewMargin = 0.35f;
-
             // Calculate the edges of the screen.
             float marginWidth = viewport.Width * ViewMargin;
             float marginLeft = cameraPosition + marginWidth;

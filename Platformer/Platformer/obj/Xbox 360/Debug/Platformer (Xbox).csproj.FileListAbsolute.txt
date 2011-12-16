@@ -286,3 +286,4 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\ResolveAssemb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.exe
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.pdb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\Copy of 0.txt
