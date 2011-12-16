@@ -25,8 +25,7 @@
     </SupportedCultures>
     <ApplicationIcon>
     </ApplicationIcon>
-    <Thumbnail>
-    </Thumbnail>
+    <Thumbnail>Super_Awesome_Game_box.png</Thumbnail>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -125,6 +124,7 @@
     <Content Include="Background.png" />
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
+    <Content Include="Super_Awesome_Game_box.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework">
