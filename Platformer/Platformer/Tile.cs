@@ -16,7 +16,7 @@ namespace Platformer
     /// <summary>
     /// Controls the collision detection and response behavior of a tile.
     /// </summary>
-    enum TileCollision
+    public enum TileCollision
     {
         /// <summary>
         /// A passable tile is one which does not hinder player motion at all.
@@ -40,7 +40,7 @@ namespace Platformer
     /// <summary>
     /// Stores the appearance and collision behavior of a tile.
     /// </summary>
-    struct Tile
+    public struct Tile
     {
         public Texture2D Texture;
         public TileCollision Collision;

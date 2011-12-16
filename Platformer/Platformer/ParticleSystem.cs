@@ -331,7 +331,11 @@ namespace ParticleEngine
         {
             // tell sprite batch to begin, using the spriteBlendMode specified in
             // initializeConstants
-			game.SpriteBatch.Begin(SpriteSortMode.Deferred, blendState);
+			//game.SpriteBatch.Begin(SpriteSortMode.Deferred, blendState);
+
+            Matrix cameraTransform = Matrix.CreateTranslation(-game.CurrentLevel.CameraPosition, 0.0f, 0.0f);
+            game.SpriteBatch.Begin(SpriteSortMode.Deferred, blendState, SamplerState.LinearClamp, DepthStencilState.Default,
+                              RasterizerState.CullCounterClockwise, null, cameraTransform);
             
             foreach (Particle p in particles)
             {

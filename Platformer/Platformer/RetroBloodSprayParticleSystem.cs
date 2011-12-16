@@ -9,7 +9,7 @@ using Platformer;
 
 namespace ParticleEngine
 {
-    class RetroBloodSprayParticleSystem : ParticleSystem
+    public class RetroBloodSprayParticleSystem : ParticleSystem
     {
         public float Dir
         {
@@ -21,6 +21,42 @@ namespace ParticleEngine
         public RetroBloodSprayParticleSystem(PlatformerGame game, int howManyEffects)
             : base(game,howManyEffects)
         {
+            textureFilename = "Sprites/quad";
+            blendColor = Color.Red;
+
+            minInitialSpeed = 25;
+            maxInitialSpeed = 160;
+
+            // we don't want the particles to accelerate at all, aside from what we
+            // do in our overriden InitializeParticle.
+            minAcceleration = 0;
+            maxAcceleration = 0;
+
+            // long lifetime, this can be changed to create thinner or thicker smoke.
+            // tweak minNumParticles and maxNumParticles to complement the effect.
+            minLifetime = 0.2f;
+            maxLifetime = 0.5f;
+
+            minScale = .1f;
+            maxScale = .3f;
+
+            // we need to reduce the number of particles on Windows Phone in order to keep
+            // a good framerate
+#if WINDOWS_PHONE
+            minNumParticles = 3;
+            maxNumParticles = 8;
+#else
+            minNumParticles = 30;
+            maxNumParticles = 60;
+#endif
+
+            // rotate slowly, we want a fairly relaxed effect
+            minRotationSpeed = -MathHelper.PiOver4 * 2;
+            maxRotationSpeed = MathHelper.PiOver4 * 2;
+
+            blendState = BlendState.AlphaBlend;
+
+            DrawOrder = AlphaBlendDrawOrder;
         }
 
          /// <summary>

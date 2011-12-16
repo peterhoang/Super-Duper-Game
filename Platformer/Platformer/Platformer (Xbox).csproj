@@ -78,6 +78,7 @@
     <Compile Include="Gun.cs" />
     <Compile Include="HandGun.cs" />
     <Compile Include="HandgunBullet.cs" />
+    <Compile Include="Layer.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="Particle.cs" />
     <Compile Include="ParticleSystem.cs" />

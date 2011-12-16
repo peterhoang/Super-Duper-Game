@@ -1,1 +1,2 @@
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Peter\Super-Duper-Game\Platformer\Content\obj\x86\Debug\ResolveAssemblyReference.cache

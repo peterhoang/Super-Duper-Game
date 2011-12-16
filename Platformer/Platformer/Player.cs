@@ -14,6 +14,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 
+using ParticleEngine;
+
 namespace Platformer
 {   
     // When player gets hit
@@ -22,7 +24,7 @@ namespace Platformer
     /// <summary>
     /// Our fearless adventurer!
     /// </summary>
-    class Player
+    public class Player
     {
         public event OnHitHandler OnHit;
 
@@ -191,6 +193,7 @@ namespace Platformer
             respawnPosition = position;
 
             Reset(position);
+
         }
 
         /// <summary>
@@ -648,7 +651,7 @@ namespace Platformer
             gotHitFrom = hitFrom;
 
             OnHit.Invoke(this, new EventArgs());
-
+           
             if (this.health <= 0)
             {
                 OnKilled(null);

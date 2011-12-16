@@ -42,6 +42,10 @@ namespace Platformer
         // Meta-level game state.
         private int levelIndex = -1;
         private Level level;
+        public Level CurrentLevel
+        {
+            get { return level; }
+        }
         private bool wasContinuePressed;
 
         // When the time remaining is less than the warning time, it blinks on the hud
@@ -74,7 +78,15 @@ namespace Platformer
         // ************************** Particle System Stuff **********************************
         ExplosionParticleSystem explosion;
         ExplosionSmokeParticleSystem smoke;
+        public RetroBloodSprayParticleSystem BloodSprayRight
+        {
+            get { return bloodSprayRight; }
+        }
         RetroBloodSprayParticleSystem bloodSprayRight;
+        public RetroBloodSprayParticleSystem BloodSprayLeft
+        {
+            get { return bloodSprayLeft; }
+        }
         RetroBloodSprayParticleSystem bloodSprayLeft;
        
         Vector2 particleEffectPos = Vector2.Zero;
@@ -282,6 +294,7 @@ namespace Platformer
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
         void player_OnHit(object sender, EventArgs e)
         {
+            
             Player player = sender as Player;
            
             float xRange = 10f;
@@ -296,6 +309,7 @@ namespace Platformer
                 bloodSprayRight.AddParticles(where);
             else
                 bloodSprayLeft.AddParticles(where);
+             
                 
         }
 
@@ -312,11 +326,13 @@ namespace Platformer
         protected override void Draw(GameTime gameTime)
         {
             graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            spriteBatch.Begin();
+           
+            //spriteBatch.Begin();
 
             level.Draw(gameTime, spriteBatch);
 
+            spriteBatch.Begin();
+            
             DrawHud();
 
             spriteBatch.End();
@@ -326,6 +342,8 @@ namespace Platformer
 
         private void DrawHud()
         {
+            //spriteBatch.Begin();
+
             Rectangle titleSafeArea = GraphicsDevice.Viewport.TitleSafeArea;
             Vector2 hudLocation = new Vector2(titleSafeArea.X, titleSafeArea.Y);
             Vector2 center = new Vector2(titleSafeArea.X + titleSafeArea.Width / 2.0f,
@@ -384,6 +402,8 @@ namespace Platformer
                 spriteBatch.Draw(status, center - statusSize / 2, Color.White);
             }
              * */
+
+           // spriteBatch.End();
         }
 
         private void DrawShadowedString(SpriteFont font, string value, Vector2 position, Color color)
