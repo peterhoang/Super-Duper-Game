@@ -70,6 +70,7 @@
     <Compile Include="Animation.cs" />
     <Compile Include="AnimationPlayer.cs" />
     <Compile Include="Bullet.cs" />
+    <Compile Include="Camera2d.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="ExplosionParticleSystem.cs" />

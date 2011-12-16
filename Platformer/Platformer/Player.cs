@@ -642,7 +642,7 @@ namespace Platformer
         /// </summary>
         /// <param name="damage">The damage.</param>
         /// <param name="hitFrom">The hit from.</param>
-        public void Hit(float damage, float hitFrom)
+        public void Hit(float damage, float hitFrom, Player killedBy)
         {
             this.health -= damage;
             pulseRed = true;
@@ -654,7 +654,7 @@ namespace Platformer
            
             if (this.health <= 0)
             {
-                OnKilled(null);
+                OnKilled(killedBy);
             }
         }
 
@@ -676,6 +676,17 @@ namespace Platformer
             else
                 fallSound.Play();
 
+            gun.Reset();
+            sprite.PlayAnimation(dieAnimation);
+        }
+        public void OnKilled(Player killedBy)
+        {
+            level.attacker_id = level.Players.IndexOf(killedBy);
+            isAlive = false;
+            pulseRed = false;
+            pulseRedTime = 0.0f;
+            killedSound.Play();
+            
             gun.Reset();
             sprite.PlayAnimation(dieAnimation);
         }

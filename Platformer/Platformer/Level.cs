@@ -36,18 +36,15 @@ namespace Platformer
         // The layer which entities are drawn on top of.
         private const int EntityLayer = 2;
 
-        // Entities in the level.
+        // Player Entities in the level.
         public List<Player> Players
         {
             get { return players; }
         }
         List<Player> players = new List<Player>();
         
-        //public Player Player
-        //{
-        //    get { return player; }
-        //}
-        //Player player;
+        // Attacker index
+        public int attacker_id = 0;
 
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
@@ -59,12 +56,12 @@ namespace Platformer
 
         // Level game state.
         private Random random = new Random(354668); // Arbitrary, but constant seed
-        private float cameraPosition;
-        public float CameraPosition
+        public Camera2d Camera
         {
-            get { return cameraPosition; }
+            get { return camera; }
         }
-
+        private Camera2d camera;
+        
         public int Score
         {
             get { return score; }
@@ -131,6 +128,8 @@ namespace Platformer
 
             // Load sounds.
             exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
+
+            camera = new Camera2d(this);
         }
 
         /// <summary>
@@ -439,7 +438,7 @@ namespace Platformer
 
                     // Falling off the bottom of the level kills the player.
                     if (player.BoundingRectangle.Top >= Height * Tile.Height)
-                        OnPlayerKilled(null);
+                        OnPlayerKilled(null, null);
 
                     UpdateEnemies(gameTime);
 
@@ -526,11 +525,7 @@ namespace Platformer
             player.OnKilled(killedBy);
             player.Reset();
         }
-     
-        private void OnPlayerKilled(Player player)
-        {
-            OnPlayerKilled(null, player);
-        }
+       
 
         /// <summary>
         /// Called when the player reaches the level's exit.
@@ -566,12 +561,12 @@ namespace Platformer
             for (int i = 0; i <= EntityLayer; ++i)
             {
                 //spriteBatch.Draw(layers[i], Vector2.Zero, Color.White);
-                layers[i].Draw(spriteBatch, cameraPosition);
+                layers[i].Draw(spriteBatch, camera.CameraPosition);
             }
             spriteBatch.End();
 
-            ScrollCamera(spriteBatch.GraphicsDevice.Viewport);
-            Matrix cameraTransform = Matrix.CreateTranslation(-cameraPosition, 0.0f, 0.0f);
+            camera.ScrollCamera(players[attacker_id], spriteBatch.GraphicsDevice.Viewport);
+            Matrix cameraTransform = Matrix.CreateTranslation(-camera.CameraPosition, 0.0f, 0.0f);
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
                               RasterizerState.CullCounterClockwise, null, cameraTransform);
 
@@ -592,31 +587,12 @@ namespace Platformer
             for (int i = EntityLayer + 1; i < layers.Length; ++i)
             {
                 //spriteBatch.Draw(layers[i], Vector2.Zero, Color.White);
-                layers[i].Draw(spriteBatch, cameraPosition);
+                layers[i].Draw(spriteBatch, camera.CameraPosition);
             }
             spriteBatch.End();
         }
 
-        private void ScrollCamera(Viewport viewport)
-        {
-            const float ViewMargin = 0.35f;
-    
-            // Calculate the edges of the screen.
-            float marginWidth = viewport.Width * ViewMargin;
-            float marginLeft = cameraPosition + marginWidth;
-            float marginRight = cameraPosition + viewport.Width - marginWidth;
-
-            // Calculate how far to scroll when the player is near the edges of the screen.
-            float cameraMovement = 0.0f;
-            if (players[0].Position.X < marginLeft)
-                cameraMovement = players[0].Position.X - marginLeft;
-            else if (players[0].Position.X > marginRight)
-                cameraMovement = players[0].Position.X - marginRight;
-
-            // Update the camera position, but prevent scrolling off the ends of the level.
-            float maxCameraPosition = Tile.Width * Width - viewport.Width;
-            cameraPosition = MathHelper.Clamp(cameraPosition + cameraMovement, 0.0f, maxCameraPosition);
-        }
+        
 
         /// <summary>
         /// Draws each tile in the level.
@@ -624,7 +600,7 @@ namespace Platformer
         private void DrawTiles(SpriteBatch spriteBatch)
         {
             // Calculate the visible range of tiles
-            int left = (int)Math.Floor(cameraPosition / Tile.Width);
+            int left = (int)Math.Floor(camera.CameraPosition / Tile.Width);
             int right = left + spriteBatch.GraphicsDevice.Viewport.Width / Tile.Width;
             right = Math.Min(right, Width - 1);
 

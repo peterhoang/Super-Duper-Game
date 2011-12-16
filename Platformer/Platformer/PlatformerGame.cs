@@ -78,19 +78,9 @@ namespace Platformer
         // ************************** Particle System Stuff **********************************
         ExplosionParticleSystem explosion;
         ExplosionSmokeParticleSystem smoke;
-        public RetroBloodSprayParticleSystem BloodSprayRight
-        {
-            get { return bloodSprayRight; }
-        }
         RetroBloodSprayParticleSystem bloodSprayRight;
-        public RetroBloodSprayParticleSystem BloodSprayLeft
-        {
-            get { return bloodSprayLeft; }
-        }
         RetroBloodSprayParticleSystem bloodSprayLeft;
        
-        Vector2 particleEffectPos = Vector2.Zero;
-
         // a timer that will tell us when it's time to trigger another explosion.
         const float TimeBetweenExplosions = 0.5f;
         float timeTillExplosion = 0.0f;
@@ -160,7 +150,6 @@ namespace Platformer
             catch { }
 
             LoadNextLevel();
-
 
         }
 
@@ -239,7 +228,7 @@ namespace Platformer
             timeTillExplosion -= dt;
             if (timeTillExplosion < 0)
             {
-                Vector2 where = particleEffectPos;
+                Vector2 where = Vector2.Zero;
              
                 // the overall explosion effect is actually comprised of two particle
                 // systems: the fiery bit, and the smoke behind it. add particles to
@@ -294,7 +283,6 @@ namespace Platformer
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
         void player_OnHit(object sender, EventArgs e)
         {
-            
             Player player = sender as Player;
            
             float xRange = 10f;
@@ -309,8 +297,7 @@ namespace Platformer
                 bloodSprayRight.AddParticles(where);
             else
                 bloodSprayLeft.AddParticles(where);
-             
-                
+     
         }
 
         private void ReloadCurrentLevel()
@@ -327,8 +314,6 @@ namespace Platformer
         {
             graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
            
-            //spriteBatch.Begin();
-
             level.Draw(gameTime, spriteBatch);
 
             spriteBatch.Begin();

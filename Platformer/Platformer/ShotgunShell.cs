@@ -97,7 +97,7 @@ namespace Platformer
                         if (!player.IsRolling && player.IsAlive)
                         {
                             float dir = (Flip == SpriteEffects.None) ? 1.0f : -1.0f;
-                            player.Hit(BULLET_DAMAGE, dir);
+                            player.Hit(BULLET_DAMAGE, dir, _player);
                             this.Reset();
                         }
                     }

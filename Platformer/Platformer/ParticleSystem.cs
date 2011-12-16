@@ -333,7 +333,7 @@ namespace ParticleEngine
             // initializeConstants
 			//game.SpriteBatch.Begin(SpriteSortMode.Deferred, blendState);
 
-            Matrix cameraTransform = Matrix.CreateTranslation(-game.CurrentLevel.CameraPosition, 0.0f, 0.0f);
+            Matrix cameraTransform = Matrix.CreateTranslation(-game.CurrentLevel.Camera.CameraPosition, 0.0f, 0.0f);
             game.SpriteBatch.Begin(SpriteSortMode.Deferred, blendState, SamplerState.LinearClamp, DepthStencilState.Default,
                               RasterizerState.CullCounterClockwise, null, cameraTransform);
             
