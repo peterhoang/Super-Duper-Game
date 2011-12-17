@@ -412,7 +412,8 @@ namespace Platformer
                     canRollAgain = false;
                 }
             }
-            if (gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton))
+            if ( (gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton)) ||
+                 (keyboardState.IsKeyDown(Keys.Z)) )
             {
                 if (canShoot)
                 {

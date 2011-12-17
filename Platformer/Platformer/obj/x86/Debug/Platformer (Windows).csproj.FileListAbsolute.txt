@@ -151,3 +151,6 @@ E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\obj\x86\Debug\Platformer.exe
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\blue_corpse.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\yellow_corpse.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\Copy of 0.txt

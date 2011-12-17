@@ -43,19 +43,19 @@ namespace ParticleEngine
             // high initial speed with lots of variance.  make the values closer
             // together to have more consistently circular explosions.
             minInitialSpeed = 100;
-            maxInitialSpeed = 100;
+            maxInitialSpeed = 200;
 
             // doesn't matter what these values are set to, acceleration is tweaked in
             // the override of InitializeParticle.
             minAcceleration = -100;
-            maxAcceleration = 200;
+            maxAcceleration = 300;
 
             // explosions should be relatively short lived
-            minLifetime = 1.5f;
-            maxLifetime = 3.0f;
+            minLifetime = 1.0f;
+            maxLifetime = 1.5f;
 
             minScale = .1f;
-            maxScale = .4f;
+            maxScale = .3f;
 
             // we need to reduce the number of particles on Windows Phone in order to keep
             // a good framerate
@@ -71,7 +71,7 @@ namespace ParticleEngine
             maxRotationSpeed = MathHelper.PiOver4;
 
             // additive blending is very good at creating fiery effects.
-			blendState = BlendState.Additive;
+			blendState = BlendState.AlphaBlend;
 
             DrawOrder = AdditiveDrawOrder;
         }
@@ -92,7 +92,7 @@ namespace ParticleEngine
             // from the unit circle, cosine is the x coordinate and sine is the
             // y coordinate. We're negating y because on the screen increasing y moves
             // down the monitor.
-            direction.X = (float)Math.Cos(radians) * 2;
+            direction.X = (float)Math.Cos(radians);
             direction.Y = -(float)Math.Sin(radians);
             return direction;
         }

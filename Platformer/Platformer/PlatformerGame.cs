@@ -80,6 +80,7 @@ namespace Platformer
         ExplosionSmokeParticleSystem smoke;
         RetroBloodSprayParticleSystem bloodSprayRight;
         RetroBloodSprayParticleSystem bloodSprayLeft;
+        RetroBloodSprayWide bloodSprayUp;
        
         // a timer that will tell us when it's time to trigger another explosion.
         const float TimeBetweenExplosions = 0.5f;
@@ -106,9 +107,11 @@ namespace Platformer
             smoke = new ExplosionSmokeParticleSystem(this, 2);
             Components.Add(smoke);
 
+            bloodSprayUp = new RetroBloodSprayWide(this, 100);
             bloodSprayRight = new RetroBloodSprayParticleSystem(this, 10);
             bloodSprayLeft = new RetroBloodSprayParticleSystem(this, 10);
             bloodSprayLeft.Dir = -1.0f;
+            Components.Add(bloodSprayUp);
             Components.Add(bloodSprayRight);
             Components.Add(bloodSprayLeft);
 
@@ -196,14 +199,18 @@ namespace Platformer
                     gamePadStates[level.Players.IndexOf(player)].IsButtonDown(Buttons.A) ||
                     touchState.AnyTouch();
 
+                if (!player.IsAlive)
+                {
+                   level.StartNewLife(player);
+                }
                 // Perform the appropriate action to advance the game and
                 // to get the player back to playing.
                 if (!wasContinuePressed && continuePressed)
                 {
-                    if (!player.IsAlive)
-                    {
-                        level.StartNewLife(player);
-                    }
+                    //if (!player.IsAlive)
+                    //{
+                    //    level.StartNewLife(player);
+                    //}
                    // else if (level.TimeRemaining == TimeSpan.Zero)
                    // {
                    //     if (level.ReachedExit)
@@ -297,6 +304,11 @@ namespace Platformer
                 bloodSprayRight.AddParticles(where);
             else
                 bloodSprayLeft.AddParticles(where);
+
+            if (player.Health <= 0.0f)
+            {
+                bloodSprayUp.AddParticles(new Vector2(player.Position.X, player.Position.Y+10));
+            }
      
         }
 

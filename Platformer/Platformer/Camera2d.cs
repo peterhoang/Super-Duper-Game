@@ -29,10 +29,10 @@ namespace Platformer
 
             // Calculate the edges of the screen.
             float marginWidth = viewport.Width * ViewMargin;
-            float marginLeft = cameraPosition + marginWidth;
-            float marginRight = cameraPosition + viewport.Width - marginWidth;
+            float marginLeft = cameraPosition + viewport.X; //marginWidth;
+            float marginRight = cameraPosition + viewport.Width;// -marginWidth;
 
-            float offset = 5.0f * Tile.Width;
+            float offset = 1.0f * Tile.Width;
 
             // don't spawn outside the map
             float maxcamerapos = Tile.Width * level.Width - viewport.Width;
