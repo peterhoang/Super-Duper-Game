@@ -55,6 +55,8 @@ Content\Sprites\Weapons\shell.xnb
 Content\Sprites\Particles\explosion.xnb
 Content\Sprites\Particles\smoke.xnb
 Content\Sprites\quad.xnb
+Content\Sprites\Player\blue_corpse.xnb
+Content\Sprites\Player\yellow_corpse.xnb
 Content\Fonts\Hud.xnb
 Content\Sounds\ExitReached.xnb
 Content\Sounds\GemCollected.xnb
@@ -68,3 +70,4 @@ Content\Sounds\Powerup.xnb
 Content\Levels\0.txt
 Content\Levels\2.txt
 Content\Levels\1.txt
+Content\Levels\Copy of 0.txt
