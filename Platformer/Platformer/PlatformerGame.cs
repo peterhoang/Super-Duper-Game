@@ -38,6 +38,7 @@ namespace Platformer
         private Texture2D winOverlay;
         private Texture2D loseOverlay;
         private Texture2D diedOverlay;
+        private Texture2D arrow;
 
         // Meta-level game state.
         private int levelIndex = -1;
@@ -47,6 +48,7 @@ namespace Platformer
             get { return level; }
         }
         private bool wasContinuePressed;
+        private bool firstKill = false;
 
         // When the time remaining is less than the warning time, it blinks on the hud
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
@@ -140,6 +142,7 @@ namespace Platformer
             winOverlay = Content.Load<Texture2D>("Overlays/you_win");
             loseOverlay = Content.Load<Texture2D>("Overlays/you_lose");
             diedOverlay = Content.Load<Texture2D>("Overlays/you_died");
+            arrow = Content.Load<Texture2D>("Sprites/arrow");
 
             //Known issue that you get exceptions if you use Media PLayer while connected to your PC
             //See http://social.msdn.microsoft.com/Forums/en/windowsphone7series/thread/c8a243d2-d360-46b1-96bd-62b1ef268c66
@@ -308,6 +311,7 @@ namespace Platformer
             if (player.Health <= 0.0f)
             {
                 bloodSprayUp.AddParticles(new Vector2(player.Position.X, player.Position.Y+10));
+                firstKill = true;
             }
      
         }
@@ -330,21 +334,31 @@ namespace Platformer
 
             spriteBatch.Begin();
             
-            DrawHud();
+            DrawHud(gameTime);
 
             spriteBatch.End();
 
             base.Draw(gameTime);
         }
 
-        private void DrawHud()
+        
+        private void DrawHud(GameTime gameTime)
         {
             //spriteBatch.Begin();
 
             Rectangle titleSafeArea = GraphicsDevice.Viewport.TitleSafeArea;
-            Vector2 hudLocation = new Vector2(titleSafeArea.X, titleSafeArea.Y);
+            Vector2 rightMargin = new Vector2(titleSafeArea.X + titleSafeArea.Width * 0.93f, titleSafeArea.Y);
+            Vector2 leftMargin = new Vector2(titleSafeArea.X, titleSafeArea.Y);
             Vector2 center = new Vector2(titleSafeArea.X + titleSafeArea.Width / 2.0f,
                                          titleSafeArea.Y + titleSafeArea.Height / 2.0f);
+
+            if (firstKill && (int)level.TimeRemaining.TotalSeconds % 2 == 0)
+            {
+                if (level.attacker_id == 0)
+                    spriteBatch.Draw(arrow, rightMargin, Color.Blue);
+                else if (level.attacker_id == 1)
+                    spriteBatch.Draw(arrow, leftMargin, arrow.Bounds, Color.Yellow, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.FlipHorizontally, 0.0f);
+            }
 
             // Draw time remaining. Uses modulo division to cause blinking when the
             // player is running out of time.

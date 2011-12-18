@@ -154,3 +154,4 @@ E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\blue_corpse.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\yellow_corpse.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\Copy of 0.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\arrow.xnb

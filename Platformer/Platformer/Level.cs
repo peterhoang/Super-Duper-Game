@@ -474,7 +474,10 @@ namespace Platformer
 
             // Clamp the time remaining at zero.
             if (timeRemaining < TimeSpan.Zero)
-                timeRemaining = TimeSpan.Zero;
+            {
+                //timeRemaining = TimeSpan.Zero;
+                timeRemaining = TimeSpan.FromMinutes(2.0);
+            }
         }
 
         /// <summary>
@@ -563,7 +566,7 @@ namespace Platformer
         /// </summary>
         public void StartNewLife(Player player)
         {
-            float xpos = camera.GetSpawnPoint(attacker_id, game.GraphicsDevice.Viewport);
+            float xpos = camera.GetSpawnPoint(attacker_id);
             if (xpos > 0.0f)
             {
                 SpawnCorpse(player.Position, player.Flip, players.IndexOf(player));

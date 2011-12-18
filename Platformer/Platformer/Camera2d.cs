@@ -23,30 +23,30 @@ namespace Platformer
             get { return cameraPosition; }
         }
 
-        public float GetSpawnPoint(int attacker_id, Viewport viewport)
+        public float GetSpawnPoint(int attacker_id, Viewport viewPort)
         {
             float results = -1.0f;
 
             // Calculate the edges of the screen.
-            float marginWidth = viewport.Width * ViewMargin;
-            float marginLeft = cameraPosition + viewport.X; //marginWidth;
-            float marginRight = cameraPosition + viewport.Width;// -marginWidth;
+            Rectangle titleSafeArea = viewPort.TitleSafeArea;
+            Vector2 rightMargin = new Vector2(titleSafeArea.X + titleSafeArea.Width * 0.93f, titleSafeArea.Y);
+            Vector2 leftMargin = new Vector2(titleSafeArea.X, titleSafeArea.Y);
 
             float offset = 1.0f * Tile.Width;
 
             // don't spawn outside the map
-            float maxcamerapos = Tile.Width * level.Width - viewport.Width;
+            float maxcamerapos = Tile.Width * level.Width - viewPort.Width;
 
             // player 1
             if (attacker_id == 0)
             {
-                results = marginRight + offset;
+                results = rightMargin.X;
                 return (results > maxcamerapos) ? -1.0f : results;
             }
             // player 2
             else
             {
-                results = marginLeft - offset;
+                results = leftMargin.X + offset;
                 return (results < 0.0f) ? -1.0f : results;
             }
         }
