@@ -67,6 +67,13 @@ Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
 Content\Sprites\Player\blue_corpse.xnb
 Content\Sprites\Player\yellow_corpse.xnb
+Content\Sprites\arrow.xnb
+Content\Tiles\blockC0.xnb
+Content\Tiles\blockC1.xnb
+Content\Backgrounds\Background0_0.xnb
+Content\Backgrounds\Background0_1.xnb
+Content\Backgrounds\Background0_2.xnb
+Content\Tiles\block-87.xnb
 Content\Levels\0.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

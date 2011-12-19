@@ -122,9 +122,9 @@ namespace Platformer
             // Load background layer textures. For now, all levels must
             // use the same backgrounds and only use the left-most part of them.
             layers = new Layer[3];
-            layers[0] = new Layer(Content, "Backgrounds/Layer0", 0.2f);
-            layers[1] = new Layer(Content, "Backgrounds/Layer1", 0.5f);
-            layers[2] = new Layer(Content, "Backgrounds/Layer2", 0.8f);
+            layers[0] = new Layer(Content, "Backgrounds/Background0_0", 0.2f);
+            layers[1] = new Layer(Content, "Backgrounds/Background0_1", 0.5f);
+            layers[2] = new Layer(Content, "Backgrounds/Background0_2", 0.8f);
             /*
             for (int i = 0; i < layers.Length; ++i)
             {
@@ -268,7 +268,8 @@ namespace Platformer
 
                 // Impassable block
                 case '#':
-                    return LoadVarietyTile("BlockA", 7, TileCollision.Impassable);
+                    return LoadTile("block-87", TileCollision.Impassable);
+                    //return LoadVarietyTile("BlockA", 7, TileCollision.Impassable);
 
                 // Unknown tile type character
                 default:
@@ -566,7 +567,7 @@ namespace Platformer
         /// </summary>
         public void StartNewLife(Player player)
         {
-            float xpos = camera.GetSpawnPoint(attacker_id);
+            float xpos = camera.GetSpawnPoint(attacker_id, game.GraphicsDevice.Viewport);
             if (xpos > 0.0f)
             {
                 SpawnCorpse(player.Position, player.Flip, players.IndexOf(player));

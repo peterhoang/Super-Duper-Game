@@ -614,6 +614,69 @@
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\yellow_corpse.xnb</Output>
       <Time>2011-12-16T16:04:19.2598369-05:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\arrow.png</Source>
+      <Name>Sprites\arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\arrow.xnb</Output>
+      <Time>2011-12-17T18:09:27.5171242-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\blockC0.png</Source>
+      <Name>Tiles\blockC0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC0.xnb</Output>
+      <Time>2011-12-19T15:08:24.7526448-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\blockC1.png</Source>
+      <Name>Tiles\blockC1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC1.xnb</Output>
+      <Time>2011-12-19T14:55:04.1948556-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background0_0.png</Source>
+      <Name>Backgrounds\Background0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_0.xnb</Output>
+      <Time>2011-12-19T15:54:38.95332-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background0_1.png</Source>
+      <Name>Backgrounds\Background0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_1.xnb</Output>
+      <Time>2011-12-19T15:34:52.4914583-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background0_2.png</Source>
+      <Name>Backgrounds\Background0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_2.xnb</Output>
+      <Time>2011-12-19T15:52:42.68767-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-87.png</Source>
+      <Name>Tiles\block-87</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87.xnb</Output>
+      <Time>2011-12-19T15:45:58.2115353-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2FDB7EF3-D3C4-47A3-8E75-C901A05B8574}</ContentProjectGUID>

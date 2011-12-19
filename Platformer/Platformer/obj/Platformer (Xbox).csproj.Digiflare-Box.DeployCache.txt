@@ -6,7 +6,13 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\
 C:\Peter\Super-Duper-Game\Platformer\Platformer\Super_Awesome_Game_box.png
 2011-12-16T14:18:54.6841272Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Platformer.exe
-2011-12-16T21:42:25.1873886Z
+2011-12-19T20:46:00.1276449Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_0.xnb
+2011-12-19T20:54:41.0464398Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_1.xnb
+2011-12-19T20:35:28.8465377Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_2.xnb
+2011-12-19T20:52:44.9077970Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb
 2011-12-16T15:55:47.4337624Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb
@@ -28,7 +34,7 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backg
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\Hud.xnb
 2011-12-16T15:55:54.1188362Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\0.txt
-2011-12-16T16:53:24.1335788Z
+2011-12-19T20:56:05.5892753Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\1.txt
 2011-12-16T14:18:54.3291069Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\2.txt
@@ -59,6 +65,8 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sound
 2011-12-16T15:55:57.6948426Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Powerup.xnb
 2011-12-16T15:55:57.9448430Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\arrow.xnb
+2011-12-19T14:44:32.2519022Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Gem.xnb
 2011-12-16T15:55:45.4547256Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\quad.xnb
@@ -131,6 +139,8 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprit
 2011-12-16T15:55:52.6488341Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb
 2011-12-16T15:55:52.7188342Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87.xnb
+2011-12-19T20:45:59.9416343Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA0.xnb
 2011-12-16T15:55:46.5647272Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA1.xnb
@@ -149,6 +159,10 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles
 2011-12-16T15:55:46.6747273Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB1.xnb
 2011-12-16T15:55:46.6947273Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC0.xnb
+2011-12-19T20:08:28.1808409Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC1.xnb
+2011-12-19T19:55:24.3360076Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Exit.xnb
 2011-12-16T15:55:52.4988339Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Platform.xnb
