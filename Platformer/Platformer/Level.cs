@@ -571,9 +571,9 @@ namespace Platformer
             if (xpos > 0.0f)
             {
                 SpawnCorpse(player.Position, player.Flip, players.IndexOf(player));
-                player.Reset(new Vector2(xpos, player.Position.Y));               
+                float ypos = player.Position.Y - 100.0f;
+                player.Reset(new Vector2(xpos, ypos));
             }
-               
         }
 
         public void SpawnCorpse(Vector2 pos, SpriteEffects flip, int playerIndex)

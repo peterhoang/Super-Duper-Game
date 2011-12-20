@@ -155,3 +155,9 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Pl
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\yellow_corpse.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\Copy of 0.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\arrow.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC0.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC1.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_0.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_1.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_2.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87.xnb
