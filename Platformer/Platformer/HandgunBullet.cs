@@ -90,6 +90,37 @@ namespace Platformer
         /// </summary>
         private void HandleCollisions()
         {
+            //check against tile
+            Rectangle bounds = BoundingRectangle;
+            int leftTile = (int)Math.Floor((float)bounds.Left / Tile.Width);
+            int rightTile = (int)Math.Ceiling(((float)bounds.Right / Tile.Width)) - 1;
+            int topTile = (int)Math.Floor((float)bounds.Top / Tile.Height);
+            int bottomTile = (int)Math.Ceiling(((float)bounds.Bottom / Tile.Height)) - 1;
+
+            // For each potentially colliding tile,
+            for (int y = topTile; y <= bottomTile; ++y)
+            {
+                for (int x = leftTile; x <= rightTile; ++x)
+                {
+                    // If this tile is collidable,
+                    TileCollision collision = Level.GetCollision(x, y);
+                    if (collision != TileCollision.Passable)
+                    {
+                        // Determine collision depth (with direction) and magnitude.
+                        Rectangle tileBounds = Level.GetBounds(x, y);
+                        Vector2 depth = RectangleExtensions.GetIntersectionDepth(bounds, tileBounds);
+                        if (depth != Vector2.Zero)
+                        {
+                            if (collision == TileCollision.Impassable) // Ignore platforms.
+                            {
+                                this.Reset();
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+
             foreach (Player player in Level.Players)
             {
                 //do not check against the owner of the bullet

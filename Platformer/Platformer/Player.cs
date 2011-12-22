@@ -28,6 +28,9 @@ namespace Platformer
     {
         public event OnHitHandler OnHit;
 
+        //font
+        SpriteFont font;
+
         // Animations
         private Animation idleAnimation;
         private Animation runAnimation;
@@ -107,6 +110,8 @@ namespace Platformer
         private const Buttons RollButton = Buttons.B;
         private const Buttons FireButton = Buttons.X;
         private const Buttons SwitchButton = Buttons.Y;
+
+        private int playerId;
 
         // Respawn point
         public Vector2 RespawnPosition
@@ -188,9 +193,10 @@ namespace Platformer
         /// <summary>
         /// Constructors a new player.
         /// </summary>
-        public Player(Level level, Vector2 position)
+        public Player(Level level, Vector2 position, int id)
         {
             this.level = level;
+            this.playerId = id;
 
             LoadContent();
 
@@ -230,6 +236,8 @@ namespace Platformer
 
             gun = m_handgun;
             canShoot = true;
+
+            font = level.Content.Load<SpriteFont>("Fonts/Hud");
         }
 
         public void LoadContent(string idle, string run, string jump, string death, string roll)
@@ -286,7 +294,8 @@ namespace Platformer
             GamePadState gamePadState, 
             TouchCollection touchState, 
             AccelerometerState accelState,
-            DisplayOrientation orientation)
+            DisplayOrientation orientation,
+            Viewport viewport)
         {
             GetInput(keyboardState, gamePadState, touchState, accelState, orientation);
 
@@ -702,7 +711,7 @@ namespace Platformer
         /// </summary>
         public void OnReachedExit()
         {
-            sprite.PlayAnimation(celebrateAnimation);
+            //sprite.PlayAnimation(celebrateAnimation);
         }
 
         /// <summary>
@@ -734,11 +743,26 @@ namespace Platformer
                 newColor.G = g;
                 newColor.B = b;
             }
-            
+
+           // spriteBatch.DrawString(font, Position.X.ToString(), position, Color.White);
             sprite.Draw(gameTime, spriteBatch, Position, flip, newColor);            
 
             // Draw the gun if not rolling
             if (isAlive) gun.Draw(gameTime, spriteBatch, isRolling);
+
+
+            //if the player is offscreen, reset
+            // Calculate the visible range of tiles
+            int left = (int)Math.Floor(level.Camera.CameraPosition / Tile.Width);
+            int right = left + spriteBatch.GraphicsDevice.Viewport.Width / Tile.Width;
+            right = Math.Min(right, level.Width - 1);
+            Vector2 rightEdge = new Vector2(right, 0.0f) * Tile.Size;
+            Vector2 leftEdge = new Vector2(left, 0.0f) * Tile.Size;
+
+            if (position.X < leftEdge.X || position.X > rightEdge.X)
+            {
+                level.StartNewLife(this);
+            }
         }
     }
 }

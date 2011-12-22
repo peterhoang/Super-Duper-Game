@@ -55,7 +55,7 @@ namespace Platformer
        
         // Key locations in the level.        
         private Vector2 start;
-        private Point exit = InvalidPosition;
+        private Point[] exit = new Point[2];
         private static readonly Point InvalidPosition = new Point(-1, -1);
 
         // Level game state.
@@ -116,7 +116,9 @@ namespace Platformer
             this.game = game;
 
             timeRemaining = TimeSpan.FromMinutes(2.0);
-
+            exit[0] = InvalidPosition;
+            exit[1] = InvalidPosition;
+            
             LoadTiles(fileStream);
 
             // Load background layer textures. For now, all levels must
@@ -137,7 +139,8 @@ namespace Platformer
             // Load sounds.
             exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
 
-            camera = new Camera2d(this);
+            camera = new Camera2d(this, 0.0f);
+           // camera.CameraPosition = 941.0f;
 
             // allocate for corpses
             corpseIndex[0] = 0;
@@ -202,9 +205,10 @@ namespace Platformer
             //if (Player == null)
             if (players.Count <= 0)
                 throw new NotSupportedException("A level must have a starting point.");
-            if (exit == InvalidPosition)
-                throw new NotSupportedException("A level must have an exit.");
-
+            if (exit[0] == InvalidPosition)
+                throw new NotSupportedException("A level must have an exit for player 1.");
+            if (exit[1] == InvalidPosition)
+                throw new NotSupportedException("A level must have an exit for player 2.");
         }
 
         /// <summary>
@@ -231,7 +235,9 @@ namespace Platformer
 
                 // Exit
                 case 'X':
-                    return LoadExitTile(x, y);
+                    return LoadExitTile1(x, y);
+                case 'Q':
+                    return LoadExitTile2(x, y);
 
                 // Gem
                 case 'G':
@@ -261,10 +267,10 @@ namespace Platformer
 
                 // Player 1 start point
                 case '1':
-                    return LoadStartTile(x, y);
+                    return LoadStartTile(x, y, 0);
                 // Player 2 start point
                 case '2':
-                    return LoadStartTile(x, y);
+                    return LoadStartTile(x, y, 1);
 
                 // Impassable block
                 case '#':
@@ -314,13 +320,13 @@ namespace Platformer
         /// <summary>
         /// Instantiates a player, puts him in the level, and remembers where to put him when he is resurrected.
         /// </summary>
-        private Tile LoadStartTile(int x, int y)
+        private Tile LoadStartTile(int x, int y, int id)
         {
             //if (Player != null)
             //    throw new NotSupportedException("A level may only have one starting point.");
 
             start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            Player player = new Player(this, start);
+            Player player = new Player(this, start, id);
 
             players.Add(player);
 
@@ -329,14 +335,27 @@ namespace Platformer
 
       
         /// <summary>
-        /// Remembers the location of the level's exit.
+        /// Remembers the location of the level's exit for player 1
         /// </summary>
-        private Tile LoadExitTile(int x, int y)
+        private Tile LoadExitTile1(int x, int y)
         {
-            if (exit != InvalidPosition)
-                throw new NotSupportedException("A level may only have one exit.");
+            //if (exit != InvalidPosition)
+            //    throw new NotSupportedException("A level may only have one exit.");
 
-            exit = GetBounds(x, y).Center;
+            exit[0] = GetBounds(x, y).Center;
+
+            return LoadTile("Exit", TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Remembers the location of the level's exit for player 2
+        /// </summary>
+        private Tile LoadExitTile2(int x, int y)
+        {
+            //if (exit != InvalidPosition)
+            //    throw new NotSupportedException("A level may only have one exit.");
+
+            exit[1] = GetBounds(x, y).Center;
 
             return LoadTile("Exit", TileCollision.Passable);
         }
@@ -431,7 +450,8 @@ namespace Platformer
             GamePadState[] gamePadStates, 
             TouchCollection touchState, 
             AccelerometerState accelState,
-            DisplayOrientation orientation)
+            DisplayOrientation orientation, 
+            Viewport viewport)
         {
             // Pause while the player is dead or time is expired.
             foreach (Player player in players)
@@ -452,7 +472,7 @@ namespace Platformer
                 else
                 {
                     timeRemaining -= gameTime.ElapsedGameTime;
-                    player.Update(gameTime, keyboardState, gamePadStates[players.IndexOf(player)], touchState, accelState, orientation);
+                    player.Update(gameTime, keyboardState, gamePadStates[players.IndexOf(player)], touchState, accelState, orientation, viewport);
                     UpdateGems(gameTime);
 
                     // Falling off the bottom of the level kills the player.
@@ -464,11 +484,12 @@ namespace Platformer
                     // The player has reached the exit if they are standing on the ground and
                     // his bounding rectangle contains the center of the exit tile. They can only
                     // exit when they have collected all of the gems.
-                    if (player.IsAlive &&
-                        player.IsOnGround &&
-                        player.BoundingRectangle.Contains(exit))
+                    if (game.firstKill && player.IsAlive && player.IsOnGround)
                     {
-                        OnExitReached();
+                        if (players.IndexOf(player) == attacker_id && player.BoundingRectangle.Contains(exit[attacker_id]))
+                        {
+                            OnExitReached();
+                        }
                     }
                 }
             }
@@ -602,7 +623,17 @@ namespace Platformer
             }
             spriteBatch.End();
 
-            camera.ScrollCamera(players[attacker_id], spriteBatch.GraphicsDevice.Viewport);
+            // center camera on level init
+            if (!game.firstKill)
+            {
+                Vector2 centerScreen = new Vector2((float)(Width * Tile.Width) / 2.0f, 0.0f);
+                camera.ScrollCamera(centerScreen, spriteBatch.GraphicsDevice.Viewport);
+            }
+            else
+            {
+                camera.ScrollCamera(players[attacker_id].Position, spriteBatch.GraphicsDevice.Viewport);
+            }
+            
             Matrix cameraTransform = Matrix.CreateTranslation(-camera.CameraPosition, 0.0f, 0.0f);
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default,
                               RasterizerState.CullCounterClockwise, null, cameraTransform);

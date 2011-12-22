@@ -48,7 +48,7 @@ namespace Platformer
             get { return level; }
         }
         private bool wasContinuePressed;
-        private bool firstKill = false;
+        public bool firstKill = false;
 
         // When the time remaining is less than the warning time, it blinks on the hud
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
@@ -173,7 +173,7 @@ namespace Platformer
 
             // update our level, passing down the GameTime along with all of our input states
             level.Update(gameTime, keyboardState, gamePadStates, touchState, 
-                         accelerometerState, Window.CurrentOrientation);
+                         accelerometerState, Window.CurrentOrientation, graphics.GraphicsDevice.Viewport);
 
             UpdateExplosions(dt);
            
@@ -216,8 +216,8 @@ namespace Platformer
                     //}
                    // else if (level.TimeRemaining == TimeSpan.Zero)
                    // {
-                   //     if (level.ReachedExit)
-                   //         LoadNextLevel();
+                        if (level.ReachedExit)
+                            LoadNextLevel();
                    //     else
                    //         ReloadCurrentLevel();
                    // }
@@ -359,6 +359,8 @@ namespace Platformer
                 else if (level.attacker_id == 1)
                     spriteBatch.Draw(arrow, leftMargin, arrow.Bounds, Color.Yellow, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.FlipHorizontally, 0.0f);
             }
+
+            //spriteBatch.DrawString(hudFont, level.Camera.CameraPosition.ToString(), leftMargin, Color.White);
 
             // Draw time remaining. Uses modulo division to cause blinking when the
             // player is running out of time.
