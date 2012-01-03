@@ -759,7 +759,7 @@ namespace Platformer
             Vector2 rightEdge = new Vector2(right, 0.0f) * Tile.Size;
             Vector2 leftEdge = new Vector2(left, 0.0f) * Tile.Size;
 
-            if (position.X < leftEdge.X || position.X > rightEdge.X)
+            if (position.X < leftEdge.X - (3 * Tile.Width) || position.X > rightEdge.X + (3 * Tile.Width))
             {
                 level.StartNewLife(this);
             }

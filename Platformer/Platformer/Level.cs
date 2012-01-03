@@ -140,7 +140,6 @@ namespace Platformer
             exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
 
             camera = new Camera2d(this, 0.0f);
-           // camera.CameraPosition = 941.0f;
 
             // allocate for corpses
             corpseIndex[0] = 0;
@@ -626,7 +625,8 @@ namespace Platformer
             // center camera on level init
             if (!game.firstKill)
             {
-                Vector2 centerScreen = new Vector2((float)(Width * Tile.Width) / 2.0f, 0.0f);
+                float approxCenter = ((float)(Width * Tile.Width) / 2.0f) + (Tile.Width * 2.6f);
+                Vector2 centerScreen = new Vector2(approxCenter, 0.0f);
                 camera.ScrollCamera(centerScreen, spriteBatch.GraphicsDevice.Viewport);
             }
             else
