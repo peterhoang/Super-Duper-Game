@@ -16,12 +16,11 @@ namespace Platformer
     /// </summary>
     abstract class Gun
     {
-        public Level Level
+        public PlatformerGame Level
         {
             get { return level; }
-            set { level = value; }
         }
-        Level level;
+        protected PlatformerGame level;
 
         public Vector2 Position
         {

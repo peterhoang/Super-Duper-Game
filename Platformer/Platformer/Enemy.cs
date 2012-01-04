@@ -157,7 +157,7 @@ namespace Platformer
         /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            foreach (Player player in Level.Players)
+            foreach (Player player in PlatformerGame.Players)
             {
                 // Stop running when the game is paused or before turning around.
                 if (!player.IsAlive ||

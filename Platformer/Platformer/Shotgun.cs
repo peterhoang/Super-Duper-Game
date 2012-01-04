@@ -27,9 +27,9 @@ namespace Platformer
         }
         protected List<ShotgunShell> _shells;
 
-        public Shotgun(Level level, Vector2 position, Player player)
+        public Shotgun(PlatformerGame level, Vector2 position, Player player)
         {
-            Level = level;
+            this.level = level;
             Position = position;
             _player = player;
 

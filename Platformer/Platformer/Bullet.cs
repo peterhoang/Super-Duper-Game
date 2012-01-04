@@ -12,12 +12,11 @@ namespace Platformer
 {
     abstract class Bullet
     {
-        public Level Level
+        public PlatformerGame Level
         {
             get { return level; }
-            set { level = value; }
         }
-        Level level;
+        protected PlatformerGame level;
 
         public Vector2 Position
         {

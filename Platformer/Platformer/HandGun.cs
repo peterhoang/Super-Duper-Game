@@ -34,9 +34,9 @@ namespace Platformer
 
         private bool isShooting;
 
-        public HandGun(Level level, Vector2 position, Player player)
+        public HandGun(PlatformerGame level, Vector2 position, Player player)
         {
-            Level = level;
+            this.level = level;
             Position = position;
             _player = player;
 

@@ -41,7 +41,7 @@ namespace Platformer
         private Texture2D arrow;
 
         // Meta-level game state.
-        private int levelIndex = -1;
+        private int levelIndex = 2;
         private Level level;
         public Level CurrentLevel
         {
@@ -49,6 +49,13 @@ namespace Platformer
         }
         private bool wasContinuePressed;
         public bool firstKill = false;
+
+        // Player Entities in the game.
+        public static List<Player> Players
+        {
+            get { return players; }
+        }
+        static List<Player> players = new List<Player>();
 
         // When the time remaining is less than the warning time, it blinks on the hud
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
@@ -67,7 +74,7 @@ namespace Platformer
         // levels in our content are 0-based and that all numbers under this constant
         // have a level file present. This allows us to not need to check for the file
         // or handle exceptions, both of which can add unnecessary time to level loading.
-        private const int numberOfLevels = 3;
+        private const int numberOfLevels = 7;
 
         // a random number generator that the whole sample can share.
         private static Random random = new Random(354669);
@@ -155,6 +162,18 @@ namespace Platformer
             }
             catch { }
 
+            //Create the players
+            //Player 1
+            players.Add(new Player(this, Vector2.Zero, 0));
+            players.Add(new Player(this, Vector2.Zero, 1));
+
+              // Set player 2's colors
+            players[1].LoadContent("Sprites/Player/cop_yellow_idle",
+                    "Sprites/Player/cop_yellow_running",
+                    "Sprites/Player/cop_yellow_jump",
+                    "Sprites/Player/cop_yellow_die",
+                    "Sprites/Player/cop_yellow_roll");
+
             LoadNextLevel();
 
         }
@@ -195,11 +214,11 @@ namespace Platformer
             if (gamePadState_1.Buttons.Back == ButtonState.Pressed)
                 Exit();
 
-            foreach (Player player in level.Players)
+            foreach (Player player in PlatformerGame.Players)
             {
                 bool continuePressed =
                     keyboardState.IsKeyDown(Keys.Space) ||
-                    gamePadStates[level.Players.IndexOf(player)].IsButtonDown(Buttons.A) ||
+                    gamePadStates[PlatformerGame.Players.IndexOf(player)].IsButtonDown(Buttons.A) ||
                     touchState.AnyTouch();
 
                 if (!player.IsAlive)
@@ -267,7 +286,7 @@ namespace Platformer
             // Unloads the content for the current level before loading the next one.
             if (level != null)
             {
-                foreach (Player player in level.Players)
+                foreach (Player player in PlatformerGame.Players)
                 {
                     player.OnHit -= player_OnHit;
                 }
@@ -278,7 +297,7 @@ namespace Platformer
             string levelPath = string.Format("Content/Levels/{0}.txt", levelIndex);
             using (Stream fileStream = TitleContainer.OpenStream(levelPath)) {
                 level = new Level(Services, fileStream, levelIndex, this);
-                foreach (Player player in level.Players)
+                foreach (Player player in PlatformerGame.Players)
                 {
                     player.OnHit += new OnHitHandler(player_OnHit);
                 }
@@ -388,7 +407,7 @@ namespace Platformer
             
             Texture2D status = null;
             /*
-            foreach (Player player in level.Players)
+            foreach (Player player in PlatformerGame.Players)
             {
                 if (level.TimeRemaining == TimeSpan.Zero)
                 {

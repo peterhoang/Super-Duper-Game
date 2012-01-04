@@ -56,11 +56,11 @@ namespace Platformer
         private SoundEffect jumpSound;
         private SoundEffect fallSound;
 
-        public Level Level
+        public PlatformerGame Level
         {
             get { return level; }
         }
-        Level level;
+        PlatformerGame level;
 
         public bool IsAlive
         {
@@ -111,6 +111,10 @@ namespace Platformer
         private const Buttons FireButton = Buttons.X;
         private const Buttons SwitchButton = Buttons.Y;
 
+        public int PlayerId
+        {
+            get { return playerId; }
+        }
         private int playerId;
 
         // Respawn point
@@ -193,7 +197,7 @@ namespace Platformer
         /// <summary>
         /// Constructors a new player.
         /// </summary>
-        public Player(Level level, Vector2 position, int id)
+        public Player(PlatformerGame level, Vector2 position, int id)
         {
             this.level = level;
             this.playerId = id;
@@ -606,11 +610,11 @@ namespace Platformer
                 for (int x = leftTile; x <= rightTile; ++x)
                 {
                     // If this tile is collidable,
-                    TileCollision collision = Level.GetCollision(x, y);
+                    TileCollision collision = Level.CurrentLevel.GetCollision(x, y);
                     if (collision != TileCollision.Passable)
                     {
                         // Determine collision depth (with direction) and magnitude.
-                        Rectangle tileBounds = Level.GetBounds(x, y);
+                        Rectangle tileBounds = Level.CurrentLevel.GetBounds(x, y);
                         Vector2 depth = RectangleExtensions.GetIntersectionDepth(bounds, tileBounds);
                         if (depth != Vector2.Zero)
                         {
@@ -695,7 +699,7 @@ namespace Platformer
         }
         public void OnKilled(Player killedBy)
         {
-            level.attacker_id = level.Players.IndexOf(killedBy);
+            level.CurrentLevel.attacker_id = PlatformerGame.Players.IndexOf(killedBy);
           
             isAlive = false;
             pulseRed = false;
@@ -753,15 +757,15 @@ namespace Platformer
 
             //if the player is offscreen, reset
             // Calculate the visible range of tiles
-            int left = (int)Math.Floor(level.Camera.CameraPosition / Tile.Width);
+            int left = (int)Math.Floor(level.CurrentLevel.Camera.CameraPosition / Tile.Width);
             int right = left + spriteBatch.GraphicsDevice.Viewport.Width / Tile.Width;
-            right = Math.Min(right, level.Width - 1);
+            right = Math.Min(right, level.CurrentLevel.Width - 1);
             Vector2 rightEdge = new Vector2(right, 0.0f) * Tile.Size;
             Vector2 leftEdge = new Vector2(left, 0.0f) * Tile.Size;
 
             if (position.X < leftEdge.X - (3 * Tile.Width) || position.X > rightEdge.X + (3 * Tile.Width))
             {
-                level.StartNewLife(this);
+                level.CurrentLevel.StartNewLife(this, false);
             }
         }
     }

@@ -138,7 +138,6 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Pla
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\PlayerKilled.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music.wma
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\2.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\1.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Platformer.exe
@@ -153,7 +152,6 @@ E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\blue_corpse.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\yellow_corpse.xnb
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\Copy of 0.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\arrow.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC0.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC1.xnb
@@ -161,3 +159,8 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Background
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_1.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_2.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\3.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\6.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\4.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\5.txt

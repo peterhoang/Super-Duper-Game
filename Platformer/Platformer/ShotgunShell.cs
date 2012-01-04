@@ -18,9 +18,9 @@ namespace Platformer
         private const float MAX_DISTANCE = 40.0f;
         private const float BULLET_DAMAGE = 50.0f;
 
-        public ShotgunShell(Level level, Vector2 position)
+        public ShotgunShell(PlatformerGame level, Vector2 position)
         {
-            Level = level;
+            this.level = level;
             Position = position;
             IsAlive = false;
             LoadContent();
@@ -86,7 +86,7 @@ namespace Platformer
         /// </summary>
         private void HandleCollisions()
         {
-            foreach (Player player in Level.Players)
+            foreach (Player player in PlatformerGame.Players)
             {
                 //do not check against the owner of the bullet
                 if (player != _player)

@@ -22,9 +22,9 @@ namespace Platformer
         
 
 
-        public HandgunBullet(Level level, Vector2 position)
+        public HandgunBullet(PlatformerGame level, Vector2 position)
         {
-            Level = level;
+            this.level = level;
             Position = position;
             IsAlive = false;
             LoadContent();
@@ -103,11 +103,11 @@ namespace Platformer
                 for (int x = leftTile; x <= rightTile; ++x)
                 {
                     // If this tile is collidable,
-                    TileCollision collision = Level.GetCollision(x, y);
+                    TileCollision collision = Level.CurrentLevel.GetCollision(x, y);
                     if (collision != TileCollision.Passable)
                     {
                         // Determine collision depth (with direction) and magnitude.
-                        Rectangle tileBounds = Level.GetBounds(x, y);
+                        Rectangle tileBounds = Level.CurrentLevel.GetBounds(x, y);
                         Vector2 depth = RectangleExtensions.GetIntersectionDepth(bounds, tileBounds);
                         if (depth != Vector2.Zero)
                         {
@@ -121,7 +121,7 @@ namespace Platformer
                 }
             }
 
-            foreach (Player player in Level.Players)
+            foreach (Player player in PlatformerGame.Players)
             {
                 //do not check against the owner of the bullet
                 if (player != _player)

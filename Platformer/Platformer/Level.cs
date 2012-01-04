@@ -36,13 +36,6 @@ namespace Platformer
         // The layer which entities are drawn on top of.
         private const int EntityLayer = 2;
 
-        // Player Entities in the level.
-        public List<Player> Players
-        {
-            get { return players; }
-        }
-        List<Player> players = new List<Player>();
-        
         // Attacker index
         public int attacker_id = 0;
 
@@ -192,17 +185,12 @@ namespace Platformer
                 }
             }
 
-            // Set player 2's colors
-            players[1].LoadContent("Sprites/Player/cop_yellow_idle",
-                    "Sprites/Player/cop_yellow_running",
-                    "Sprites/Player/cop_yellow_jump",
-                    "Sprites/Player/cop_yellow_die",
-                    "Sprites/Player/cop_yellow_roll");
+          
             
 
             // Verify that the level has a beginning and an end.
             //if (Player == null)
-            if (players.Count <= 0)
+            if (PlatformerGame.Players.Count <= 0)
                 throw new NotSupportedException("A level must have a starting point.");
             if (exit[0] == InvalidPosition)
                 throw new NotSupportedException("A level must have an exit for player 1.");
@@ -230,6 +218,8 @@ namespace Platformer
             {
                 // Blank space
                 case '.':
+                    return new Tile(null, TileCollision.Passable);
+                case '|':
                     return new Tile(null, TileCollision.Passable);
 
                 // Exit
@@ -325,9 +315,7 @@ namespace Platformer
             //    throw new NotSupportedException("A level may only have one starting point.");
 
             start = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            Player player = new Player(this, start, id);
-
-            players.Add(player);
+            PlatformerGame.Players[id].Reset(start);
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -453,7 +441,7 @@ namespace Platformer
             Viewport viewport)
         {
             // Pause while the player is dead or time is expired.
-            foreach (Player player in players)
+            foreach (Player player in PlatformerGame.Players)
             {
                 if (!player.IsAlive)// || TimeRemaining == TimeSpan.Zero)
                 {
@@ -471,7 +459,7 @@ namespace Platformer
                 else
                 {
                     timeRemaining -= gameTime.ElapsedGameTime;
-                    player.Update(gameTime, keyboardState, gamePadStates[players.IndexOf(player)], touchState, accelState, orientation, viewport);
+                    player.Update(gameTime, keyboardState, gamePadStates[player.PlayerId], touchState, accelState, orientation, viewport);
                     UpdateGems(gameTime);
 
                     // Falling off the bottom of the level kills the player.
@@ -485,7 +473,7 @@ namespace Platformer
                     // exit when they have collected all of the gems.
                     if (game.firstKill && player.IsAlive && player.IsOnGround)
                     {
-                        if (players.IndexOf(player) == attacker_id && player.BoundingRectangle.Contains(exit[attacker_id]))
+                        if (player.PlayerId == attacker_id && player.BoundingRectangle.Contains(exit[attacker_id]))
                         {
                             OnExitReached();
                         }
@@ -512,7 +500,7 @@ namespace Platformer
 
                 gem.Update(gameTime);
 
-                foreach (Player player in players)
+                foreach (Player player in PlatformerGame.Players)
                 {
                     if (gem.BoundingCircle.Intersects(player.BoundingRectangle))
                     {
@@ -532,7 +520,7 @@ namespace Platformer
             {
                 enemy.Update(gameTime);
 
-                foreach (Player player in players)
+                foreach (Player player in PlatformerGame.Players)
                 {
                     // Touching an enemy instantly kills the player
                     if (enemy.BoundingRectangle.Intersects(player.BoundingRectangle))
@@ -574,7 +562,7 @@ namespace Platformer
         /// </summary>
         private void OnExitReached()
         {
-            foreach (Player player in players)
+            foreach (Player player in PlatformerGame.Players)
             {
                 player.OnReachedExit();
                 exitReachedSound.Play();
@@ -582,15 +570,20 @@ namespace Platformer
             }
         }
 
+
         /// <summary>
         /// Restores the player to the starting point to try the level again.
         /// </summary>
         public void StartNewLife(Player player)
         {
+            StartNewLife(player, true);
+        }
+        public void StartNewLife(Player player, bool isKilled)
+        {
             float xpos = camera.GetSpawnPoint(attacker_id, game.GraphicsDevice.Viewport);
             if (xpos > 0.0f)
             {
-                SpawnCorpse(player.Position, player.Flip, players.IndexOf(player));
+                if (isKilled) SpawnCorpse(player.Position, player.Flip, PlatformerGame.Players.IndexOf(player));
                 float ypos = player.Position.Y - 100.0f;
                 player.Reset(new Vector2(xpos, ypos));
             }
@@ -631,7 +624,7 @@ namespace Platformer
             }
             else
             {
-                camera.ScrollCamera(players[attacker_id].Position, spriteBatch.GraphicsDevice.Viewport);
+                camera.ScrollCamera(PlatformerGame.Players[attacker_id].Position, spriteBatch.GraphicsDevice.Viewport);
             }
             
             Matrix cameraTransform = Matrix.CreateTranslation(-camera.CameraPosition, 0.0f, 0.0f);
@@ -652,7 +645,7 @@ namespace Platformer
             foreach (Gem gem in gems)
                 gem.Draw(gameTime, spriteBatch);
             
-            foreach (Player player in players)
+            foreach (Player player in PlatformerGame.Players)
                 player.Draw(gameTime, spriteBatch);
 
             foreach (Enemy enemy in enemies)
