@@ -100,7 +100,7 @@ namespace Platformer
 
         // Constants for rolling movement
         private const float MaxRollTime = 0.35f;
-        private const float RollControlPower = 0.14f;
+        private const float RollControlPower = 0.21f;
         private const float MaxRollRate = 0.6f;
 
         // Input configuration
@@ -470,6 +470,22 @@ namespace Platformer
             // Apply velocity.
             Position += velocity * elapsed;
             Position = new Vector2((float)Math.Round(Position.X), (float)Math.Round(Position.Y));
+
+            // Player to player collision
+            if (!isRolling)
+            {
+                foreach (Player player in PlatformerGame.Players)
+                {
+                    if (this != player)
+                    {
+                        if (this.BoundingRectangle.Intersects(player.BoundingRectangle))
+                        {
+                            float offset = (this.flip == SpriteEffects.None) ? -1.0f : 1.0f;
+                            Position = new Vector2(previousPosition.X + offset, previousPosition.Y);
+                        }
+                    }
+                }
+            }
 
             // If the player is now colliding with the level, separate them.
             HandleCollisions();
