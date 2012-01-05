@@ -478,7 +478,7 @@ namespace Platformer
                 {
                     if (this != player)
                     {
-                        if (this.BoundingRectangle.Intersects(player.BoundingRectangle))
+                        if (player.IsAlive && this.BoundingRectangle.Intersects(player.BoundingRectangle))
                         {
                             float offset = (this.flip == SpriteEffects.None) ? -1.0f : 1.0f;
                             Position = new Vector2(previousPosition.X + offset, previousPosition.Y);
@@ -688,7 +688,10 @@ namespace Platformer
            
             if (this.health <= 0)
             {
-                OnKilled(killedBy);
+                if (killedBy != null)
+                    OnKilled(killedBy);
+                else
+                    OnKilled();
             }
         }
 
@@ -699,16 +702,12 @@ namespace Platformer
         /// The enemy who killed the player. This parameter is null if the player was
         /// not killed by an enemy (fell into a hole).
         /// </param>
-        public void OnKilled(Enemy killedBy)
+        public void OnKilled()
         {
             isAlive = false;
             pulseRed = false;
             pulseRedTime = 0.0f;
-         
-            if (killedBy != null)
-                killedSound.Play();
-            else
-                fallSound.Play();
+            killedSound.Play();
 
             gun.Reset();
             sprite.PlayAnimation(dieAnimation);

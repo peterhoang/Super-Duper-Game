@@ -164,3 +164,4 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\0.t
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\6.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\4.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Levels\5.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\spike.xnb

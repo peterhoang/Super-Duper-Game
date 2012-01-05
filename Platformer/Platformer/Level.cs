@@ -41,6 +41,7 @@ namespace Platformer
 
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
+        private List<Spike> spikes = new List<Spike>();
         
         private const int MAX_CORPSES = 10;
         private Corpse[,] corpses = new Corpse[2,MAX_CORPSES];
@@ -261,6 +262,9 @@ namespace Platformer
                 case '2':
                     return LoadStartTile(x, y, 1);
 
+                case '^':
+                    return LoadSpikeTile(x, y);
+
                 // Impassable block
                 case '#':
                     return LoadTile("block-87", TileCollision.Impassable);
@@ -354,6 +358,17 @@ namespace Platformer
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             enemies.Add(new Enemy(this, position, spriteSet));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates an enemy and puts him in the level.
+        /// </summary>
+        private Tile LoadSpikeTile(int x, int y)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            spikes.Add(new Spike(this, position));
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -464,9 +479,13 @@ namespace Platformer
 
                     // Falling off the bottom of the level kills the player.
                     if (player.BoundingRectangle.Top >= Height * Tile.Height)
-                        OnPlayerKilled(null, null);
+                    {
+                        this.attacker_id = (player.PlayerId == 0) ? 1 : 0;
+                        OnPlayerKilled(null, player);
+                    }
 
                     UpdateEnemies(gameTime);
+                    UpdateSpikes(gameTime);
 
                     // The player has reached the exit if they are standing on the ground and
                     // his bounding rectangle contains the center of the exit tile. They can only
@@ -532,6 +551,25 @@ namespace Platformer
         }
 
         /// <summary>
+        /// Collision detection for the spikes.
+        /// </summary>
+        private void UpdateSpikes(GameTime gameTime)
+        {
+            foreach (Spike spike in spikes)
+            {
+                foreach (Player player in PlatformerGame.Players)
+                {
+                    // Touching a spike instantly kills the player
+                    if (spike.BoundingRectangle.Intersects(player.BoundingRectangle))
+                    {
+                        this.attacker_id = (player.PlayerId == 0) ? 1 : 0;
+                        player.Hit(100, 1.0f, null);
+                    }
+                }
+            }
+        }
+
+        /// <summary>
         /// Called when a gem is collected.
         /// </summary>
         /// <param name="gem">The gem that was collected.</param>
@@ -552,7 +590,7 @@ namespace Platformer
         /// </param>
         private void OnPlayerKilled(Enemy killedBy, Player player)
         {
-            player.OnKilled(killedBy);
+            player.OnKilled();
             player.Reset();
         }
        
@@ -583,8 +621,9 @@ namespace Platformer
             float xpos = camera.GetSpawnPoint(attacker_id, game.GraphicsDevice.Viewport);
             if (xpos > 0.0f)
             {
-                if (isKilled) SpawnCorpse(player.Position, player.Flip, PlatformerGame.Players.IndexOf(player));
-                float ypos = player.Position.Y - 100.0f;
+                if (isKilled) 
+                    SpawnCorpse(player.Position, player.Flip, PlatformerGame.Players.IndexOf(player));
+                float ypos = player.Position.Y - 200.0f;
                 player.Reset(new Vector2(xpos, ypos));
             }
         }
@@ -650,6 +689,9 @@ namespace Platformer
 
             foreach (Enemy enemy in enemies)
                 enemy.Draw(gameTime, spriteBatch);
+
+            foreach (Spike spike in spikes)
+                spike.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
 

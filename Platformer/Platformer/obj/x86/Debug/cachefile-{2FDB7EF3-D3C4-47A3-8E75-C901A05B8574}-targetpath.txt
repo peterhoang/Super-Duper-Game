@@ -74,6 +74,7 @@ Content\Backgrounds\Background0_0.xnb
 Content\Backgrounds\Background0_1.xnb
 Content\Backgrounds\Background0_2.xnb
 Content\Tiles\block-87.xnb
+Content\Tiles\spike.xnb
 Content\Levels\3.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

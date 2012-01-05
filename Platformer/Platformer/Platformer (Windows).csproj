@@ -97,6 +97,7 @@
     <Compile Include="Shotgun.cs" />
     <Compile Include="ShotgunShell.cs" />
     <Compile Include="SmokePlumeParticleSystem.cs" />
+    <Compile Include="Spike.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="TouchCollectionExtensions.cs" />
   </ItemGroup>
