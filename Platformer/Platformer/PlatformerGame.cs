@@ -297,6 +297,17 @@ namespace Platformer
                 levelIndex = (levelIndex + 1) % numberOfLevels;
             }
 
+            // Provide the background set
+            string[] backgroundSet = new string[3] { "Backgrounds/Background0_0", "Backgrounds/Background0_1", "Backgrounds/Background0_2" };
+            switch (levelIndex)
+            {
+                case 3:
+                    backgroundSet[0] = "Backgrounds/Background0_0";
+                    backgroundSet[1] = "Backgrounds/Background0_1";
+                    backgroundSet[2] = "Backgrounds/Background0_2";
+                    break;
+            }
+
             //If the either reaches the last level, remove the other player
             if (levelIndex == 6 || levelIndex == 0)
             {
@@ -317,7 +328,7 @@ namespace Platformer
             // Load the level.
             string levelPath = string.Format("Content/Levels/{0}.txt", levelIndex);
             using (Stream fileStream = TitleContainer.OpenStream(levelPath)) {
-                level = new Level(Services, fileStream, levelIndex, this);
+                level = new Level(Services, fileStream, levelIndex, backgroundSet, this);
                 foreach (Player player in PlatformerGame.Players)
                 {
                     player.OnHit += new OnHitHandler(player_OnHit);

@@ -6,7 +6,7 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\
 C:\Peter\Super-Duper-Game\Platformer\Platformer\Super_Awesome_Game_box.png
 2011-12-16T14:18:54.6841272Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Platformer.exe
-2011-12-19T20:46:00.1276449Z
+2012-01-24T22:19:39.2009722Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_0.xnb
 2011-12-19T20:54:41.0464398Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_1.xnb
@@ -34,13 +34,19 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backg
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\Hud.xnb
 2011-12-16T15:55:54.1188362Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\0.txt
-2011-12-19T20:56:05.5892753Z
+2012-01-24T21:54:28.5295667Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\1.txt
-2011-12-16T14:18:54.3291069Z
+2012-01-24T20:46:42.1439828Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\2.txt
-2011-12-16T14:18:54.3301069Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\Copy of 0.txt
-2011-12-16T19:34:46.7496799Z
+2012-01-24T20:45:07.9115930Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\3.txt
+2012-01-04T18:52:19.2127754Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\4.txt
+2012-01-04T19:10:12.3591559Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\5.txt
+2012-01-05T15:22:27.5569945Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\6.txt
+2012-01-24T21:22:27.1776717Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_died.xnb
 2011-12-16T15:55:52.1088333Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_lose.xnb
@@ -167,3 +173,5 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles
 2011-12-16T15:55:52.4988339Z
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Platform.xnb
 2011-12-16T15:55:46.7047273Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\spike.xnb
+2012-01-24T22:19:16.9597000Z

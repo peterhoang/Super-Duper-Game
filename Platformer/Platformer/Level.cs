@@ -99,7 +99,7 @@ namespace Platformer
         /// <param name="fileStream">
         /// A stream containing the tile data.
         /// </param>
-        public Level(IServiceProvider serviceProvider, Stream fileStream, int levelIndex, PlatformerGame game)
+        public Level(IServiceProvider serviceProvider, Stream fileStream, int levelIndex, string[] backgroundSet, PlatformerGame game)
         {
             // Create a new content manager to load content used just by this level.
             content = new ContentManager(serviceProvider, "Content");
@@ -115,9 +115,12 @@ namespace Platformer
             // Load background layer textures. For now, all levels must
             // use the same backgrounds and only use the left-most part of them.
             layers = new Layer[3];
-            layers[0] = new Layer(Content, "Backgrounds/Background0_0", 0.2f);
-            layers[1] = new Layer(Content, "Backgrounds/Background0_1", 0.5f);
-            layers[2] = new Layer(Content, "Backgrounds/Background0_2", 0.8f);
+            float scrollRate = 0.2f;
+            for (int i = 0; i < layers.Length; ++i)
+            {
+                layers[i] = new Layer(Content, backgroundSet[i], scrollRate);
+                scrollRate += 0.3f;
+            }
             /*
             for (int i = 0; i < layers.Length; ++i)
             {

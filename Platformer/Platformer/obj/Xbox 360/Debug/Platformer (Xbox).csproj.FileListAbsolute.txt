@@ -286,7 +286,6 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\ResolveAssemb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.exe
 C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\Platformer.pdb
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\Copy of 0.txt
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\blue_corpse.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\yellow_corpse.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\arrow.xnb
@@ -296,3 +295,8 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backg
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_1.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_2.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\spike.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\3.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\6.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\4.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\5.txt
