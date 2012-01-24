@@ -36,9 +36,6 @@ namespace Platformer
         // The layer which entities are drawn on top of.
         private const int EntityLayer = 2;
 
-        // Attacker index
-        public int attacker_id = 0;
-
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
         private List<Spike> spikes = new List<Spike>();
@@ -186,17 +183,8 @@ namespace Platformer
                 }
             }
 
-          
-            
-
-            // Verify that the level has a beginning and an end.
-            //if (Player == null)
             if (PlatformerGame.Players.Count <= 0)
                 throw new NotSupportedException("A level must have a starting point.");
-            if (exit[0] == InvalidPosition)
-                throw new NotSupportedException("A level must have an exit for player 1.");
-            if (exit[1] == InvalidPosition)
-                throw new NotSupportedException("A level must have an exit for player 2.");
         }
 
         /// <summary>
@@ -480,7 +468,7 @@ namespace Platformer
                     // Falling off the bottom of the level kills the player.
                     if (player.BoundingRectangle.Top >= Height * Tile.Height)
                     {
-                        this.attacker_id = (player.PlayerId == 0) ? 1 : 0;
+                        PlatformerGame.attacker_id = (player.PlayerId == 0) ? 1 : 0;
                         OnPlayerKilled(null, player);
                     }
 
@@ -492,7 +480,7 @@ namespace Platformer
                     // exit when they have collected all of the gems.
                     if (game.firstKill && player.IsAlive && player.IsOnGround)
                     {
-                        if (player.PlayerId == attacker_id && player.BoundingRectangle.Contains(exit[attacker_id]))
+                        if (player.PlayerId == PlatformerGame.attacker_id && player.BoundingRectangle.Contains(exit[PlatformerGame.attacker_id]))
                         {
                             OnExitReached();
                         }
@@ -562,7 +550,7 @@ namespace Platformer
                     // Touching a spike instantly kills the player
                     if (spike.BoundingRectangle.Intersects(player.BoundingRectangle))
                     {
-                        this.attacker_id = (player.PlayerId == 0) ? 1 : 0;
+                        PlatformerGame.attacker_id = (player.PlayerId == 0) ? 1 : 0;
                         player.Hit(100, 1.0f, null);
                     }
                 }
@@ -618,7 +606,7 @@ namespace Platformer
         }
         public void StartNewLife(Player player, bool isKilled)
         {
-            float xpos = camera.GetSpawnPoint(attacker_id, game.GraphicsDevice.Viewport);
+            float xpos = camera.GetSpawnPoint(game.GraphicsDevice.Viewport);
             if (xpos > 0.0f)
             {
                 if (isKilled) 
@@ -663,7 +651,7 @@ namespace Platformer
             }
             else
             {
-                camera.ScrollCamera(PlatformerGame.Players[attacker_id].Position, spriteBatch.GraphicsDevice.Viewport);
+                camera.ScrollCamera(PlatformerGame.Players[PlatformerGame.attacker_id].Position, spriteBatch.GraphicsDevice.Viewport);
             }
             
             Matrix cameraTransform = Matrix.CreateTranslation(-camera.CameraPosition, 0.0f, 0.0f);
@@ -683,10 +671,10 @@ namespace Platformer
 
             foreach (Gem gem in gems)
                 gem.Draw(gameTime, spriteBatch);
-            
+
             foreach (Player player in PlatformerGame.Players)
                 player.Draw(gameTime, spriteBatch);
-
+            
             foreach (Enemy enemy in enemies)
                 enemy.Draw(gameTime, spriteBatch);
 

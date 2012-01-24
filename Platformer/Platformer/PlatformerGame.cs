@@ -56,6 +56,9 @@ namespace Platformer
             get { return players; }
         }
         static List<Player> players = new List<Player>();
+        
+        // Attacker index
+        public static int attacker_id = 0;
 
         // When the time remaining is less than the warning time, it blinks on the hud
         private static readonly TimeSpan WarningTime = TimeSpan.FromSeconds(30);
@@ -225,24 +228,28 @@ namespace Platformer
                 {
                    level.StartNewLife(player);
                 }
+                if (level.ReachedExit)
+                {
+                    LoadNextLevel();
+                }
+
                 // Perform the appropriate action to advance the game and
                 // to get the player back to playing.
-                if (!wasContinuePressed && continuePressed)
-                {
+               // if (!wasContinuePressed && continuePressed)
+               // {
                     //if (!player.IsAlive)
                     //{
                     //    level.StartNewLife(player);
                     //}
                    // else if (level.TimeRemaining == TimeSpan.Zero)
                    // {
-                        if (level.ReachedExit)
-                            LoadNextLevel();
+                       
                    //     else
                    //         ReloadCurrentLevel();
                    // }
 
-                }
-                wasContinuePressed = continuePressed;
+                //}
+                //wasContinuePressed = continuePressed;
             }
             
         }
@@ -281,7 +288,21 @@ namespace Platformer
         private void LoadNextLevel()
         {
             // move to the next level
-            levelIndex = (levelIndex + 1) % numberOfLevels;
+            if (level != null)
+            {
+                levelIndex = (PlatformerGame.attacker_id == 0) ? (levelIndex + 1) % numberOfLevels : (levelIndex - 1) % numberOfLevels;
+            }
+            else
+            {
+                levelIndex = (levelIndex + 1) % numberOfLevels;
+            }
+
+            //If the either reaches the last level, remove the other player
+            if (levelIndex == 6 || levelIndex == 0)
+            {
+                int idx = (attacker_id == 0) ? 1 : 0;
+                Players[idx].IsRespawnable = false;
+            }
 
             // Unloads the content for the current level before loading the next one.
             if (level != null)
@@ -373,9 +394,9 @@ namespace Platformer
 
             if (firstKill && (int)level.TimeRemaining.TotalSeconds % 2 == 0)
             {
-                if (level.attacker_id == 0)
+                if (PlatformerGame.attacker_id == 0)
                     spriteBatch.Draw(arrow, rightMargin, Color.Blue);
-                else if (level.attacker_id == 1)
+                else if (PlatformerGame.attacker_id == 1)
                     spriteBatch.Draw(arrow, leftMargin, arrow.Bounds, Color.Yellow, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.FlipHorizontally, 0.0f);
             }
 

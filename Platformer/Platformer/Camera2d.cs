@@ -25,7 +25,7 @@ namespace Platformer
             set { cameraPosition = value; }
         }
 
-        public float GetSpawnPoint(int attacker_id, Viewport viewport)
+        public float GetSpawnPoint(Viewport viewport)
         {
             float results = -1.0f;
 
@@ -40,7 +40,7 @@ namespace Platformer
             float maxcamerapos = Tile.Width * level.Width - viewport.Width;
 
             // player 1
-            if (attacker_id == 0)
+            if (PlatformerGame.attacker_id == 0)
             {
                 results = marginRight + offset;
                 return (results >= Tile.Width * level.Width) ? -1.0f : results;

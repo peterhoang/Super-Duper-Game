@@ -68,6 +68,13 @@ namespace Platformer
         }
         bool isAlive;
 
+        public bool IsRespawnable
+        {
+            get { return isRespawnable; }
+            set { isRespawnable = value; }
+        }
+        bool isRespawnable = true;
+
         // Physics state
         public Vector2 Position
         {
@@ -301,6 +308,8 @@ namespace Platformer
             DisplayOrientation orientation,
             Viewport viewport)
         {
+            if (!IsRespawnable) return;
+
             GetInput(keyboardState, gamePadState, touchState, accelState, orientation);
 
             ApplyPhysics(gameTime);
@@ -714,7 +723,7 @@ namespace Platformer
         }
         public void OnKilled(Player killedBy)
         {
-            level.CurrentLevel.attacker_id = PlatformerGame.Players.IndexOf(killedBy);
+            PlatformerGame.attacker_id = PlatformerGame.Players.IndexOf(killedBy);
           
             isAlive = false;
             pulseRed = false;
@@ -738,6 +747,8 @@ namespace Platformer
         /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (!IsRespawnable) return;
+
             // Flip the sprite to face the way we are moving.
             if (Velocity.X > 0)
                 flip = SpriteEffects.None;
@@ -782,6 +793,7 @@ namespace Platformer
             {
                 level.CurrentLevel.StartNewLife(this, false);
             }
+            
         }
     }
 }
