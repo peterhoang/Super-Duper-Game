@@ -400,12 +400,15 @@ namespace Platformer
 
             // If any digital horizontal movement input is found, override the analog movement.
             if (keyboardState.IsKeyDown(Keys.Left) ||
-                keyboardState.IsKeyDown(Keys.A))
+                keyboardState.IsKeyDown(Keys.A) ||
+                gamePadState.IsButtonDown(Buttons.DPadLeft))
+                
             {
                 movement = -1.0f;
             }
             else if (keyboardState.IsKeyDown(Keys.Right) ||
-                     keyboardState.IsKeyDown(Keys.D))
+                     keyboardState.IsKeyDown(Keys.D) ||
+                     gamePadState.IsButtonDown(Buttons.DPadRight))
             {
                 movement = 1.0f;
             }

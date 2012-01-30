@@ -524,15 +524,6 @@
       <Time>2011-12-16T09:18:54.3241066-05:00</Time>
     </Item>
     <Item>
-      <Source>Sounds\ExitReached.wma</Source>
-      <Name>Sounds\ExitReached</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\ExitReached.xnb</Output>
-      <Time>2011-12-16T09:18:54.3941106-05:00</Time>
-    </Item>
-    <Item>
       <Source>Sounds\GemCollected.wma</Source>
       <Name>Sounds\GemCollected</Name>
       <Importer>WmaImporter</Importer>
@@ -549,43 +540,6 @@
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\MonsterKilled.xnb</Output>
       <Time>2011-12-16T09:18:54.4211121-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\Music.wma</Source>
-      <Name>Sounds\Music</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music.xnb</Output>
-      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music.wma</Extra>
-      <Time>2011-12-16T09:18:54.4461135-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\PlayerFall.wma</Source>
-      <Name>Sounds\PlayerFall</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\PlayerFall.xnb</Output>
-      <Time>2011-12-16T09:18:54.4481137-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\PlayerJump.wma</Source>
-      <Name>Sounds\PlayerJump</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\PlayerJump.xnb</Output>
-      <Time>2011-12-16T09:18:54.4501138-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\PlayerKilled.wma</Source>
-      <Name>Sounds\PlayerKilled</Name>
-      <Importer>WmaImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\PlayerKilled.xnb</Output>
-      <Time>2011-12-16T09:18:54.4511138-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Powerup.wma</Source>
@@ -685,6 +639,259 @@
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\spike.xnb</Output>
       <Time>2012-01-04T15:40:56.79856-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Run.png</Source>
+      <Name>Sprites\Bowser\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Run.xnb</Output>
+      <Time>2012-01-30T10:45:32.6549026-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Fire.png</Source>
+      <Name>Sprites\Bowser\Fire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Fire.xnb</Output>
+      <Time>2012-01-30T12:07:55.7556318-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Idle.png</Source>
+      <Name>Sprites\Bowser\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Idle.xnb</Output>
+      <Time>2012-01-30T12:07:55.7546317-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\firebreath.png</Source>
+      <Name>Sprites\Weapons\firebreath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\firebreath.xnb</Output>
+      <Time>2012-01-30T12:12:30.2473318-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\dominating.wav</Source>
+      <Name>Sounds\UT\dominating</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\dominating.xnb</Output>
+      <Time>2012-01-30T12:23:51.0712727-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\doublekill.wav</Source>
+      <Name>Sounds\UT\doublekill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\doublekill.xnb</Output>
+      <Time>2012-01-30T12:23:51.0722728-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\firstblood.wav</Source>
+      <Name>Sounds\UT\firstblood</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\firstblood.xnb</Output>
+      <Time>2012-01-30T12:23:51.1522774-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\godlike.wav</Source>
+      <Name>Sounds\UT\godlike</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\godlike.xnb</Output>
+      <Time>2012-01-30T12:23:51.1542775-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\headshot.wav</Source>
+      <Name>Sounds\UT\headshot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\headshot.xnb</Output>
+      <Time>2012-01-30T12:23:51.1552775-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\holyshit.wav</Source>
+      <Name>Sounds\UT\holyshit</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\holyshit.xnb</Output>
+      <Time>2012-01-30T12:23:51.1652781-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\killingspree.wav</Source>
+      <Name>Sounds\UT\killingspree</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\killingspree.xnb</Output>
+      <Time>2012-01-30T12:23:51.1662782-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\ludicrouskill.wav</Source>
+      <Name>Sounds\UT\ludicrouskill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ludicrouskill.xnb</Output>
+      <Time>2012-01-30T12:23:51.1682783-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\megakill.wav</Source>
+      <Name>Sounds\UT\megakill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\megakill.xnb</Output>
+      <Time>2012-01-30T12:23:51.1712784-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\monsterkill.wav</Source>
+      <Name>Sounds\UT\monsterkill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\monsterkill.xnb</Output>
+      <Time>2012-01-30T12:23:51.1732786-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\multikill.wav</Source>
+      <Name>Sounds\UT\multikill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\multikill.xnb</Output>
+      <Time>2012-01-30T12:23:51.1742786-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\play.wav</Source>
+      <Name>Sounds\UT\play</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\play.xnb</Output>
+      <Time>2012-01-30T12:23:51.1742786-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\rampage.wav</Source>
+      <Name>Sounds\UT\rampage</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\rampage.xnb</Output>
+      <Time>2012-01-30T12:23:51.1752787-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\ultrakill.wav</Source>
+      <Name>Sounds\UT\ultrakill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ultrakill.xnb</Output>
+      <Time>2012-01-30T12:23:51.1762787-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\unstoppable.wav</Source>
+      <Name>Sounds\UT\unstoppable</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\unstoppable.xnb</Output>
+      <Time>2012-01-30T12:23:51.1772788-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\wickedsick.wav</Source>
+      <Name>Sounds\UT\wickedsick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\wickedsick.xnb</Output>
+      <Time>2012-01-30T12:23:51.1782788-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\jumpSound.wav</Source>
+      <Name>Sounds\jumpSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\jumpSound.xnb</Output>
+      <Time>2012-01-30T17:04:40.3936319-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\pistolShotSound.wav</Source>
+      <Name>Sounds\pistolShotSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\pistolShotSound.xnb</Output>
+      <Time>2012-01-30T17:04:40.3966321-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\rollSound.wav</Source>
+      <Name>Sounds\rollSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\rollSound.xnb</Output>
+      <Time>2012-01-30T17:04:40.3946319-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\shotgunBlastSound.wav</Source>
+      <Name>Sounds\shotgunBlastSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\shotgunBlastSound.xnb</Output>
+      <Time>2012-01-30T17:11:50.9492583-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\killedSound.wav</Source>
+      <Name>Sounds\killedSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\killedSound.xnb</Output>
+      <Time>2012-01-30T17:13:45.0457842-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\fallSound.wav</Source>
+      <Name>Sounds\fallSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\fallSound.xnb</Output>
+      <Time>2012-01-30T17:21:58.7930249-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\hitSound.wav</Source>
+      <Name>Sounds\hitSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\hitSound.xnb</Output>
+      <Time>2012-01-30T17:25:00.8894402-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Music\bgmusic1.mp3</Source>
+      <Name>Sounds\Music\bgmusic1</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.xnb</Output>
+      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.wma</Extra>
+      <Time>2012-01-30T16:25:39.3237303-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
