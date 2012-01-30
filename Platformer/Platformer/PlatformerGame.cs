@@ -10,6 +10,7 @@
 using System;
 using System.IO;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
@@ -104,6 +105,21 @@ namespace Platformer
         bool startExplosionEffect = false;
         // ************************** Particle System Stuff **********************************
 
+        // ************************************ Sounds ***************************************
+        private static SoundEffect firstBloodSound;
+        private static SoundEffect dominatingSound;
+        private static SoundEffect doublekillSound;
+        private static SoundEffect godlikeSound;
+        private static SoundEffect holyshitSound;
+        private static SoundEffect killingspreeSound;
+        private static SoundEffect megakillSound;
+        private static SoundEffect monsterKillSound;
+        private static SoundEffect multikillSound;
+        private static SoundEffect ultrakillSound;
+        private static SoundEffect unstoppableSound;
+        private static SoundEffect wickedsickSound;
+        // ***********************************************************************************
+
 
         public PlatformerGame()
         {
@@ -154,6 +170,20 @@ namespace Platformer
             diedOverlay = Content.Load<Texture2D>("Overlays/you_died");
             arrow = Content.Load<Texture2D>("Sprites/arrow");
 
+            // Load sounds
+            firstBloodSound = Content.Load<SoundEffect>("Sounds/UT/firstblood");
+            dominatingSound = Content.Load<SoundEffect>("Sounds/UT/dominating");
+            doublekillSound = Content.Load<SoundEffect>("Sounds/UT/doublekill");
+            godlikeSound = Content.Load<SoundEffect>("Sounds/UT/godlike");
+            holyshitSound = Content.Load<SoundEffect>("Sounds/UT/holyshit");
+            killingspreeSound = Content.Load<SoundEffect>("Sounds/UT/killingspree");
+            megakillSound = Content.Load<SoundEffect>("Sounds/UT/megakill");
+            monsterKillSound = Content.Load<SoundEffect>("Sounds/UT/monsterkill");
+            multikillSound = Content.Load<SoundEffect>("Sounds/UT/multikill");
+            ultrakillSound = Content.Load<SoundEffect>("Sounds/UT/ultrakill");
+            unstoppableSound = Content.Load<SoundEffect>("Sounds/UT/unstoppable");
+            wickedsickSound = Content.Load<SoundEffect>("Sounds/UT/wickedsick");
+
             //Known issue that you get exceptions if you use Media PLayer while connected to your PC
             //See http://social.msdn.microsoft.com/Forums/en/windowsphone7series/thread/c8a243d2-d360-46b1-96bd-62b1ef268c66
             //Which means its impossible to test this from VS.
@@ -161,7 +191,7 @@ namespace Platformer
             try
             {
                 MediaPlayer.IsRepeating = true;
-                MediaPlayer.Play(Content.Load<Song>("Sounds/Music"));
+                MediaPlayer.Play(Content.Load<Song>("Sounds/Music/bgmusic1"));
             }
             catch { }
 
@@ -308,12 +338,14 @@ namespace Platformer
                     break;
             }
 
-            //If the either reaches the last level, remove the other player
+            //If the either reaches the last level, remove the other player  
             if (levelIndex == 6 || levelIndex == 0)
             {
                 int idx = (attacker_id == 0) ? 1 : 0;
                 Players[idx].IsRespawnable = false;
+                Players[idx].Reset(Vector2.Zero);
             }
+      
 
             // Unloads the content for the current level before loading the next one.
             if (level != null)
@@ -362,7 +394,8 @@ namespace Platformer
             if (player.Health <= 0.0f)
             {
                 bloodSprayUp.AddParticles(new Vector2(player.Position.X, player.Position.Y+10));
-                firstKill = true;
+                if (!firstKill) firstBloodSound.Play();
+                firstKill = true;                
             }
      
         }
@@ -486,7 +519,62 @@ namespace Platformer
         {
             return min + (float)random.NextDouble() * (max - min);
         }
+        public static int RandomBetween(int min, int max)
+        {
+            return random.Next(min, max);
+        }
 
+        public static void PlayUTSounds(int killcount)
+        {
+            if (killcount == 2)
+            {
+                doublekillSound.Play();
+            }
+            else if (killcount == 3)
+            {
+                multikillSound.Play();
+            }
+            else if (killcount >= 4 && killcount < 10)
+            {
+                int rand = RandomBetween(1, 100);
+                if (rand > 0 && rand < 25)
+                {
+                    holyshitSound.Play();
+                }
+                else if (rand >= 25 && rand < 50)
+                {
+                    dominatingSound.Play();
+                }
+                else if (rand >= 50 && rand < 75)
+                {
+                    killingspreeSound.Play();
+                }
+                else if (rand >= 75)
+                {
+                    megakillSound.Play();
+                }
+            }
+            else if (killcount >= 10)
+            {
+                int rand = RandomBetween(1, 100);
+                if (rand > 0 && rand < 25)
+                {
+                    godlikeSound.Play();
+                }
+                else if (rand >= 25 && rand < 50)
+                {
+                    unstoppableSound.Play();
+                }
+                else if (rand >= 50 && rand < 75)
+                {
+                    monsterKillSound.Play();
+                }
+                else if (rand >= 75)
+                {
+                    ultrakillSound.Play();
+                }
+            }
+        }
         #endregion
     }
 }

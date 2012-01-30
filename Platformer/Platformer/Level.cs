@@ -86,7 +86,9 @@ namespace Platformer
         }
         ContentManager content;
 
-        private SoundEffect exitReachedSound;
+        //Sounds
+        private SoundEffect fallingSound;
+        
 
         #region Loading
 
@@ -131,7 +133,7 @@ namespace Platformer
              * */
 
             // Load sounds.
-            exitReachedSound = Content.Load<SoundEffect>("Sounds/ExitReached");
+            fallingSound = Content.Load<SoundEffect>("Sounds/fallSound");
 
             camera = new Camera2d(this, 0.0f);
 
@@ -237,6 +239,8 @@ namespace Platformer
                     return LoadEnemyTile(x, y, "MonsterC");
                 case 'D':
                     return LoadEnemyTile(x, y, "MonsterD");
+                case 'E':
+                    return LoadBowserTile(x, y, "Bowser");
 
                 // Platform block
                 case '~':
@@ -346,6 +350,17 @@ namespace Platformer
         /// Instantiates an enemy and puts him in the level.
         /// </summary>
         private Tile LoadEnemyTile(int x, int y, string spriteSet)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            enemies.Add(new Enemy(this, position, spriteSet));
+
+            return new Tile(null, TileCollision.Passable);
+        }
+
+        /// <summary>
+        /// Instantiates a Bowser and puts him in the level.
+        /// </summary>
+        private Tile LoadBowserTile(int x, int y, string spriteSet)
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
             enemies.Add(new Enemy(this, position, spriteSet));
@@ -472,6 +487,7 @@ namespace Platformer
                     if (player.BoundingRectangle.Top >= Height * Tile.Height)
                     {
                         PlatformerGame.attacker_id = (player.PlayerId == 0) ? 1 : 0;
+                        fallingSound.Play();
                         OnPlayerKilled(null, player);
                     }
 
@@ -594,7 +610,6 @@ namespace Platformer
             foreach (Player player in PlatformerGame.Players)
             {
                 player.OnReachedExit();
-                exitReachedSound.Play();
                 reachedExit = true;
             }
         }

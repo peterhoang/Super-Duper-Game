@@ -51,11 +51,6 @@ namespace Platformer
         }
         private float gotHitFrom;
 
-        // Sounds
-        private SoundEffect killedSound;
-        private SoundEffect jumpSound;
-        private SoundEffect fallSound;
-
         public PlatformerGame Level
         {
             get { return level; }
@@ -91,6 +86,8 @@ namespace Platformer
             set { velocity = value; }
         }
         Vector2 velocity;
+
+        public int KillCount { get; set; }
 
         // Constants for controling horizontal movement
         private const float MoveAcceleration = 12000.0f;
@@ -184,6 +181,12 @@ namespace Platformer
         private float pulseRedTime;
         private const float MAX_PULSE_TIME = 0.4f;
 
+        //Sounds
+        private SoundEffect killedSound;
+        private SoundEffect jumpSound;
+        private SoundEffect rollSound;
+        private SoundEffect hitSound;
+
         private GamePadState old_gamePadState = new GamePadState();
 
         private Rectangle localBounds;
@@ -230,17 +233,17 @@ namespace Platformer
             dieAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_die"), 0.1f, false);
             rollAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/Player/cop_roll2"), 0.1f, false);
 
+            killedSound = Level.Content.Load<SoundEffect>("Sounds/killedSound");
+            jumpSound = Level.Content.Load<SoundEffect>("Sounds/jumpSound");
+            rollSound = Level.Content.Load<SoundEffect>("Sounds/rollSound");
+            hitSound = Level.Content.Load<SoundEffect>("Sounds/hitSound");           
+
             // Calculate bounds within texture size.            
             int width = (int)(idleAnimation.FrameWidth * 0.4);
             int left = (idleAnimation.FrameWidth - width) / 2;
             int height = (int)(idleAnimation.FrameWidth * 0.8);
             int top = idleAnimation.FrameHeight - height;
             localBounds = new Rectangle(left, top, width, height);
-
-            // Load sounds.            
-            killedSound = Level.Content.Load<SoundEffect>("Sounds/PlayerKilled");
-            jumpSound = Level.Content.Load<SoundEffect>("Sounds/PlayerJump");
-            fallSound = Level.Content.Load<SoundEffect>("Sounds/PlayerFall");
 
             m_handgun = new HandGun(level, position, this);
             m_shotgun = new Shotgun(level, position, this);
@@ -569,8 +572,10 @@ namespace Platformer
                 // Begin or continue a roll
                 if ((!wasRolling && IsOnGround) || rollTime > 0.0f)
                 {
-                    //if (rollTime == 0.0f)
-                       // jumpSound.Play();
+                    if (rollTime == 0.0f)
+                    {
+                        rollSound.Play(0.3f, 0.0f, 0.0f);
+                    }
 
                     rollTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
                     sprite.PlayAnimation(rollAnimation);
@@ -693,6 +698,8 @@ namespace Platformer
 
             gotHitFrom = hitFrom;
 
+            hitSound.Play();
+
             OnHit.Invoke(this, new EventArgs());
            
             if (this.health <= 0)
@@ -729,10 +736,19 @@ namespace Platformer
             pulseRed = false;
             pulseRedTime = 0.0f;
             killedSound.Play();
-            
+
+            this.KillCount = 0;
+            killedBy.KillCount += 1;
+
             gun.Reset();
             sprite.PlayAnimation(dieAnimation);
+
+            //play UT sounds 
+            PlatformerGame.PlayUTSounds(killedBy.KillCount);
+
         }
+
+        
 
         /// <summary>
         /// Called when this player reaches the level's exit.
@@ -793,7 +809,7 @@ namespace Platformer
             {
                 level.CurrentLevel.StartNewLife(this, false);
             }
-            
+
         }
     }
 }

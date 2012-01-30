@@ -49,6 +49,8 @@ namespace Platformer
         {
         }
 
+        protected bool isShooting;
+
         public abstract void Shoot();
 
         public abstract void Reset();

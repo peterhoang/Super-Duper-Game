@@ -18,7 +18,8 @@ namespace Platformer
         private Animation muzzleFire;
         private AnimationPlayer muzzle;
         private float muzzleAnimationTimer;
-        private bool isShooting;
+
+        SoundEffect shotSound;
 
         private const int MAX_SHELLS = 2;
         public List<ShotgunShell> Shells
@@ -51,6 +52,7 @@ namespace Platformer
             // Load animated textures.
             baseGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun"), 0.1f, false);
             muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun_muzzle"), 0.01f, false);
+            shotSound = Level.Content.Load<SoundEffect>("Sounds/shotgunBlastSound");
         }
 
         public override void Reset()
@@ -73,6 +75,7 @@ namespace Platformer
                     shell.Flip = Flip;
                     shell.Player = _player;
                     isShooting = true;
+                    shotSound.Play(0.7f, 0.0f, 0.0f);
                     break;
                 }
             }

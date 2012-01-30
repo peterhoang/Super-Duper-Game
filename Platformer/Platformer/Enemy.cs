@@ -16,7 +16,7 @@ namespace Platformer
     /// <summary>
     /// Facing direction along the X axis.
     /// </summary>
-    enum FaceDirection
+    public enum FaceDirection
     {
         Left = -1,
         Right = 1,
@@ -42,7 +42,7 @@ namespace Platformer
         }
         Vector2 position;
 
-        private Rectangle localBounds;
+        protected Rectangle localBounds;
         /// <summary>
         /// Gets a rectangle which bounds this enemy in world space.
         /// </summary>
@@ -58,29 +58,29 @@ namespace Platformer
         }
 
         // Animations
-        private Animation runAnimation;
-        private Animation idleAnimation;
-        private AnimationPlayer sprite;
+        protected Animation runAnimation;
+        protected Animation idleAnimation;
+        protected AnimationPlayer sprite;
 
         /// <summary>
         /// The direction this enemy is facing and moving along the X axis.
         /// </summary>
-        private FaceDirection direction = FaceDirection.Left;
+        protected FaceDirection direction = FaceDirection.Left;
 
         /// <summary>
         /// How long this enemy has been waiting before turning around.
         /// </summary>
-        private float waitTime;
+        protected float waitTime;
 
         /// <summary>
         /// How long to wait before turning around.
         /// </summary>
-        private const float MaxWaitTime = 0.5f;
+        protected const float MaxWaitTime = 0.5f;
 
         /// <summary>
         /// The speed at which this enemy moves along the X axis.
         /// </summary>
-        private const float MoveSpeed = 64.0f;
+        protected const float MoveSpeed = 64.0f;
 
         /// <summary>
         /// Constructs a new Enemy.

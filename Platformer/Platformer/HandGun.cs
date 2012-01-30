@@ -20,6 +20,8 @@ namespace Platformer
         private Animation baseGraphic;
         private AnimationPlayer sprite;
 
+        SoundEffect shotSound;
+
         // graphic of the muzzle 
         private Animation muzzleFire;
         private AnimationPlayer muzzle;
@@ -31,8 +33,6 @@ namespace Platformer
             get { return _bullets; }
         }
         protected List<HandgunBullet> _bullets;
-
-        private bool isShooting;
 
         public HandGun(PlatformerGame level, Vector2 position, Player player)
         {
@@ -58,6 +58,7 @@ namespace Platformer
             // Load animated textures.
             baseGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun"), 0.1f, false);
             muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun_muzzle"), 0.03f, false);
+            shotSound = Level.Content.Load<SoundEffect>("Sounds/pistolShotSound");
         }
 
         public override void Reset()
@@ -80,6 +81,7 @@ namespace Platformer
                     bullet.Flip = Flip;
                     bullet.Player = _player;
                     isShooting = true;
+                    shotSound.Play();
                     break;
                 }
             }
