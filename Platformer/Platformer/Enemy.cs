@@ -13,6 +13,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Platformer
 {
+
     /// <summary>
     /// Facing direction along the X axis.
     /// </summary>
@@ -31,7 +32,7 @@ namespace Platformer
         {
             get { return level; }
         }
-        Level level;
+        protected Level level;
 
         /// <summary>
         /// Position in world space of the bottom center of this enemy.
@@ -40,7 +41,7 @@ namespace Platformer
         {
             get { return position; }
         }
-        Vector2 position;
+        protected Vector2 position;
 
         protected Rectangle localBounds;
         /// <summary>
@@ -96,7 +97,7 @@ namespace Platformer
         /// <summary>
         /// Loads a particular enemy sprite sheet and sounds.
         /// </summary>
-        public void LoadContent(string spriteSet)
+        public virtual void LoadContent(string spriteSet)
         {
             // Load animations.
             spriteSet = "Sprites/" + spriteSet + "/";
@@ -116,7 +117,7 @@ namespace Platformer
         /// <summary>
         /// Paces back and forth along a platform, waiting at either end.
         /// </summary>
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
