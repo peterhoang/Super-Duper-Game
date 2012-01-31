@@ -98,6 +98,9 @@ Content\Sounds\shotgunBlastSound.xnb
 Content\Sounds\killedSound.xnb
 Content\Sounds\fallSound.xnb
 Content\Sounds\hitSound.xnb
+Content\Backgrounds\Background1_0.xnb
+Content\Backgrounds\Background1_1.xnb
+Content\Backgrounds\Background1_2.xnb
 Content\Levels\3.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

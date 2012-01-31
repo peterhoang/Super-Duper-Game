@@ -188,3 +188,6 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\sho
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\killedSound.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\fallSound.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\hitSound.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_0.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_1.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_2.xnb

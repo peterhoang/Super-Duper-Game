@@ -893,6 +893,33 @@
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\hitSound.xnb</Output>
       <Time>2012-01-30T17:25:00.8894402-05:00</Time>
     </Item>
+    <Item>
+      <Source>Backgrounds\Background1_0.png</Source>
+      <Name>Backgrounds\Background1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_0.xnb</Output>
+      <Time>2012-01-31T12:41:40.9767178-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background1_1.png</Source>
+      <Name>Backgrounds\Background1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_1.xnb</Output>
+      <Time>2012-01-31T12:41:40.9787179-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background1_2.png</Source>
+      <Name>Backgrounds\Background1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_2.xnb</Output>
+      <Time>2012-01-31T12:41:40.9777179-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2FDB7EF3-D3C4-47A3-8E75-C901A05B8574}</ContentProjectGUID>

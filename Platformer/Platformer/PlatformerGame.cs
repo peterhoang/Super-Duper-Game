@@ -331,6 +331,12 @@ namespace Platformer
             string[] backgroundSet = new string[3] { "Backgrounds/Background0_0", "Backgrounds/Background0_1", "Backgrounds/Background0_2" };
             switch (levelIndex)
             {
+                case 2:
+                case 4:
+                    backgroundSet[0] = "Backgrounds/Background1_0";
+                    backgroundSet[1] = "Backgrounds/Background1_1";
+                    backgroundSet[2] = "Backgrounds/Background1_2";
+                    break;
                 case 3:
                     backgroundSet[0] = "Backgrounds/Background0_0";
                     backgroundSet[1] = "Backgrounds/Background0_1";

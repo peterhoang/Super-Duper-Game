@@ -252,10 +252,39 @@ namespace Platformer
 
                 // Player 1 start point
                 case '1':
-                    return LoadStartTile(x, y, 0);
+                    if (PlatformerGame.attacker_id == 0 && game.firstKill)
+                        return LoadStartTile(x, y, 0);
+                    else
+                        return new Tile(null, TileCollision.Passable);
                 // Player 2 start point
                 case '2':
-                    return LoadStartTile(x, y, 1);
+                    if (PlatformerGame.attacker_id == 0 && game.firstKill)
+                        return LoadStartTile(x, y, 1);
+                    else
+                        return new Tile(null, TileCollision.Passable);
+                // Player 1 alternative start point
+                case '3':
+                    if (PlatformerGame.attacker_id == 1 && game.firstKill)
+                        return LoadStartTile(x, y, 0);
+                    else
+                        return new Tile(null, TileCollision.Passable);
+                // Player 2 alternative start point
+                case '4':
+                    if (PlatformerGame.attacker_id == 1 && game.firstKill)
+                        return LoadStartTile(x, y, 1);
+                    else
+                        return new Tile(null, TileCollision.Passable);
+                case '5':
+                    if (!game.firstKill)
+                        return LoadStartTile(x, y, 0);
+                    else
+                        return new Tile(null, TileCollision.Passable);
+                case '6':
+                    if (!game.firstKill)
+                        return LoadStartTile(x, y, 1);
+                    else
+                        return new Tile(null, TileCollision.Passable);
+
 
                 case '^':
                     return LoadSpikeTile(x, y);

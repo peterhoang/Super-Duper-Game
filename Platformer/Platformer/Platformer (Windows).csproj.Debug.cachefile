@@ -66,12 +66,8 @@ Content\Backgrounds\Background0_2.xnb
 Content\Tiles\block-87.xnb
 Content\Tiles\spike.xnb
 Content\Fonts\Hud.xnb
-Content\Sounds\ExitReached.xnb
 Content\Sounds\GemCollected.xnb
 Content\Sounds\MonsterKilled.xnb
-Content\Sounds\PlayerFall.xnb
-Content\Sounds\PlayerJump.xnb
-Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
 Content\Sprites\Bowser\Fire.xnb
 Content\Sprites\Bowser\Run.xnb
@@ -93,7 +89,6 @@ Content\Sounds\UT\rampage.xnb
 Content\Sounds\UT\ultrakill.xnb
 Content\Sounds\UT\unstoppable.xnb
 Content\Sounds\UT\wickedsick.xnb
-Content\Sounds\Music\Music.xnb
 Content\Sounds\Music\bgmusic1.xnb
 Content\Sounds\jumpSound.xnb
 Content\Sounds\pistolShotSound.xnb
@@ -102,7 +97,9 @@ Content\Sounds\shotgunBlastSound.xnb
 Content\Sounds\killedSound.xnb
 Content\Sounds\fallSound.xnb
 Content\Sounds\hitSound.xnb
-Content\Sounds\Music\Music.wma
+Content\Backgrounds\Background1_0.xnb
+Content\Backgrounds\Background1_1.xnb
+Content\Backgrounds\Background1_2.xnb
 Content\Sounds\Music\bgmusic1.wma
 Content\Levels\3.txt
 Content\Levels\2.txt
