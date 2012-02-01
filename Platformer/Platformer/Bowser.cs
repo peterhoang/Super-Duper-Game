@@ -89,7 +89,7 @@ namespace Platformer
             if (waitTime >= MaxWaitTime)
             {
                 int rand = PlatformerGame.RandomBetween(1, 100);
-                if (rand < 50)
+                if (rand < 75)
                 {
                     this.State = EntityState.RUNNING;
                 }
@@ -97,12 +97,18 @@ namespace Platformer
                 {
                     this.State = EntityState.JUMPING;
                 }
-                if (rand > 75)
-                {
-                    direction = (FaceDirection)(-(int)direction);
-                    velocity.X = 0.0f;
-                }
                 waitTime = 0.0f;
+            }
+
+            // pursue the attacker
+            Player player = PlatformerGame.Players[PlatformerGame.attacker_id];
+            if (this.position.X - player.Position.X < 0)
+            {
+                direction = FaceDirection.Right;
+            }
+            else
+            {
+                direction = FaceDirection.Left;
             }
 
             
