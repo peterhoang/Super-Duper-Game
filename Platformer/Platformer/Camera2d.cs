@@ -27,7 +27,7 @@ namespace Platformer
 
         public float GetSpawnPoint(Viewport viewport)
         {
-            float results = -1.0f;
+            float results = -999.9f;
 
             // Calculate the edges of the screen.
             float marginWidth = viewport.Width * ViewMargin;
@@ -43,13 +43,13 @@ namespace Platformer
             if (PlatformerGame.attacker_id == 0)
             {
                 results = marginRight + offset;
-                return (results >= Tile.Width * level.Width) ? -1.0f : results;
+                return (results >= Tile.Width * level.Width) ? -999.9f : results;
             }
             // player 2
             else
             {
                 results = marginLeft - offset;
-                return (results <= 0.0f) ? -1.0f : results;
+                return (results <= 0.0f) ? -999.9f : results;
             }
         }
 

@@ -262,7 +262,7 @@ namespace Platformer
                 {
                     LoadNextLevel();
                 }
-
+                
                 // Perform the appropriate action to advance the game and
                 // to get the player back to playing.
                // if (!wasContinuePressed && continuePressed)
@@ -280,6 +280,13 @@ namespace Platformer
 
                 //}
                 //wasContinuePressed = continuePressed;
+            }
+
+            //check if both player is in the "no-man lands"
+            if (players[0].Position.X == -999.9f && players[1].Position.X == -999.9f)
+            {
+                //players[attacker_id].Reset(Vector2.Zero);
+                level.StartNewLife(players[attacker_id]);
             }
             
         }
@@ -359,6 +366,7 @@ namespace Platformer
                 foreach (Player player in PlatformerGame.Players)
                 {
                     player.OnHit -= player_OnHit;
+                    player.IsRespawnable = true;
                 }
                 level.Dispose();
             }
@@ -540,9 +548,9 @@ namespace Platformer
             {
                 multikillSound.Play();
             }
-            else if (killcount >= 4 && killcount < 10)
+            else if (killcount >= 4)
             {
-                int rand = RandomBetween(1, 100);
+                int rand = RandomBetween(1, 200);
                 if (rand > 0 && rand < 25)
                 {
                     holyshitSound.Play();
@@ -555,27 +563,23 @@ namespace Platformer
                 {
                     killingspreeSound.Play();
                 }
-                else if (rand >= 75)
+                else if (rand >= 75 && rand < 100)
                 {
                     megakillSound.Play();
                 }
-            }
-            else if (killcount >= 10)
-            {
-                int rand = RandomBetween(1, 100);
-                if (rand > 0 && rand < 25)
+                else if (rand >= 100 && rand < 125)
                 {
                     godlikeSound.Play();
                 }
-                else if (rand >= 25 && rand < 50)
+                else if (rand >= 125 && rand < 150)
                 {
                     unstoppableSound.Play();
                 }
-                else if (rand >= 50 && rand < 75)
+                else if (rand >= 150 && rand < 175)
                 {
                     monsterKillSound.Play();
                 }
-                else if (rand >= 75)
+                else if (rand >= 175)
                 {
                     ultrakillSound.Play();
                 }

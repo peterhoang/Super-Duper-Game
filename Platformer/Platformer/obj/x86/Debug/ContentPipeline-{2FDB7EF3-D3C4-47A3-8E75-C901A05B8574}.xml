@@ -656,7 +656,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Run.xnb</Output>
-      <Time>2012-01-30T10:45:32.6549026-05:00</Time>
+      <Time>2012-02-01T10:48:37.8473624-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Bowser\Idle.png</Source>
@@ -665,7 +665,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Idle.xnb</Output>
-      <Time>2012-01-30T12:07:55.7546317-05:00</Time>
+      <Time>2012-02-01T12:18:35.6831009-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\firebreath.png</Source>
@@ -919,6 +919,24 @@
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_2.xnb</Output>
       <Time>2012-01-31T12:41:40.9777179-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-87-red.png</Source>
+      <Name>Tiles\block-87-red</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87-red.xnb</Output>
+      <Time>2012-01-31T15:15:40.1000883-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Jump.png</Source>
+      <Name>Sprites\Bowser\Jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Jump.xnb</Output>
+      <Time>2012-02-01T10:48:40.1014913-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

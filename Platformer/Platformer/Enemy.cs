@@ -156,7 +156,7 @@ namespace Platformer
         /// <summary>
         /// Draws the animated enemy.
         /// </summary>
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             foreach (Player player in PlatformerGame.Players)
             {

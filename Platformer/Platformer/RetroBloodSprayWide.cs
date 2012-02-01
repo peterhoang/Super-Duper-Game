@@ -47,15 +47,15 @@ namespace ParticleEngine
 
             // doesn't matter what these values are set to, acceleration is tweaked in
             // the override of InitializeParticle.
-            minAcceleration = -100;
-            maxAcceleration = 300;
+            minAcceleration = 0;
+            maxAcceleration = -100;
 
             // explosions should be relatively short lived
             minLifetime = 1.0f;
             maxLifetime = 1.5f;
 
-            minScale = .1f;
-            maxScale = .3f;
+            minScale = 0.9f;
+            maxScale = 0.5f;
 
             // we need to reduce the number of particles on Windows Phone in order to keep
             // a good framerate
@@ -63,15 +63,15 @@ namespace ParticleEngine
             minNumParticles = 10;
             maxNumParticles = 12;
 #else
-            minNumParticles = 150;
-            maxNumParticles = 200;
+            minNumParticles = 20;
+            maxNumParticles = 50;
 #endif
 
             minRotationSpeed = -MathHelper.PiOver4;
             maxRotationSpeed = MathHelper.PiOver4;
 
             // additive blending is very good at creating fiery effects.
-			blendState = BlendState.AlphaBlend;
+            blendState = BlendState.Additive;
 
             DrawOrder = AdditiveDrawOrder;
         }
@@ -86,7 +86,7 @@ namespace ParticleEngine
             // Point the particles somewhere between 80 and 100 degrees.
             // tweak this to make the smoke have more or less spread.
             float radians = PlatformerGame.RandomBetween(
-                MathHelper.ToRadians(80), MathHelper.ToRadians(100));
+                MathHelper.ToRadians(50), MathHelper.ToRadians(130));
 
             Vector2 direction = Vector2.Zero;
             // from the unit circle, cosine is the x coordinate and sine is the
@@ -101,7 +101,7 @@ namespace ParticleEngine
         {
             base.InitializeParticle(p, where);
 
-            p.Acceleration.Y += 100;
+            p.Acceleration.Y += 200;
         }
     }
 }

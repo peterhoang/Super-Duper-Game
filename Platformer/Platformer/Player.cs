@@ -723,32 +723,27 @@ namespace Platformer
         /// </param>
         public void OnKilled()
         {
-            isAlive = false;
-            pulseRed = false;
-            pulseRedTime = 0.0f;
-            killedSound.Play();
-
-            gun.Reset();
+            onKilledReset();
             sprite.PlayAnimation(dieAnimation);
         }
         public void OnKilled(Player killedBy)
         {
+            onKilledReset();
             PlatformerGame.attacker_id = PlatformerGame.Players.IndexOf(killedBy);
-          
-            isAlive = false;
-            pulseRed = false;
-            pulseRedTime = 0.0f;
-            killedSound.Play();
-
-            this.KillCount = 0;
             killedBy.KillCount += 1;
-
-            gun.Reset();
             sprite.PlayAnimation(dieAnimation);
 
             //play UT sounds 
             PlatformerGame.PlayUTSounds(killedBy.KillCount);
-
+        }
+        private void onKilledReset()
+        {
+            isAlive = false;
+            pulseRed = false;
+            pulseRedTime = 0.0f;
+            killedSound.Play();
+            this.KillCount = 0;
+            gun.Reset();
         }
 
         

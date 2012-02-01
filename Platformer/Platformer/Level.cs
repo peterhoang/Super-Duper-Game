@@ -51,6 +51,11 @@ namespace Platformer
 
         // Level game state.
         private Random random = new Random(354668); // Arbitrary, but constant seed
+
+        public PlatformerGame Game
+        {
+            get { return game; }
+        }
         private PlatformerGame game;
 
         public Camera2d Camera
@@ -392,7 +397,7 @@ namespace Platformer
         private Tile LoadBowserTile(int x, int y, string spriteSet)
         {
             Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
-            enemies.Add(new Enemy(this, position, spriteSet));
+            enemies.Add(new Bowser(this, position, spriteSet));
 
             return new Tile(null, TileCollision.Passable);
         }
@@ -517,7 +522,8 @@ namespace Platformer
                     {
                         PlatformerGame.attacker_id = (player.PlayerId == 0) ? 1 : 0;
                         fallingSound.Play();
-                        OnPlayerKilled(null, player);
+                        player.OnKilled();
+                        player.Reset();
                     }
 
                     UpdateEnemies(gameTime);
@@ -574,7 +580,7 @@ namespace Platformer
             foreach (Enemy enemy in enemies)
             {
                 enemy.Update(gameTime);
-
+                /*
                 foreach (Player player in PlatformerGame.Players)
                 {
                     // Touching an enemy instantly kills the player
@@ -583,6 +589,7 @@ namespace Platformer
                         OnPlayerKilled(enemy, player);
                     }
                 }
+                 * */
             }
         }
 
@@ -618,20 +625,6 @@ namespace Platformer
         }
 
         /// <summary>
-        /// Called when the player is killed.
-        /// </summary>
-        /// <param name="killedBy">
-        /// The enemy who killed the player. This is null if the player was not killed by an
-        /// enemy, such as when a player falls into a hole.
-        /// </param>
-        private void OnPlayerKilled(Enemy killedBy, Player player)
-        {
-            player.OnKilled();
-            player.Reset();
-        }
-       
-
-        /// <summary>
         /// Called when the player reaches the level's exit.
         /// </summary>
         private void OnExitReached()
@@ -654,12 +647,20 @@ namespace Platformer
         public void StartNewLife(Player player, bool isKilled)
         {
             float xpos = camera.GetSpawnPoint(game.GraphicsDevice.Viewport);
+            if (isKilled)
+            {
+                SpawnCorpse(player.Position, player.Flip, PlatformerGame.Players.IndexOf(player));
+            }
             if (xpos > 0.0f)
             {
-                if (isKilled) 
-                    SpawnCorpse(player.Position, player.Flip, PlatformerGame.Players.IndexOf(player));
+                //player.IsRespawnable = true;
                 float ypos = player.Position.Y - 200.0f;
                 player.Reset(new Vector2(xpos, ypos));
+            }
+            else if (xpos == -999.9f)
+            {
+                //player.IsRespawnable = false;
+                player.Reset(new Vector2(xpos, 0.0f));
             }
         }
 
