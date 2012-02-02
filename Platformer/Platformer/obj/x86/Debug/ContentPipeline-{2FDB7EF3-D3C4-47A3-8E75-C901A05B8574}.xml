@@ -900,7 +900,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_0.xnb</Output>
-      <Time>2012-01-31T12:41:40.9767178-05:00</Time>
+      <Time>2012-02-02T11:23:27.1378108-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background1_1.png</Source>
@@ -909,7 +909,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_1.xnb</Output>
-      <Time>2012-01-31T12:41:40.9787179-05:00</Time>
+      <Time>2012-02-02T11:23:27.1298103-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background1_2.png</Source>
@@ -918,7 +918,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_2.xnb</Output>
-      <Time>2012-01-31T12:41:40.9777179-05:00</Time>
+      <Time>2012-02-02T11:23:27.1218099-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\block-87-red.png</Source>
@@ -937,6 +937,60 @@
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Jump.xnb</Output>
       <Time>2012-02-01T10:48:40.1014913-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2_0.png</Source>
+      <Name>Backgrounds\Background2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_0.xnb</Output>
+      <Time>2012-02-02T11:36:53.7469462-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2_1.png</Source>
+      <Name>Backgrounds\Background2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_1.xnb</Output>
+      <Time>2012-02-02T11:36:53.7559467-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2_2.png</Source>
+      <Name>Backgrounds\Background2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_2.xnb</Output>
+      <Time>2012-02-02T11:36:53.7509464-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-16.png</Source>
+      <Name>Tiles\block-16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-16.xnb</Output>
+      <Time>2012-02-02T11:39:42.5025985-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-3.png</Source>
+      <Name>Tiles\block-3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-3.xnb</Output>
+      <Time>2012-02-02T11:44:15.9452385-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\greyblock1.png</Source>
+      <Name>Tiles\greyblock1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\greyblock1.xnb</Output>
+      <Time>2012-02-02T11:45:06.0701055-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

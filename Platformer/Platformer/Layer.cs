@@ -23,25 +23,37 @@ namespace Platformer
                 Textures[i] = content.Load<Texture2D>(basePath + "_" + i);
             }
              * */
-            Background = content.Load<Texture2D>(basePath);
+            if (basePath != null)
+                Background = content.Load<Texture2D>(basePath);
+            else
+                Background = null;
+
             ScrollRate = scrollRate;
         }
 
         public void Draw(SpriteBatch spriteBatch, float cameraPosition)
         {
-            // Assume each segment is the same width
-            int segmentWidth = Background.Width;
+            if (Background == null)
+            {
+                spriteBatch.GraphicsDevice.Clear(Color.Black);
+            }
+            else
+            {
 
-            // Calculate which segments to draw and how much to offset them
-            float x = cameraPosition * ScrollRate;
-            int leftSegment = (int)Math.Floor(x / segmentWidth);
-            int rightSegment = leftSegment + 1;
-            x = (x / segmentWidth - leftSegment) * -segmentWidth;
+                // Assume each segment is the same width
+                int segmentWidth = Background.Width;
 
-            spriteBatch.Draw(Background, new Vector2(x, 0.0f), Color.White);
-            spriteBatch.Draw(Background, new Vector2(x + segmentWidth, 0.0f), Color.White);
-            //spriteBatch.Draw(Textures[leftSegment % Textures.Length], new Vector2(x, 0.0f), Color.White);
-            //spriteBatch.Draw(Textures[rightSegment % Textures.Length], new Vector2(x + segmentWidth, 0.0f), Color.White);
+                // Calculate which segments to draw and how much to offset them
+                float x = cameraPosition * ScrollRate;
+                int leftSegment = (int)Math.Floor(x / segmentWidth);
+                int rightSegment = leftSegment + 1;
+                x = (x / segmentWidth - leftSegment) * -segmentWidth;
+
+                spriteBatch.Draw(Background, new Vector2(x, 0.0f), Color.White);
+                spriteBatch.Draw(Background, new Vector2(x + segmentWidth, 0.0f), Color.White);
+                //spriteBatch.Draw(Textures[leftSegment % Textures.Length], new Vector2(x, 0.0f), Color.White);
+                //spriteBatch.Draw(Textures[rightSegment % Textures.Length], new Vector2(x + segmentWidth, 0.0f), Color.White);
+            }
         }
     }
 }

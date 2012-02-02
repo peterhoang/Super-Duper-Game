@@ -297,7 +297,14 @@ namespace Platformer
                 // Impassable block
                 case '#':
                     return LoadTile("block-87", TileCollision.Impassable);
-                    //return LoadVarietyTile("BlockA", 7, TileCollision.Impassable);
+                case '%':
+                    return LoadTile("block-87-red", TileCollision.Impassable);
+                case '@':
+                    return LoadTile("block-16", TileCollision.Impassable);
+                case '$':
+                    return LoadTile("block-3", TileCollision.Impassable);
+                case '&':
+                    return LoadTile("greyblock1", TileCollision.Impassable);
 
                 // Unknown tile type character
                 default:

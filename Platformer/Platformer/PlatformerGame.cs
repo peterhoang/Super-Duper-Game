@@ -349,6 +349,18 @@ namespace Platformer
                     backgroundSet[1] = "Backgrounds/Background0_1";
                     backgroundSet[2] = "Backgrounds/Background0_2";
                     break;
+                case 1:
+                case 5:
+                    backgroundSet[0] = "Backgrounds/Background2_0";
+                    backgroundSet[1] = "Backgrounds/Background2_1";
+                    backgroundSet[2] = "Backgrounds/Background2_2";
+                    break;
+                case 0:
+                case 6:
+                    backgroundSet[0] = null;
+                    backgroundSet[1] = null;
+                    backgroundSet[2] = null;
+                    break;
             }
 
             //If the either reaches the last level, remove the other player  
