@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+
 
 namespace Platformer
 {
@@ -24,9 +26,14 @@ namespace Platformer
         private const float GravityAcceleration = 200.0f;
         private const float MaxFallSpeed = 550.0f;
         private const float JumpControlPower = 0.14f;
+        private const float MaxDistFromPlayer = 150.0f;
+        private const int MAX_FIRE = 2;
+
         private float jumpTime = 0.0f;
         private const float MaxMoveSpeed = 50.0f;
         protected Vector2 velocity;
+
+        private List<BowserFire> _bullets = new List<BowserFire>();
 
         Texture2D dummyTexture;
 
@@ -46,8 +53,13 @@ namespace Platformer
         {
             State = EntityState.IDLE;
             velocity = Vector2.Zero;
+
+            for (int i = 0; i < MAX_FIRE; i++)
+            {
+                _bullets.Add(new BowserFire(level.Game, position));
+            }
         }
-      
+
         /// Loads a particular enemy sprite sheet and sounds.
         /// </summary>
         public override void LoadContent(string spriteSet)
@@ -84,7 +96,7 @@ namespace Platformer
                 }
             }
 
-            //random direction
+            //random jumping
             waitTime += elapsed;
             if (waitTime >= MaxWaitTime)
             {
@@ -97,12 +109,19 @@ namespace Platformer
                 {
                     this.State = EntityState.JUMPING;
                 }
+                if (rand > 50)
+                {
+                    FireAttack();
+                    sprite.PlayAnimation(fireAnimation);
+                }
                 waitTime = 0.0f;
             }
 
             // pursue the attacker
             Player player = PlatformerGame.Players[PlatformerGame.attacker_id];
-            if (this.position.X - player.Position.X < 0)
+            float deltaDist = this.position.X - player.Position.X;
+
+            if (deltaDist < 0)
             {
                 direction = FaceDirection.Right;
             }
@@ -111,8 +130,16 @@ namespace Platformer
                 direction = FaceDirection.Left;
             }
 
+            // Maintain a min distance from player
+            if (Math.Abs(deltaDist) > MaxDistFromPlayer)
+            {
+                velocity.X += (int)direction * MoveSpeed * elapsed;
+            }
+            else
+            {
+                velocity.X += -(int)direction * MoveSpeed * elapsed;
+            }
             
-            velocity.X += (int)direction * MoveSpeed * elapsed;
             velocity.X = MathHelper.Clamp(velocity.X, -MaxMoveSpeed, MaxMoveSpeed);
             velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
             velocity.Y = DoJump(velocity.Y, gameTime);
@@ -122,7 +149,28 @@ namespace Platformer
             position += velocity * elapsed;
             position = new Vector2((float)Math.Round(position.X), (float)Math.Round(position.Y));
 
+            //Update the fire attack
+            foreach (BowserFire fire in _bullets)
+            {
+                fire.Update(gameTime);
+            }
+
             HandleCollisions();
+        }
+
+        public void FireAttack()
+        {
+            //fire off a bullet if any available
+            foreach (BowserFire bullet in _bullets)
+            {
+                if (!bullet.IsAlive)
+                {
+                    bullet.IsAlive = true;
+                    bullet.Position = this.Position + new Vector2(-2, -22);
+                    bullet.direction = direction;
+                    break;
+                }
+            }
         }
 
         private float DoJump(float velocityY, GameTime gameTime)
@@ -230,8 +278,15 @@ namespace Platformer
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             // Draw facing the way the enemy is moving.
-            SpriteEffects flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+            SpriteEffects flip;
+            flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
             sprite.Draw(gameTime, spriteBatch, Position, flip);
+
+            // Draw the fire attack
+            foreach (BowserFire fire in _bullets)
+            {
+                fire.Draw(gameTime, spriteBatch);
+            }
         }
 
     }

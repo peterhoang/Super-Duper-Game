@@ -63,9 +63,10 @@ namespace Platformer
         /// </summary>
         public int FrameWidth
         {
-            // Assume square frames.
-            get { return Texture.Height; }
+            get { return _frameWidth; }
+            set { _frameWidth = value; }
         }
+        private int _frameWidth;
 
         /// <summary>
         /// Gets the height of a frame in the animation.
@@ -83,6 +84,17 @@ namespace Platformer
             this.texture = texture;
             this.frameTime = frameTime;
             this.isLooping = isLooping;
+            //assume square frames
+            this._frameWidth = texture.Height;
         }
+        public Animation(Texture2D texture, float frameTime, bool isLooping, int frameWidth)
+        {
+            this.texture = texture;
+            this.frameTime = frameTime;
+            this.isLooping = isLooping;
+            //assume square frames
+            this._frameWidth = frameWidth;
+        }
+        
     }
 }

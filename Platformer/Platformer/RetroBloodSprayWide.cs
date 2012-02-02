@@ -71,7 +71,7 @@ namespace ParticleEngine
             maxRotationSpeed = MathHelper.PiOver4;
 
             // additive blending is very good at creating fiery effects.
-            blendState = BlendState.Additive;
+            blendState = BlendState.AlphaBlend;
 
             DrawOrder = AdditiveDrawOrder;
         }
