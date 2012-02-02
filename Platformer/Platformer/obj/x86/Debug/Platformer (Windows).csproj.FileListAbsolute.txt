@@ -199,3 +199,13 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Background
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-16.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-3.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\greyblock1.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\background.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\blank.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\menufont.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\gradient.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\gamefont.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87-purp.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bridge.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chain.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\handle.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\lavatop.xnb

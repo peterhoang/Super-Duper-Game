@@ -83,7 +83,7 @@ namespace Platformer
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Vector2 position, SpriteEffects spriteEffects, Color color)
         {
             if (Animation == null)
-                throw new NotSupportedException("No animation is currently playing.");
+                return;
 
             // Process passing time.
             time += (float)gameTime.ElapsedGameTime.TotalSeconds;

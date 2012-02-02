@@ -18,6 +18,7 @@ using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Input;
 
 using ParticleEngine;
+using System.Diagnostics;
 
 namespace Platformer
 {
@@ -30,6 +31,7 @@ namespace Platformer
     {
         // Physical structure of the level.
         private Tile[,] tiles;
+        private Tile[,] bridgeTiles;
         //private Texture2D[] layers;
         private Layer[] layers;
 
@@ -39,6 +41,10 @@ namespace Platformer
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
         private List<Spike> spikes = new List<Spike>();
+
+        private float withdrawBridgeWaitTime = 0.0f;
+        private const float MaxWithdrawBridgeWaitTime = 0.5f;
+        private bool isBridgeWithdrawing = false;
         
         private const int MAX_CORPSES = 10;
         private Corpse[,] corpses = new Corpse[2,MAX_CORPSES];
@@ -47,6 +53,7 @@ namespace Platformer
         // Key locations in the level.        
         private Vector2 start;
         private Point[] exit = new Point[2];
+        private Point bridgeSwitch;
         private static readonly Point InvalidPosition = new Point(-1, -1);
 
         // Level game state.
@@ -181,6 +188,7 @@ namespace Platformer
 
             // Allocate the tile grid.
             tiles = new Tile[width, lines.Count];
+            bridgeTiles = new Tile[width, lines.Count];
 
             // Loop over every tile position,
             for (int y = 0; y < Height; ++y)
@@ -240,8 +248,6 @@ namespace Platformer
                     return LoadEnemyTile(x, y, "MonsterA");
                 case 'B':
                     return LoadEnemyTile(x, y, "MonsterB");
-                case 'C':
-                    return LoadEnemyTile(x, y, "MonsterC");
                 case 'D':
                     return LoadEnemyTile(x, y, "MonsterD");
                 case 'E':
@@ -249,11 +255,15 @@ namespace Platformer
 
                 // Platform block
                 case '~':
-                    return LoadVarietyTile("BlockB", 2, TileCollision.Platform);
+                    return LoadBridgeTile(x, y, TileCollision.Platform);
 
                 // Passable block
                 case ':':
                     return LoadVarietyTile("BlockB", 2, TileCollision.Passable);
+                case 'C':
+                    return LoadTile("chain", TileCollision.Passable);
+                case 'c':
+                    return LoadTile("chain_flipped", TileCollision.Passable);
 
                 // Player 1 start point
                 case '1':
@@ -290,7 +300,6 @@ namespace Platformer
                     else
                         return new Tile(null, TileCollision.Passable);
 
-
                 case '^':
                     return LoadSpikeTile(x, y);
 
@@ -300,11 +309,15 @@ namespace Platformer
                 case '%':
                     return LoadTile("block-87-red", TileCollision.Impassable);
                 case '@':
-                    return LoadTile("block-16", TileCollision.Impassable);
+                    return LoadTile("block-87-purp", TileCollision.Impassable);
                 case '$':
                     return LoadTile("block-3", TileCollision.Impassable);
                 case '&':
                     return LoadTile("greyblock1", TileCollision.Impassable);
+                case 'L':
+                    return LoadTile("lavatop", TileCollision.Passable);
+                case 'T':
+                    return LoadBridgeSwitchTile(x, y);
 
                 // Unknown tile type character
                 default:
@@ -326,6 +339,15 @@ namespace Platformer
         private Tile LoadTile(string name, TileCollision collision)
         {
             return new Tile(Content.Load<Texture2D>("Tiles/" + name), collision);
+        }
+
+        private Tile LoadBridgeTile(int x, int y, TileCollision collision)
+        {
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            Tile bridgeTile = new Tile(Content.Load<Texture2D>("Tiles/bridge"), collision);
+            bridgeTiles[x, y] = bridgeTile;
+
+            return bridgeTiles[x, y];
         }
 
 
@@ -385,6 +407,12 @@ namespace Platformer
             exit[1] = GetBounds(x, y).Center;
 
             return LoadTile("Exit", TileCollision.Passable);
+        }
+
+        private Tile LoadBridgeSwitchTile(int x, int y)
+        {
+            bridgeSwitch = GetBounds(x, y).Center;
+            return LoadTile("handle", TileCollision.Passable);
         }
 
         /// <summary>
@@ -502,48 +530,66 @@ namespace Platformer
             DisplayOrientation orientation, 
             Viewport viewport)
         {
-            // Pause while the player is dead or time is expired.
-            foreach (Player player in PlatformerGame.Players)
+            // Play the bridge withdrawing animation
+            if (isBridgeWithdrawing)
             {
-                if (!player.IsAlive)// || TimeRemaining == TimeSpan.Zero)
-                {
-                    // Still want to perform physics on the player.
-                    player.ApplyPhysics(gameTime);
-                }
-                else if (ReachedExit)
-                {
-                    // Animate the time being converted into points.
-                    int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
-                    seconds = Math.Min(seconds, (int)Math.Ceiling(TimeRemaining.TotalSeconds));
-                    timeRemaining -= TimeSpan.FromSeconds(seconds);
-                    score += seconds * PointsPerSecond;
-                }
-                else
-                {
-                    timeRemaining -= gameTime.ElapsedGameTime;
-                    player.Update(gameTime, keyboardState, gamePadStates[player.PlayerId], touchState, accelState, orientation, viewport);
-                    UpdateGems(gameTime);
+                WithdrawBridge(gameTime);
+            }
+            else
+            {
 
-                    // Falling off the bottom of the level kills the player.
-                    if (player.BoundingRectangle.Top >= Height * Tile.Height)
+            // Pause while the player is dead or time is expired.
+                foreach (Player player in PlatformerGame.Players)
+                {
+                    if (!player.IsAlive)// || TimeRemaining == TimeSpan.Zero)
                     {
-                        PlatformerGame.attacker_id = (player.PlayerId == 0) ? 1 : 0;
-                        fallingSound.Play();
-                        player.OnKilled();
-                        player.Reset();
+                        // Still want to perform physics on the player.
+                        player.ApplyPhysics(gameTime);
                     }
-
-                    UpdateEnemies(gameTime);
-                    UpdateSpikes(gameTime);
-
-                    // The player has reached the exit if they are standing on the ground and
-                    // his bounding rectangle contains the center of the exit tile. They can only
-                    // exit when they have collected all of the gems.
-                    if (game.firstKill && player.IsAlive && player.IsOnGround)
+                    else if (ReachedExit)
                     {
-                        if (player.PlayerId == PlatformerGame.attacker_id && player.BoundingRectangle.Contains(exit[PlatformerGame.attacker_id]))
+                        // Animate the time being converted into points.
+                        int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
+                        seconds = Math.Min(seconds, (int)Math.Ceiling(TimeRemaining.TotalSeconds));
+                        timeRemaining -= TimeSpan.FromSeconds(seconds);
+                        score += seconds * PointsPerSecond;
+                    }
+                    else
+                    {
+                        timeRemaining -= gameTime.ElapsedGameTime;
+                        player.Update(gameTime, keyboardState, gamePadStates[player.PlayerId], touchState, accelState, orientation, viewport);
+                        UpdateGems(gameTime);
+
+                        // Falling off the bottom of the level kills the player.
+                        if (player.BoundingRectangle.Top >= Height * Tile.Height)
                         {
-                            OnExitReached();
+                            PlatformerGame.attacker_id = (player.PlayerId == 0) ? 1 : 0;
+                            fallingSound.Play();
+                            player.OnKilled();
+                            player.Reset();
+                        }
+
+                        UpdateEnemies(gameTime);
+                        UpdateSpikes(gameTime);
+
+                        // The player has reached the exit if they are standing on the ground and
+                        // his bounding rectangle contains the center of the exit tile. They can only
+                        // exit when they have collected all of the gems.
+                        if (game.firstKill && player.PlayerId == PlatformerGame.attacker_id)
+                        {
+                            if (player.IsAlive && player.IsOnGround)
+                            {
+                                if (player.BoundingRectangle.Contains(exit[PlatformerGame.attacker_id]))
+                                {
+                                    OnExitReached();
+                                }
+                                if (player.BoundingRectangle.Contains(bridgeSwitch))
+                                {
+                                    WithdrawBridge(gameTime);
+                                }
+                            }
+
+
                         }
                     }
                 }
@@ -587,6 +633,15 @@ namespace Platformer
             foreach (Enemy enemy in enemies)
             {
                 enemy.Update(gameTime);
+                // Falling off the bottom of the level kills the enemy.
+                if (enemy.BoundingRectangle.Top >= Height * Tile.Height)
+                {
+                    if (enemy.GetType() ==  typeof(Bowser))
+                    {
+                        Bowser bowser = enemy as Bowser;
+                        bowser.IsAlive = false;
+                    }
+                }
                 /*
                 foreach (Player player in PlatformerGame.Players)
                 {
@@ -653,7 +708,7 @@ namespace Platformer
         }
         public void StartNewLife(Player player, bool isKilled)
         {
-            float xpos = camera.GetSpawnPoint(game.GraphicsDevice.Viewport);
+            float xpos = camera.GetSpawnPoint(game.ScreenManager.GraphicsDevice.Viewport);
             if (isKilled)
             {
                 SpawnCorpse(player.Position, player.Flip, PlatformerGame.Players.IndexOf(player));
@@ -777,5 +832,47 @@ namespace Platformer
         }
 
         #endregion
+
+        /// <summary>
+        /// Animates the withdrawal of the bridge
+        /// </summary>
+        private void WithdrawBridge(GameTime gameTime)
+        {
+            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            withdrawBridgeWaitTime += elapsed;
+
+            isBridgeWithdrawing = true;
+
+            if (withdrawBridgeWaitTime > MaxWithdrawBridgeWaitTime)
+            {
+                // Calculate the visible range of tiles
+                int left = (int)Math.Floor(camera.CameraPosition / Tile.Width);
+                int right = left + game.ScreenManager.GraphicsDevice.Viewport.Width / Tile.Width;
+                right = Math.Min(right, Width - 1);
+
+                bool isThereMoreLeft = false;
+                for (int y = 0; y < Height; ++y)
+                {
+                    for (int x = left; x <= right; ++x)
+                    {
+                        if (bridgeTiles[x, y].Texture != null && tiles[x, y].Texture != null)
+                        {
+                            if (tiles[x, y].Texture.Name == bridgeTiles[x, y].Texture.Name)
+                            {
+                                tiles[x, y].Texture = null;
+                                tiles[x, y].Collision = TileCollision.Passable;
+
+                                bridgeTiles[x, y].Texture = null;
+                                bridgeTiles[x, y].Collision = TileCollision.Passable;
+                               
+                                isThereMoreLeft = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (!isThereMoreLeft) isBridgeWithdrawing = false;
+            }
+        }
     }
 }

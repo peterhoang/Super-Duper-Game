@@ -27,7 +27,7 @@ namespace Platformer
         private const float MaxFallSpeed = 550.0f;
         private const float JumpControlPower = 0.14f;
         private const float MaxDistFromPlayer = 150.0f;
-        private const int MAX_FIRE = 2;
+        private const int MAX_FIRE = 1;
 
         private float jumpTime = 0.0f;
         private const float MaxMoveSpeed = 50.0f;
@@ -53,6 +53,7 @@ namespace Platformer
         {
             State = EntityState.IDLE;
             velocity = Vector2.Zero;
+            IsAlive = true;
 
             for (int i = 0; i < MAX_FIRE; i++)
             {
@@ -76,12 +77,19 @@ namespace Platformer
             int top = idleAnimation.FrameHeight - height;
             localBounds = new Rectangle(left, top, width, height);
 
-            dummyTexture = new Texture2D(Level.Game.GraphicsDevice, 1, 1);
+            dummyTexture = new Texture2D(Level.Game.ScreenManager.GraphicsDevice, 1, 1);
             dummyTexture.SetData(new Color[] { Color.White });
         }
 
         public override void Update(GameTime gameTime)
         {
+            if (!IsAlive)
+            {
+                foreach (BowserFire fire in _bullets)
+                    fire.Reset();
+                return;
+            }
+
             float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             if (IsAlive && IsOnGround)
@@ -277,6 +285,8 @@ namespace Platformer
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            if (!IsAlive) return;
+
             // Draw facing the way the enemy is moving.
             SpriteEffects flip;
             flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;

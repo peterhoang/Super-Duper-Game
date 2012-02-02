@@ -15,23 +15,36 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Input.Touch;
+using Microsoft.Xna.Framework.Content;
 using System.Collections.Generic;
 using ParticleEngine;
+
+using GameStateManagement;
+using System.Diagnostics;
 
 namespace Platformer
 {
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class PlatformerGame : Microsoft.Xna.Framework.Game
+    public class PlatformerGame : GameScreen
     {
+        #region Fields
+
         // Resources for drawing.
-        private GraphicsDeviceManager graphics;
+        private GraphicsDevice graphics;
         public SpriteBatch SpriteBatch
         {
             get { return spriteBatch; }
         }
         private SpriteBatch spriteBatch;
+
+        public ContentManager Content
+        {
+            get { return content; }
+        }
+        ContentManager content;
+        GameComponentCollection components; 
 
         // Global content.
         private SpriteFont hudFont;
@@ -87,6 +100,7 @@ namespace Platformer
             get { return random; }
         }
 
+        float pauseAlpha;
         
         // ************************** Particle System Stuff **********************************
         ExplosionParticleSystem explosion;
@@ -120,69 +134,83 @@ namespace Platformer
         private static SoundEffect wickedsickSound;
         // ***********************************************************************************
 
+        #endregion
+
+        #region Initialize
 
         public PlatformerGame()
         {
-            graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
-
-            // create the particle systems and add them to the components list.
-            // we should never see more than one explosion at once
-            explosion = new ExplosionParticleSystem(this, 1);
-            Components.Add(explosion);
-
-            // but the smoke from the explosion lingers a while.
-            smoke = new ExplosionSmokeParticleSystem(this, 2);
-            Components.Add(smoke);
-
-            bloodSprayUp = new RetroBloodSprayWide(this, 100);
-            bloodSprayRight = new RetroBloodSprayParticleSystem(this, 10);
-            bloodSprayLeft = new RetroBloodSprayParticleSystem(this, 10);
-            bloodSprayLeft.Dir = -1.0f;
-            Components.Add(bloodSprayUp);
-            Components.Add(bloodSprayRight);
-            Components.Add(bloodSprayLeft);
-
+            TransitionOnTime = TimeSpan.FromSeconds(1.5);
+            TransitionOffTime = TimeSpan.FromSeconds(0.5);
 
 #if WINDOWS_PHONE
             graphics.IsFullScreen = true;
             TargetElapsedTime = TimeSpan.FromTicks(333333);
 #endif
-
-            Accelerometer.Initialize();
+            try
+            {
+                Accelerometer.Initialize();
+            }
+            catch { }
         }
 
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
-        protected override void LoadContent()
+        public override void LoadContent()
         {
+            if (content == null)
+                content = new ContentManager(ScreenManager.Game.Services, "Content");
+
+            if (components == null)
+                components = ScreenManager.Game.Components;
+
+            if (graphics == null)
+                graphics = ScreenManager.GraphicsDevice;
+
+            // create the particle systems and add them to the components list.
+            // we should never see more than one explosion at once
+            explosion = new ExplosionParticleSystem(this, 1);
+            components.Add(explosion);
+
+            // but the smoke from the explosion lingers a while.
+            smoke = new ExplosionSmokeParticleSystem(this, 2);
+            components.Add(smoke);
+
+            bloodSprayUp = new RetroBloodSprayWide(this, 100);
+            bloodSprayRight = new RetroBloodSprayParticleSystem(this, 10);
+            bloodSprayLeft = new RetroBloodSprayParticleSystem(this, 10);
+            bloodSprayLeft.Dir = -1.0f;
+            components.Add(bloodSprayUp);
+            components.Add(bloodSprayRight);
+            components.Add(bloodSprayLeft);
+
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch = new SpriteBatch(ScreenManager.Game.GraphicsDevice);
 
             // Load fonts
-            hudFont = Content.Load<SpriteFont>("Fonts/Hud");
+            hudFont = content.Load<SpriteFont>("Fonts/Hud");
 
             // Load overlay textures
-            winOverlay = Content.Load<Texture2D>("Overlays/you_win");
-            loseOverlay = Content.Load<Texture2D>("Overlays/you_lose");
-            diedOverlay = Content.Load<Texture2D>("Overlays/you_died");
-            arrow = Content.Load<Texture2D>("Sprites/arrow");
+            winOverlay = content.Load<Texture2D>("Overlays/you_win");
+            loseOverlay = content.Load<Texture2D>("Overlays/you_lose");
+            diedOverlay = content.Load<Texture2D>("Overlays/you_died");
+            arrow = content.Load<Texture2D>("Sprites/arrow");
 
             // Load sounds
-            firstBloodSound = Content.Load<SoundEffect>("Sounds/UT/firstblood");
-            dominatingSound = Content.Load<SoundEffect>("Sounds/UT/dominating");
-            doublekillSound = Content.Load<SoundEffect>("Sounds/UT/doublekill");
-            godlikeSound = Content.Load<SoundEffect>("Sounds/UT/godlike");
-            holyshitSound = Content.Load<SoundEffect>("Sounds/UT/holyshit");
-            killingspreeSound = Content.Load<SoundEffect>("Sounds/UT/killingspree");
-            megakillSound = Content.Load<SoundEffect>("Sounds/UT/megakill");
-            monsterKillSound = Content.Load<SoundEffect>("Sounds/UT/monsterkill");
-            multikillSound = Content.Load<SoundEffect>("Sounds/UT/multikill");
-            ultrakillSound = Content.Load<SoundEffect>("Sounds/UT/ultrakill");
-            unstoppableSound = Content.Load<SoundEffect>("Sounds/UT/unstoppable");
-            wickedsickSound = Content.Load<SoundEffect>("Sounds/UT/wickedsick");
+            firstBloodSound = content.Load<SoundEffect>("Sounds/UT/firstblood");
+            dominatingSound = content.Load<SoundEffect>("Sounds/UT/dominating");
+            doublekillSound = content.Load<SoundEffect>("Sounds/UT/doublekill");
+            godlikeSound = content.Load<SoundEffect>("Sounds/UT/godlike");
+            holyshitSound = content.Load<SoundEffect>("Sounds/UT/holyshit");
+            killingspreeSound = content.Load<SoundEffect>("Sounds/UT/killingspree");
+            megakillSound = content.Load<SoundEffect>("Sounds/UT/megakill");
+            monsterKillSound = content.Load<SoundEffect>("Sounds/UT/monsterkill");
+            multikillSound = content.Load<SoundEffect>("Sounds/UT/multikill");
+            ultrakillSound = content.Load<SoundEffect>("Sounds/UT/ultrakill");
+            unstoppableSound = content.Load<SoundEffect>("Sounds/UT/unstoppable");
+            wickedsickSound = content.Load<SoundEffect>("Sounds/UT/wickedsick");
 
             //Known issue that you get exceptions if you use Media PLayer while connected to your PC
             //See http://social.msdn.microsoft.com/Forums/en/windowsphone7series/thread/c8a243d2-d360-46b1-96bd-62b1ef268c66
@@ -191,7 +219,7 @@ namespace Platformer
             try
             {
                 MediaPlayer.IsRepeating = true;
-                MediaPlayer.Play(Content.Load<Song>("Sounds/Music/bgmusic1"));
+                MediaPlayer.Play(content.Load<Song>("Sounds/Music/bgmusic1"));
             }
             catch { }
 
@@ -212,28 +240,60 @@ namespace Platformer
         }
 
         /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
+        /// Unload graphics content used by the game.
         /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Update(GameTime gameTime)
+        public override void UnloadContent()
         {
-            // Handle polling for our input and handling high-level input
-            HandleInput();
-
-            float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-            // update our level, passing down the GameTime along with all of our input states
-            level.Update(gameTime, keyboardState, gamePadStates, touchState, 
-                         accelerometerState, Window.CurrentOrientation, graphics.GraphicsDevice.Viewport);
-
-            UpdateExplosions(dt);
-           
-            base.Update(gameTime);
+            foreach (Player player in Players)
+            {
+                player.OnHit -= player_OnHit;
+            }
+            Players.Clear();
+            content.Unload();  
         }
 
-        private void HandleInput()
+        #endregion
+
+        #region Update & Draw
+
+        /// <summary>
+        /// Updates the state of the game. This method checks the GameScreen.IsActive
+        /// property, so the game will stop updating when the pause menu is active,
+        /// or if you tab away to a different application.
+        /// </summary>
+        public override void Update(GameTime gameTime, bool otherScreenHasFocus,
+                                                       bool coveredByOtherScreen)
         {
+            base.Update(gameTime, otherScreenHasFocus, false);
+            // Handle polling for our input and handling high-level input
+
+            // Gradually fade in or out depending on whether we are covered by the pause screen.
+            if (coveredByOtherScreen)
+                pauseAlpha = Math.Min(pauseAlpha + 1f / 32, 1);
+            else
+                pauseAlpha = Math.Max(pauseAlpha - 1f / 32, 0);
+
+            if (IsActive)
+            {
+                float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                // update our level, passing down the GameTime along with all of our input states
+                level.Update(gameTime, keyboardState, gamePadStates, touchState,
+                             accelerometerState, ScreenManager.Game.Window.CurrentOrientation, graphics.Viewport);
+
+                UpdateExplosions(dt);
+            }
+           
+        }
+
+        public override void HandleInput(InputState input)
+        {
+            if (input == null)
+               throw new ArgumentNullException("input");
+
+            // Look up inputs for the active player profile.
+            int playerIndex = (int)ControllingPlayer.Value;
+
             // get all of our input states
             keyboardState = Keyboard.GetState();
             gamePadState_1 = GamePad.GetState(PlayerIndex.One);
@@ -244,49 +304,55 @@ namespace Platformer
             accelerometerState = Accelerometer.GetState();
 
             // Exit the game when back is pressed.
-            if (gamePadState_1.Buttons.Back == ButtonState.Pressed)
-                Exit();
+            //if (gamePadState_1.Buttons.Back == ButtonState.Pressed)
+            //    Exit();
 
-            foreach (Player player in PlatformerGame.Players)
+            if (input.IsPauseGame(ControllingPlayer))
             {
-                bool continuePressed =
-                    keyboardState.IsKeyDown(Keys.Space) ||
-                    gamePadStates[PlatformerGame.Players.IndexOf(player)].IsButtonDown(Buttons.A) ||
-                    touchState.AnyTouch();
+                ScreenManager.AddScreen(new PauseMenuScreen(), ControllingPlayer);
+            }
+            else
+            {
+                foreach (Player player in PlatformerGame.Players)
+                {
+                    bool continuePressed =
+                        keyboardState.IsKeyDown(Keys.Space) ||
+                        gamePadStates[PlatformerGame.Players.IndexOf(player)].IsButtonDown(Buttons.A) ||
+                        touchState.AnyTouch();
 
-                if (!player.IsAlive)
-                {
-                   level.StartNewLife(player);
-                }
-                if (level.ReachedExit)
-                {
-                    LoadNextLevel();
-                }
-                
-                // Perform the appropriate action to advance the game and
-                // to get the player back to playing.
-               // if (!wasContinuePressed && continuePressed)
-               // {
+                    if (!player.IsAlive)
+                    {
+                        level.StartNewLife(player);
+                    }
+                    if (level.ReachedExit)
+                    {
+                        LoadNextLevel();
+                    }
+
+                    // Perform the appropriate action to advance the game and
+                    // to get the player back to playing.
+                    // if (!wasContinuePressed && continuePressed)
+                    // {
                     //if (!player.IsAlive)
                     //{
                     //    level.StartNewLife(player);
                     //}
-                   // else if (level.TimeRemaining == TimeSpan.Zero)
-                   // {
-                       
-                   //     else
-                   //         ReloadCurrentLevel();
-                   // }
+                    // else if (level.TimeRemaining == TimeSpan.Zero)
+                    // {
 
-                //}
-                //wasContinuePressed = continuePressed;
-            }
+                    //     else
+                    //         ReloadCurrentLevel();
+                    // }
 
-            //check if both player is in the "no-man lands"
-            if (players[0].Position.X == -999.9f && players[1].Position.X == -999.9f)
-            {
-                //players[attacker_id].Reset(Vector2.Zero);
-                level.StartNewLife(players[attacker_id]);
+                    //}
+                    //wasContinuePressed = continuePressed;
+                }
+                //check if both player is in the "no-man lands"
+                if (players[0].Position.X == -999.9f && players[1].Position.X == -999.9f)
+                {
+                    //players[attacker_id].Reset(Vector2.Zero);
+                    level.StartNewLife(players[attacker_id]);
+                }
             }
             
         }
@@ -386,7 +452,7 @@ namespace Platformer
             // Load the level.
             string levelPath = string.Format("Content/Levels/{0}.txt", levelIndex);
             using (Stream fileStream = TitleContainer.OpenStream(levelPath)) {
-                level = new Level(Services, fileStream, levelIndex, backgroundSet, this);
+                level = new Level(ScreenManager.Game.Services, fileStream, levelIndex, backgroundSet, this);
                 foreach (Player player in PlatformerGame.Players)
                 {
                     player.OnHit += new OnHitHandler(player_OnHit);
@@ -394,51 +460,14 @@ namespace Platformer
             }
         }
 
-        /// <summary>
-        /// Handles the OnHit event of the player control. For now, this is used to determine where to
-        /// generate the particle effects
-        /// </summary>
-        /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
-        void player_OnHit(object sender, EventArgs e)
-        {
-            Player player = sender as Player;
-           
-            float xRange = 10f;
-            float yRange = 12f;
-            float ycenter = player.Position.Y - 25;
-
-            Vector2 where = Vector2.Zero;
-            where.X = RandomBetween(player.Position.X - xRange, player.Position.X + xRange);
-            where.Y = RandomBetween(ycenter - yRange, ycenter + yRange);
-
-            if (player.GotHitFrom  > 0.0f)
-                bloodSprayRight.AddParticles(where);
-            else
-                bloodSprayLeft.AddParticles(where);
-
-            if (player.Health <= 0.0f)
-            {
-                bloodSprayUp.AddParticles(new Vector2(player.Position.X, player.Position.Y+10));
-                if (!firstKill) firstBloodSound.Play();
-                firstKill = true;                
-            }
-     
-        }
-
-        private void ReloadCurrentLevel()
-        {
-            --levelIndex;
-            LoadNextLevel();
-        }
-
+       
         /// <summary>
         /// Draws the game from background to foreground.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Draw(GameTime gameTime)
+        public override void Draw(GameTime gameTime)
         {
-            graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
+            graphics.Clear(Color.CornflowerBlue);
            
             level.Draw(gameTime, spriteBatch);
 
@@ -448,6 +477,14 @@ namespace Platformer
 
             spriteBatch.End();
 
+            // If the game is transitioning on or off, fade it out to black.
+            if (TransitionPosition > 0 || pauseAlpha > 0)
+            {
+                float alpha = MathHelper.Lerp(1f - TransitionAlpha, 1f, pauseAlpha / 2);
+
+                ScreenManager.FadeBackBufferToBlack(alpha);
+            }
+
             base.Draw(gameTime);
         }
 
@@ -456,7 +493,7 @@ namespace Platformer
         {
             //spriteBatch.Begin();
 
-            Rectangle titleSafeArea = GraphicsDevice.Viewport.TitleSafeArea;
+            Rectangle titleSafeArea = ScreenManager.Game.GraphicsDevice.Viewport.TitleSafeArea;
             Vector2 rightMargin = new Vector2(titleSafeArea.X + titleSafeArea.Width * 0.93f, titleSafeArea.Y);
             Vector2 leftMargin = new Vector2(titleSafeArea.X, titleSafeArea.Y);
             Vector2 center = new Vector2(titleSafeArea.X + titleSafeArea.Width / 2.0f,
@@ -535,8 +572,49 @@ namespace Platformer
             spriteBatch.DrawString(font, value, position, color);
         }
 
+        #endregion
+
 
         #region Helper Functions
+
+        /// <summary>
+        /// Handles the OnHit event of the player control. For now, this is used to determine where to
+        /// generate the particle effects
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
+        void player_OnHit(object sender, EventArgs e)
+        {
+            Player player = sender as Player;
+
+            float xRange = 10f;
+            float yRange = 12f;
+            float ycenter = player.Position.Y - 25;
+
+            Vector2 where = Vector2.Zero;
+            where.X = RandomBetween(player.Position.X - xRange, player.Position.X + xRange);
+            where.Y = RandomBetween(ycenter - yRange, ycenter + yRange);
+
+            if (player.GotHitFrom > 0.0f)
+                bloodSprayRight.AddParticles(where);
+            else
+                bloodSprayLeft.AddParticles(where);
+
+            if (player.Health <= 0.0f)
+            {
+                bloodSprayUp.AddParticles(new Vector2(player.Position.X, player.Position.Y + 10));
+                if (!firstKill) firstBloodSound.Play();
+                firstKill = true;
+            }
+
+        }
+
+        private void ReloadCurrentLevel()
+        {
+            --levelIndex;
+            LoadNextLevel();
+        }
+
 
         //  a handy little function that gives a random float between two
         // values. This will be used in several places in the sample, in particilar in

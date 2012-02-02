@@ -28,6 +28,8 @@ namespace Platformer
     {
         public event OnHitHandler OnHit;
 
+        #region Fields
+
         //font
         SpriteFont font;
 
@@ -203,6 +205,8 @@ namespace Platformer
                 return new Rectangle(left, top, localBounds.Width, localBounds.Height);
             }
         }
+
+        #endregion
 
         /// <summary>
         /// Constructors a new player.

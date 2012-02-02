@@ -160,7 +160,7 @@ namespace ParticleEngine
         /// it has a large impact on the amount of memory required, and slows down the
         /// Update and Draw functions.</remarks>
         protected ParticleSystem(PlatformerGame game, int howManyEffects)
-            : base(game)
+            : base(game.ScreenManager.Game)
         {            
             this.game = game;
             this.howManyEffects = howManyEffects;
