@@ -81,12 +81,20 @@ namespace Platformer
             dummyTexture.SetData(new Color[] { Color.White });
         }
 
+        public void Killed()
+        {
+            IsAlive = false;
+            foreach (BowserFire fire in _bullets)
+            {
+                fire.Reset();
+                fire.IsAlive = false;
+            }
+        }
+
         public override void Update(GameTime gameTime)
         {
             if (!IsAlive)
             {
-                foreach (BowserFire fire in _bullets)
-                    fire.Reset();
                 return;
             }
 

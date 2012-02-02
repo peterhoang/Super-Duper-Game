@@ -119,6 +119,8 @@ Content\Tiles\bridge.xnb
 Content\Tiles\chain.xnb
 Content\Tiles\handle.xnb
 Content\Tiles\lavatop.xnb
+Content\Tiles\chain_flipped.xnb
+Content\Tiles\chunli.xnb
 Content\Levels\3.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

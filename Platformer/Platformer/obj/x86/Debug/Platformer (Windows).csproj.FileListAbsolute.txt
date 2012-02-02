@@ -209,3 +209,5 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\brid
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chain.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\handle.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\lavatop.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chain_flipped.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chunli.xnb

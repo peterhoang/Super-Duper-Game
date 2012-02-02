@@ -264,6 +264,8 @@ namespace Platformer
                     return LoadTile("chain", TileCollision.Passable);
                 case 'c':
                     return LoadTile("chain_flipped", TileCollision.Passable);
+                case 'W':
+                    return LoadWinnerTile(x, y);
 
                 // Player 1 start point
                 case '1':
@@ -413,6 +415,11 @@ namespace Platformer
         {
             bridgeSwitch = GetBounds(x, y).Center;
             return LoadTile("handle", TileCollision.Passable);
+        }
+
+        private Tile LoadWinnerTile(int x, int y)
+        {
+            return LoadTile("chunli", TileCollision.Passable);
         }
 
         /// <summary>
@@ -639,7 +646,7 @@ namespace Platformer
                     if (enemy.GetType() ==  typeof(Bowser))
                     {
                         Bowser bowser = enemy as Bowser;
-                        bowser.IsAlive = false;
+                        bowser.Killed();
                     }
                 }
                 /*

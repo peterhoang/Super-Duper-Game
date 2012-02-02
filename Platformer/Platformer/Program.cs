@@ -40,6 +40,7 @@ namespace GameStateManagement
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferWidth = 800;
             graphics.PreferredBackBufferHeight = 480;
+            graphics.SynchronizeWithVerticalRetrace = false;
 
             // Create the screen manager component.
             screenManager = new ScreenManager(this);
