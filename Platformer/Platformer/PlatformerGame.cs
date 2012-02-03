@@ -63,6 +63,7 @@ namespace Platformer
         }
         private bool wasContinuePressed;
         public bool firstKill = false;
+        public static bool bossFight = false;
 
         // Player Entities in the game.
         public static List<Player> Players
@@ -234,6 +235,7 @@ namespace Platformer
                     "Sprites/Player/cop_yellow_jump",
                     "Sprites/Player/cop_yellow_die",
                     "Sprites/Player/cop_yellow_roll");
+            players[1].Flip = SpriteEffects.FlipHorizontally;
 
             LoadNextLevel();
 
@@ -249,6 +251,7 @@ namespace Platformer
                 player.OnHit -= player_OnHit;
             }
             Players.Clear();
+            bossFight = false;
             content.Unload();  
         }
 
@@ -435,6 +438,7 @@ namespace Platformer
                 int idx = (attacker_id == 0) ? 1 : 0;
                 Players[idx].IsRespawnable = false;
                 Players[idx].Reset(Vector2.Zero);
+                bossFight = true;
             }
       
 
@@ -603,10 +607,32 @@ namespace Platformer
             if (player.Health <= 0.0f)
             {
                 bloodSprayUp.AddParticles(new Vector2(player.Position.X, player.Position.Y + 10));
-                if (!firstKill) firstBloodSound.Play();
-                firstKill = true;
-            }
+                if (!firstKill)
+                {
+                    firstBloodSound.Play();
+                    firstKill = true;
+                }
 
+                if (bossFight)
+                {
+                    displayEpicFail();
+                }
+                
+            }
+        }
+        public void displayEpicFail()
+        {
+            const string message = "EPIC FAIL!!!!!1";
+
+            CustomMessageBoxScreen confirmQuitMessageBox = new CustomMessageBoxScreen(message, false);
+
+            confirmQuitMessageBox.Accepted += ConfirmQuitMessageBoxAccepted;
+
+            ScreenManager.AddScreen(confirmQuitMessageBox, ControllingPlayer);
+        }
+        void ConfirmQuitMessageBoxAccepted(object sender, PlayerIndexEventArgs e)
+        {
+            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new PlatformerGame());
         }
 
         private void ReloadCurrentLevel()

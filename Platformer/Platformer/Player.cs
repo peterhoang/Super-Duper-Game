@@ -45,6 +45,7 @@ namespace Platformer
         public SpriteEffects Flip
         {
             get { return flip; }
+            set { flip = value; }
         }
 
         public float GotHitFrom

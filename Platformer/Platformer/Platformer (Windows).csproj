@@ -79,7 +79,9 @@
     <Compile Include="Circle.cs" />
     <Compile Include="Bowser.cs" />
     <Compile Include="Corpse.cs" />
+    <Compile Include="CountDownScreen.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="CustomMessageScreen.cs" />
     <Compile Include="ExplosionParticleSystem.cs" />
     <Compile Include="ExplosionSmokeParticleSystem.cs" />
     <Compile Include="GameplayScreen.cs" />
@@ -115,6 +117,8 @@
     <Compile Include="Spike.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="TouchCollectionExtensions.cs" />
+    <Compile Include="WinnerScreen.cs" />
+    <Compile Include="WinnerTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

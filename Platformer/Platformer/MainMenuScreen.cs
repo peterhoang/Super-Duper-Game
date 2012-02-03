@@ -57,8 +57,7 @@ namespace GameStateManagement
         void PlayGameMenuEntrySelected(object sender, PlayerIndexEventArgs e)
         {
          //   ScreenManager.TraceEnabled = true;
-            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex,
-                               new PlatformerGame());
+            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new PlatformerGame(), new CountDownScreen());
             
         }
 

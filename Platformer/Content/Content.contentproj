@@ -781,7 +781,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tiles\chunli.png">
+    <Compile Include="Sprites\chunli.png">
       <Name>chunli</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>

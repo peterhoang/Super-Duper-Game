@@ -1092,13 +1092,13 @@
       <Time>2012-02-02T16:53:46.9174374-05:00</Time>
     </Item>
     <Item>
-      <Source>Tiles\chunli.png</Source>
-      <Name>Tiles\chunli</Name>
+      <Source>Sprites\chunli.png</Source>
+      <Name>Sprites\chunli</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chunli.xnb</Output>
-      <Time>2012-02-02T17:54:13.9078893-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\chunli.xnb</Output>
+      <Time>2012-02-03T10:25:34.9574926-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

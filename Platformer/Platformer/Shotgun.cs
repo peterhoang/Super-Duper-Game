@@ -19,6 +19,10 @@ namespace Platformer
         private AnimationPlayer muzzle;
         private float muzzleAnimationTimer;
 
+        private float rateOfFire;
+        private const float MAXFIRERATE = 0.4f;
+        private bool canShoot = true;
+
         SoundEffect shotSound;
 
         private const int MAX_SHELLS = 2;
@@ -65,6 +69,8 @@ namespace Platformer
 
         public override void Shoot()
         {
+            if (!canShoot) return;
+
             //fire off a bullet if any available
             foreach (ShotgunShell shell in _shells)
             {
@@ -75,6 +81,7 @@ namespace Platformer
                     shell.Flip = Flip;
                     shell.Player = _player;
                     isShooting = true;
+                    canShoot = false;
                     shotSound.Play(0.7f, 0.0f, 0.0f);
                     break;
                 }
@@ -86,6 +93,8 @@ namespace Platformer
         /// </summary>
         public override void Update(GameTime gameTime, Vector2 position, SpriteEffects flip)
         {
+            float elapsed =  (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             Vector2 offset = (flip == SpriteEffects.None) ? new Vector2(37, 3) : new Vector2(-37, 3);
             Flip = flip;
             Position = position + offset;
@@ -94,13 +103,23 @@ namespace Platformer
 
             if (isShooting)
             {
-                muzzleAnimationTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                muzzleAnimationTimer += elapsed;
                 muzzle.PlayAnimation(muzzleFire);
                 if (muzzleAnimationTimer > 0.20f)
                 {
                     muzzleAnimationTimer = 0.0f;
                     isShooting = false;
                     muzzle.StopAnimation();
+                }
+            }
+
+            if (!canShoot)
+            {
+                rateOfFire += elapsed;
+                if (rateOfFire > MAXFIRERATE)
+                {
+                    rateOfFire = 0.0f;
+                    canShoot = true;
                 }
             }
 

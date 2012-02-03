@@ -19,6 +19,7 @@ using Microsoft.Xna.Framework.Input;
 
 using ParticleEngine;
 using System.Diagnostics;
+using GameStateManagement;
 
 namespace Platformer
 {
@@ -41,6 +42,7 @@ namespace Platformer
         private List<Gem> gems = new List<Gem>();
         private List<Enemy> enemies = new List<Enemy>();
         private List<Spike> spikes = new List<Spike>();
+        private List<WinnerTile> winnerTiles = new List<WinnerTile>();
 
         private float withdrawBridgeWaitTime = 0.0f;
         private const float MaxWithdrawBridgeWaitTime = 0.5f;
@@ -419,7 +421,10 @@ namespace Platformer
 
         private Tile LoadWinnerTile(int x, int y)
         {
-            return LoadTile("chunli", TileCollision.Passable);
+            Vector2 position = RectangleExtensions.GetBottomCenter(GetBounds(x, y));
+            winnerTiles.Add(new WinnerTile(this, position));
+
+            return new Tile(null, TileCollision.Passable);
         }
 
         /// <summary>
@@ -572,12 +577,22 @@ namespace Platformer
                         {
                             PlatformerGame.attacker_id = (player.PlayerId == 0) ? 1 : 0;
                             fallingSound.Play();
-                            player.OnKilled();
-                            player.Reset();
+
+                            if (!PlatformerGame.bossFight)
+                            {
+                                player.OnKilled();
+                                player.Reset();
+                            }
+                            else
+                            {
+                                game.displayEpicFail();
+                            }
+                            
                         }
 
                         UpdateEnemies(gameTime);
                         UpdateSpikes(gameTime);
+                        UpdateWinnerTile(gameTime);
 
                         // The player has reached the exit if they are standing on the ground and
                         // his bounding rectangle contains the center of the exit tile. They can only
@@ -662,6 +677,29 @@ namespace Platformer
             }
         }
 
+        private void UpdateWinnerTile(GameTime gameTime)
+        {
+            foreach (WinnerTile winning in winnerTiles)
+            {
+                if (winning.BoundingRectangle.Intersects(PlatformerGame.Players[PlatformerGame.attacker_id].BoundingRectangle))
+                {
+                    const string message = "WINNER!";
+
+                    CustomMessageBoxScreen confirmQuitMessageBox = new CustomMessageBoxScreen(message, false);
+
+                    confirmQuitMessageBox.Accepted += ConfirmQuitMessageBoxAccepted;
+
+                    game.ScreenManager.AddScreen(confirmQuitMessageBox, game.ControllingPlayer);
+
+                }
+
+            }
+        }
+        void ConfirmQuitMessageBoxAccepted(object sender, PlayerIndexEventArgs e)
+        {
+            LoadingScreen.Load(game.ScreenManager, true, e.PlayerIndex, new PlatformerGame(), new CountDownScreen());
+        }
+
         /// <summary>
         /// Collision detection for the spikes.
         /// </summary>
@@ -723,14 +761,14 @@ namespace Platformer
             if (xpos > 0.0f)
             {
                 //player.IsRespawnable = true;
-                float ypos = player.Position.Y - 200.0f;
+                float ypos = -200.0f;
                 player.Reset(new Vector2(xpos, ypos));
             }
-            else if (xpos == -999.9f)
-            {
+            //else if (xpos == -999.9f)
+            //{
                 //player.IsRespawnable = false;
-                player.Reset(new Vector2(xpos, 0.0f));
-            }
+            //    player.Reset(new Vector2(xpos, 0.0f));
+            //}
         }
 
         public void SpawnCorpse(Vector2 pos, SpriteEffects flip, int playerIndex)
@@ -797,6 +835,9 @@ namespace Platformer
 
             foreach (Spike spike in spikes)
                 spike.Draw(gameTime, spriteBatch);
+
+            foreach (WinnerTile tile in winnerTiles)
+                tile.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
 

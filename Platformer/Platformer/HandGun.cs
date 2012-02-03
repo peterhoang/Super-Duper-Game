@@ -27,6 +27,10 @@ namespace Platformer
         private AnimationPlayer muzzle;
         private float muzzleAnimationTimer;
 
+        private float rateOfFire;
+        private const float MAXFIRERATE = 0.2f;
+        private bool canShoot = true;
+
         private const int MAX_HANDGUN_BULLETS = 4;
         public List<HandgunBullet> Bullets
         {
@@ -71,6 +75,8 @@ namespace Platformer
 
         public override void Shoot()
         {
+            if (!canShoot) return;
+
             //fire off a bullet if any available
             foreach (HandgunBullet bullet in _bullets)
             {
@@ -81,6 +87,7 @@ namespace Platformer
                     bullet.Flip = Flip;
                     bullet.Player = _player;
                     isShooting = true;
+                    canShoot = false;
                     shotSound.Play();
                     break;
                 }
@@ -92,6 +99,8 @@ namespace Platformer
         /// </summary>
         public override void Update(GameTime gameTime, Vector2 position, SpriteEffects flip)
         {
+            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             Vector2 offset = (flip == SpriteEffects.None) ? new Vector2(45, 0) : new Vector2(-45, 0);
             Flip = flip;
             Position = position + offset;
@@ -99,14 +108,23 @@ namespace Platformer
             sprite.PlayAnimation(baseGraphic);
 
             if (isShooting) {
-                muzzleAnimationTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                muzzleAnimationTimer += elapsed;
                 muzzle.PlayAnimation(muzzleFire);
                 if (muzzleAnimationTimer > 0.20f) {
                     muzzleAnimationTimer = 0.0f;
                     isShooting = false;
                     muzzle.StopAnimation();
                 }
+            }
 
+            if (!canShoot)
+            {
+                rateOfFire += elapsed;
+                if (rateOfFire > MAXFIRERATE)
+                {
+                    rateOfFire = 0f;
+                    canShoot = true;
+                }
             }
 
             // Update call for bullets

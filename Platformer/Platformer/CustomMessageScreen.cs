@@ -1,4 +1,4 @@
-#region File Description
+﻿#region File Description
 //-----------------------------------------------------------------------------
 // MessageBoxScreen.cs
 //
@@ -20,12 +20,13 @@ namespace GameStateManagement
     /// A popup message box screen, used to display "are you sure?"
     /// confirmation messages.
     /// </summary>
-    class MessageBoxScreen : GameScreen
+    class CustomMessageBoxScreen : GameScreen
     {
         #region Fields
 
         string message;
         Texture2D gradientTexture;
+        Random r = new Random();
 
         #endregion
 
@@ -43,7 +44,7 @@ namespace GameStateManagement
         /// Constructor automatically includes the standard "A=ok, B=cancel"
         /// usage text prompt.
         /// </summary>
-        public MessageBoxScreen(string message)
+        public CustomMessageBoxScreen(string message)
             : this(message, true)
         { }
 
@@ -52,11 +53,11 @@ namespace GameStateManagement
         /// Constructor lets the caller specify whether to include the standard
         /// "A=ok, B=cancel" usage text prompt.
         /// </summary>
-        public MessageBoxScreen(string message, bool includeUsageText)
+        public CustomMessageBoxScreen(string message, bool includeUsageText)
         {
             const string usageText = "\nA button, Space, Enter = ok" +
-                                     "\nB button, Esc = cancel"; 
-            
+                                     "\nB button, Esc = cancel";
+
             if (includeUsageText)
                 this.message = message + usageText;
             else
@@ -108,14 +109,6 @@ namespace GameStateManagement
 
                 ExitScreen();
             }
-            else if (input.IsMenuCancel(ControllingPlayer, out playerIndex))
-            {
-                // Raise the cancelled event, then exit the message box.
-                if (Cancelled != null)
-                    Cancelled(this, new PlayerIndexEventArgs(playerIndex));
-
-                ExitScreen();
-            }
         }
 
 
@@ -135,29 +128,20 @@ namespace GameStateManagement
             // Darken down any other screens that were drawn beneath the popup.
             ScreenManager.FadeBackBufferToBlack(TransitionAlpha * 2 / 3);
 
-            // Center the message text in the viewport.
+            // Center the text in the viewport.
             Viewport viewport = ScreenManager.GraphicsDevice.Viewport;
             Vector2 viewportSize = new Vector2(viewport.Width, viewport.Height);
             Vector2 textSize = font.MeasureString(message);
             Vector2 textPosition = (viewportSize - textSize) / 2;
 
-
-            // The background includes a border somewhat larger than the text itself.
-            const int hPad = 32;
-            const int vPad = 16;
-
-            Rectangle backgroundRectangle = new Rectangle((int)textPosition.X - hPad,
-                                                          (int)textPosition.Y - vPad,
-                                                          (int)textSize.X + hPad * 2,
-                                                          (int)textSize.Y + vPad * 2);
-
             // Fade the popup alpha during transitions.
-            Color color = Color.White * TransitionAlpha;
+            Color color = new Color(
+                (byte)r.Next(0, 255),
+                (byte)r.Next(0, 255),
+                (byte)r.Next(0, 255));
+           color = color * TransitionAlpha;
 
             spriteBatch.Begin();
-
-            // Draw the background rectangle.
-            spriteBatch.Draw(gradientTexture, backgroundRectangle, color);
 
             // Draw the message box text.
             spriteBatch.DrawString(font, message, textPosition, color);
