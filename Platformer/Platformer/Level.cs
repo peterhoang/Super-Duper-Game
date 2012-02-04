@@ -657,33 +657,43 @@ namespace Platformer
         /// </summary>
         private void UpdateEnemies(GameTime gameTime)
         {
+            // Calculate the visible range of tiles
+            int left = (int)Math.Floor(camera.CameraPosition / Tile.Width);
+            int right = left + game.ScreenManager.GraphicsDevice.Viewport.Width / Tile.Width;
+            right = Math.Min(right, Width - 1);
+
+
             foreach (Enemy enemy in enemies)
             {
-                enemy.Update(gameTime);
-                // Falling off the bottom of the level kills the enemy.
-                if (enemy.BoundingRectangle.Top >= Height * Tile.Height)
+                if (enemy.Position.X / Tile.Width > left && enemy.Position.X / Tile.Width < right)
                 {
-                    if (enemy.GetType() ==  typeof(Bowser))
+
+                    enemy.Update(gameTime);
+                    // Falling off the bottom of the level kills the enemy.
+                    if (enemy.BoundingRectangle.Top >= Height * Tile.Height)
                     {
-                        Bowser bowser = enemy as Bowser;
-                        if (bowser.IsAlive)
+                        if (enemy.GetType() == typeof(Bowser))
                         {
-                            bowser.Killed();
-                            bowserFallSound.Play();
+                            Bowser bowser = enemy as Bowser;
+                            if (bowser.IsAlive)
+                            {
+                                bowser.Killed();
+                                bowserFallSound.Play();
+                            }
+
                         }
-                        
                     }
-                }
-                /*
-                foreach (Player player in PlatformerGame.Players)
-                {
-                    // Touching an enemy instantly kills the player
-                    if (enemy.BoundingRectangle.Intersects(player.BoundingRectangle))
+                    /*
+                    foreach (Player player in PlatformerGame.Players)
                     {
-                        OnPlayerKilled(enemy, player);
+                        // Touching an enemy instantly kills the player
+                        if (enemy.BoundingRectangle.Intersects(player.BoundingRectangle))
+                        {
+                            OnPlayerKilled(enemy, player);
+                        }
                     }
+                     * */
                 }
-                 * */
             }
         }
 
@@ -847,8 +857,7 @@ namespace Platformer
             foreach (Player player in PlatformerGame.Players)
                 player.Draw(gameTime, spriteBatch);
             
-            foreach (Enemy enemy in enemies)
-                enemy.Draw(gameTime, spriteBatch);
+            DrawEnemies(gameTime, spriteBatch);
 
             foreach (Spike spike in spikes)
                 spike.Draw(gameTime, spriteBatch);
@@ -867,7 +876,21 @@ namespace Platformer
             spriteBatch.End();
         }
 
-        
+        private void DrawEnemies(GameTime gameTime, SpriteBatch spriteBatch)
+        {
+            // Calculate the visible range of tiles
+            int left = (int)Math.Floor(camera.CameraPosition / Tile.Width);
+            int right = left + spriteBatch.GraphicsDevice.Viewport.Width / Tile.Width;
+            right = Math.Min(right, Width - 1);
+
+            foreach (Enemy enemy in enemies)
+            {
+                if (enemy.Position.X / Tile.Width > left && enemy.Position.X / Tile.Width < right)
+                {
+                    enemy.Draw(gameTime, spriteBatch);
+                }
+            }
+        }
 
         /// <summary>
         /// Draws each tile in the level.

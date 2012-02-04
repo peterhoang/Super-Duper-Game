@@ -12,11 +12,11 @@ namespace Platformer
     class HandgunBullet : Bullet
     {
    
-        private const float BULLET_SPEED = 10.0f;
-        private const float BULLET_DAMAGE = 25.0f;
+        private const float BULLET_SPEED = 1000.0f;
+        private const float BULLET_DAMAGE = 20.0f;
         
-        private const float MAX_BULLET_SPEED = 500.0f;
-        private const float MAX_BULLET_TIMEALIVE = 0.3f;
+        private const float MAX_BULLET_SPEED = 1000.0f;
+        private const float MAX_BULLET_TIMEALIVE = 0.2f;
    
         private float bulletTimeAlive; 
         
@@ -50,12 +50,14 @@ namespace Platformer
         {
             if (!IsAlive) return;
 
+            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             bulletSprite.PlayAnimation(bulletGraphic);
 
             float movement = (Flip == SpriteEffects.None) ? 1.0f : -1.0f;
-            position.X += movement * BULLET_SPEED;
-            
-            bulletTimeAlive += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            position.X += movement * BULLET_SPEED * elapsed;
+
+            bulletTimeAlive += elapsed;
 
             if (bulletTimeAlive > MAX_BULLET_TIMEALIVE)
             {

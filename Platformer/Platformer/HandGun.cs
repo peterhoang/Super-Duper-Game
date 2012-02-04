@@ -28,7 +28,7 @@ namespace Platformer
         private float muzzleAnimationTimer;
 
         private float rateOfFire;
-        private const float MAXFIRERATE = 0.2f;
+        private const float MAXFIRERATE = 0.18f;
         private bool canShoot = true;
 
         private const int MAX_HANDGUN_BULLETS = 4;
