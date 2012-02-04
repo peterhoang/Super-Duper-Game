@@ -141,6 +141,7 @@ namespace GameStateManagement
             Vector2 textSize = font.MeasureString(message);
             Vector2 textPosition = (viewportSize - textSize) / 2;
 
+
             // The background includes a border somewhat larger than the text itself.
             const int hPad = 32;
             const int vPad = 16;

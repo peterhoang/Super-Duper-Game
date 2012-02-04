@@ -2,3 +2,4 @@ C:\Peter\Platformer_4_0\Platformer\Content\obj\Xbox 360\Debug\ResolveAssemblyRef
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Battle-Royal-Extreme\Platformer\Content\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
 C:\Peter\Battle-Royal-Extreme\Platformer\Content\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
 C:\Peter\Super-Duper-Game\Platformer\Content\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Content\obj\Xbox 360\Debug\ResolveAssemblyReference.cache

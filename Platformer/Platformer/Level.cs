@@ -20,6 +20,7 @@ using Microsoft.Xna.Framework.Input;
 using ParticleEngine;
 using System.Diagnostics;
 using GameStateManagement;
+using Microsoft.Xna.Framework.Media;
 
 namespace Platformer
 {
@@ -44,8 +45,7 @@ namespace Platformer
         private List<Spike> spikes = new List<Spike>();
         private List<WinnerTile> winnerTiles = new List<WinnerTile>();
 
-        private float withdrawBridgeWaitTime = 0.0f;
-        private const float MaxWithdrawBridgeWaitTime = 0.5f;
+        private float withdrawBridgeWaitTime = 1.0f;
         private bool isBridgeWithdrawing = false;
         
         private const int MAX_CORPSES = 10;
@@ -102,7 +102,9 @@ namespace Platformer
 
         //Sounds
         private SoundEffect fallingSound;
-        
+        private SoundEffect clearSound;
+        private SoundEffect bowserFallSound;
+        private SoundEffect bridgeSound;        
 
         #region Loading
 
@@ -148,6 +150,9 @@ namespace Platformer
 
             // Load sounds.
             fallingSound = Content.Load<SoundEffect>("Sounds/fallSound");
+            clearSound = Content.Load<SoundEffect>("Sounds/smb_stage_clear");
+            bowserFallSound = Content.Load<SoundEffect>("Sounds/smb_bowserfalls");
+            bridgeSound = content.Load<SoundEffect>("Sounds/bridgeSound");
 
             camera = new Camera2d(this, 0.0f);
 
@@ -661,7 +666,12 @@ namespace Platformer
                     if (enemy.GetType() ==  typeof(Bowser))
                     {
                         Bowser bowser = enemy as Bowser;
-                        bowser.Killed();
+                        if (bowser.IsAlive)
+                        {
+                            bowser.Killed();
+                            bowserFallSound.Play();
+                        }
+                        
                     }
                 }
                 /*
@@ -690,6 +700,13 @@ namespace Platformer
                     confirmQuitMessageBox.Accepted += ConfirmQuitMessageBoxAccepted;
 
                     game.ScreenManager.AddScreen(confirmQuitMessageBox, game.ControllingPlayer);
+
+                    try
+                    {
+                        MediaPlayer.Stop();
+                        clearSound.Play();
+                    }
+                    catch { }
 
                 }
 
@@ -761,7 +778,7 @@ namespace Platformer
             if (xpos > 0.0f)
             {
                 //player.IsRespawnable = true;
-                float ypos = -200.0f;
+                float ypos = -0.0f;
                 player.Reset(new Vector2(xpos, ypos));
             }
             //else if (xpos == -999.9f)
@@ -891,7 +908,7 @@ namespace Platformer
 
             isBridgeWithdrawing = true;
 
-            if (withdrawBridgeWaitTime > MaxWithdrawBridgeWaitTime)
+            if (withdrawBridgeWaitTime > 0.1f) 
             {
                 // Calculate the visible range of tiles
                 int left = (int)Math.Floor(camera.CameraPosition / Tile.Width);
@@ -914,10 +931,13 @@ namespace Platformer
                                 bridgeTiles[x, y].Collision = TileCollision.Passable;
                                
                                 isThereMoreLeft = true;
+                                bridgeSound.Play();
+                                withdrawBridgeWaitTime = 0.0f;
                                 break;
                             }
                         }
                     }
+                    if (isThereMoreLeft) break;
                 }
                 if (!isThereMoreLeft) isBridgeWithdrawing = false;
             }

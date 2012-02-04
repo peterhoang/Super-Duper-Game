@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 
 namespace Platformer
@@ -42,6 +43,8 @@ namespace Platformer
         public bool IsOnGround { get; set; }
         public bool IsAlive { get; set; }
 
+        private SoundEffect fireSound;
+
         #endregion
 
 
@@ -79,6 +82,8 @@ namespace Platformer
 
             dummyTexture = new Texture2D(Level.Game.ScreenManager.GraphicsDevice, 1, 1);
             dummyTexture.SetData(new Color[] { Color.White });
+
+            fireSound = level.Content.Load<SoundEffect>("Sounds/smb_bowserfire");
         }
 
         public void Killed()
@@ -181,6 +186,7 @@ namespace Platformer
             {
                 if (!bullet.IsAlive)
                 {
+                    fireSound.Play();
                     bullet.IsAlive = true;
                     bullet.Position = this.Position + new Vector2(-2, -22);
                     bullet.direction = direction;

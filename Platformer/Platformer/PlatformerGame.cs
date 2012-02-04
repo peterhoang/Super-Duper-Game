@@ -133,6 +133,7 @@ namespace Platformer
         private static SoundEffect ultrakillSound;
         private static SoundEffect unstoppableSound;
         private static SoundEffect wickedsickSound;
+        private static SoundEffect failSound;
         // ***********************************************************************************
 
         #endregion
@@ -212,6 +213,7 @@ namespace Platformer
             ultrakillSound = content.Load<SoundEffect>("Sounds/UT/ultrakill");
             unstoppableSound = content.Load<SoundEffect>("Sounds/UT/unstoppable");
             wickedsickSound = content.Load<SoundEffect>("Sounds/UT/wickedsick");
+            failSound = content.Load<SoundEffect>("Sounds/smb_gameover");
 
             //Known issue that you get exceptions if you use Media PLayer while connected to your PC
             //See http://social.msdn.microsoft.com/Forums/en/windowsphone7series/thread/c8a243d2-d360-46b1-96bd-62b1ef268c66
@@ -439,6 +441,12 @@ namespace Platformer
                 Players[idx].IsRespawnable = false;
                 Players[idx].Reset(Vector2.Zero);
                 bossFight = true;
+                try
+                {
+                    MediaPlayer.Stop();
+                    MediaPlayer.Play(content.Load<Song>("Sounds/Music/smb-castle"));
+                }
+                catch { }
             }
       
 
@@ -629,10 +637,18 @@ namespace Platformer
             confirmQuitMessageBox.Accepted += ConfirmQuitMessageBoxAccepted;
 
             ScreenManager.AddScreen(confirmQuitMessageBox, ControllingPlayer);
+
+            try
+            {
+                MediaPlayer.Stop();
+                failSound.Play();
+            }
+            catch { }
+
         }
         void ConfirmQuitMessageBoxAccepted(object sender, PlayerIndexEventArgs e)
         {
-            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new PlatformerGame());
+            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new PlatformerGame(), new CountDownScreen());
         }
 
         private void ReloadCurrentLevel()
