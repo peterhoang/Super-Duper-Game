@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb</Output>
-      <Time>2011-12-15T19:26:51.6411-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Gem.xnb</Output>
+      <Time>2012-02-03T15:34:46.3838758-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterA\Idle.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb</Output>
-      <Time>2011-12-15T19:26:51.6431-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3848759-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterA\Run.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb</Output>
-      <Time>2011-12-15T19:26:51.6441-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterA\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3858759-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterB\Idle.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb</Output>
-      <Time>2011-12-15T19:26:51.6461-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.386876-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterB\Run.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb</Output>
-      <Time>2011-12-15T19:26:51.6481-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterB\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.387876-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterC\Idle.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb</Output>
-      <Time>2011-12-15T19:26:51.6491-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3898762-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterC\Run.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb</Output>
-      <Time>2011-12-15T19:26:51.6501-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterC\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3908762-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterD\Idle.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb</Output>
-      <Time>2011-12-15T19:26:51.6521-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3918763-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\MonsterD\Run.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb</Output>
-      <Time>2011-12-15T19:26:51.6531-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\MonsterD\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3928763-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Celebrate.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
-      <Time>2011-12-15T19:26:51.6711-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
+      <Time>2012-02-03T15:34:46.4088772-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Die.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb</Output>
-      <Time>2011-12-15T19:26:51.6721-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Die.xnb</Output>
+      <Time>2012-02-03T15:34:46.4098773-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Idle.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb</Output>
-      <Time>2011-12-15T19:26:51.6741-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4108774-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Jump.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb</Output>
-      <Time>2011-12-15T19:26:51.6751-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.4118774-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Run.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb</Output>
-      <Time>2011-12-15T19:26:51.6871-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.422878-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA0.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb</Output>
-      <Time>2011-12-15T19:26:51.7041-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA0.xnb</Output>
+      <Time>2012-02-03T15:34:46.4408791-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA1.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb</Output>
-      <Time>2011-12-15T19:26:51.7061-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA1.xnb</Output>
+      <Time>2012-02-03T15:34:46.4418791-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA2.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb</Output>
-      <Time>2011-12-15T19:26:51.7061-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA2.xnb</Output>
+      <Time>2012-02-03T15:34:46.4428792-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA3.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb</Output>
-      <Time>2011-12-15T19:26:51.7071-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA3.xnb</Output>
+      <Time>2012-02-03T15:34:46.4438792-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA4.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb</Output>
-      <Time>2011-12-15T19:26:51.7081-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA4.xnb</Output>
+      <Time>2012-02-03T15:34:46.4458794-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA5.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb</Output>
-      <Time>2011-12-15T19:26:51.7091-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA5.xnb</Output>
+      <Time>2012-02-03T15:34:46.4558799-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockA6.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb</Output>
-      <Time>2011-12-15T19:26:51.7101-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockA6.xnb</Output>
+      <Time>2012-02-03T15:34:46.4598802-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockB0.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb</Output>
-      <Time>2011-12-15T19:26:51.7111-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB0.xnb</Output>
+      <Time>2012-02-03T15:34:46.4638804-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\BlockB1.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb</Output>
-      <Time>2011-12-15T19:26:51.7121-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\BlockB1.xnb</Output>
+      <Time>2012-02-03T15:34:46.4688807-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\Platform.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb</Output>
-      <Time>2011-12-15T19:26:51.7141-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Platform.xnb</Output>
+      <Time>2012-02-03T15:34:46.4708808-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer0_0.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb</Output>
-      <Time>2011-12-15T19:26:51.5271-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.2138661-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer0_1.png</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb</Output>
-      <Time>2011-12-15T19:26:51.5321-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2178663-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer0_2.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb</Output>
-      <Time>2011-12-15T19:26:51.5361-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2208665-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer1_0.png</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb</Output>
-      <Time>2011-12-15T19:26:51.5471-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.229867-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer1_1.png</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb</Output>
-      <Time>2011-12-15T19:26:51.5561-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2378675-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer1_2.png</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb</Output>
-      <Time>2011-12-15T19:26:51.5641-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2448679-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer2_0.png</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb</Output>
-      <Time>2011-12-15T19:26:51.5681-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.247868-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer2_1.png</Source>
@@ -286,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb</Output>
-      <Time>2011-12-15T19:26:51.5711-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2518683-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Layer2_2.png</Source>
@@ -295,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb</Output>
-      <Time>2011-12-15T19:26:51.5761-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2558685-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_died.png</Source>
@@ -304,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb</Output>
-      <Time>2011-12-15T19:26:51.5871-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_died.xnb</Output>
+      <Time>2012-02-03T15:34:46.2718694-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_lose.png</Source>
@@ -313,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb</Output>
-      <Time>2011-12-15T19:26:51.5881-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_lose.xnb</Output>
+      <Time>2012-02-03T15:34:46.2728695-05:00</Time>
     </Item>
     <Item>
       <Source>Overlays\you_win.png</Source>
@@ -322,8 +322,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb</Output>
-      <Time>2011-12-15T19:26:51.5891-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Overlays\you_win.xnb</Output>
+      <Time>2012-02-03T15:34:46.2738695-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_running.png</Source>
@@ -331,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_running.xnb</Output>
-      <Time>2011-12-15T19:26:51.6931-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_running.xnb</Output>
+      <Time>2012-02-03T15:34:46.4268783-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\Exit.png</Source>
@@ -340,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb</Output>
-      <Time>2011-12-15T19:26:51.7131-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\Exit.xnb</Output>
+      <Time>2012-02-03T15:34:46.4698807-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_idle.png</Source>
@@ -349,8 +349,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_idle.xnb</Output>
-      <Time>2011-12-15T19:26:51.6891-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4248782-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_jump.png</Source>
@@ -358,8 +358,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_jump.xnb</Output>
-      <Time>2011-12-15T19:26:51.6901-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.4258782-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_roll.png</Source>
@@ -367,8 +367,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_roll.xnb</Output>
-      <Time>2011-12-15T19:26:51.6911-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_roll.xnb</Output>
+      <Time>2012-02-03T15:34:46.4258782-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_die.png</Source>
@@ -376,8 +376,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_die.xnb</Output>
-      <Time>2011-12-15T19:26:51.6881-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_die.xnb</Output>
+      <Time>2012-02-03T15:34:46.4248782-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\handgun.png</Source>
@@ -385,8 +385,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\handgun.xnb</Output>
-      <Time>2011-12-15T19:26:51.6991-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\handgun.xnb</Output>
+      <Time>2012-02-03T15:34:46.4338787-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\shotgun.png</Source>
@@ -394,8 +394,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\shotgun.xnb</Output>
-      <Time>2011-12-15T19:26:51.7011-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\shotgun.xnb</Output>
+      <Time>2012-02-03T15:34:46.4368788-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\handgun_muzzle.png</Source>
@@ -403,8 +403,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb</Output>
-      <Time>2011-12-15T19:26:51.7001-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4338787-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_roll2.png</Source>
@@ -412,8 +412,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_roll2.xnb</Output>
-      <Time>2011-12-15T19:26:51.6921-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_roll2.xnb</Output>
+      <Time>2012-02-03T15:34:46.4268783-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\shotgun_muzzle.png</Source>
@@ -421,8 +421,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb</Output>
-      <Time>2011-12-15T19:26:51.7031-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4368788-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\bullet.png</Source>
@@ -430,8 +430,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\bullet.xnb</Output>
-      <Time>2011-12-15T19:26:51.6981-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\bullet.xnb</Output>
+      <Time>2012-02-03T15:34:46.4328786-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_yellow_die.png</Source>
@@ -439,8 +439,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_die.xnb</Output>
-      <Time>2011-12-15T19:26:51.6931-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_die.xnb</Output>
+      <Time>2012-02-03T15:34:46.4278783-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_yellow_idle.png</Source>
@@ -448,8 +448,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_idle.xnb</Output>
-      <Time>2011-12-15T19:26:51.6951-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4278783-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_yellow_jump.png</Source>
@@ -457,8 +457,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_jump.xnb</Output>
-      <Time>2011-12-15T19:26:51.6961-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.4288784-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_yellow_roll.png</Source>
@@ -466,8 +466,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_roll.xnb</Output>
-      <Time>2011-12-15T19:26:51.6971-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_roll.xnb</Output>
+      <Time>2012-02-03T15:34:46.4288784-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\cop_yellow_running.png</Source>
@@ -475,8 +475,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_running.xnb</Output>
-      <Time>2011-12-15T19:26:51.6971-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_running.xnb</Output>
+      <Time>2012-02-03T15:34:46.4308785-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\shell.png</Source>
@@ -484,8 +484,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\shell.xnb</Output>
-      <Time>2011-12-15T19:26:51.7011-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\shell.xnb</Output>
+      <Time>2012-02-03T15:34:46.4358788-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Particles\explosion.png</Source>
@@ -493,8 +493,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Particles\explosion.xnb</Output>
-      <Time>2011-12-15T19:26:51.6561-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Particles\explosion.xnb</Output>
+      <Time>2012-02-03T15:34:46.3958765-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Particles\smoke.bmp</Source>
@@ -502,8 +502,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Particles\smoke.xnb</Output>
-      <Time>2011-12-15T19:26:51.6691-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Particles\smoke.xnb</Output>
+      <Time>2012-02-03T15:34:46.4068771-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\quad.png</Source>
@@ -511,8 +511,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\quad.xnb</Output>
-      <Time>2011-12-15T19:26:51.7041-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\quad.xnb</Output>
+      <Time>2012-02-03T15:34:46.438879-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\blue_corpse.png</Source>
@@ -520,8 +520,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\blue_corpse.xnb</Output>
-      <Time>2011-12-16T23:12:30.9338-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\blue_corpse.xnb</Output>
+      <Time>2012-02-03T15:34:46.4238781-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\yellow_corpse.png</Source>
@@ -529,8 +529,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\yellow_corpse.xnb</Output>
-      <Time>2011-12-16T23:12:30.9348-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\yellow_corpse.xnb</Output>
+      <Time>2012-02-03T15:34:46.4318786-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\arrow.png</Source>
@@ -538,8 +538,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\arrow.xnb</Output>
-      <Time>2011-12-17T22:41:13.9078-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\arrow.xnb</Output>
+      <Time>2012-02-03T15:34:46.4378789-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\blockC0.png</Source>
@@ -547,8 +547,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC0.xnb</Output>
-      <Time>2012-02-04T09:20:15.3398-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC0.xnb</Output>
+      <Time>2012-02-03T15:34:46.473881-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\blockC1.png</Source>
@@ -556,8 +556,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC1.xnb</Output>
-      <Time>2012-02-04T09:20:15.3408-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\blockC1.xnb</Output>
+      <Time>2012-02-03T15:34:46.474881-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background0_0.png</Source>
@@ -565,8 +565,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_0.xnb</Output>
-      <Time>2012-02-04T09:20:15.0938-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.1708636-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background0_1.png</Source>
@@ -574,8 +574,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_1.xnb</Output>
-      <Time>2012-02-04T09:20:15.0988-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.1728637-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background0_2.png</Source>
@@ -583,8 +583,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_2.xnb</Output>
-      <Time>2012-02-04T09:20:15.1008-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background0_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.1758639-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\block-87.png</Source>
@@ -592,8 +592,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87.xnb</Output>
-      <Time>2012-02-04T09:20:15.3398-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87.xnb</Output>
+      <Time>2012-02-03T15:34:46.473881-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\spike.png</Source>
@@ -601,8 +601,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\spike.xnb</Output>
-      <Time>2012-02-04T09:20:15.3448-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\spike.xnb</Output>
+      <Time>2012-02-03T15:34:46.4788812-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Bowser\Fire.png</Source>
@@ -610,8 +610,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Fire.xnb</Output>
-      <Time>2012-02-04T09:20:15.3288-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Fire.xnb</Output>
+      <Time>2012-02-03T15:34:46.3808756-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Weapons\firebreath.png</Source>
@@ -619,8 +619,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\firebreath.xnb</Output>
-      <Time>2012-02-04T09:20:15.3328-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\firebreath.xnb</Output>
+      <Time>2012-02-03T15:34:46.4328786-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background1_0.png</Source>
@@ -628,8 +628,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_0.xnb</Output>
-      <Time>2012-02-04T09:20:15.1098-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.1828643-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background1_1.png</Source>
@@ -637,8 +637,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_1.xnb</Output>
-      <Time>2012-02-04T09:20:15.1208-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.1918648-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background1_2.png</Source>
@@ -646,8 +646,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_2.xnb</Output>
-      <Time>2012-02-04T09:20:15.1248-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background1_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.194865-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\block-87-red.png</Source>
@@ -655,8 +655,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87-red.xnb</Output>
-      <Time>2012-02-04T09:20:15.3388-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87-red.xnb</Output>
+      <Time>2012-02-03T15:34:46.4728809-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Bowser\Run.png</Source>
@@ -664,8 +664,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Run.xnb</Output>
-      <Time>2012-02-04T09:20:15.3318-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3828758-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Bowser\Jump.png</Source>
@@ -673,8 +673,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Jump.xnb</Output>
-      <Time>2012-02-04T09:20:15.3308-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.3818757-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Bowser\Idle.png</Source>
@@ -682,8 +682,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Idle.xnb</Output>
-      <Time>2012-02-04T09:20:15.3298-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Bowser\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3818757-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background2_0.png</Source>
@@ -691,8 +691,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_0.xnb</Output>
-      <Time>2012-02-04T09:20:15.1318-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.1998653-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background2_1.png</Source>
@@ -700,8 +700,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_1.xnb</Output>
-      <Time>2012-02-04T09:20:15.1408-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2058656-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background2_2.png</Source>
@@ -709,8 +709,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_2.xnb</Output>
-      <Time>2012-02-04T09:20:15.1458-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Background2_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2108659-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\block-16.png</Source>
@@ -718,8 +718,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-16.xnb</Output>
-      <Time>2012-02-04T09:20:15.3368-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-16.xnb</Output>
+      <Time>2012-02-03T15:34:46.4718808-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\block-3.png</Source>
@@ -727,8 +727,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-3.xnb</Output>
-      <Time>2012-02-04T09:20:15.3378-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-3.xnb</Output>
+      <Time>2012-02-03T15:34:46.4718808-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\greyblock1.png</Source>
@@ -736,8 +736,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\greyblock1.xnb</Output>
-      <Time>2012-02-04T09:20:15.3438-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\greyblock1.xnb</Output>
+      <Time>2012-02-03T15:34:46.4768811-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\background.png</Source>
@@ -745,8 +745,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\background.xnb</Output>
-      <Time>2012-02-04T09:20:15.1478-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\background.xnb</Output>
+      <Time>2012-02-03T15:34:46.2578686-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\blank.png</Source>
@@ -754,8 +754,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\blank.xnb</Output>
-      <Time>2012-02-04T09:20:15.3328-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\blank.xnb</Output>
+      <Time>2012-02-03T15:34:46.4378789-05:00</Time>
     </Item>
     <Item>
       <Source>gradient.png</Source>
@@ -763,8 +763,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\gradient.xnb</Output>
-      <Time>2012-02-04T09:20:15.3458-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\gradient.xnb</Output>
+      <Time>2012-02-03T15:34:46.4788812-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\block-87-purp.png</Source>
@@ -772,8 +772,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87-purp.xnb</Output>
-      <Time>2012-02-04T09:20:15.3378-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\block-87-purp.xnb</Output>
+      <Time>2012-02-03T15:34:46.4728809-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\bridge.png</Source>
@@ -781,8 +781,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bridge.xnb</Output>
-      <Time>2012-02-04T09:20:15.3418-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\bridge.xnb</Output>
+      <Time>2012-02-03T15:34:46.4758811-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\chain.png</Source>
@@ -790,8 +790,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chain.xnb</Output>
-      <Time>2012-02-04T09:20:15.3428-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chain.xnb</Output>
+      <Time>2012-02-03T15:34:46.4758811-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\handle.png</Source>
@@ -799,8 +799,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\handle.xnb</Output>
-      <Time>2012-02-04T09:20:15.3438-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\handle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4778812-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\lavatop.png</Source>
@@ -808,8 +808,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\lavatop.xnb</Output>
-      <Time>2012-02-04T09:20:15.3448-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\lavatop.xnb</Output>
+      <Time>2012-02-03T15:34:46.4778812-05:00</Time>
     </Item>
     <Item>
       <Source>Tiles\chain_flipped.png</Source>
@@ -817,8 +817,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chain_flipped.xnb</Output>
-      <Time>2012-02-04T09:20:15.3428-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Tiles\chain_flipped.xnb</Output>
+      <Time>2012-02-03T15:34:46.4768811-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\chunli.png</Source>
@@ -826,8 +826,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\chunli.xnb</Output>
-      <Time>2012-02-04T09:20:15.3338-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\chunli.xnb</Output>
+      <Time>2012-02-03T15:34:46.438879-05:00</Time>
     </Item>
     <Item>
       <Source>Fonts\Hud.spritefont</Source>
@@ -835,8 +835,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
-      <Time>2011-12-15T19:26:51.5811-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
+      <Time>2012-02-03T15:34:46.2608688-05:00</Time>
     </Item>
     <Item>
       <Source>Fonts\menufont.spritefont</Source>
@@ -844,8 +844,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\menufont.xnb</Output>
-      <Time>2012-02-04T09:20:15.1548-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\menufont.xnb</Output>
+      <Time>2012-02-03T15:34:46.2628689-05:00</Time>
     </Item>
     <Item>
       <Source>Fonts\gamefont.spritefont</Source>
@@ -853,8 +853,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\gamefont.xnb</Output>
-      <Time>2012-02-04T09:20:15.1528-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\gamefont.xnb</Output>
+      <Time>2012-02-03T15:34:46.2618688-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\GemCollected.wma</Source>
@@ -862,8 +862,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
-      <Time>2011-12-15T19:26:51.5951-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\GemCollected.xnb</Output>
+      <Time>2012-02-03T15:34:46.2768697-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\MonsterKilled.wma</Source>
@@ -871,8 +871,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb</Output>
-      <Time>2011-12-15T19:26:51.5971-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\MonsterKilled.xnb</Output>
+      <Time>2012-02-03T15:34:46.2788698-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Powerup.wma</Source>
@@ -880,8 +880,8 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
-      <Time>2011-12-15T19:26:51.6391-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
+      <Time>2012-02-03T15:34:46.3188721-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\dominating.wav</Source>
@@ -889,8 +889,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\dominating.xnb</Output>
-      <Time>2012-02-04T09:20:15.2398-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\dominating.xnb</Output>
+      <Time>2012-02-03T15:34:46.3228723-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\doublekill.wav</Source>
@@ -898,8 +898,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\doublekill.xnb</Output>
-      <Time>2012-02-04T09:20:15.2428-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\doublekill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3258725-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\firstblood.wav</Source>
@@ -907,8 +907,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\firstblood.xnb</Output>
-      <Time>2012-02-04T09:20:15.2458-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\firstblood.xnb</Output>
+      <Time>2012-02-03T15:34:46.3278726-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\godlike.wav</Source>
@@ -916,8 +916,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\godlike.xnb</Output>
-      <Time>2012-02-04T09:20:15.2498-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\godlike.xnb</Output>
+      <Time>2012-02-03T15:34:46.3318728-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\headshot.wav</Source>
@@ -925,8 +925,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\headshot.xnb</Output>
-      <Time>2012-02-04T09:20:15.2528-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\headshot.xnb</Output>
+      <Time>2012-02-03T15:34:46.3338729-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\holyshit.wav</Source>
@@ -934,8 +934,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\holyshit.xnb</Output>
-      <Time>2012-02-04T09:20:15.2578-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\holyshit.xnb</Output>
+      <Time>2012-02-03T15:34:46.3378732-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\killingspree.wav</Source>
@@ -943,8 +943,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\killingspree.xnb</Output>
-      <Time>2012-02-04T09:20:15.2608-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\killingspree.xnb</Output>
+      <Time>2012-02-03T15:34:46.3408733-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\ludicrouskill.wav</Source>
@@ -952,8 +952,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\ludicrouskill.xnb</Output>
-      <Time>2012-02-04T09:20:15.2648-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\ludicrouskill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3438735-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\megakill.wav</Source>
@@ -961,8 +961,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\megakill.xnb</Output>
-      <Time>2012-02-04T09:20:15.2678-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\megakill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3468737-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\monsterkill.wav</Source>
@@ -970,8 +970,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\monsterkill.xnb</Output>
-      <Time>2012-02-04T09:20:15.2738-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\monsterkill.xnb</Output>
+      <Time>2012-02-03T15:34:46.351874-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\multikill.wav</Source>
@@ -979,8 +979,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\multikill.xnb</Output>
-      <Time>2012-02-04T09:20:15.2768-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\multikill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3538741-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\play.wav</Source>
@@ -988,8 +988,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\play.xnb</Output>
-      <Time>2012-02-04T09:20:15.2808-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\play.xnb</Output>
+      <Time>2012-02-03T15:34:46.3568743-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\rampage.wav</Source>
@@ -997,8 +997,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\rampage.xnb</Output>
-      <Time>2012-02-04T09:20:15.2838-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\rampage.xnb</Output>
+      <Time>2012-02-03T15:34:46.3588744-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\ultrakill.wav</Source>
@@ -1006,8 +1006,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\ultrakill.xnb</Output>
-      <Time>2012-02-04T09:20:15.2858-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\ultrakill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3618745-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\unstoppable.wav</Source>
@@ -1015,8 +1015,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\unstoppable.xnb</Output>
-      <Time>2012-02-04T09:20:15.2888-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\unstoppable.xnb</Output>
+      <Time>2012-02-03T15:34:46.3638747-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\UT\wickedsick.wav</Source>
@@ -1024,8 +1024,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\wickedsick.xnb</Output>
-      <Time>2012-02-04T09:20:15.2928-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\UT\wickedsick.xnb</Output>
+      <Time>2012-02-03T15:34:46.3668748-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\jumpSound.wav</Source>
@@ -1033,8 +1033,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\jumpSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.3008-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\jumpSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3718751-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\pistolShotSound.wav</Source>
@@ -1042,8 +1042,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\pistolShotSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.3068-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\pistolShotSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3758754-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\rollSound.wav</Source>
@@ -1051,8 +1051,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\rollSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.3088-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\rollSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3778755-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\shotgunBlastSound.wav</Source>
@@ -1060,8 +1060,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\shotgunBlastSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.3118-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\shotgunBlastSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3798756-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\killedSound.wav</Source>
@@ -1069,8 +1069,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\killedSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.3048-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\killedSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3738752-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\fallSound.wav</Source>
@@ -1078,8 +1078,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\fallSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.2968-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\fallSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3688749-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\hitSound.wav</Source>
@@ -1087,8 +1087,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\hitSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.2988-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\hitSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.369875-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\smb_bowserfalls.wav</Source>
@@ -1096,8 +1096,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_bowserfalls.xnb</Output>
-      <Time>2012-02-04T09:20:15.3148-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_bowserfalls.xnb</Output>
+      <Time>2012-02-03T17:42:17.8225131-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\smb_bowserfire.wav</Source>
@@ -1105,8 +1105,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_bowserfire.xnb</Output>
-      <Time>2012-02-04T09:20:15.3168-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_bowserfire.xnb</Output>
+      <Time>2012-02-03T17:42:17.8255132-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\smb_gameover.wav</Source>
@@ -1114,8 +1114,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_gameover.xnb</Output>
-      <Time>2012-02-04T09:20:15.3218-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_gameover.xnb</Output>
+      <Time>2012-02-03T17:42:17.8285134-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\smb_stage_clear.wav</Source>
@@ -1123,8 +1123,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_stage_clear.xnb</Output>
-      <Time>2012-02-04T09:20:15.3278-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\smb_stage_clear.xnb</Output>
+      <Time>2012-02-03T17:49:57.077781-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\bridgeSound.wav</Source>
@@ -1132,8 +1132,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\bridgeSound.xnb</Output>
-      <Time>2012-02-04T09:20:15.2938-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\bridgeSound.xnb</Output>
+      <Time>2012-02-03T18:41:37.9121385-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Music\bgmusic1.mp3</Source>
@@ -1141,9 +1141,9 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\bgmusic1.xnb</Output>
-      <Extra>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\bgmusic1.wma</Extra>
-      <Time>2012-02-04T09:20:15.2118-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\bgmusic1.xnb</Output>
+      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\bgmusic1.wma</Extra>
+      <Time>2012-02-03T15:34:46.316872-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Music\smb-castle.mp3</Source>
@@ -1151,9 +1151,54 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\smb-castle.xnb</Output>
-      <Extra>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\smb-castle.wma</Extra>
-      <Time>2012-02-04T09:20:15.2358-05:00</Time>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\smb-castle.xnb</Output>
+      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\smb-castle.wma</Extra>
+      <Time>2012-02-03T17:42:09.8710583-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\knifeSound.wav</Source>
+      <Name>Sounds\knifeSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\knifeSound.xnb</Output>
+      <Time>2012-02-06T13:04:53.620316-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_grenade.png</Source>
+      <Name>Sprites\Player\cop_grenade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_grenade.xnb</Output>
+      <Time>2012-02-06T14:06:24.4496884-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\grenadeSound.wav</Source>
+      <Name>Sounds\grenadeSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\grenadeSound.xnb</Output>
+      <Time>2012-02-06T13:11:48.4666612-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\knife.png</Source>
+      <Name>Sprites\Weapons\knife</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\knife.xnb</Output>
+      <Time>2012-02-06T12:53:33.562539-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\knife_idle.png</Source>
+      <Name>Sprites\Weapons\knife_idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\knife_idle.xnb</Output>
+      <Time>2012-02-06T16:03:10.493835-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -1162,10 +1207,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Content\</RootDirectory>
-      <LoggerRootDirectory>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Peter\Super-Duper-Game\Platformer\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -1194,7 +1239,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-12-10T12:20:04.2622-05:00</Value>
+        <Value>2011-12-08T12:10:03.1823313-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

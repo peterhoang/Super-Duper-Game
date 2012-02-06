@@ -128,6 +128,11 @@ Content\Sounds\Music\bgmusic1.xnb
 Content\Sounds\Music\bgmusic1.wma
 Content\Sounds\Music\smb-castle.xnb
 Content\Sounds\Music\smb-castle.wma
+Content\Sounds\knifeSound.xnb
+Content\Sprites\Player\cop_grenade.xnb
+Content\Sounds\grenadeSound.xnb
+Content\Sprites\Weapons\knife.xnb
+Content\Sprites\Weapons\knife_idle.xnb
 Content\Levels\3.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

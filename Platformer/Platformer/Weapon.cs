@@ -1,33 +1,26 @@
 using System;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
-
 
 namespace Platformer
 {
     /// <summary>
     /// This is a game component that implements IUpdateable.
     /// </summary>
-    abstract class Gun
+    abstract class Weapon
     {
-        public PlatformerGame Level
+        public PlatformerGame Game
         {
-            get { return level; }
+            get { return game; }
         }
-        protected PlatformerGame level;
+        protected PlatformerGame game;
 
         public Vector2 Position
         {
             get { return position; }
             set { position = value; }
         }
-        Vector2 position;
+        protected Vector2 position;
 
         public SpriteEffects Flip
         {
@@ -43,9 +36,9 @@ namespace Platformer
         }
         protected Player _player;
 
-        public Gun() { }
+        public Weapon() { }
 
-        public Gun(Game game)
+        public Weapon(Game game)
         {
         }
 
@@ -57,7 +50,7 @@ namespace Platformer
 
         public abstract void Update(GameTime gameTime, Vector2 position, SpriteEffects flip);
 
-        public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch, bool isRolling);
+        public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch);
 
     }
 }

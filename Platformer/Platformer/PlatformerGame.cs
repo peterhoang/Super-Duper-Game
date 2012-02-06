@@ -61,7 +61,7 @@ namespace Platformer
         {
             get { return level; }
         }
-        private bool wasContinuePressed;
+        //private bool wasContinuePressed;
         public bool firstKill = false;
         public static bool bossFight = false;
 
@@ -334,23 +334,6 @@ namespace Platformer
                         LoadNextLevel();
                     }
 
-                    // Perform the appropriate action to advance the game and
-                    // to get the player back to playing.
-                    // if (!wasContinuePressed && continuePressed)
-                    // {
-                    //if (!player.IsAlive)
-                    //{
-                    //    level.StartNewLife(player);
-                    //}
-                    // else if (level.TimeRemaining == TimeSpan.Zero)
-                    // {
-
-                    //     else
-                    //         ReloadCurrentLevel();
-                    // }
-
-                    //}
-                    //wasContinuePressed = continuePressed;
                 }
                 //check if both player is in the "no-man lands"
                 if (players[0].Position.X == -999.9f && players[1].Position.X == -999.9f)

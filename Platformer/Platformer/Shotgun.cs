@@ -1,16 +1,12 @@
 using System;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
+using System.Collections.Generic;
 
 namespace Platformer
 {
-    class Shotgun : Gun
+    class Shotgun : Weapon
     {
         private Animation baseGraphic;
         private AnimationPlayer sprite;
@@ -34,7 +30,7 @@ namespace Platformer
 
         public Shotgun(PlatformerGame level, Vector2 position, Player player)
         {
-            this.level = level;
+            this.game = level;
             Position = position;
             _player = player;
 
@@ -54,9 +50,9 @@ namespace Platformer
         public void LoadContent()
         {
             // Load animated textures.
-            baseGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun"), 0.1f, false);
-            muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shotgun_muzzle"), 0.01f, false);
-            shotSound = Level.Content.Load<SoundEffect>("Sounds/shotgunBlastSound");
+            baseGraphic = new Animation(Game.Content.Load<Texture2D>("Sprites/Weapons/shotgun"), 0.1f, false);
+            muzzleFire = new Animation(Game.Content.Load<Texture2D>("Sprites/Weapons/shotgun_muzzle"), 0.01f, false);
+            shotSound = Game.Content.Load<SoundEffect>("Sounds/shotgunBlastSound");
         }
 
         public override void Reset()
@@ -133,11 +129,10 @@ namespace Platformer
         /// <summary>
         /// Draws the gun
         /// </summary>
-        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch, bool isRolling)
+        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             // Draw that sprite.
-            if (!isRolling)
-                sprite.Draw(gameTime, spriteBatch, Position, Flip);
+            sprite.Draw(gameTime, spriteBatch, Position, Flip);
 
             if (isShooting)
             {

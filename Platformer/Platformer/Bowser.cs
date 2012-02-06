@@ -22,12 +22,13 @@ namespace Platformer
         public EntityState State { get; set; }
 
         // Constants for controlling vertical movement
-        private const float MaxJumpTime = 0.7f;
-        private const float JumpLaunchVelocity = -1000.0f;
-        private const float GravityAcceleration = 200.0f;
-        private const float MaxFallSpeed = 550.0f;
+        private const float MaxJumpTime = 1.0f;
+        private const float JumpLaunchVelocity = -800.0f;
+        private const float GravityAcceleration = 150.0f;
+        private const float MaxFallSpeed = 350.0f;
         private const float JumpControlPower = 0.14f;
         private const float MaxDistFromPlayer = 150.0f;
+        private const float MinDistFromPlayer = 80.0f;
         private const int MAX_FIRE = 1;
 
         private float jumpTime = 0.0f;
@@ -43,7 +44,21 @@ namespace Platformer
         public bool IsOnGround { get; set; }
         public bool IsAlive { get; set; }
 
+        //Sounds
         private SoundEffect fireSound;
+        private SoundEffect hitSound;
+        private SoundEffect bowserFallSound;
+
+        //Sprite Effects: Pulse red
+        private bool pulseRed;
+        private float pulseRedTime;
+        private const float MAX_PULSE_TIME = 0.4f;
+        private int gotHitFrom;
+
+        private float health;
+        private bool playDeathAnimation;
+
+        Texture2D debugTexture;
 
         #endregion
 
@@ -68,15 +83,18 @@ namespace Platformer
         /// </summary>
         public override void LoadContent(string spriteSet)
         {
+            debugTexture = new Texture2D(Level.Game.ScreenManager.GraphicsDevice, 1, 1);
+            debugTexture.SetData(new Color[] { Color.White });
+
             // Load animations.
             base.LoadContent(spriteSet);
             fireAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/" + spriteSet + "/Fire"), 0.1f, true);
             jumpAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/" + spriteSet + "/Jump"), 0.1f, true);
 
             // Calculate bounds within texture size.
-            int width = (int)(idleAnimation.FrameWidth);
+            int width = (int)(idleAnimation.FrameWidth * 0.4);
             int left = (idleAnimation.FrameWidth - width) / 2;
-            int height = (int)(idleAnimation.FrameWidth);
+            int height = (int)(idleAnimation.FrameWidth * 0.4);
             int top = idleAnimation.FrameHeight - height;
             localBounds = new Rectangle(left, top, width, height);
 
@@ -84,6 +102,11 @@ namespace Platformer
             dummyTexture.SetData(new Color[] { Color.White });
 
             fireSound = level.Content.Load<SoundEffect>("Sounds/smb_bowserfire");
+            hitSound = level.Content.Load<SoundEffect>("Sounds/hitSound");
+            bowserFallSound = level.Content.Load<SoundEffect>("Sounds/smb_bowserfalls");
+
+
+            health = 100.0f;
         }
 
         public void Killed()
@@ -94,89 +117,111 @@ namespace Platformer
                 fire.Reset();
                 fire.IsAlive = false;
             }
+            bowserFallSound.Play();
         }
 
         public override void Update(GameTime gameTime)
         {
-            if (!IsAlive)
-            {
-                return;
-            }
-
             float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            if (IsAlive && IsOnGround)
+            if (playDeathAnimation)
             {
-                if (Math.Abs(velocity.X) - 0.02f > 0)
+                velocity.X = 0.0f;
+                velocity.Y += 0.4f;
+
+                // Move in the current direction.
+                // Apply velocity.
+                position += velocity * elapsed;
+                position = new Vector2((float)Math.Round(position.X), (float)Math.Round(position.Y));
+            }
+            else if (IsAlive)
+            {
+                
+
+                if (IsAlive && IsOnGround)
                 {
-                    sprite.PlayAnimation(runAnimation);
+                    if (Math.Abs(velocity.X) - 0.02f > 0)
+                    {
+                        sprite.PlayAnimation(runAnimation);
+                    }
+                    else
+                    {
+                        sprite.PlayAnimation(idleAnimation);
+                    }
+                }
+
+                //random jumping
+                waitTime += elapsed;
+                if (waitTime >= MaxWaitTime)
+                {
+                    int rand = PlatformerGame.RandomBetween(1, 100);
+                    if (rand < 75)
+                    {
+                        this.State = EntityState.RUNNING;
+                    }
+                    else
+                    {
+                        this.State = EntityState.JUMPING;
+                    }
+                    if (rand > 50)
+                    {
+                        FireAttack();
+                        sprite.PlayAnimation(fireAnimation);
+                    }
+                    waitTime = 0.0f;
+                }
+
+                // pursue the attacker
+                Player player = PlatformerGame.Players[PlatformerGame.attacker_id];
+                float deltaDist = this.position.X - player.Position.X;
+
+                if (deltaDist < 0)
+                {
+                    direction = FaceDirection.Right;
                 }
                 else
                 {
-                    sprite.PlayAnimation(idleAnimation);
+                    direction = FaceDirection.Left;
                 }
-            }
 
-            //random jumping
-            waitTime += elapsed;
-            if (waitTime >= MaxWaitTime)
-            {
-                int rand = PlatformerGame.RandomBetween(1, 100);
-                if (rand < 75)
+                // Maintain a min distance from player
+                if (Math.Abs(deltaDist) > PlatformerGame.RandomBetween(MinDistFromPlayer, MaxDistFromPlayer))
                 {
-                    this.State = EntityState.RUNNING;
+                    velocity.X += (int)direction * MoveSpeed * elapsed;
                 }
                 else
                 {
-                    this.State = EntityState.JUMPING;
+                    velocity.X += -(int)direction * MoveSpeed * elapsed;
                 }
-                if (rand > 50)
+
+                velocity.X = MathHelper.Clamp(velocity.X, -MaxMoveSpeed, MaxMoveSpeed);
+                velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
+                velocity.Y = DoJump(velocity.Y, gameTime);
+
+                // Move in the current direction.
+                // Apply velocity.
+                position += velocity * elapsed;
+                position = new Vector2((float)Math.Round(position.X), (float)Math.Round(position.Y));
+
+                //Update the fire attack
+                foreach (BowserFire fire in _bullets)
                 {
-                    FireAttack();
-                    sprite.PlayAnimation(fireAnimation);
+                    fire.Update(gameTime);
                 }
-                waitTime = 0.0f;
-            }
 
-            // pursue the attacker
-            Player player = PlatformerGame.Players[PlatformerGame.attacker_id];
-            float deltaDist = this.position.X - player.Position.X;
+                HandleCollisions();
 
-            if (deltaDist < 0)
-            {
-                direction = FaceDirection.Right;
+                //Sprite effects
+                if (pulseRed)
+                {
+                    pulseRedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                    if (pulseRedTime > MAX_PULSE_TIME)
+                    {
+                        pulseRed = false;
+                        pulseRedTime = 0.0f;
+                    }
+                }
             }
-            else
-            {
-                direction = FaceDirection.Left;
-            }
-
-            // Maintain a min distance from player
-            if (Math.Abs(deltaDist) > MaxDistFromPlayer)
-            {
-                velocity.X += (int)direction * MoveSpeed * elapsed;
-            }
-            else
-            {
-                velocity.X += -(int)direction * MoveSpeed * elapsed;
-            }
-            
-            velocity.X = MathHelper.Clamp(velocity.X, -MaxMoveSpeed, MaxMoveSpeed);
-            velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
-            velocity.Y = DoJump(velocity.Y, gameTime);
-
-            // Move in the current direction.
-            // Apply velocity.
-            position += velocity * elapsed;
-            position = new Vector2((float)Math.Round(position.X), (float)Math.Round(position.Y));
-
-            //Update the fire attack
-            foreach (BowserFire fire in _bullets)
-            {
-                fire.Update(gameTime);
-            }
-
-            HandleCollisions();
         }
 
         public void FireAttack()
@@ -297,19 +342,70 @@ namespace Platformer
             previousBottom = bounds.Bottom;
         }
 
+
+        /// <summary>
+        /// When bowser get's hit. Called from a Bullet.
+        /// </summary>
+        /// <param name="damage">The damage.</param>
+        /// <param name="hitFrom">The hit from.</param>
+        public void Hit(float damage, int hitFrom)
+        {
+            this.health -= damage;
+            pulseRed = true;
+            pulseRedTime = 0.0f;
+
+            gotHitFrom = hitFrom;
+
+            hitSound.Play();
+
+            if (this.health <= 0)
+            {
+                Killed();
+                playDeathAnimation = true;
+            }
+
+        }
+
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            if (!IsAlive) return;
-
-            // Draw facing the way the enemy is moving.
-            SpriteEffects flip;
-            flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
-            sprite.Draw(gameTime, spriteBatch, Position, flip);
-
-            // Draw the fire attack
-            foreach (BowserFire fire in _bullets)
+            if (playDeathAnimation)
             {
-                fire.Draw(gameTime, spriteBatch);
+                SpriteEffects flip;
+                flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+                flip = flip | SpriteEffects.FlipVertically;
+                sprite.Draw(gameTime, spriteBatch, Position, flip);
+            }
+            else if (IsAlive)
+            {
+                // Draw that sprite.
+                Color newColor = Color.White;
+
+                if (pulseRed)
+                {
+                    Color spriteColor = Color.Red;
+                    double speed = 30.0;
+                    double pulseCycle = Math.Sin(gameTime.TotalGameTime.TotalSeconds * speed) / 2.0 + .5;
+                    byte range = 100;
+
+                    byte r = (byte)MathHelper.Clamp(MathHelper.Lerp((float)(spriteColor.R - range), (float)(spriteColor.R + range), (float)pulseCycle), 0, 255);
+                    byte g = (byte)MathHelper.Clamp(MathHelper.Lerp((float)(spriteColor.G - range), (float)(spriteColor.G + range), (float)pulseCycle), 0, 255);
+                    byte b = (byte)MathHelper.Clamp(MathHelper.Lerp((float)(spriteColor.B - range), (float)(spriteColor.B + range), (float)pulseCycle), 0, 255);
+
+                    newColor.R = r;
+                    newColor.G = g;
+                    newColor.B = b;
+                }
+
+                // Draw facing the way the enemy is moving.
+                SpriteEffects flip;
+                flip = direction > 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+                sprite.Draw(gameTime, spriteBatch, Position, flip, newColor);
+
+                // Draw the fire attack
+                foreach (BowserFire fire in _bullets)
+                {
+                    fire.Draw(gameTime, spriteBatch);
+                }
             }
         }
 

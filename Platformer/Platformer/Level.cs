@@ -41,9 +41,10 @@ namespace Platformer
         private const int EntityLayer = 2;
 
         private List<Gem> gems = new List<Gem>();
-        private List<Enemy> enemies = new List<Enemy>();
         private List<Spike> spikes = new List<Spike>();
         private List<WinnerTile> winnerTiles = new List<WinnerTile>();
+        public List<Enemy> Enemies { get { return enemies; } }
+        private List<Enemy> enemies = new List<Enemy>();
 
         private float withdrawBridgeWaitTime = 1.0f;
         private bool isBridgeWithdrawing = false;
@@ -103,7 +104,6 @@ namespace Platformer
         //Sounds
         private SoundEffect fallingSound;
         private SoundEffect clearSound;
-        private SoundEffect bowserFallSound;
         private SoundEffect bridgeSound;        
 
         #region Loading
@@ -151,7 +151,6 @@ namespace Platformer
             // Load sounds.
             fallingSound = Content.Load<SoundEffect>("Sounds/fallSound");
             clearSound = Content.Load<SoundEffect>("Sounds/smb_stage_clear");
-            bowserFallSound = Content.Load<SoundEffect>("Sounds/smb_bowserfalls");
             bridgeSound = content.Load<SoundEffect>("Sounds/bridgeSound");
 
             camera = new Camera2d(this, 0.0f);
@@ -678,21 +677,20 @@ namespace Platformer
                             if (bowser.IsAlive)
                             {
                                 bowser.Killed();
-                                bowserFallSound.Play();
                             }
 
                         }
                     }
-                    /*
+                    
                     foreach (Player player in PlatformerGame.Players)
                     {
                         // Touching an enemy instantly kills the player
                         if (enemy.BoundingRectangle.Intersects(player.BoundingRectangle))
                         {
-                            OnPlayerKilled(enemy, player);
+                            player.Hit(50.0f, (float)enemy.direction, null);
                         }
                     }
-                     * */
+                    
                 }
             }
         }

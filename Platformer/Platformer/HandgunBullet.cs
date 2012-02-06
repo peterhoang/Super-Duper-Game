@@ -1,11 +1,7 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 
 namespace Platformer
 {
@@ -136,6 +132,22 @@ namespace Platformer
                             player.Hit(BULLET_DAMAGE, dir, _player);
                             this.Reset();
                         }
+                    }
+                }
+            }
+
+            List<Enemy> enemies = level.CurrentLevel.Enemies;
+            foreach (Bowser enemy in enemies)
+            {
+                if (this.BoundingRectangle.Intersects(enemy.BoundingRectangle))
+                {
+                    //Rolling players are invulnarable. 
+                    //Ignore dead players
+                    if (enemy.IsAlive)
+                    {
+                        int dir = (Flip == SpriteEffects.None) ? 1 : -1;
+                        enemy.Hit(BULLET_DAMAGE, dir);
+                        this.Reset();
                     }
                 }
             }

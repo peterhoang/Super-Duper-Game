@@ -119,8 +119,15 @@ Content\Sounds\shotgunBlastSound.xnb
 Content\Sounds\killedSound.xnb
 Content\Sounds\fallSound.xnb
 Content\Sounds\hitSound.xnb
+Content\Sounds\smb_bowserfalls.xnb
+Content\Sounds\smb_bowserfire.xnb
+Content\Sounds\smb_gameover.xnb
+Content\Sounds\smb_stage_clear.xnb
+Content\Sounds\bridgeSound.xnb
 Content\Sounds\Music\bgmusic1.xnb
 Content\Sounds\Music\bgmusic1.wma
+Content\Sounds\Music\smb-castle.xnb
+Content\Sounds\Music\smb-castle.wma
 Content\Levels\3.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

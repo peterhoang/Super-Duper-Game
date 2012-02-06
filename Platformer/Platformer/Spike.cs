@@ -40,7 +40,7 @@ namespace Platformer
         private AnimationPlayer sprite;
 
         /// <summary>
-        /// Constructs a new Enemy.
+        /// Constructs a new Spike
         /// </summary>
         public Spike(Level level, Vector2 position)
         {
@@ -51,7 +51,7 @@ namespace Platformer
         }
 
         /// <summary>
-        /// Loads a particular enemy sprite sheet and sounds.
+        /// Loads a particular spike sprite sheet and sounds.
         /// </summary>
         public void LoadContent()
         {
@@ -67,7 +67,7 @@ namespace Platformer
         }
 
         /// <summary>
-        /// Draws the animated enemy.
+        /// Draws the spike
         /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {

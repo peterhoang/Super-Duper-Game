@@ -299,6 +299,8 @@ namespace ParticleEngine
         /// </summary>
         public override void Update(GameTime gameTime)
         {
+            if (game == null) return;
+
             // calculate dt, the change in the since the last frame. the particle
             // updates will use this value.
             float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -329,6 +331,8 @@ namespace ParticleEngine
         /// </summary>
         public override void Draw(GameTime gameTime)
         {
+            if (game == null) return;
+
             // tell sprite batch to begin, using the spriteBlendMode specified in
             // initializeConstants
 			//game.SpriteBatch.Begin(SpriteSortMode.Deferred, blendState);

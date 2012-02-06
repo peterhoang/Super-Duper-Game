@@ -1,12 +1,8 @@
 using System;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
+using System.Collections.Generic;
 
 
 namespace Platformer
@@ -14,7 +10,7 @@ namespace Platformer
     /// <summary>
     /// This is a game component that implements IUpdateable.
     /// </summary>
-    class HandGun : Gun
+    class HandGun : Weapon
     {
         // graphic of the gun
         private Animation baseGraphic;
@@ -38,9 +34,9 @@ namespace Platformer
         }
         protected List<HandgunBullet> _bullets;
 
-        public HandGun(PlatformerGame level, Vector2 position, Player player)
+        public HandGun(PlatformerGame game, Vector2 position, Player player)
         {
-            this.level = level;
+            this.game = game;
             Position = position;
             _player = player;
 
@@ -48,7 +44,7 @@ namespace Platformer
             _bullets = new List<HandgunBullet>();
             for (int i = 0; i < MAX_HANDGUN_BULLETS; i++)
             {
-                _bullets.Add(new HandgunBullet(level, position));
+                _bullets.Add(new HandgunBullet(game, position));
             }
 
             LoadContent();
@@ -60,9 +56,9 @@ namespace Platformer
         public void LoadContent()
         {
             // Load animated textures.
-            baseGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun"), 0.1f, false);
-            muzzleFire = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/handgun_muzzle"), 0.03f, false);
-            shotSound = Level.Content.Load<SoundEffect>("Sounds/pistolShotSound");
+            baseGraphic = new Animation(Game.Content.Load<Texture2D>("Sprites/Weapons/handgun"), 0.1f, false);
+            muzzleFire = new Animation(Game.Content.Load<Texture2D>("Sprites/Weapons/handgun_muzzle"), 0.03f, false);
+            shotSound = Game.Content.Load<SoundEffect>("Sounds/pistolShotSound");
         }
 
         public override void Reset()
@@ -138,11 +134,10 @@ namespace Platformer
         /// <summary>
         /// Draws the gun
         /// </summary>
-        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch, bool isRolling)
+        public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             // Draw that sprite.
-            if (!isRolling)
-                sprite.Draw(gameTime, spriteBatch, Position, Flip);
+            sprite.Draw(gameTime, spriteBatch, Position, Flip);
 
             if (isShooting)
             {

@@ -66,7 +66,7 @@ namespace Platformer
         /// <summary>
         /// The direction this enemy is facing and moving along the X axis.
         /// </summary>
-        protected FaceDirection direction = FaceDirection.Left;
+        public FaceDirection direction = FaceDirection.Left;
 
         /// <summary>
         /// How long this enemy has been waiting before turning around.

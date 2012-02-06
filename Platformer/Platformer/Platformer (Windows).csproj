@@ -87,10 +87,11 @@
     <Compile Include="GameplayScreen.cs" />
     <Compile Include="GameScreen.cs" />
     <Compile Include="Gem.cs" />
-    <Compile Include="Gun.cs" />
+    <Compile Include="Weapon.cs" />
     <Compile Include="HandGun.cs" />
     <Compile Include="HandgunBullet.cs" />
     <Compile Include="InputState.cs" />
+    <Compile Include="Knife.cs" />
     <Compile Include="Layer.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="LoadingScreen.cs" />

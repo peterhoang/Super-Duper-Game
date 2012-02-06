@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Gem.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Gem.xnb</Output>
       <Time>2012-02-03T15:34:46.3838758-05:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Idle.xnb</Output>
       <Time>2012-02-03T15:34:46.3848759-05:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Run.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Run.xnb</Output>
       <Time>2012-02-03T15:34:46.3858759-05:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Idle.xnb</Output>
       <Time>2012-02-03T15:34:46.386876-05:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Run.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Run.xnb</Output>
       <Time>2012-02-03T15:34:46.387876-05:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Idle.xnb</Output>
       <Time>2012-02-03T15:34:46.3898762-05:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Run.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Run.xnb</Output>
       <Time>2012-02-03T15:34:46.3908762-05:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Idle.xnb</Output>
       <Time>2012-02-03T15:34:46.3918763-05:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Run.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Run.xnb</Output>
       <Time>2012-02-03T15:34:46.3928763-05:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
       <Time>2012-02-03T15:34:46.4088772-05:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Die.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Die.xnb</Output>
       <Time>2012-02-03T15:34:46.4098773-05:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Idle.xnb</Output>
       <Time>2012-02-03T15:34:46.4108774-05:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Jump.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Jump.xnb</Output>
       <Time>2012-02-03T15:34:46.4118774-05:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Run.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Run.xnb</Output>
       <Time>2012-02-03T15:34:46.422878-05:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA0.xnb</Output>
       <Time>2012-02-03T15:34:46.4408791-05:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA1.xnb</Output>
       <Time>2012-02-03T15:34:46.4418791-05:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA2.xnb</Output>
       <Time>2012-02-03T15:34:46.4428792-05:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA3.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA3.xnb</Output>
       <Time>2012-02-03T15:34:46.4438792-05:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA4.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA4.xnb</Output>
       <Time>2012-02-03T15:34:46.4458794-05:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA5.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA5.xnb</Output>
       <Time>2012-02-03T15:34:46.4558799-05:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA6.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA6.xnb</Output>
       <Time>2012-02-03T15:34:46.4598802-05:00</Time>
     </Item>
     <Item>
@@ -196,7 +196,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB0.xnb</Output>
       <Time>2012-02-03T15:34:46.4638804-05:00</Time>
     </Item>
     <Item>
@@ -205,7 +205,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB1.xnb</Output>
       <Time>2012-02-03T15:34:46.4688807-05:00</Time>
     </Item>
     <Item>
@@ -214,7 +214,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Platform.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Platform.xnb</Output>
       <Time>2012-02-03T15:34:46.4708808-05:00</Time>
     </Item>
     <Item>
@@ -223,7 +223,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb</Output>
       <Time>2012-02-03T15:34:46.2138661-05:00</Time>
     </Item>
     <Item>
@@ -232,7 +232,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb</Output>
       <Time>2012-02-03T15:34:46.2178663-05:00</Time>
     </Item>
     <Item>
@@ -241,7 +241,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_2.xnb</Output>
       <Time>2012-02-03T15:34:46.2208665-05:00</Time>
     </Item>
     <Item>
@@ -250,7 +250,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_0.xnb</Output>
       <Time>2012-02-03T15:34:46.229867-05:00</Time>
     </Item>
     <Item>
@@ -259,7 +259,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_1.xnb</Output>
       <Time>2012-02-03T15:34:46.2378675-05:00</Time>
     </Item>
     <Item>
@@ -268,7 +268,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_2.xnb</Output>
       <Time>2012-02-03T15:34:46.2448679-05:00</Time>
     </Item>
     <Item>
@@ -277,7 +277,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_0.xnb</Output>
       <Time>2012-02-03T15:34:46.247868-05:00</Time>
     </Item>
     <Item>
@@ -286,7 +286,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_1.xnb</Output>
       <Time>2012-02-03T15:34:46.2518683-05:00</Time>
     </Item>
     <Item>
@@ -295,7 +295,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_2.xnb</Output>
       <Time>2012-02-03T15:34:46.2558685-05:00</Time>
     </Item>
     <Item>
@@ -304,7 +304,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_died.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_died.xnb</Output>
       <Time>2012-02-03T15:34:46.2718694-05:00</Time>
     </Item>
     <Item>
@@ -313,7 +313,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_lose.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_lose.xnb</Output>
       <Time>2012-02-03T15:34:46.2728695-05:00</Time>
     </Item>
     <Item>
@@ -322,7 +322,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_win.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_win.xnb</Output>
       <Time>2012-02-03T15:34:46.2738695-05:00</Time>
     </Item>
     <Item>
@@ -331,7 +331,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_running.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_running.xnb</Output>
       <Time>2012-02-03T15:34:46.4268783-05:00</Time>
     </Item>
     <Item>
@@ -340,7 +340,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Exit.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Exit.xnb</Output>
       <Time>2012-02-03T15:34:46.4698807-05:00</Time>
     </Item>
     <Item>
@@ -349,7 +349,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_idle.xnb</Output>
       <Time>2012-02-03T15:34:46.4248782-05:00</Time>
     </Item>
     <Item>
@@ -358,7 +358,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_jump.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_jump.xnb</Output>
       <Time>2012-02-03T15:34:46.4258782-05:00</Time>
     </Item>
     <Item>
@@ -367,7 +367,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll.xnb</Output>
       <Time>2012-02-03T15:34:46.4258782-05:00</Time>
     </Item>
     <Item>
@@ -376,7 +376,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_die.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_die.xnb</Output>
       <Time>2012-02-03T15:34:46.4248782-05:00</Time>
     </Item>
     <Item>
@@ -385,7 +385,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun.xnb</Output>
       <Time>2012-02-03T15:34:46.4338787-05:00</Time>
     </Item>
     <Item>
@@ -394,7 +394,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun.xnb</Output>
       <Time>2012-02-03T15:34:46.4368788-05:00</Time>
     </Item>
     <Item>
@@ -403,7 +403,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb</Output>
       <Time>2012-02-03T15:34:46.4338787-05:00</Time>
     </Item>
     <Item>
@@ -412,7 +412,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll2.xnb</Output>
       <Time>2012-02-03T15:34:46.4268783-05:00</Time>
     </Item>
     <Item>
@@ -421,7 +421,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb</Output>
       <Time>2012-02-03T15:34:46.4368788-05:00</Time>
     </Item>
     <Item>
@@ -430,7 +430,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\bullet.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\bullet.xnb</Output>
       <Time>2012-02-03T15:34:46.4328786-05:00</Time>
     </Item>
     <Item>
@@ -439,7 +439,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_die.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_die.xnb</Output>
       <Time>2012-02-03T15:34:46.4278783-05:00</Time>
     </Item>
     <Item>
@@ -448,7 +448,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_idle.xnb</Output>
       <Time>2012-02-03T15:34:46.4278783-05:00</Time>
     </Item>
     <Item>
@@ -457,7 +457,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_jump.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_jump.xnb</Output>
       <Time>2012-02-03T15:34:46.4288784-05:00</Time>
     </Item>
     <Item>
@@ -466,7 +466,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_roll.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_roll.xnb</Output>
       <Time>2012-02-03T15:34:46.4288784-05:00</Time>
     </Item>
     <Item>
@@ -475,7 +475,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_running.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_running.xnb</Output>
       <Time>2012-02-03T15:34:46.4308785-05:00</Time>
     </Item>
     <Item>
@@ -484,7 +484,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb</Output>
       <Time>2012-02-03T15:34:46.4358788-05:00</Time>
     </Item>
     <Item>
@@ -493,7 +493,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\explosion.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\explosion.xnb</Output>
       <Time>2012-02-03T15:34:46.3958765-05:00</Time>
     </Item>
     <Item>
@@ -502,7 +502,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\smoke.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\smoke.xnb</Output>
       <Time>2012-02-03T15:34:46.4068771-05:00</Time>
     </Item>
     <Item>
@@ -511,7 +511,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\quad.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\quad.xnb</Output>
       <Time>2012-02-03T15:34:46.438879-05:00</Time>
     </Item>
     <Item>
@@ -520,7 +520,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\blue_corpse.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\blue_corpse.xnb</Output>
       <Time>2012-02-03T15:34:46.4238781-05:00</Time>
     </Item>
     <Item>
@@ -529,7 +529,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\yellow_corpse.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\yellow_corpse.xnb</Output>
       <Time>2012-02-03T15:34:46.4318786-05:00</Time>
     </Item>
     <Item>
@@ -538,7 +538,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\arrow.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\arrow.xnb</Output>
       <Time>2012-02-03T15:34:46.4378789-05:00</Time>
     </Item>
     <Item>
@@ -547,7 +547,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC0.xnb</Output>
       <Time>2012-02-03T15:34:46.473881-05:00</Time>
     </Item>
     <Item>
@@ -556,7 +556,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC1.xnb</Output>
       <Time>2012-02-03T15:34:46.474881-05:00</Time>
     </Item>
     <Item>
@@ -565,7 +565,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_0.xnb</Output>
       <Time>2012-02-03T15:34:46.1708636-05:00</Time>
     </Item>
     <Item>
@@ -574,7 +574,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_1.xnb</Output>
       <Time>2012-02-03T15:34:46.1728637-05:00</Time>
     </Item>
     <Item>
@@ -583,7 +583,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_2.xnb</Output>
       <Time>2012-02-03T15:34:46.1758639-05:00</Time>
     </Item>
     <Item>
@@ -592,7 +592,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87.xnb</Output>
       <Time>2012-02-03T15:34:46.473881-05:00</Time>
     </Item>
     <Item>
@@ -601,7 +601,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\spike.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\spike.xnb</Output>
       <Time>2012-02-03T15:34:46.4788812-05:00</Time>
     </Item>
     <Item>
@@ -610,7 +610,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Fire.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Fire.xnb</Output>
       <Time>2012-02-03T15:34:46.3808756-05:00</Time>
     </Item>
     <Item>
@@ -619,7 +619,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\firebreath.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\firebreath.xnb</Output>
       <Time>2012-02-03T15:34:46.4328786-05:00</Time>
     </Item>
     <Item>
@@ -628,7 +628,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_0.xnb</Output>
       <Time>2012-02-03T15:34:46.1828643-05:00</Time>
     </Item>
     <Item>
@@ -637,7 +637,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_1.xnb</Output>
       <Time>2012-02-03T15:34:46.1918648-05:00</Time>
     </Item>
     <Item>
@@ -646,7 +646,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_2.xnb</Output>
       <Time>2012-02-03T15:34:46.194865-05:00</Time>
     </Item>
     <Item>
@@ -655,7 +655,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87-red.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87-red.xnb</Output>
       <Time>2012-02-03T15:34:46.4728809-05:00</Time>
     </Item>
     <Item>
@@ -664,7 +664,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Run.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Run.xnb</Output>
       <Time>2012-02-03T15:34:46.3828758-05:00</Time>
     </Item>
     <Item>
@@ -673,7 +673,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Jump.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Jump.xnb</Output>
       <Time>2012-02-03T15:34:46.3818757-05:00</Time>
     </Item>
     <Item>
@@ -682,7 +682,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Idle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Idle.xnb</Output>
       <Time>2012-02-03T15:34:46.3818757-05:00</Time>
     </Item>
     <Item>
@@ -691,7 +691,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_0.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_0.xnb</Output>
       <Time>2012-02-03T15:34:46.1998653-05:00</Time>
     </Item>
     <Item>
@@ -700,7 +700,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_1.xnb</Output>
       <Time>2012-02-03T15:34:46.2058656-05:00</Time>
     </Item>
     <Item>
@@ -709,7 +709,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_2.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_2.xnb</Output>
       <Time>2012-02-03T15:34:46.2108659-05:00</Time>
     </Item>
     <Item>
@@ -718,7 +718,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-16.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-16.xnb</Output>
       <Time>2012-02-03T15:34:46.4718808-05:00</Time>
     </Item>
     <Item>
@@ -727,7 +727,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-3.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-3.xnb</Output>
       <Time>2012-02-03T15:34:46.4718808-05:00</Time>
     </Item>
     <Item>
@@ -736,7 +736,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\greyblock1.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\greyblock1.xnb</Output>
       <Time>2012-02-03T15:34:46.4768811-05:00</Time>
     </Item>
     <Item>
@@ -745,7 +745,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\background.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\background.xnb</Output>
       <Time>2012-02-03T15:34:46.2578686-05:00</Time>
     </Item>
     <Item>
@@ -754,7 +754,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\blank.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\blank.xnb</Output>
       <Time>2012-02-03T15:34:46.4378789-05:00</Time>
     </Item>
     <Item>
@@ -763,7 +763,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\gradient.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\gradient.xnb</Output>
       <Time>2012-02-03T15:34:46.4788812-05:00</Time>
     </Item>
     <Item>
@@ -772,7 +772,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87-purp.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87-purp.xnb</Output>
       <Time>2012-02-03T15:34:46.4728809-05:00</Time>
     </Item>
     <Item>
@@ -781,7 +781,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\bridge.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\bridge.xnb</Output>
       <Time>2012-02-03T15:34:46.4758811-05:00</Time>
     </Item>
     <Item>
@@ -790,7 +790,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\chain.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\chain.xnb</Output>
       <Time>2012-02-03T15:34:46.4758811-05:00</Time>
     </Item>
     <Item>
@@ -799,7 +799,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\handle.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\handle.xnb</Output>
       <Time>2012-02-03T15:34:46.4778812-05:00</Time>
     </Item>
     <Item>
@@ -808,7 +808,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\lavatop.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\lavatop.xnb</Output>
       <Time>2012-02-03T15:34:46.4778812-05:00</Time>
     </Item>
     <Item>
@@ -817,7 +817,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\chain_flipped.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\chain_flipped.xnb</Output>
       <Time>2012-02-03T15:34:46.4768811-05:00</Time>
     </Item>
     <Item>
@@ -826,7 +826,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\chunli.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\chunli.xnb</Output>
       <Time>2012-02-03T15:34:46.438879-05:00</Time>
     </Item>
     <Item>
@@ -835,7 +835,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\Hud.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\Hud.xnb</Output>
       <Time>2012-02-03T15:34:46.2608688-05:00</Time>
     </Item>
     <Item>
@@ -844,7 +844,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\menufont.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\menufont.xnb</Output>
       <Time>2012-02-03T15:34:46.2628689-05:00</Time>
     </Item>
     <Item>
@@ -853,7 +853,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\gamefont.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\gamefont.xnb</Output>
       <Time>2012-02-03T15:34:46.2618688-05:00</Time>
     </Item>
     <Item>
@@ -862,7 +862,7 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\GemCollected.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\GemCollected.xnb</Output>
       <Time>2012-02-03T15:34:46.2768697-05:00</Time>
     </Item>
     <Item>
@@ -871,7 +871,7 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\MonsterKilled.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\MonsterKilled.xnb</Output>
       <Time>2012-02-03T15:34:46.2788698-05:00</Time>
     </Item>
     <Item>
@@ -880,7 +880,7 @@
       <Importer>WmaImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Powerup.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Powerup.xnb</Output>
       <Time>2012-02-03T15:34:46.3188721-05:00</Time>
     </Item>
     <Item>
@@ -889,7 +889,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\dominating.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\dominating.xnb</Output>
       <Time>2012-02-03T15:34:46.3228723-05:00</Time>
     </Item>
     <Item>
@@ -898,7 +898,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\doublekill.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\doublekill.xnb</Output>
       <Time>2012-02-03T15:34:46.3258725-05:00</Time>
     </Item>
     <Item>
@@ -907,7 +907,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\firstblood.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\firstblood.xnb</Output>
       <Time>2012-02-03T15:34:46.3278726-05:00</Time>
     </Item>
     <Item>
@@ -916,7 +916,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\godlike.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\godlike.xnb</Output>
       <Time>2012-02-03T15:34:46.3318728-05:00</Time>
     </Item>
     <Item>
@@ -925,7 +925,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\headshot.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\headshot.xnb</Output>
       <Time>2012-02-03T15:34:46.3338729-05:00</Time>
     </Item>
     <Item>
@@ -934,7 +934,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\holyshit.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\holyshit.xnb</Output>
       <Time>2012-02-03T15:34:46.3378732-05:00</Time>
     </Item>
     <Item>
@@ -943,7 +943,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\killingspree.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\killingspree.xnb</Output>
       <Time>2012-02-03T15:34:46.3408733-05:00</Time>
     </Item>
     <Item>
@@ -952,7 +952,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ludicrouskill.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ludicrouskill.xnb</Output>
       <Time>2012-02-03T15:34:46.3438735-05:00</Time>
     </Item>
     <Item>
@@ -961,7 +961,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\megakill.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\megakill.xnb</Output>
       <Time>2012-02-03T15:34:46.3468737-05:00</Time>
     </Item>
     <Item>
@@ -970,7 +970,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\monsterkill.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\monsterkill.xnb</Output>
       <Time>2012-02-03T15:34:46.351874-05:00</Time>
     </Item>
     <Item>
@@ -979,7 +979,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\multikill.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\multikill.xnb</Output>
       <Time>2012-02-03T15:34:46.3538741-05:00</Time>
     </Item>
     <Item>
@@ -988,7 +988,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\play.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\play.xnb</Output>
       <Time>2012-02-03T15:34:46.3568743-05:00</Time>
     </Item>
     <Item>
@@ -997,7 +997,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\rampage.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\rampage.xnb</Output>
       <Time>2012-02-03T15:34:46.3588744-05:00</Time>
     </Item>
     <Item>
@@ -1006,7 +1006,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ultrakill.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ultrakill.xnb</Output>
       <Time>2012-02-03T15:34:46.3618745-05:00</Time>
     </Item>
     <Item>
@@ -1015,7 +1015,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\unstoppable.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\unstoppable.xnb</Output>
       <Time>2012-02-03T15:34:46.3638747-05:00</Time>
     </Item>
     <Item>
@@ -1024,7 +1024,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\wickedsick.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\wickedsick.xnb</Output>
       <Time>2012-02-03T15:34:46.3668748-05:00</Time>
     </Item>
     <Item>
@@ -1033,7 +1033,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\jumpSound.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\jumpSound.xnb</Output>
       <Time>2012-02-03T15:34:46.3718751-05:00</Time>
     </Item>
     <Item>
@@ -1042,7 +1042,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\pistolShotSound.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\pistolShotSound.xnb</Output>
       <Time>2012-02-03T15:34:46.3758754-05:00</Time>
     </Item>
     <Item>
@@ -1051,7 +1051,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\rollSound.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\rollSound.xnb</Output>
       <Time>2012-02-03T15:34:46.3778755-05:00</Time>
     </Item>
     <Item>
@@ -1060,7 +1060,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\shotgunBlastSound.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\shotgunBlastSound.xnb</Output>
       <Time>2012-02-03T15:34:46.3798756-05:00</Time>
     </Item>
     <Item>
@@ -1069,7 +1069,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\killedSound.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\killedSound.xnb</Output>
       <Time>2012-02-03T15:34:46.3738752-05:00</Time>
     </Item>
     <Item>
@@ -1078,7 +1078,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\fallSound.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\fallSound.xnb</Output>
       <Time>2012-02-03T15:34:46.3688749-05:00</Time>
     </Item>
     <Item>
@@ -1087,8 +1087,53 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\hitSound.xnb</Output>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\hitSound.xnb</Output>
       <Time>2012-02-03T15:34:46.369875-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_bowserfalls.wav</Source>
+      <Name>Sounds\smb_bowserfalls</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_bowserfalls.xnb</Output>
+      <Time>2012-02-03T17:42:17.8225131-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_bowserfire.wav</Source>
+      <Name>Sounds\smb_bowserfire</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_bowserfire.xnb</Output>
+      <Time>2012-02-03T17:42:17.8255132-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_gameover.wav</Source>
+      <Name>Sounds\smb_gameover</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_gameover.xnb</Output>
+      <Time>2012-02-03T17:42:17.8285134-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_stage_clear.wav</Source>
+      <Name>Sounds\smb_stage_clear</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_stage_clear.xnb</Output>
+      <Time>2012-02-03T17:49:57.077781-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\bridgeSound.wav</Source>
+      <Name>Sounds\bridgeSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\bridgeSound.xnb</Output>
+      <Time>2012-02-03T18:41:37.9121385-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Music\bgmusic1.mp3</Source>
@@ -1096,9 +1141,19 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.xnb</Output>
-      <Extra>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.wma</Extra>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.xnb</Output>
+      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.wma</Extra>
       <Time>2012-02-03T15:34:46.316872-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Music\smb-castle.mp3</Source>
+      <Name>Sounds\Music\smb-castle</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\smb-castle.xnb</Output>
+      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\smb-castle.wma</Extra>
+      <Time>2012-02-03T17:42:09.8710583-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -1107,10 +1162,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>true</CompressContent>
-      <RootDirectory>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Peter Hoang\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Peter\Super-Duper-Game\Platformer\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
