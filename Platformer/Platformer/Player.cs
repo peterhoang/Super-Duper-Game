@@ -265,7 +265,7 @@ namespace Platformer
             font = level.Content.Load<SpriteFont>("Fonts/Hud");
         }
 
-        public void LoadContent(string idle, string run, string jump, string death, string roll)
+        public void LoadContent(string idle, string run, string jump, string death, string roll, string grenade)
         {
             // Load animated textures.
             idleAnimation = new Animation(Level.Content.Load<Texture2D>(idle), 0.1f, true);
@@ -273,6 +273,7 @@ namespace Platformer
             jumpAnimation = new Animation(Level.Content.Load<Texture2D>(jump), 0.1f, false);
             dieAnimation = new Animation(Level.Content.Load<Texture2D>(death), 0.1f, false);
             rollAnimation = new Animation(Level.Content.Load<Texture2D>(roll), 0.1f, false);
+            grenadeAnimation = new Animation(Level.Content.Load<Texture2D>(grenade), 0.1f, false);
 
             // Calculate bounds within texture size.            
             int width = (int)(idleAnimation.FrameWidth * 0.4);

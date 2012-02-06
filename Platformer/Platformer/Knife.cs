@@ -121,6 +121,20 @@ namespace Platformer
                         }
                     }
                 }
+
+                foreach (Bowser enemy in game.CurrentLevel.Enemies)
+                {
+                    if (enemy.IsAlive)
+                    {
+                        if (this.BoundingRectangle.Intersects(enemy.BoundingRectangle))
+                        {
+                            int dir = (Flip == SpriteEffects.None) ? 1 : -1;
+                            enemy.Hit(KNIFE_DAMAGE, dir);
+                            this.Reset();
+                        }
+                    }
+                }
+
             }
 
             if (!canAttack)

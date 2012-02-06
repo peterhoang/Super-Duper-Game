@@ -331,8 +331,6 @@ namespace ParticleEngine
         /// </summary>
         public override void Draw(GameTime gameTime)
         {
-            if (game == null) return;
-
             // tell sprite batch to begin, using the spriteBlendMode specified in
             // initializeConstants
 			//game.SpriteBatch.Begin(SpriteSortMode.Deferred, blendState);

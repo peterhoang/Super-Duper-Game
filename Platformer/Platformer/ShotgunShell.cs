@@ -98,6 +98,19 @@ namespace Platformer
                     }
                 }
             }
+
+            foreach (Bowser enemy in level.CurrentLevel.Enemies)
+            {
+                if (enemy.IsAlive)
+                {
+                    if (this.BoundingRectangle.Intersects(enemy.BoundingRectangle))
+                    {
+                        int dir = (Flip == SpriteEffects.None) ? 1 : -1;
+                        enemy.Hit(BULLET_DAMAGE, dir);
+                        this.Reset();
+                    }
+                }
+            }
         }
 
     }

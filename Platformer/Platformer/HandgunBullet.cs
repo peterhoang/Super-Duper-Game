@@ -139,11 +139,9 @@ namespace Platformer
             List<Enemy> enemies = level.CurrentLevel.Enemies;
             foreach (Bowser enemy in enemies)
             {
-                if (this.BoundingRectangle.Intersects(enemy.BoundingRectangle))
+                if (enemy.IsAlive)
                 {
-                    //Rolling players are invulnarable. 
-                    //Ignore dead players
-                    if (enemy.IsAlive)
+                    if (this.BoundingRectangle.Intersects(enemy.BoundingRectangle))
                     {
                         int dir = (Flip == SpriteEffects.None) ? 1 : -1;
                         enemy.Hit(BULLET_DAMAGE, dir);

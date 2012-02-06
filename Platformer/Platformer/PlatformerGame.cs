@@ -236,7 +236,8 @@ namespace Platformer
                     "Sprites/Player/cop_yellow_running",
                     "Sprites/Player/cop_yellow_jump",
                     "Sprites/Player/cop_yellow_die",
-                    "Sprites/Player/cop_yellow_roll");
+                    "Sprites/Player/cop_yellow_roll",
+                    "Sprites/Player/cop_yellow_grenade");
             players[1].Flip = SpriteEffects.FlipHorizontally;
 
             LoadNextLevel();

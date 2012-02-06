@@ -35,6 +35,9 @@ namespace GameStateManagement
         public event EventHandler<PlayerIndexEventArgs> Accepted;
         public event EventHandler<PlayerIndexEventArgs> Cancelled;
 
+        private float delayTime = 0.0f;
+        private bool canInteract = false;
+
         #endregion
 
         #region Initialization
@@ -94,6 +97,8 @@ namespace GameStateManagement
         /// </summary>
         public override void HandleInput(InputState input)
         {
+            if (!canInteract) return;
+
             PlayerIndex playerIndex;
 
             // We pass in our ControllingPlayer, which may either be null (to
@@ -116,6 +121,15 @@ namespace GameStateManagement
 
         #region Draw
 
+        public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
+        {
+            base.Update(gameTime, otherScreenHasFocus, coveredByOtherScreen);
+
+            delayTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (delayTime >= 2.0f)
+                canInteract = true;
+
+        }
 
         /// <summary>
         /// Draws the message box.
