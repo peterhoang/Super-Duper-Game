@@ -830,6 +830,69 @@
       <Time>2012-02-03T15:34:46.438879-05:00</Time>
     </Item>
     <Item>
+      <Source>Sprites\Weapons\knife.png</Source>
+      <Name>Sprites\Weapons\knife</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\knife.xnb</Output>
+      <Time>2012-02-06T12:53:33.562539-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_grenade.png</Source>
+      <Name>Sprites\Player\cop_grenade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_grenade.xnb</Output>
+      <Time>2012-02-06T14:06:24.4496884-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\knife_idle.png</Source>
+      <Name>Sprites\Weapons\knife_idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\knife_idle.xnb</Output>
+      <Time>2012-02-06T16:03:10.493835-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_yellow_grenade.png</Source>
+      <Name>Sprites\Player\cop_yellow_grenade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_grenade.xnb</Output>
+      <Time>2012-02-06T18:05:32.1171768-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\duff.png</Source>
+      <Name>Sprites\duff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\duff.xnb</Output>
+      <Time>2012-02-06T18:23:28.2303082-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\donut.png</Source>
+      <Name>Sprites\donut</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\donut.xnb</Output>
+      <Time>2012-02-06T18:27:35.3558814-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\winning.png</Source>
+      <Name>Sprites\winning</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\winning.xnb</Output>
+      <Time>2012-02-06T18:30:01.8169711-05:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\Hud.spritefont</Source>
       <Name>Fonts\Hud</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -855,6 +918,15 @@
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\gamefont.xnb</Output>
       <Time>2012-02-03T15:34:46.2618688-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\FatKidDL2.spritefont</Source>
+      <Name>Fonts\FatKidDL2</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\FatKidDL2.xnb</Output>
+      <Time>2012-02-06T18:45:36.7042931-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\GemCollected.wma</Source>
@@ -1134,6 +1206,24 @@
       <Options>None</Options>
       <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\bridgeSound.xnb</Output>
       <Time>2012-02-03T18:41:37.9121385-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\knifeSound.wav</Source>
+      <Name>Sounds\knifeSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\knifeSound.xnb</Output>
+      <Time>2012-02-06T13:04:53.620316-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\grenadeSound.wav</Source>
+      <Name>Sounds\grenadeSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\grenadeSound.xnb</Output>
+      <Time>2012-02-06T13:11:48.4666612-05:00</Time>
     </Item>
     <Item>
       <Source>Sounds\Music\bgmusic1.mp3</Source>
