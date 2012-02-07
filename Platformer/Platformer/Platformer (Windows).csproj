@@ -87,6 +87,7 @@
     <Compile Include="GameplayScreen.cs" />
     <Compile Include="GameScreen.cs" />
     <Compile Include="Gem.cs" />
+    <Compile Include="Grenade.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="HandGun.cs" />
     <Compile Include="HandgunBullet.cs" />

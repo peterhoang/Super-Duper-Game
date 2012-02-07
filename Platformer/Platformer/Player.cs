@@ -181,6 +181,7 @@ namespace Platformer
         private HandGun m_handgun;
         private Shotgun m_shotgun;
         private Knife m_knife;
+        private Grenade m_bomb;
         private Weapon weapon;
         
 
@@ -259,6 +260,7 @@ namespace Platformer
             m_handgun = new HandGun(level, position, this);
             m_shotgun = new Shotgun(level, position, this);
             m_knife = new Knife(level, position, this);
+            m_bomb = new Grenade(level, position, this);
 
             weapon = m_handgun;
 
@@ -351,6 +353,7 @@ namespace Platformer
                 m_handgun.Update(gameTime, Position, flip);
                 m_shotgun.Update(gameTime, Position, flip);
                 m_knife.Update(gameTime, Position, flip);
+                m_bomb.Update(gameTime, Position, flip);
                
                 //Sprite effects
                 if (pulseRed)
@@ -458,9 +461,10 @@ namespace Platformer
             isThrowGrenade = false;
             if (!isRolling)
             {
-                if (gamePadState.IsButtonDown(GrenadeButton))
+                if (gamePadState.IsButtonDown(GrenadeButton) && isOnGround)
                 {
                     isThrowGrenade = true;
+                    m_bomb.Shoot();
                 }
                 else if ((gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton)) ||
                         (keyboardState.IsKeyDown(Keys.Z)) ||
@@ -823,10 +827,14 @@ namespace Platformer
             sprite.Draw(gameTime, spriteBatch, Position, flip, newColor);            
 
             // Draw the gun if not rolling
-            if (isAlive && !isRolling && !isThrowGrenade)
+            if (isAlive && !isRolling)
             {
-              weapon.Draw(gameTime, spriteBatch);          
-            }
+                if (isThrowGrenade)
+                    m_bomb.Draw(gameTime, spriteBatch);
+                else
+                    weapon.Draw(gameTime, spriteBatch);          
+            } 
+            
 
 
             //if the player is offscreen, reset

@@ -139,6 +139,9 @@ Content\Sounds\Music\bgmusic1.wma
 Content\Sounds\Music\smb-castle.xnb
 Content\Sounds\Music\smb-castle.wma
 Content\Super_Awesome_Game_box.xnb
+Content\Sprites\Weapons\bomb.xnb
+Content\Sounds\explosionSound.xnb
+Content\xbox_controller.xnb
 Content\Levels\3.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

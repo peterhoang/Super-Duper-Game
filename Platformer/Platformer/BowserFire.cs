@@ -12,7 +12,7 @@ namespace Platformer
     class BowserFire : Bullet
     {
         private const float BULLET_SPEED = 100.0f;
-        private const float BULLET_DAMAGE = 35f;
+        private const float BULLET_DAMAGE = 50f;
 
         private const float MAX_BULLET_SPEED = 100.0f;
         private const float MAX_BULLET_TIMEALIVE = 4.0f;

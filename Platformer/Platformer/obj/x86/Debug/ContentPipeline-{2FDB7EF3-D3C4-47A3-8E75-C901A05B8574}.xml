@@ -1254,6 +1254,33 @@
       <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Super_Awesome_Game_box.xnb</Output>
       <Time>2012-02-06T20:51:31.1116-05:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Weapons\bomb.png</Source>
+      <Name>Sprites\Weapons\bomb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\bomb.xnb</Output>
+      <Time>2012-02-06T22:15:10.6416-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\explosionSound.wav</Source>
+      <Name>Sounds\explosionSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\explosionSound.xnb</Output>
+      <Time>2012-02-06T22:18:49.1616-05:00</Time>
+    </Item>
+    <Item>
+      <Source>xbox_controller.png</Source>
+      <Name>xbox_controller</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\xbox_controller.xnb</Output>
+      <Time>2012-02-06T23:07:19.3336-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2FDB7EF3-D3C4-47A3-8E75-C901A05B8574}</ContentProjectGUID>
