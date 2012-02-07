@@ -55,7 +55,7 @@ namespace GameStateManagement
             if (content == null)
                 content = new ContentManager(ScreenManager.Game.Services, "Content");
 
-            backgroundTexture = content.Load<Texture2D>("Backgrounds/background");
+            backgroundTexture = content.Load<Texture2D>("Super_Awesome_Game_box");
         }
 
 
@@ -94,11 +94,16 @@ namespace GameStateManagement
         {
             SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
             Viewport viewport = ScreenManager.GraphicsDevice.Viewport;
-            Rectangle fullscreen = new Rectangle(0, 0, viewport.Width, viewport.Height);
+            //Rectangle fullscreen = new Rectangle(0, 0, viewport.Width, viewport.Height);
+            Rectangle leftSide = new Rectangle(0, 0, backgroundTexture.Width, backgroundTexture.Height);
+            Rectangle rightSide = new Rectangle(viewport.Width - backgroundTexture.Width,
+                                                0, backgroundTexture.Width, backgroundTexture.Height);
 
             spriteBatch.Begin();
 
-            spriteBatch.Draw(backgroundTexture, fullscreen,
+            spriteBatch.Draw(backgroundTexture, leftSide,
+                             new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha));
+            spriteBatch.Draw(backgroundTexture, rightSide,
                              new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha));
 
             spriteBatch.End();

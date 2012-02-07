@@ -510,3 +510,14 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\du
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\donut.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\winning.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\FatKidDL2.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\knife.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_grenade.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\knife_idle.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_grenade.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\duff.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\donut.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\winning.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Fonts\FatKidDL2.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\knifeSound.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\grenadeSound.xnb
+E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Super_Awesome_Game_box.xnb

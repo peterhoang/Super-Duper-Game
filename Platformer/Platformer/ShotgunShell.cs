@@ -30,8 +30,8 @@ namespace Platformer
             bulletGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shell"), 0.1f, false);
 
             // Calculate bounds within texture size.            
-            int width = (int)(bulletGraphic.FrameWidth * 0.6);
-            int left = (bulletGraphic.FrameWidth - width) / 2;
+            int width = (int)(bulletGraphic.FrameWidth * 0.4);
+            int left = ((bulletGraphic.FrameWidth - width) / 2) + 2;
             int height = (int)(bulletGraphic.FrameWidth * 0.8);
             int top = bulletGraphic.FrameHeight - height;
             localBounds = new Rectangle(left, top, width, height);

@@ -63,6 +63,10 @@ namespace Platformer
             {
                 idleAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/chunli"), 0.1f, false, 40);
             }
+            else if (rand > 75)
+            {
+                idleAnimation = new Animation(Level.Content.Load<Texture2D>("Sprites/winning"), 0.1f, false, 200);
+            }
             sprite.PlayAnimation(idleAnimation);
          
             // Calculate bounds within texture size.

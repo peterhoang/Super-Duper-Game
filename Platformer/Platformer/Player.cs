@@ -109,7 +109,7 @@ namespace Platformer
         // Constants for rolling movement
         private const float MaxRollTime = 0.35f;
         private const float RollControlPower = 0.21f;
-        private const float MaxRollRate = 0.6f;
+        private const float MaxRollRate = 2.0f;
 
         // Input configuration
         private const float MoveStickScale = 1.0f;

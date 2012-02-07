@@ -12,7 +12,7 @@ namespace Platformer
         private const float BULLET_DAMAGE = 20.0f;
         
         private const float MAX_BULLET_SPEED = 1000.0f;
-        private const float MAX_BULLET_TIMEALIVE = 0.2f;
+        private const float MAX_BULLET_TIMEALIVE = 0.25f;
    
         private float bulletTimeAlive; 
         

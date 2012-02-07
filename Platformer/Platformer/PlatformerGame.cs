@@ -93,6 +93,9 @@ namespace Platformer
         // have a level file present. This allows us to not need to check for the file
         // or handle exceptions, both of which can add unnecessary time to level loading.
         private const int numberOfLevels = 7;
+        private float levelTransitionDelayTime = 0.0f;
+        private const float MAX_LEVEL_DELAY = 0.5f;
+        private bool startLevelDelayTimer = false;
 
         // a random number generator that the whole sample can share.
         private static Random random = new Random(354669);
@@ -270,24 +273,37 @@ namespace Platformer
         public override void Update(GameTime gameTime, bool otherScreenHasFocus,
                                                        bool coveredByOtherScreen)
         {
-            base.Update(gameTime, otherScreenHasFocus, false);
-            // Handle polling for our input and handling high-level input
-
-            // Gradually fade in or out depending on whether we are covered by the pause screen.
-            if (coveredByOtherScreen)
-                pauseAlpha = Math.Min(pauseAlpha + 1f / 32, 1);
-            else
-                pauseAlpha = Math.Max(pauseAlpha - 1f / 32, 0);
-
-            if (IsActive)
+            if (startLevelDelayTimer)
             {
-                float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+                levelTransitionDelayTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (levelTransitionDelayTime > MAX_LEVEL_DELAY)
+                {
+                    levelTransitionDelayTime = 0.0f;
+                    startLevelDelayTimer = false;
+                }
+            }
+            else
+            {
 
-                // update our level, passing down the GameTime along with all of our input states
-                level.Update(gameTime, keyboardState, gamePadStates, touchState,
-                             accelerometerState, ScreenManager.Game.Window.CurrentOrientation, graphics.Viewport);
+                base.Update(gameTime, otherScreenHasFocus, false);
+                // Handle polling for our input and handling high-level input
 
-                UpdateExplosions(dt);
+                // Gradually fade in or out depending on whether we are covered by the pause screen.
+                if (coveredByOtherScreen)
+                    pauseAlpha = Math.Min(pauseAlpha + 1f / 32, 1);
+                else
+                    pauseAlpha = Math.Max(pauseAlpha - 1f / 32, 0);
+
+                if (IsActive)
+                {
+                    float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                    // update our level, passing down the GameTime along with all of our input states
+                    level.Update(gameTime, keyboardState, gamePadStates, touchState,
+                                 accelerometerState, ScreenManager.Game.Window.CurrentOrientation, graphics.Viewport);
+
+                    UpdateExplosions(dt);
+                }
             }
            
         }
@@ -454,6 +470,8 @@ namespace Platformer
                     player.OnHit += new OnHitHandler(player_OnHit);
                 }
             }
+
+            startLevelDelayTimer = true;
         }
 
        
