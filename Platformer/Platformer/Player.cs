@@ -332,6 +332,7 @@ namespace Platformer
             if (isThrowGrenade)
             {
                 sprite.PlayAnimation(grenadeAnimation);
+                m_bomb.Update(gameTime, Position, flip);
             }
             else
             {
@@ -461,14 +462,18 @@ namespace Platformer
             isThrowGrenade = false;
             if (!isRolling)
             {
+                if (old_gamePadState.IsButtonDown(GrenadeButton) && !gamePadState.IsButtonDown(GrenadeButton))
+                {
+                    m_bomb.Shoot();
+                }
                 if (gamePadState.IsButtonDown(GrenadeButton) && isOnGround)
                 {
                     isThrowGrenade = true;
-                    m_bomb.Shoot();
+                    m_bomb.Charging(this.position);
                 }
                 else if ((gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton)) ||
                         (keyboardState.IsKeyDown(Keys.Z)) ||
-                        (gamePadState.IsButtonDown(FireButton2) && !old_gamePadState.IsButtonDown(FireButton2)) )
+                        (gamePadState.IsButtonDown(FireButton2) && !old_gamePadState.IsButtonDown(FireButton2)))
                 {
                     weapon.Shoot();
                 }
@@ -827,14 +832,12 @@ namespace Platformer
             sprite.Draw(gameTime, spriteBatch, Position, flip, newColor);            
 
             // Draw the gun if not rolling
-            if (isAlive && !isRolling)
+            if (isAlive)
             {
-                if (isThrowGrenade)
-                    m_bomb.Draw(gameTime, spriteBatch);
-                else
-                    weapon.Draw(gameTime, spriteBatch);          
+                if (!isRolling)
+                    weapon.Draw(gameTime, spriteBatch);
+                m_bomb.Draw(gameTime, spriteBatch);
             } 
-            
 
 
             //if the player is offscreen, reset

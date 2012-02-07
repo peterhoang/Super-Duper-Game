@@ -97,6 +97,9 @@ Content\Sprites\Player\cop_yellow_grenade.xnb
 Content\Sprites\duff.xnb
 Content\Sprites\donut.xnb
 Content\Sprites\winning.xnb
+Content\Super_Awesome_Game_box.xnb
+Content\Sprites\Weapons\bomb.xnb
+Content\xbox_controller.xnb
 Content\Fonts\Hud.xnb
 Content\Fonts\menufont.xnb
 Content\Fonts\gamefont.xnb
@@ -134,12 +137,9 @@ Content\Sounds\smb_stage_clear.xnb
 Content\Sounds\bridgeSound.xnb
 Content\Sounds\knifeSound.xnb
 Content\Sounds\grenadeSound.xnb
+Content\Sounds\explosionSound.xnb
 Content\Sounds\Music\bgmusic1.xnb
 Content\Sounds\Music\smb-castle.xnb
-Content\Super_Awesome_Game_box.xnb
-Content\Sprites\Weapons\bomb.xnb
-Content\Sounds\explosionSound.xnb
-Content\xbox_controller.xnb
 Content\Sounds\Music\bgmusic1.wma
 Content\Sounds\Music\smb-castle.wma
 Content\Levels\3.txt
