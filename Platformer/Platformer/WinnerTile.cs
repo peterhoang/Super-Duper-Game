@@ -33,7 +33,6 @@ namespace Platformer
         }
 
         Animation idleAnimation;
-        Animation cheerAnimation;
         AnimationPlayer sprite;
 
         #endregion

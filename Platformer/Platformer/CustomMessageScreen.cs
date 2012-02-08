@@ -33,7 +33,6 @@ namespace GameStateManagement
         #region Events
 
         public event EventHandler<PlayerIndexEventArgs> Accepted;
-        public event EventHandler<PlayerIndexEventArgs> Cancelled;
 
         private float delayTime = 0.0f;
         private bool canInteract = false;

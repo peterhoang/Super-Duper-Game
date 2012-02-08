@@ -8,36 +8,43 @@ namespace Platformer
 {
     class Grenade : Weapon
     {
-        BasicEffect basicEffect;
-        VertexPositionColor[] vertices;
-
         Animation idleAnimation;
         AnimationPlayer sprite;
 
-        SoundEffect grenadeSound;
+        SoundEffect throwSound;
+        SoundEffect bombSound;
         SoundEffect explosionSound;
+        SoundEffectInstance bombSoundInstance;
 
-        Vector2 initalPosition;
-        Vector2 acceleration = new Vector2(0, -9.8f);
-
-        private bool isOnGround;
         private int previousBottom;
 
         public bool IsAttacking { get { return attacking; } }
         private bool attacking = false;
         private bool charging = false;
-        private float attackTime = 0.0f;
-        private const float MAXATTACKTIME = 0.3f;
+        private bool initialVelocitySet = false;
+      
+        private float timeToLive = 0.0f;
+        private const float MAX_TIME_ALIVE = 1.5f;
 
+        public bool CanAttack { get { return canAttack; } }
         private bool canAttack = true;
         private float rateOfAttackTime = 0.0f;
         private const float MAXRATEOFATTACK = 1.5f;
 
         private Vector2 velocity;
-        private const float BOMB_DAMAGE = 1.0f;
 
-        private const float GravityAcceleration = 3400.0f;
+        // Constants for controlling vertical movement
+        private float jumpTime;
+        private float MaxJumpTime = 1.0f;
+        private const float JumpLaunchVelocity = -3500.0f;
+        private const float GravityAcceleration = 1000.0f;
         private const float MaxFallSpeed = 550.0f;
+        private const float JumpControlPower = 0.14f;
+
+        public bool IsOnGround { get; set; }
+        public bool IsAlive { get; set; }
+
+        GrenadeExplosion explosion;
 
         private Rectangle localBounds;
         /// <summary>
@@ -68,25 +75,21 @@ namespace Platformer
         /// </summary>
         public void LoadContent()
         {
-            basicEffect = new BasicEffect(game.ScreenManager.GraphicsDevice);
-            basicEffect.VertexColorEnabled = true;
-            basicEffect.Projection = Matrix.CreateOrthographicOffCenter
-               (0, game.ScreenManager.GraphicsDevice.Viewport.Width,     // left, right
-                game.ScreenManager.GraphicsDevice.Viewport.Height, 0,    // bottom, top
-                0, 1);                                         // near, far plane
+            this.Reset();
 
-            vertices = new VertexPositionColor[2];
-            vertices[0].Position = new Vector3(100, 100, 0);
-            vertices[0].Color = Color.Black;
-            vertices[1].Position = new Vector3(200, 200, 0);
-            vertices[1].Color = Color.Black;
-
+            explosion = new GrenadeExplosion(game, position, _player);
 
             idleAnimation = new Animation(game.Content.Load<Texture2D>("Sprites/Weapons/bomb"), 0.1f, true);
             sprite.PlayAnimation(idleAnimation);
 
-            grenadeSound = game.Content.Load<SoundEffect>("Sounds/grenadeSound");
             explosionSound = game.Content.Load<SoundEffect>("Sounds/explosionSound");
+
+            throwSound = game.Content.Load<SoundEffect>("Sounds/throwSound");
+            bombSound = game.Content.Load<SoundEffect>("Sounds/bombSound");
+            bombSoundInstance = bombSound.CreateInstance();
+            bombSoundInstance.IsLooped = true;
+            bombSoundInstance.Volume = 0.55f;
+     
          
             // Calculate bounds within texture size.
             int width = (int)(idleAnimation.FrameWidth * 0.4);
@@ -98,42 +101,75 @@ namespace Platformer
 
         public void Charging(Vector2 position)
         {
-            this.initalPosition = position;
+            if (attacking || !canAttack) return;
+
+            if (bombSoundInstance.State != SoundState.Playing)
+            {
+                bombSoundInstance.Play();
+            }
+            sprite.PlayAnimation(idleAnimation);
             charging = true;
+
+            if (!initialVelocitySet)
+            {
+                velocity = (_player.Flip == SpriteEffects.None) ? new Vector2(200.0f, -100.0f) : new Vector2(-200.0f, -100.0f);
+                initialVelocitySet = true;
+            }
         }
 
         public override void Shoot()
         {
+            if (!canAttack) return;
+            canAttack = false;
             charging = false;
             attacking = true;
+            throwSound.Play();
+            bombSoundInstance.Stop();
         }
 
         public override void Reset()
         {
+            IsAlive = true;
+            initialVelocitySet = false;
             attacking = false;
             charging = false;
-            velocity = Vector2.Zero;
+            timeToLive = 0.0f;
+            jumpTime = 0.0f;
+            velocity = new Vector2(200.0f, -100.0f);
+        }
+
+        private void Explode()
+        {
+            explosionSound.Play();
+            explosion.Position = this.position;
+            explosion.IsAlive = true;
+            this.Reset();    
         }
 
         public override void Update(GameTime gameTime, Vector2 position, SpriteEffects flip)
         {
             float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-            if (charging)
+          
+            if (charging && !attacking)
             {
-                velocity.X += 10.0f;
-                velocity.Y += 10.0f;
+                velocity.X += 5.0f * ((flip == SpriteEffects.None) ? 1.0f : -1.0f);
+                velocity.Y -= 50.0f;
+                MaxJumpTime += 1.0f;
             }
 
             if (attacking)
             {
-                this.position += velocity * elapsed - 0.5f * acceleration * elapsed * elapsed;
+                velocity.Y = MathHelper.Clamp(velocity.Y + GravityAcceleration * elapsed, -MaxFallSpeed, MaxFallSpeed);
+                velocity.Y = DoJump(velocity.Y, gameTime);
+                this.position.X += velocity.X * elapsed;
+                this.position.Y += velocity.Y * elapsed;
+                //this.position = new Vector2((float)Math.Round(this.position.X), (float)Math.Round(this.position.Y));
 
-                rateOfAttackTime += elapsed;
-                if (rateOfAttackTime > MAXRATEOFATTACK)
+                HandleCollisions();
+
+                timeToLive += elapsed;
+                if (timeToLive > MAX_TIME_ALIVE)
                 {
-                    attacking = false;
-                    rateOfAttackTime = 0.0f;
                     this.Reset();
                 }
             }
@@ -144,14 +180,25 @@ namespace Platformer
                 this.position = position + offset;
             }
 
+            if (!canAttack)
+            {
+                rateOfAttackTime += elapsed;
+                if (rateOfAttackTime > MAXRATEOFATTACK)
+                {
+                    rateOfAttackTime = 0.0f;
+                    canAttack = true;
+                }
+            }
 
+            explosion.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            if (attacking || charging)
+            if (attacking || charging) 
                 sprite.Draw(gameTime, spriteBatch, this.position, Flip);
 
+            explosion.Draw(gameTime, spriteBatch);
                 //basicEffect.CurrentTechnique.Passes[0].Apply();
                 //game.ScreenManager.GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.LineList, vertices, 0, 1);
             
@@ -167,7 +214,7 @@ namespace Platformer
             int bottomTile = (int)Math.Ceiling(((float)bounds.Bottom / Tile.Height)) - 1;
 
             // Reset flag to search for ground collision.
-            isOnGround = false;
+            IsOnGround = false;
 
             // For each potentially colliding tile,
             for (int y = topTile; y <= bottomTile; ++y)
@@ -187,29 +234,10 @@ namespace Platformer
                             float absDepthY = Math.Abs(depth.Y);
 
                             // Resolve the collision along the shallow axis.
-                            if (absDepthY < absDepthX || collision == TileCollision.Platform)
+                            if (absDepthY < absDepthX || collision == TileCollision.Platform || collision == TileCollision.Impassable || IsOnGround)
                             {
-                                // If we crossed the top of a tile, we are on the ground.
-                                if (previousBottom <= tileBounds.Top)
-                                    isOnGround = true;
-
-                                // Ignore platforms, unless we are on the ground.
-                                if (collision == TileCollision.Impassable || isOnGround)
-                                {
-                                    // Resolve the collision along the Y axis.
-                                    Position = new Vector2(Position.X, Position.Y + depth.Y);
-
-                                    // Perform further collisions with the new bounds.
-                                    bounds = BoundingRectangle;
-                                }
-                            }
-                            else if (collision == TileCollision.Impassable) // Ignore platforms.
-                            {
-                                // Resolve the collision along the X axis.
-                                Position = new Vector2(Position.X + depth.X, Position.Y);
-
-                                // Perform further collisions with the new bounds.
-                                bounds = BoundingRectangle;
+                                this.Explode();
+                                break;
                             }
                         }
                     }
@@ -218,6 +246,38 @@ namespace Platformer
 
             // Save the new bounds bottom.
             previousBottom = bounds.Bottom;
+        }
+
+        private float DoJump(float velocityY, GameTime gameTime)
+        {
+            // If the player wants to jump
+            if (!charging && attacking)
+            {
+                // Begin or continue a jump
+                if ((IsOnGround) || jumpTime > 0.0f)
+                {
+                    jumpTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                }
+
+                // If we are in the ascent of the jump
+                if (0.0f < jumpTime && jumpTime <= MaxJumpTime)
+                {
+                    // Fully override the vertical velocity with a power curve that gives players more control over the top of the jump
+                    velocityY = JumpLaunchVelocity * (1.0f - (float)Math.Pow(jumpTime / MaxJumpTime, JumpControlPower));
+                }
+                else
+                {
+                    // Reached the apex of the jump
+                    jumpTime = 0.0f;
+                }
+            }
+            else
+            {
+                // Continues not jumping or cancels a jump in progress
+                jumpTime = 0.0f;
+            }
+
+            return velocityY;
         }
     }
 }

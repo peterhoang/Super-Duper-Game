@@ -136,12 +136,14 @@ Content\Sounds\smb_gameover.xnb
 Content\Sounds\smb_stage_clear.xnb
 Content\Sounds\bridgeSound.xnb
 Content\Sounds\knifeSound.xnb
-Content\Sounds\grenadeSound.xnb
 Content\Sounds\explosionSound.xnb
 Content\Sounds\Music\bgmusic1.xnb
 Content\Sounds\Music\bgmusic1.wma
 Content\Sounds\Music\smb-castle.xnb
 Content\Sounds\Music\smb-castle.wma
+Content\Sounds\throwSound.xnb
+Content\Sounds\bombSound.xnb
+Content\Sprites\Weapons\explosion.xnb
 Content\Levels\3.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

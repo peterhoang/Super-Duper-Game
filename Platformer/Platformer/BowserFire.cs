@@ -23,7 +23,7 @@ namespace Platformer
 
         public BowserFire(PlatformerGame level, Vector2 position)
         {
-            this.level = level;
+            this.game = level;
             Position = position;
             IsAlive = false;
             LoadContent();
@@ -35,7 +35,7 @@ namespace Platformer
         public void LoadContent()
         {
             // Load animated textures.
-            bulletGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/firebreath"), 0.1f, true, 60);
+            bulletGraphic = new Animation(Game.Content.Load<Texture2D>("Sprites/Weapons/firebreath"), 0.1f, true, 60);
             bulletSprite.PlayAnimation(bulletGraphic);
 
             // Calculate bounds within texture size.            

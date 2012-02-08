@@ -16,11 +16,9 @@ namespace Platformer
    
         private float bulletTimeAlive; 
         
-
-
         public HandgunBullet(PlatformerGame level, Vector2 position)
         {
-            this.level = level;
+            this.game = level;
             Position = position;
             IsAlive = false;
             LoadContent();
@@ -32,7 +30,7 @@ namespace Platformer
         public void LoadContent()
         {
             // Load animated textures.
-            bulletGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/bullet"), 0.1f, false);
+            bulletGraphic = new Animation(Game.Content.Load<Texture2D>("Sprites/Weapons/bullet"), 0.1f, false);
 
              // Calculate bounds within texture size.            
             int width = (int)(bulletGraphic.FrameWidth * 0.4);
@@ -99,11 +97,11 @@ namespace Platformer
                 for (int x = leftTile; x <= rightTile; ++x)
                 {
                     // If this tile is collidable,
-                    TileCollision collision = Level.CurrentLevel.GetCollision(x, y);
+                    TileCollision collision = Game.CurrentLevel.GetCollision(x, y);
                     if (collision != TileCollision.Passable)
                     {
                         // Determine collision depth (with direction) and magnitude.
-                        Rectangle tileBounds = Level.CurrentLevel.GetBounds(x, y);
+                        Rectangle tileBounds = Game.CurrentLevel.GetBounds(x, y);
                         Vector2 depth = RectangleExtensions.GetIntersectionDepth(bounds, tileBounds);
                         if (depth != Vector2.Zero)
                         {
@@ -136,7 +134,7 @@ namespace Platformer
                 }
             }
 
-            List<Enemy> enemies = level.CurrentLevel.Enemies;
+            List<Enemy> enemies = game.CurrentLevel.Enemies;
             foreach (Bowser enemy in enemies)
             {
                 if (enemy.IsAlive)

@@ -12,7 +12,6 @@ namespace GameStateManagement
         #region Fields
 
         string message;
-        Texture2D gradientTexture;
         float countDownTimer = 4.0f;
         Random r = new Random();
        

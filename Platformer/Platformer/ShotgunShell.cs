@@ -15,7 +15,7 @@ namespace Platformer
 
         public ShotgunShell(PlatformerGame level, Vector2 position)
         {
-            this.level = level;
+            this.game = level;
             Position = position;
             IsAlive = false;
             LoadContent();
@@ -27,7 +27,7 @@ namespace Platformer
         public void LoadContent()
         {
             // Load animated textures.
-            bulletGraphic = new Animation(Level.Content.Load<Texture2D>("Sprites/Weapons/shell"), 0.1f, false);
+            bulletGraphic = new Animation(Game.Content.Load<Texture2D>("Sprites/Weapons/shell"), 0.1f, false);
 
             // Calculate bounds within texture size.            
             int width = (int)(bulletGraphic.FrameWidth * 0.4);
@@ -99,7 +99,7 @@ namespace Platformer
                 }
             }
 
-            foreach (Bowser enemy in level.CurrentLevel.Enemies)
+            foreach (Bowser enemy in game.CurrentLevel.Enemies)
             {
                 if (enemy.IsAlive)
                 {

@@ -88,6 +88,7 @@
     <Compile Include="GameScreen.cs" />
     <Compile Include="Gem.cs" />
     <Compile Include="Grenade.cs" />
+    <Compile Include="GrenadeExplosion.cs" />
     <Compile Include="PrimitiveBatch.cs" />
     <Compile Include="Weapon.cs" />
     <Compile Include="HandGun.cs" />

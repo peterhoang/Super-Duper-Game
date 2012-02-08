@@ -6,11 +6,11 @@ namespace Platformer
 {
     abstract class Bullet
     {
-        public PlatformerGame Level
+        public PlatformerGame Game
         {
-            get { return level; }
+            get { return game; }
         }
-        protected PlatformerGame level;
+        protected PlatformerGame game;
 
         public Vector2 Position
         {

@@ -462,15 +462,18 @@ namespace Platformer
             isThrowGrenade = false;
             if (!isRolling)
             {
+                // release the charged bomb
                 if (old_gamePadState.IsButtonDown(GrenadeButton) && !gamePadState.IsButtonDown(GrenadeButton))
                 {
                     m_bomb.Shoot();
                 }
-                if (gamePadState.IsButtonDown(GrenadeButton) && isOnGround)
+                // charge up the bomb throw if button held
+                if (gamePadState.IsButtonDown(GrenadeButton) && isOnGround && m_bomb.CanAttack)
                 {
                     isThrowGrenade = true;
                     m_bomb.Charging(this.position);
                 }
+                // other attacks
                 else if ((gamePadState.IsButtonDown(FireButton) && !old_gamePadState.IsButtonDown(FireButton)) ||
                         (keyboardState.IsKeyDown(Keys.Z)) ||
                         (gamePadState.IsButtonDown(FireButton2) && !old_gamePadState.IsButtonDown(FireButton2)))

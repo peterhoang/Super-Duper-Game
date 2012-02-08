@@ -13,11 +13,17 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Platformer
 {
+
+    // When player gets hit
+    public delegate void AnimationCompletedHanler(object sender, EventArgs e);
+
     /// <summary>
     /// Controls playback of an Animation.
     /// </summary>
     public struct AnimationPlayer
     {
+        public event AnimationCompletedHanler AnimationCompleted;
+
         /// <summary>
         /// Gets the animation which is currently playing.
         /// </summary>
@@ -101,6 +107,7 @@ namespace Platformer
                     frameIndex = Math.Min(frameIndex + 1, Animation.FrameCount - 1);
                 }
             }
+            
 
             // Calculate the source rectangle of the current frame.
             //Rectangle source = new Rectangle(FrameIndex * Animation.Texture.Height, 0, Animation.Texture.Height, Animation.Texture.Height);
@@ -108,6 +115,11 @@ namespace Platformer
 
             // Draw the current frame.
             spriteBatch.Draw(Animation.Texture, position, source, color, 0.0f, Origin, 1.0f, spriteEffects, 0.0f);
+
+            if (!Animation.IsLooping && frameIndex >= Animation.FrameCount -1)
+            {
+                if (AnimationCompleted != null) AnimationCompleted.Invoke(this, new EventArgs());
+            }
         }
     }
 }
