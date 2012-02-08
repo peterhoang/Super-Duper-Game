@@ -35,7 +35,7 @@ namespace Platformer
 
         private bool canAttack = true;
         private float rateOfAttackTime = 0.0f;
-        private const float MAXRATEOFATTACK = 1.5f;
+        private const float MAXRATEOFATTACK = 3.0f;
 
         private const float KNIFE_DAMAGE = 30.0f;
 
