@@ -1,303 +1,315 @@
 e43a8e485f7f4c989c2e57d13f38c7c1
 0
 Digiflare-Box
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\
-129730144220000000
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\
+129731876960000000
 C:\Peter\Super-Duper-Game\Platformer\Platformer\Super_Awesome_Game_box.png
 2012-02-03T20:34:46.6118888Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Platformer.exe
-2012-02-06T23:51:01.5641305Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\gradient.xnb
-2012-02-06T23:50:19.8595575Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\background.xnb
-2012-02-06T23:50:19.8525571Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_0.xnb
-2012-02-06T23:50:01.7973942Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_1.xnb
-2012-02-06T23:50:02.4273951Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background0_2.xnb
-2012-02-06T23:50:02.9873959Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_0.xnb
-2012-02-06T23:50:06.2484005Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_1.xnb
-2012-02-06T23:50:08.8314378Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background1_2.xnb
-2012-02-06T23:50:11.3304970Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_0.xnb
-2012-02-06T23:50:13.9725248Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_1.xnb
-2012-02-06T23:50:16.6925286Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Background2_2.xnb
-2012-02-06T23:50:19.1425321Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_0.xnb
-2012-02-06T23:49:55.1263848Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_1.xnb
-2012-02-06T23:49:55.7863858Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer0_2.xnb
-2012-02-06T23:49:56.4763867Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_0.xnb
-2012-02-06T23:49:56.9463874Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_1.xnb
-2012-02-06T23:49:57.3963880Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer1_2.xnb
-2012-02-06T23:49:57.8563887Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_0.xnb
-2012-02-06T23:49:58.2173892Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_1.xnb
-2012-02-06T23:49:58.5973898Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Backgrounds\Layer2_2.xnb
-2012-02-06T23:49:59.0473904Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\FatKidDL2.xnb
-2012-02-06T23:50:20.4405907Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\gamefont.xnb
-2012-02-06T23:50:20.3885877Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\Hud.xnb
-2012-02-06T23:50:20.2025771Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Fonts\menufont.xnb
-2012-02-06T23:50:20.2715810Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\0.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Platformer.exe
+2012-02-08T15:14:53.4488500Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\gradient.xnb
+2012-02-08T15:14:14.1226006Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Super_Awesome_Game_box.xnb
+2012-02-08T15:14:14.6666317Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\xbox_controller.xnb
+2012-02-08T15:14:14.7996393Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\background.xnb
+2012-02-08T15:14:14.1126000Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background0_0.xnb
+2012-02-08T15:13:55.4275313Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background0_1.xnb
+2012-02-08T15:13:56.0835688Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background0_2.xnb
+2012-02-08T15:13:56.6566016Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background1_0.xnb
+2012-02-08T15:14:00.0377950Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background1_1.xnb
+2012-02-08T15:14:02.6829463Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background1_2.xnb
+2012-02-08T15:14:05.2650940Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background2_0.xnb
+2012-02-08T15:14:07.9662485Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background2_1.xnb
+2012-02-08T15:14:10.7564081Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background2_2.xnb
+2012-02-08T15:14:13.3815582Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer0_0.xnb
+2012-02-08T15:13:48.6551440Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer0_1.xnb
+2012-02-08T15:13:49.3321827Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer0_2.xnb
+2012-02-08T15:13:50.0422233Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer1_0.xnb
+2012-02-08T15:13:50.5172505Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer1_1.xnb
+2012-02-08T15:13:50.9762767Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer1_2.xnb
+2012-02-08T15:13:51.4703050Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer2_0.xnb
+2012-02-08T15:13:51.8333257Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer2_1.xnb
+2012-02-08T15:13:52.2303485Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer2_2.xnb
+2012-02-08T15:13:52.6693736Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\FatKidDL2.xnb
+2012-02-08T15:14:15.2486650Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\gamefont.xnb
+2012-02-08T15:14:15.1916618Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\Hud.xnb
+2012-02-08T15:14:14.9996508Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\menufont.xnb
+2012-02-08T15:14:15.0726550Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Levels\0.txt
 2012-02-06T15:52:37.9289750Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\1.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Levels\1.txt
 2012-02-06T14:08:55.2818406Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\2.txt
-2012-02-03T20:34:46.2658691Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\3.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Levels\2.txt
+2012-02-07T03:13:38.6090955Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Levels\3.txt
 2012-02-06T17:33:02.9272182Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\4.txt
-2012-02-03T22:25:22.9654666Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\5.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Levels\4.txt
+2012-02-07T03:13:38.6090955Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Levels\5.txt
 2012-02-03T20:34:46.2688692Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Levels\6.txt
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Levels\6.txt
 2012-02-06T15:30:40.1752366Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_died.xnb
-2012-02-06T23:49:59.1573905Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_lose.xnb
-2012-02-06T23:49:59.2773907Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Overlays\you_win.xnb
-2012-02-06T23:49:59.3873909Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\bridgeSound.xnb
-2012-02-06T23:50:22.3145947Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\fallSound.xnb
-2012-02-06T23:50:22.0245943Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\GemCollected.xnb
-2012-02-06T23:50:20.6245923Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\grenadeSound.xnb
-2012-02-06T23:50:22.3345947Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\hitSound.xnb
-2012-02-06T23:50:22.0345943Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\jumpSound.xnb
-2012-02-06T23:50:21.9145941Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\killedSound.xnb
-2012-02-06T23:50:21.9945942Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\knifeSound.xnb
-2012-02-06T23:50:22.3245947Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\MonsterKilled.xnb
-2012-02-06T23:50:20.6845924Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\pistolShotSound.xnb
-2012-02-06T23:50:21.9245941Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Powerup.xnb
-2012-02-06T23:50:20.9345927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\rollSound.xnb
-2012-02-06T23:50:21.9445941Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\shotgunBlastSound.xnb
-2012-02-06T23:50:21.9645942Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_bowserfalls.xnb
-2012-02-06T23:50:22.0645943Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_bowserfire.xnb
-2012-02-06T23:50:22.0945943Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_gameover.xnb
-2012-02-06T23:50:22.1745945Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\smb_stage_clear.xnb
-2012-02-06T23:50:22.3045946Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.wma
-2012-02-06T23:50:24.5455978Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\bgmusic1.xnb
-2012-02-06T23:50:24.5755979Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\smb-castle.wma
-2012-02-06T23:50:26.6166008Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\Music\smb-castle.xnb
-2012-02-06T23:50:26.6466008Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\dominating.xnb
-2012-02-06T23:50:20.9845928Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\doublekill.xnb
-2012-02-06T23:50:21.0245929Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\firstblood.xnb
-2012-02-06T23:50:21.0845929Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\godlike.xnb
-2012-02-06T23:50:21.1645930Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\headshot.xnb
-2012-02-06T23:50:21.2145931Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\holyshit.xnb
-2012-02-06T23:50:21.3045932Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\killingspree.xnb
-2012-02-06T23:50:21.3645933Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ludicrouskill.xnb
-2012-02-06T23:50:21.4245934Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\megakill.xnb
-2012-02-06T23:50:21.4945935Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\monsterkill.xnb
-2012-02-06T23:50:21.6045937Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\multikill.xnb
-2012-02-06T23:50:21.6645937Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\play.xnb
-2012-02-06T23:50:21.7045938Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\rampage.xnb
-2012-02-06T23:50:21.7445939Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\ultrakill.xnb
-2012-02-06T23:50:21.7845939Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\unstoppable.xnb
-2012-02-06T23:50:21.8445940Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sounds\UT\wickedsick.xnb
-2012-02-06T23:50:21.9045941Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\arrow.xnb
-2012-02-06T23:50:00.6973927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\blank.xnb
-2012-02-06T23:50:19.8565573Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\chunli.xnb
-2012-02-06T23:50:19.9065601Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\donut.xnb
-2012-02-06T23:50:20.0045658Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\duff.xnb
-2012-02-06T23:50:19.9825645Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Gem.xnb
-2012-02-06T23:49:53.5463826Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\quad.xnb
-2012-02-06T23:50:00.6773927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\winning.xnb
-2012-02-06T23:50:20.1055715Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Fire.xnb
-2012-02-06T23:50:03.0173959Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Idle.xnb
-2012-02-06T23:50:11.3794998Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Jump.xnb
-2012-02-06T23:50:11.3694993Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Bowser\Run.xnb
-2012-02-06T23:50:11.3524983Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Idle.xnb
-2012-02-06T23:49:53.6163827Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterA\Run.xnb
-2012-02-06T23:49:53.6863828Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Idle.xnb
-2012-02-06T23:49:53.7663829Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterB\Run.xnb
-2012-02-06T23:49:53.8463830Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Idle.xnb
-2012-02-06T23:49:53.9163831Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterC\Run.xnb
-2012-02-06T23:49:53.9863832Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Idle.xnb
-2012-02-06T23:49:54.0563833Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\MonsterD\Run.xnb
-2012-02-06T23:49:54.1263834Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\explosion.xnb
-2012-02-06T23:50:00.2973921Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Particles\smoke.xnb
-2012-02-06T23:50:00.6773927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\blue_corpse.xnb
-2012-02-06T23:50:00.6873927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Celebrate.xnb
-2012-02-06T23:49:54.1963835Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_die.xnb
-2012-02-06T23:49:59.4973910Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_grenade.xnb
-2012-02-06T23:50:19.9205610Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_idle.xnb
-2012-02-06T23:49:59.4273909Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_jump.xnb
-2012-02-06T23:49:59.4473909Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll.xnb
-2012-02-06T23:49:59.4773910Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_roll2.xnb
-2012-02-06T23:49:59.5473911Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_running.xnb
-2012-02-06T23:49:59.4173909Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_die.xnb
-2012-02-06T23:49:59.6973913Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_grenade.xnb
-2012-02-06T23:50:19.9345618Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_idle.xnb
-2012-02-06T23:49:59.7073913Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_jump.xnb
-2012-02-06T23:49:59.7273913Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_roll.xnb
-2012-02-06T23:49:59.7473914Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\cop_yellow_running.xnb
-2012-02-06T23:49:59.7773914Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Die.xnb
-2012-02-06T23:49:54.2663836Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Idle.xnb
-2012-02-06T23:49:54.2663836Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Jump.xnb
-2012-02-06T23:49:54.3363837Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\Run.xnb
-2012-02-06T23:49:54.4063838Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Player\yellow_corpse.xnb
-2012-02-06T23:50:00.6873927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\bullet.xnb
-2012-02-06T23:49:59.6773913Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\firebreath.xnb
-2012-02-06T23:50:03.0273960Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun.xnb
-2012-02-06T23:49:59.5073910Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\handgun_muzzle.xnb
-2012-02-06T23:49:59.5273911Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\knife.xnb
-2012-02-06T23:50:19.9135605Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\knife_idle.xnb
-2012-02-06T23:50:19.9265613Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shell.xnb
-2012-02-06T23:49:59.7773914Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun.xnb
-2012-02-06T23:49:59.5073910Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Sprites\Weapons\shotgun_muzzle.xnb
-2012-02-06T23:49:59.6673913Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-16.xnb
-2012-02-06T23:50:19.1525321Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-3.xnb
-2012-02-06T23:50:19.1525321Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87-purp.xnb
-2012-02-06T23:50:19.8635577Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87-red.xnb
-2012-02-06T23:50:11.3354973Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\block-87.xnb
-2012-02-06T23:50:02.9973959Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA0.xnb
-2012-02-06T23:49:54.4063838Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA1.xnb
-2012-02-06T23:49:54.4163838Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA2.xnb
-2012-02-06T23:49:54.4163838Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA3.xnb
-2012-02-06T23:49:54.4163838Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA4.xnb
-2012-02-06T23:49:54.4263839Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA5.xnb
-2012-02-06T23:49:54.4263839Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockA6.xnb
-2012-02-06T23:49:54.4363839Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB0.xnb
-2012-02-06T23:49:54.4363839Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\BlockB1.xnb
-2012-02-06T23:49:54.4363839Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC0.xnb
-2012-02-06T23:50:00.7073927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\blockC1.xnb
-2012-02-06T23:50:00.7073927Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\bridge.xnb
-2012-02-06T23:50:19.8695580Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\chain.xnb
-2012-02-06T23:50:19.8755584Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\chain_flipped.xnb
-2012-02-06T23:50:19.8885591Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Exit.xnb
-2012-02-06T23:49:59.4273909Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\greyblock1.xnb
-2012-02-06T23:50:19.1625321Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\handle.xnb
-2012-02-06T23:50:19.8805587Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\lavatop.xnb
-2012-02-06T23:50:19.8845589Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\Platform.xnb
-2012-02-06T23:49:54.4463839Z
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Debug\Content\Tiles\spike.xnb
-2012-02-06T23:50:02.9973959Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Overlays\you_died.xnb
+2012-02-08T15:13:52.7843801Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Overlays\you_lose.xnb
+2012-02-08T15:13:52.8973866Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Overlays\you_win.xnb
+2012-02-08T15:13:53.0143933Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\bombSound.xnb
+2012-02-08T15:14:17.4917933Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\bridgeSound.xnb
+2012-02-08T15:14:17.2917819Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\explosionSound.xnb
+2012-02-08T15:14:17.3417847Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\fallSound.xnb
+2012-02-08T15:14:16.9617630Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\GemCollected.xnb
+2012-02-08T15:14:15.3996737Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\hitSound.xnb
+2012-02-08T15:14:16.9707635Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\jumpSound.xnb
+2012-02-08T15:14:16.8277553Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\killedSound.xnb
+2012-02-08T15:14:16.9317613Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\knifeSound.xnb
+2012-02-08T15:14:17.3047826Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\MonsterKilled.xnb
+2012-02-08T15:14:15.4676776Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\pistolShotSound.xnb
+2012-02-08T15:14:16.8377559Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Powerup.xnb
+2012-02-08T15:14:15.7666947Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\rollSound.xnb
+2012-02-08T15:14:16.8737580Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\shotgunBlastSound.xnb
+2012-02-08T15:14:16.8967593Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_bowserfalls.xnb
+2012-02-08T15:14:17.0037654Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_bowserfire.xnb
+2012-02-08T15:14:17.0337671Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_gameover.xnb
+2012-02-08T15:14:17.1257724Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_stage_clear.xnb
+2012-02-08T15:14:17.2837814Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\throwSound.xnb
+2012-02-08T15:14:17.3567856Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\bgmusic1.wma
+2012-02-08T15:14:20.0069372Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\bgmusic1.xnb
+2012-02-08T15:14:20.0339387Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\smb-castle.wma
+2012-02-08T15:14:21.9930508Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\smb-castle.xnb
+2012-02-08T15:14:22.0190523Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\dominating.xnb
+2012-02-08T15:14:15.8126973Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\doublekill.xnb
+2012-02-08T15:14:15.8617001Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\firstblood.xnb
+2012-02-08T15:14:15.9337042Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\godlike.xnb
+2012-02-08T15:14:16.0197091Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\headshot.xnb
+2012-02-08T15:14:16.0697120Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\holyshit.xnb
+2012-02-08T15:14:16.1587171Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\killingspree.xnb
+2012-02-08T15:14:16.2187205Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\ludicrouskill.xnb
+2012-02-08T15:14:16.2837242Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\megakill.xnb
+2012-02-08T15:14:16.3487279Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\monsterkill.xnb
+2012-02-08T15:14:16.4727350Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\multikill.xnb
+2012-02-08T15:14:16.5337385Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\play.xnb
+2012-02-08T15:14:16.5927419Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\rampage.xnb
+2012-02-08T15:14:16.6447449Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\ultrakill.xnb
+2012-02-08T15:14:16.6957478Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\unstoppable.xnb
+2012-02-08T15:14:16.7517510Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\wickedsick.xnb
+2012-02-08T15:14:16.8137545Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\arrow.xnb
+2012-02-08T15:13:54.3254683Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\blank.xnb
+2012-02-08T15:14:14.1176003Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\chunli.xnb
+2012-02-08T15:14:14.1746036Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\donut.xnb
+2012-02-08T15:14:14.2626086Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\duff.xnb
+2012-02-08T15:14:14.2436075Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Gem.xnb
+2012-02-08T15:13:46.6500293Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\quad.xnb
+2012-02-08T15:13:54.3034670Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\winning.xnb
+2012-02-08T15:14:14.3796153Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Fire.xnb
+2012-02-08T15:13:56.6886035Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Idle.xnb
+2012-02-08T15:14:05.3140968Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Jump.xnb
+2012-02-08T15:14:05.3040962Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Run.xnb
+2012-02-08T15:14:05.2860952Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterA\Idle.xnb
+2012-02-08T15:13:46.7480349Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterA\Run.xnb
+2012-02-08T15:13:46.8130386Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterB\Idle.xnb
+2012-02-08T15:13:46.8920431Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterB\Run.xnb
+2012-02-08T15:13:46.9590470Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterC\Idle.xnb
+2012-02-08T15:13:47.0330512Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterC\Run.xnb
+2012-02-08T15:13:47.1000550Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterD\Idle.xnb
+2012-02-08T15:13:47.1820597Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterD\Run.xnb
+2012-02-08T15:13:47.2520637Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Particles\explosion.xnb
+2012-02-08T15:13:53.9344459Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Particles\smoke.xnb
+2012-02-08T15:13:54.3004669Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\blue_corpse.xnb
+2012-02-08T15:13:54.3104674Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Celebrate.xnb
+2012-02-08T15:13:47.3240678Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_die.xnb
+2012-02-08T15:13:53.1263997Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_grenade.xnb
+2012-02-08T15:14:14.1916046Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_idle.xnb
+2012-02-08T15:13:53.0603959Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_jump.xnb
+2012-02-08T15:13:53.0833972Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_roll.xnb
+2012-02-08T15:13:53.1033984Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_roll2.xnb
+2012-02-08T15:13:53.1744025Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_running.xnb
+2012-02-08T15:13:53.0453951Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_die.xnb
+2012-02-08T15:13:53.3224109Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_grenade.xnb
+2012-02-08T15:14:14.2056054Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_idle.xnb
+2012-02-08T15:13:53.3294113Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_jump.xnb
+2012-02-08T15:13:53.3524126Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_roll.xnb
+2012-02-08T15:13:53.3684135Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_running.xnb
+2012-02-08T15:13:53.3974152Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Die.xnb
+2012-02-08T15:13:47.4370743Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Idle.xnb
+2012-02-08T15:13:47.4580755Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Jump.xnb
+2012-02-08T15:13:47.5370800Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Run.xnb
+2012-02-08T15:13:47.6080841Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\yellow_corpse.xnb
+2012-02-08T15:13:54.3174678Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\bomb.xnb
+2012-02-08T15:14:14.6776324Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\bullet.xnb
+2012-02-08T15:13:53.3014097Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\explosion.xnb
+2012-02-08T15:14:14.8476421Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\firebreath.xnb
+2012-02-08T15:13:56.6966039Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\handgun.xnb
+2012-02-08T15:13:53.1334001Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\handgun_muzzle.xnb
+2012-02-08T15:13:53.1584015Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\knife.xnb
+2012-02-08T15:14:14.1806039Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\knife_idle.xnb
+2012-02-08T15:14:14.1986050Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\shell.xnb
+2012-02-08T15:13:53.4024155Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\shotgun.xnb
+2012-02-08T15:13:53.1384004Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\shotgun_muzzle.xnb
+2012-02-08T15:13:53.2974095Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-16.xnb
+2012-02-08T15:14:13.3865585Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-3.xnb
+2012-02-08T15:14:13.3925589Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-87-purp.xnb
+2012-02-08T15:14:14.1286010Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-87-red.xnb
+2012-02-08T15:14:05.2700943Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-87.xnb
+2012-02-08T15:13:56.6626020Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA0.xnb
+2012-02-08T15:13:47.9381030Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA1.xnb
+2012-02-08T15:13:47.9431032Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA2.xnb
+2012-02-08T15:13:47.9481035Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA3.xnb
+2012-02-08T15:13:47.9531038Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA4.xnb
+2012-02-08T15:13:47.9571040Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA5.xnb
+2012-02-08T15:13:47.9631044Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA6.xnb
+2012-02-08T15:13:47.9691047Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockB0.xnb
+2012-02-08T15:13:47.9731050Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockB1.xnb
+2012-02-08T15:13:47.9781052Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\blockC0.xnb
+2012-02-08T15:13:54.3294685Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\blockC1.xnb
+2012-02-08T15:13:54.3344688Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\bridge.xnb
+2012-02-08T15:14:14.1336013Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\chain.xnb
+2012-02-08T15:14:14.1406017Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\chain_flipped.xnb
+2012-02-08T15:14:14.1556025Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\Exit.xnb
+2012-02-08T15:13:53.0513954Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\greyblock1.xnb
+2012-02-08T15:14:13.3975592Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\handle.xnb
+2012-02-08T15:14:14.1456019Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\lavatop.xnb
+2012-02-08T15:14:14.1506022Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\Platform.xnb
+2012-02-08T15:13:47.9831055Z
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\spike.xnb
+2012-02-08T15:13:56.6696024Z

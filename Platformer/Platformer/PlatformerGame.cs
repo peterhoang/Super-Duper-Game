@@ -329,7 +329,7 @@ namespace Platformer
             //if (gamePadState_1.Buttons.Back == ButtonState.Pressed)
             //    Exit();
 
-            if (input.IsPauseGame(ControllingPlayer))
+            if (input.IsPauseGame(null))
             {
                 ScreenManager.AddScreen(new PauseMenuScreen(), ControllingPlayer);
             }

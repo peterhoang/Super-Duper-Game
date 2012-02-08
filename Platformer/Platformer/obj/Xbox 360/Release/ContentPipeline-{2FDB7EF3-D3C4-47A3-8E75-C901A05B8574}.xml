@@ -1,0 +1,1345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Sprites\Gem.png</Source>
+      <Name>Sprites\Gem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Gem.xnb</Output>
+      <Time>2012-02-03T15:34:46.3838758-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Idle.png</Source>
+      <Name>Sprites\MonsterA\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterA\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3848759-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterA\Run.png</Source>
+      <Name>Sprites\MonsterA\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterA\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3858759-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Idle.png</Source>
+      <Name>Sprites\MonsterB\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterB\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.386876-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterB\Run.png</Source>
+      <Name>Sprites\MonsterB\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterB\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.387876-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Idle.png</Source>
+      <Name>Sprites\MonsterC\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterC\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3898762-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterC\Run.png</Source>
+      <Name>Sprites\MonsterC\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterC\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3908762-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Idle.png</Source>
+      <Name>Sprites\MonsterD\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterD\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3918763-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\MonsterD\Run.png</Source>
+      <Name>Sprites\MonsterD\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\MonsterD\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3928763-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Celebrate.png</Source>
+      <Name>Sprites\Player\Celebrate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Celebrate.xnb</Output>
+      <Time>2012-02-03T15:34:46.4088772-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Die.png</Source>
+      <Name>Sprites\Player\Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Die.xnb</Output>
+      <Time>2012-02-03T15:34:46.4098773-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Idle.png</Source>
+      <Name>Sprites\Player\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4108774-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Jump.png</Source>
+      <Name>Sprites\Player\Jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.4118774-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Run.png</Source>
+      <Name>Sprites\Player\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.422878-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockA0.png</Source>
+      <Name>Tiles\BlockA0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA0.xnb</Output>
+      <Time>2012-02-03T15:34:46.4408791-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockA1.png</Source>
+      <Name>Tiles\BlockA1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA1.xnb</Output>
+      <Time>2012-02-03T15:34:46.4418791-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockA2.png</Source>
+      <Name>Tiles\BlockA2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA2.xnb</Output>
+      <Time>2012-02-03T15:34:46.4428792-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockA3.png</Source>
+      <Name>Tiles\BlockA3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA3.xnb</Output>
+      <Time>2012-02-03T15:34:46.4438792-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockA4.png</Source>
+      <Name>Tiles\BlockA4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA4.xnb</Output>
+      <Time>2012-02-03T15:34:46.4458794-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockA5.png</Source>
+      <Name>Tiles\BlockA5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA5.xnb</Output>
+      <Time>2012-02-03T15:34:46.4558799-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockA6.png</Source>
+      <Name>Tiles\BlockA6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockA6.xnb</Output>
+      <Time>2012-02-03T15:34:46.4598802-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockB0.png</Source>
+      <Name>Tiles\BlockB0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockB0.xnb</Output>
+      <Time>2012-02-03T15:34:46.4638804-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BlockB1.png</Source>
+      <Name>Tiles\BlockB1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\BlockB1.xnb</Output>
+      <Time>2012-02-03T15:34:46.4688807-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Platform.png</Source>
+      <Name>Tiles\Platform</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\Platform.xnb</Output>
+      <Time>2012-02-03T15:34:46.4708808-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer0_0.png</Source>
+      <Name>Backgrounds\Layer0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer0_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.2138661-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer0_1.png</Source>
+      <Name>Backgrounds\Layer0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer0_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2178663-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer0_2.png</Source>
+      <Name>Backgrounds\Layer0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer0_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2208665-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer1_0.png</Source>
+      <Name>Backgrounds\Layer1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer1_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.229867-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer1_1.png</Source>
+      <Name>Backgrounds\Layer1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer1_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2378675-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer1_2.png</Source>
+      <Name>Backgrounds\Layer1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer1_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2448679-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer2_0.png</Source>
+      <Name>Backgrounds\Layer2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer2_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.247868-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer2_1.png</Source>
+      <Name>Backgrounds\Layer2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer2_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2518683-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer2_2.png</Source>
+      <Name>Backgrounds\Layer2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Layer2_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2558685-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Overlays\you_died.png</Source>
+      <Name>Overlays\you_died</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Overlays\you_died.xnb</Output>
+      <Time>2012-02-03T15:34:46.2718694-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Overlays\you_lose.png</Source>
+      <Name>Overlays\you_lose</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Overlays\you_lose.xnb</Output>
+      <Time>2012-02-03T15:34:46.2728695-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Overlays\you_win.png</Source>
+      <Name>Overlays\you_win</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Overlays\you_win.xnb</Output>
+      <Time>2012-02-03T15:34:46.2738695-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_running.png</Source>
+      <Name>Sprites\Player\cop_running</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_running.xnb</Output>
+      <Time>2012-02-03T15:34:46.4268783-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Exit.png</Source>
+      <Name>Tiles\Exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\Exit.xnb</Output>
+      <Time>2012-02-03T15:34:46.4698807-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_idle.png</Source>
+      <Name>Sprites\Player\cop_idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4248782-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_jump.png</Source>
+      <Name>Sprites\Player\cop_jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.4258782-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_roll.png</Source>
+      <Name>Sprites\Player\cop_roll</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_roll.xnb</Output>
+      <Time>2012-02-03T15:34:46.4258782-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_die.png</Source>
+      <Name>Sprites\Player\cop_die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_die.xnb</Output>
+      <Time>2012-02-03T15:34:46.4248782-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\handgun.png</Source>
+      <Name>Sprites\Weapons\handgun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\handgun.xnb</Output>
+      <Time>2012-02-03T15:34:46.4338787-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\shotgun.png</Source>
+      <Name>Sprites\Weapons\shotgun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\shotgun.xnb</Output>
+      <Time>2012-02-03T15:34:46.4368788-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\handgun_muzzle.png</Source>
+      <Name>Sprites\Weapons\handgun_muzzle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\handgun_muzzle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4338787-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_roll2.png</Source>
+      <Name>Sprites\Player\cop_roll2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_roll2.xnb</Output>
+      <Time>2012-02-03T15:34:46.4268783-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\shotgun_muzzle.png</Source>
+      <Name>Sprites\Weapons\shotgun_muzzle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\shotgun_muzzle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4368788-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\bullet.png</Source>
+      <Name>Sprites\Weapons\bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\bullet.xnb</Output>
+      <Time>2012-02-03T15:34:46.4328786-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_yellow_die.png</Source>
+      <Name>Sprites\Player\cop_yellow_die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_die.xnb</Output>
+      <Time>2012-02-03T15:34:46.4278783-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_yellow_idle.png</Source>
+      <Name>Sprites\Player\cop_yellow_idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4278783-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_yellow_jump.png</Source>
+      <Name>Sprites\Player\cop_yellow_jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.4288784-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_yellow_roll.png</Source>
+      <Name>Sprites\Player\cop_yellow_roll</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_roll.xnb</Output>
+      <Time>2012-02-03T15:34:46.4288784-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_yellow_running.png</Source>
+      <Name>Sprites\Player\cop_yellow_running</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_running.xnb</Output>
+      <Time>2012-02-03T15:34:46.4308785-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\shell.png</Source>
+      <Name>Sprites\Weapons\shell</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\shell.xnb</Output>
+      <Time>2012-02-03T15:34:46.4358788-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Particles\explosion.png</Source>
+      <Name>Sprites\Particles\explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Particles\explosion.xnb</Output>
+      <Time>2012-02-03T15:34:46.3958765-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Particles\smoke.bmp</Source>
+      <Name>Sprites\Particles\smoke</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Particles\smoke.xnb</Output>
+      <Time>2012-02-03T15:34:46.4068771-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\quad.png</Source>
+      <Name>Sprites\quad</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\quad.xnb</Output>
+      <Time>2012-02-03T15:34:46.438879-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\blue_corpse.png</Source>
+      <Name>Sprites\Player\blue_corpse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\blue_corpse.xnb</Output>
+      <Time>2012-02-03T15:34:46.4238781-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\yellow_corpse.png</Source>
+      <Name>Sprites\Player\yellow_corpse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\yellow_corpse.xnb</Output>
+      <Time>2012-02-03T15:34:46.4318786-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\arrow.png</Source>
+      <Name>Sprites\arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\arrow.xnb</Output>
+      <Time>2012-02-03T15:34:46.4378789-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\blockC0.png</Source>
+      <Name>Tiles\blockC0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\blockC0.xnb</Output>
+      <Time>2012-02-03T15:34:46.473881-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\blockC1.png</Source>
+      <Name>Tiles\blockC1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\blockC1.xnb</Output>
+      <Time>2012-02-03T15:34:46.474881-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background0_0.png</Source>
+      <Name>Backgrounds\Background0_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background0_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.1708636-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background0_1.png</Source>
+      <Name>Backgrounds\Background0_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background0_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.1728637-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background0_2.png</Source>
+      <Name>Backgrounds\Background0_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background0_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.1758639-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-87.png</Source>
+      <Name>Tiles\block-87</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-87.xnb</Output>
+      <Time>2012-02-03T15:34:46.473881-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\spike.png</Source>
+      <Name>Tiles\spike</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\spike.xnb</Output>
+      <Time>2012-02-03T15:34:46.4788812-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Fire.png</Source>
+      <Name>Sprites\Bowser\Fire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Fire.xnb</Output>
+      <Time>2012-02-03T15:34:46.3808756-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\firebreath.png</Source>
+      <Name>Sprites\Weapons\firebreath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\firebreath.xnb</Output>
+      <Time>2012-02-03T15:34:46.4328786-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background1_0.png</Source>
+      <Name>Backgrounds\Background1_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background1_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.1828643-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background1_1.png</Source>
+      <Name>Backgrounds\Background1_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background1_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.1918648-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background1_2.png</Source>
+      <Name>Backgrounds\Background1_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background1_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.194865-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-87-red.png</Source>
+      <Name>Tiles\block-87-red</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-87-red.xnb</Output>
+      <Time>2012-02-03T15:34:46.4728809-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Run.png</Source>
+      <Name>Sprites\Bowser\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Run.xnb</Output>
+      <Time>2012-02-03T15:34:46.3828758-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Jump.png</Source>
+      <Name>Sprites\Bowser\Jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Jump.xnb</Output>
+      <Time>2012-02-03T15:34:46.3818757-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Bowser\Idle.png</Source>
+      <Name>Sprites\Bowser\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Bowser\Idle.xnb</Output>
+      <Time>2012-02-03T15:34:46.3818757-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2_0.png</Source>
+      <Name>Backgrounds\Background2_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background2_0.xnb</Output>
+      <Time>2012-02-03T15:34:46.1998653-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2_1.png</Source>
+      <Name>Backgrounds\Background2_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background2_1.xnb</Output>
+      <Time>2012-02-03T15:34:46.2058656-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2_2.png</Source>
+      <Name>Backgrounds\Background2_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\Background2_2.xnb</Output>
+      <Time>2012-02-03T15:34:46.2108659-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-16.png</Source>
+      <Name>Tiles\block-16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-16.xnb</Output>
+      <Time>2012-02-03T15:34:46.4718808-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-3.png</Source>
+      <Name>Tiles\block-3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-3.xnb</Output>
+      <Time>2012-02-03T15:34:46.4718808-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\greyblock1.png</Source>
+      <Name>Tiles\greyblock1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\greyblock1.xnb</Output>
+      <Time>2012-02-03T15:34:46.4768811-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\background.png</Source>
+      <Name>Backgrounds\background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Backgrounds\background.xnb</Output>
+      <Time>2012-02-03T15:34:46.2578686-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\blank.png</Source>
+      <Name>Sprites\blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\blank.xnb</Output>
+      <Time>2012-02-03T15:34:46.4378789-05:00</Time>
+    </Item>
+    <Item>
+      <Source>gradient.png</Source>
+      <Name>gradient</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\gradient.xnb</Output>
+      <Time>2012-02-03T15:34:46.4788812-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\block-87-purp.png</Source>
+      <Name>Tiles\block-87-purp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\block-87-purp.xnb</Output>
+      <Time>2012-02-03T15:34:46.4728809-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\bridge.png</Source>
+      <Name>Tiles\bridge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\bridge.xnb</Output>
+      <Time>2012-02-03T15:34:46.4758811-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\chain.png</Source>
+      <Name>Tiles\chain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\chain.xnb</Output>
+      <Time>2012-02-03T15:34:46.4758811-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\handle.png</Source>
+      <Name>Tiles\handle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\handle.xnb</Output>
+      <Time>2012-02-03T15:34:46.4778812-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\lavatop.png</Source>
+      <Name>Tiles\lavatop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\lavatop.xnb</Output>
+      <Time>2012-02-03T15:34:46.4778812-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\chain_flipped.png</Source>
+      <Name>Tiles\chain_flipped</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Tiles\chain_flipped.xnb</Output>
+      <Time>2012-02-03T15:34:46.4768811-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\chunli.png</Source>
+      <Name>Sprites\chunli</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\chunli.xnb</Output>
+      <Time>2012-02-03T15:34:46.438879-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\knife.png</Source>
+      <Name>Sprites\Weapons\knife</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\knife.xnb</Output>
+      <Time>2012-02-06T12:53:33.562539-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_grenade.png</Source>
+      <Name>Sprites\Player\cop_grenade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_grenade.xnb</Output>
+      <Time>2012-02-06T14:06:24.4496884-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\knife_idle.png</Source>
+      <Name>Sprites\Weapons\knife_idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\knife_idle.xnb</Output>
+      <Time>2012-02-06T16:03:10.493835-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\cop_yellow_grenade.png</Source>
+      <Name>Sprites\Player\cop_yellow_grenade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Player\cop_yellow_grenade.xnb</Output>
+      <Time>2012-02-06T18:05:32.1171768-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\duff.png</Source>
+      <Name>Sprites\duff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\duff.xnb</Output>
+      <Time>2012-02-06T18:23:28.2303082-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\donut.png</Source>
+      <Name>Sprites\donut</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\donut.xnb</Output>
+      <Time>2012-02-06T18:27:35.3558814-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\winning.png</Source>
+      <Name>Sprites\winning</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\winning.xnb</Output>
+      <Time>2012-02-06T18:30:01.8169711-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Super_Awesome_Game_box.png</Source>
+      <Name>Super_Awesome_Game_box</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Super_Awesome_Game_box.xnb</Output>
+      <Time>2012-02-06T22:13:38.6290955-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\bomb.png</Source>
+      <Name>Sprites\Weapons\bomb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\bomb.xnb</Output>
+      <Time>2012-02-06T22:14:21.9391734-05:00</Time>
+    </Item>
+    <Item>
+      <Source>xbox_controller.png</Source>
+      <Name>xbox_controller</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\xbox_controller.xnb</Output>
+      <Time>2012-02-07T10:59:50.1918316-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Weapons\explosion.png</Source>
+      <Name>Sprites\Weapons\explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sprites\Weapons\explosion.xnb</Output>
+      <Time>2012-02-08T08:27:37.1478102-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Hud.spritefont</Source>
+      <Name>Fonts\Hud</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\Hud.xnb</Output>
+      <Time>2012-02-03T15:34:46.2608688-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\menufont.spritefont</Source>
+      <Name>Fonts\menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\menufont.xnb</Output>
+      <Time>2012-02-03T15:34:46.2628689-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\gamefont.spritefont</Source>
+      <Name>Fonts\gamefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\gamefont.xnb</Output>
+      <Time>2012-02-03T15:34:46.2618688-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\FatKidDL2.spritefont</Source>
+      <Name>Fonts\FatKidDL2</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Fonts\FatKidDL2.xnb</Output>
+      <Time>2012-02-06T18:45:36.7042931-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\GemCollected.wma</Source>
+      <Name>Sounds\GemCollected</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\GemCollected.xnb</Output>
+      <Time>2012-02-03T15:34:46.2768697-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\MonsterKilled.wma</Source>
+      <Name>Sounds\MonsterKilled</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\MonsterKilled.xnb</Output>
+      <Time>2012-02-03T15:34:46.2788698-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Powerup.wma</Source>
+      <Name>Sounds\Powerup</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Powerup.xnb</Output>
+      <Time>2012-02-03T15:34:46.3188721-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\dominating.wav</Source>
+      <Name>Sounds\UT\dominating</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\dominating.xnb</Output>
+      <Time>2012-02-03T15:34:46.3228723-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\doublekill.wav</Source>
+      <Name>Sounds\UT\doublekill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\doublekill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3258725-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\firstblood.wav</Source>
+      <Name>Sounds\UT\firstblood</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\firstblood.xnb</Output>
+      <Time>2012-02-03T15:34:46.3278726-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\godlike.wav</Source>
+      <Name>Sounds\UT\godlike</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\godlike.xnb</Output>
+      <Time>2012-02-03T15:34:46.3318728-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\headshot.wav</Source>
+      <Name>Sounds\UT\headshot</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\headshot.xnb</Output>
+      <Time>2012-02-03T15:34:46.3338729-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\holyshit.wav</Source>
+      <Name>Sounds\UT\holyshit</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\holyshit.xnb</Output>
+      <Time>2012-02-03T15:34:46.3378732-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\killingspree.wav</Source>
+      <Name>Sounds\UT\killingspree</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\killingspree.xnb</Output>
+      <Time>2012-02-03T15:34:46.3408733-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\ludicrouskill.wav</Source>
+      <Name>Sounds\UT\ludicrouskill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\ludicrouskill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3438735-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\megakill.wav</Source>
+      <Name>Sounds\UT\megakill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\megakill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3468737-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\monsterkill.wav</Source>
+      <Name>Sounds\UT\monsterkill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\monsterkill.xnb</Output>
+      <Time>2012-02-03T15:34:46.351874-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\multikill.wav</Source>
+      <Name>Sounds\UT\multikill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\multikill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3538741-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\play.wav</Source>
+      <Name>Sounds\UT\play</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\play.xnb</Output>
+      <Time>2012-02-03T15:34:46.3568743-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\rampage.wav</Source>
+      <Name>Sounds\UT\rampage</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\rampage.xnb</Output>
+      <Time>2012-02-03T15:34:46.3588744-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\ultrakill.wav</Source>
+      <Name>Sounds\UT\ultrakill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\ultrakill.xnb</Output>
+      <Time>2012-02-03T15:34:46.3618745-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\unstoppable.wav</Source>
+      <Name>Sounds\UT\unstoppable</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\unstoppable.xnb</Output>
+      <Time>2012-02-03T15:34:46.3638747-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\UT\wickedsick.wav</Source>
+      <Name>Sounds\UT\wickedsick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\UT\wickedsick.xnb</Output>
+      <Time>2012-02-03T15:34:46.3668748-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\jumpSound.wav</Source>
+      <Name>Sounds\jumpSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\jumpSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3718751-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\pistolShotSound.wav</Source>
+      <Name>Sounds\pistolShotSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\pistolShotSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3758754-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\rollSound.wav</Source>
+      <Name>Sounds\rollSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\rollSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3778755-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\shotgunBlastSound.wav</Source>
+      <Name>Sounds\shotgunBlastSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\shotgunBlastSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3798756-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\killedSound.wav</Source>
+      <Name>Sounds\killedSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\killedSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3738752-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\fallSound.wav</Source>
+      <Name>Sounds\fallSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\fallSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.3688749-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\hitSound.wav</Source>
+      <Name>Sounds\hitSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\hitSound.xnb</Output>
+      <Time>2012-02-03T15:34:46.369875-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_bowserfalls.wav</Source>
+      <Name>Sounds\smb_bowserfalls</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_bowserfalls.xnb</Output>
+      <Time>2012-02-03T17:42:17.8225131-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_bowserfire.wav</Source>
+      <Name>Sounds\smb_bowserfire</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_bowserfire.xnb</Output>
+      <Time>2012-02-03T17:42:17.8255132-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_gameover.wav</Source>
+      <Name>Sounds\smb_gameover</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_gameover.xnb</Output>
+      <Time>2012-02-03T17:42:17.8285134-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\smb_stage_clear.wav</Source>
+      <Name>Sounds\smb_stage_clear</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\smb_stage_clear.xnb</Output>
+      <Time>2012-02-03T17:49:57.077781-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\bridgeSound.wav</Source>
+      <Name>Sounds\bridgeSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\bridgeSound.xnb</Output>
+      <Time>2012-02-03T18:41:37.9121385-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\knifeSound.wav</Source>
+      <Name>Sounds\knifeSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\knifeSound.xnb</Output>
+      <Time>2012-02-06T13:04:53.620316-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\explosionSound.wav</Source>
+      <Name>Sounds\explosionSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\explosionSound.xnb</Output>
+      <Time>2012-02-08T08:27:37.1428099-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\throwSound.wav</Source>
+      <Name>Sounds\throwSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\throwSound.xnb</Output>
+      <Time>2012-02-08T08:27:37.1458101-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\bombSound.wav</Source>
+      <Name>Sounds\bombSound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\bombSound.xnb</Output>
+      <Time>2012-02-08T08:27:37.1328094-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Music\bgmusic1.mp3</Source>
+      <Name>Sounds\Music\bgmusic1</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\bgmusic1.xnb</Output>
+      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\bgmusic1.wma</Extra>
+      <Time>2012-02-03T15:34:46.316872-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Music\smb-castle.mp3</Source>
+      <Name>Sounds\Music\smb-castle</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\smb-castle.xnb</Output>
+      <Extra>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\Sounds\Music\smb-castle.wma</Extra>
+      <Time>2012-02-03T17:42:09.8710583-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{2FDB7EF3-D3C4-47A3-8E75-C901A05B8574}</ContentProjectGUID>
+      <TargetPlatform>Xbox360</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Peter\Super-Duper-Game\Platformer\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\obj\Xbox 360\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\Xbox 360\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-12-08T12:10:03.1823313-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

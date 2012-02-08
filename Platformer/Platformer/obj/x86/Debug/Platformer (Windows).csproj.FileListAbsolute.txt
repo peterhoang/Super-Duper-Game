@@ -502,7 +502,6 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Mus
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Music\smb-castle.wma
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\knifeSound.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_grenade.xnb
-C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\grenadeSound.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\knife.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\knife_idle.xnb
 C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\cop_yellow_grenade.xnb
@@ -530,3 +529,6 @@ C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\exp
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\throwSound.xnb
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\bombSound.xnb
 E:\Users\Pete\Documents\Visual Studio 2010\Projects\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\explosion.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Weapons\explosion.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\throwSound.xnb
+C:\Peter\Super-Duper-Game\Platformer\Platformer\bin\x86\Debug\Content\Sounds\bombSound.xnb

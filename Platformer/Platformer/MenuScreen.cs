@@ -74,7 +74,7 @@ namespace GameStateManagement
         public override void HandleInput(InputState input)
         {
             // Move to the previous menu entry?
-            if (input.IsMenuUp(ControllingPlayer))
+            if (input.IsMenuUp(null))
             {
                 selectedEntry--;
 
@@ -83,7 +83,7 @@ namespace GameStateManagement
             }
 
             // Move to the next menu entry?
-            if (input.IsMenuDown(ControllingPlayer))
+            if (input.IsMenuDown(null))
             {
                 selectedEntry++;
 
@@ -98,11 +98,11 @@ namespace GameStateManagement
             // OnSelectEntry and OnCancel, so they can tell which player triggered them.
             PlayerIndex playerIndex;
 
-            if (input.IsMenuSelect(ControllingPlayer, out playerIndex))
+            if (input.IsMenuSelect(null, out playerIndex))
             {
                 OnSelectEntry(selectedEntry, playerIndex);
             }
-            else if (input.IsMenuCancel(ControllingPlayer, out playerIndex))
+            else if (input.IsMenuCancel(null, out playerIndex))
             {
                 OnCancel(playerIndex);
             }
